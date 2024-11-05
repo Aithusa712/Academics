@@ -1,0 +1,64 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,220,55,246"/>
+<area shape="rect" id="Node000002" href="$classWindDataCalculator.html#af0a69963fe39b52243a2b4856d4fcf01" title="Calculate the average wind speed, temperature, and solar radiation." alt="" coords="104,78,243,121"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="36,218,61,176,80,152,101,131,105,128,108,132,104,135,84,156,66,179,41,221"/>
+<area shape="rect" id="Node000010" href="$classWindDataCalculator.html#ae7dbd07b5e3d6196d2b6d72d475fea16" title="Calculate the average wind speed." alt="" coords="103,212,244,254"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="55,230,87,230,87,236,55,236"/>
+<area shape="rect" id="Node000012" href="$classWindDataCalculator.html#aff91569f8a39cf2ab8343e163116c43e" title="Calculate the average solar radiation." alt="" coords="104,278,243,321"/>
+<area shape="poly" id="edge21_Node000001_Node000012" title=" " alt="" coords="56,242,113,269,111,274,54,247"/>
+<area shape="rect" id="Node000013" href="$classWindDataCalculator.html#a9fed217324b48400dc673f01e4324252" title="Calculate the average temperature." alt="" coords="104,145,243,188"/>
+<area shape="poly" id="edge24_Node000001_Node000013" title=" " alt="" coords="54,219,111,192,113,197,56,224"/>
+<area shape="rect" id="Node000014" href="$classCsvReader.html#ab5b19b9cee08061ec5d148707daaa9ba" title="Read csv file." alt="" coords="292,414,440,441"/>
+<area shape="poly" id="edge29_Node000001_Node000014" title=" " alt="" coords="40,245,65,288,83,311,104,331,145,357,190,378,278,408,276,413,188,383,143,362,101,335,79,314,60,291,35,248"/>
+<area shape="rect" id="Node000003" href="$classWindDataCalculator.html#aafb8875c9e9ac954e8cf20839ef6e283" title="Calculate average." alt="" coords="297,212,435,254"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="229,119,246,131,262,149,270,165,279,181,294,198,298,201,295,205,290,202,274,184,266,168,257,152,242,135,226,124"/>
+<area shape="rect" id="Node000004" href="$classVector.html#a4c06178fd032101cd345e35dd3528f89" title="Retrieves the current element specified by the parameter index." alt="" coords="553,166,638,193"/>
+<area shape="poly" id="edge8_Node000002_Node000004" title=" " alt="" coords="197,76,239,45,264,31,291,20,333,8,367,3,401,6,441,20,487,47,526,82,558,119,580,152,576,155,553,123,522,86,484,51,439,25,400,12,367,8,334,13,293,25,267,35,242,49,200,80"/>
+<area shape="rect" id="Node000005" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the number of elements in the vector." alt="" coords="550,217,641,244"/>
+<area shape="poly" id="edge14_Node000002_Node000005" title=" " alt="" coords="216,75,266,56,325,42,355,40,386,42,415,50,442,64,458,80,466,97,469,133,471,170,477,187,490,203,511,217,536,224,534,229,509,221,487,207,472,189,465,171,463,134,461,99,453,83,439,69,413,55,385,47,355,45,325,47,267,61,218,80"/>
+<area shape="rect" id="Node000006" href="$classWindDataCalculator.html#ae3236343ed4b4241e157df9fe8b11a8f" title="Calculate standard deviation." alt="" coords="297,78,435,121"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="243,97,282,97,282,102,243,102"/>
+<area shape="rect" id="Node000007" href="$classWindDataCalculator.html#a0c94ccaf09a9ae6721f57302ef02c09d" title="Gets the monthly record of wind data." alt="" coords="297,278,435,321"/>
+<area shape="poly" id="edge9_Node000002_Node000007" title=" " alt="" coords="233,120,246,131,259,149,266,166,270,200,275,232,282,248,294,265,296,267,292,270,290,268,277,251,270,233,265,200,261,168,254,152,242,135,229,124"/>
+<area shape="rect" id="Node000009" href="$classWindDataCalculator.html#ac92f1b237abfb452c0a15905dcf48594" title="Rounds off numbers." alt="" coords="297,145,435,188"/>
+<area shape="poly" id="edge13_Node000002_Node000009" title=" " alt="" coords="238,119,289,137,287,142,236,124"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="435,215,538,190,539,196,436,220"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="435,230,535,228,535,234,436,235"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="430,119,542,158,540,163,429,124"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="425,119,442,131,458,150,466,169,474,187,490,203,512,214,536,222,535,227,510,219,487,207,469,190,461,171,453,153,439,135,422,124"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="421,276,439,264,453,249,461,233,470,218,487,203,512,191,538,183,539,188,514,196,490,207,474,221,466,236,457,252,442,268,424,280"/>
+<area shape="poly" id="edge12_Node000007_Node000005" title=" " alt="" coords="423,275,488,253,535,241,536,246,489,258,424,280"/>
+<area shape="rect" id="Node000008" href="$classVector.html#a771cb9fc1c1941bcef009df2b55f3c72" title="Add another element into the end of the vector." alt="" coords="548,268,643,294"/>
+<area shape="poly" id="edge11_Node000007_Node000008" title=" " alt="" coords="435,292,532,284,533,289,436,297"/>
+<area shape="poly" id="edge16_Node000010_Node000003" title=" " alt="" coords="244,230,281,230,281,236,244,236"/>
+<area shape="poly" id="edge17_Node000010_Node000006" title=" " alt="" coords="226,209,242,198,257,181,266,165,274,148,290,131,295,128,298,132,294,135,279,152,270,168,262,184,246,202,229,213"/>
+<area shape="poly" id="edge19_Node000010_Node000007" title=" " alt="" coords="238,252,289,270,287,275,236,257"/>
+<area shape="poly" id="edge20_Node000010_Node000009" title=" " alt="" coords="236,209,287,191,289,196,238,214"/>
+<area shape="rect" id="Node000011" href="$classWindDataCalculator.html#a08cb45ae79a76426dadf0bb9b39bab21" title="Checks the month." alt="" coords="297,345,435,388"/>
+<area shape="poly" id="edge18_Node000010_Node000011" title=" " alt="" coords="229,253,246,264,262,282,270,299,279,315,294,331,298,334,295,339,290,335,274,318,266,301,257,285,242,268,226,257"/>
+<area shape="poly" id="edge22_Node000012_Node000003" title=" " alt="" coords="236,275,287,257,289,262,238,280"/>
+<area shape="poly" id="edge23_Node000012_Node000007" title=" " alt="" coords="243,297,282,297,282,302,243,302"/>
+<area shape="poly" id="edge25_Node000013_Node000003" title=" " alt="" coords="238,186,289,204,287,209,236,191"/>
+<area shape="poly" id="edge26_Node000013_Node000006" title=" " alt="" coords="236,142,287,124,289,129,238,147"/>
+<area shape="poly" id="edge27_Node000013_Node000007" title=" " alt="" coords="229,186,246,198,262,215,270,232,279,248,294,264,298,268,295,272,290,268,274,251,266,234,257,218,242,202,226,191"/>
+<area shape="poly" id="edge28_Node000013_Node000009" title=" " alt="" coords="243,164,282,164,282,169,243,169"/>
+<area shape="poly" id="edge30_Node000014_Node000004" title=" " alt="" coords="420,412,438,398,454,374,461,350,462,325,460,301,458,277,460,252,468,228,487,203,510,187,537,179,539,184,513,192,490,207,473,230,465,253,464,277,465,301,467,325,466,350,459,376,442,402,423,416"/>
+<area shape="poly" id="edge39_Node000014_Node000005" title=" " alt="" coords="419,412,438,398,451,380,458,363,461,326,464,290,472,272,487,254,509,239,534,231,536,236,511,244,490,258,476,274,469,291,466,327,463,364,456,383,442,402,422,416"/>
+<area shape="poly" id="edge31_Node000014_Node000008" title=" " alt="" coords="417,412,439,398,455,375,461,352,468,328,487,304,508,292,532,284,534,289,511,297,490,308,473,330,466,353,460,377,442,402,419,416"/>
+<area shape="rect" id="Node000015" href="$classDate.html#a6955e1ba08e50fc1972b3601066be008" title="Sets the date by converting the int paramaters into string and storing the full date into m_date." alt="" coords="543,521,648,548"/>
+<area shape="poly" id="edge32_Node000014_Node000015" title=" " alt="" coords="386,440,431,473,489,507,528,520,527,525,487,512,428,478,382,444"/>
+<area shape="rect" id="Node000016" href="$structWindRecType.html#a55c24477023d6a6ef0af9a0edde4ec68" title="Set the Date object in the struct." alt="" coords="517,572,674,598"/>
+<area shape="poly" id="edge33_Node000014_Node000016" title=" " alt="" coords="378,440,421,498,453,530,490,558,504,564,501,569,487,562,449,534,417,501,374,443"/>
+<area shape="rect" id="Node000017" href="$structWindRecType.html#a6c0f77ffe702ba54780cc3c58ebbbb58" title="Set the value for solar Radiation in the struct." alt="" coords="488,622,703,649"/>
+<area shape="poly" id="edge34_Node000014_Node000017" title=" " alt="" coords="375,440,389,475,414,521,447,568,467,590,490,608,497,613,495,617,487,613,464,594,443,572,409,523,385,477,370,442"/>
+<area shape="rect" id="Node000018" href="$structWindRecType.html#ae93a146f64253457db29f8e947a39d40" title="Set the value for Speed in the struct." alt="" coords="512,673,679,700"/>
+<area shape="poly" id="edge35_Node000014_Node000018" title=" " alt="" coords="373,441,385,484,407,543,441,606,464,634,490,659,500,665,497,670,487,663,460,638,437,609,402,545,379,485,368,442"/>
+<area shape="rect" id="Node000019" href="$structWindRecType.html#a716e9014237155f70f5287637ec9163a" title="Set the value for temperature in the struct." alt="" coords="495,318,696,345"/>
+<area shape="poly" id="edge36_Node000014_Node000019" title=" " alt="" coords="410,411,439,398,453,387,462,376,472,365,487,355,501,348,503,353,490,359,475,369,466,380,456,391,442,402,413,416"/>
+<area shape="rect" id="Node000020" href="$classTime.html#a53cf358919b9cb1313b816320e536314" title="Sets the time by taking in two paramaters." alt="" coords="542,369,649,396"/>
+<area shape="poly" id="edge37_Node000014_Node000020" title=" " alt="" coords="437,411,526,393,527,399,438,416"/>
+<area shape="rect" id="Node000021" href="$structWindRecType.html#af12c1ca05ae7190aee325ef28228f89d" title="Set the Time object in the struct." alt="" coords="516,420,675,446"/>
+<area shape="poly" id="edge38_Node000014_Node000021" title=" " alt="" coords="441,427,501,428,501,434,440,432"/>
+<area shape="rect" id="Node000022" href="$classCsvReader.html#a7c90a4ba5a57751bcb8817affcfbf035" title="Remove whitespace, newline in a string." alt="" coords="537,470,654,497"/>
+<area shape="poly" id="edge40_Node000014_Node000022" title=" " alt="" coords="422,439,489,456,523,464,521,469,488,461,421,444"/>
+</map>

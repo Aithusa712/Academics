@@ -1,0 +1,26 @@
+<html>
+        <head>
+                <title>Batch Example</title>
+                <script language="JavaScript">
+
+                function validate(form) {
+                         if (form.name.value == "") {
+                                alert("The name field is required.")
+                                form.name.focus()
+                                form.name.select()
+                                return false
+                        }
+                        return true
+                }
+</script>
+</head>
+        <body>
+
+<form method="GET" action="http://www.it.murdoch.edu.au/cgi-bin/reply1.pl"
+                                onSubmit="return validate(this)">
+<p>Name: <input name="name" type="text" size="20"></p>
+<p><textarea name="comments" rows="4" columns="40">Please write here...</textarea></p>
+<p><input type="submit"> </p>
+</form>
+</body>
+</html>

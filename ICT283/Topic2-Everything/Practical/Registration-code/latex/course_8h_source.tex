@@ -1,0 +1,93 @@
+\doxysection{course.\+h}
+\hypertarget{course_8h_source}{}\label{course_8h_source}\index{ICT283/Topic2-\/Everything/Practical/Registration-\/code/course.h@{ICT283/Topic2-\/Everything/Practical/Registration-\/code/course.h}}
+\mbox{\hyperlink{course_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ COURSE.H\ -\/\ Course\ class\ definition/interface}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ author\ KRI}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ modified\ smr}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ A\ .h\ file\ is\ also\ known\ as\ the\ header\ file.\ It\ is\ the\ Interface.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ It\ should\ only\ contain\ type\ declarations\ and\ prototypes\ of\ routines,\ similar}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ to\ what\ was\ done\ in\ ict159.}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ The\ implementation\ will\ go\ into\ the\ corresponding\ .cpp\ file.\ Implementation\ is\ the}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ body\ of\ the\ routines.}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ COURSE\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ COURSE\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{comment}{//\ No\ routine\ from\ string.h\ is\ needed\ in\ this\ header\ file\ course.h.}}
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ So\ it\ has\ been\ commented\ out.}}
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ Do\ not\ \#include\ files\ that\ are\ not\ needed.}}
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ The\ implementation\ file\ course.cpp\ needs\ string.h,\ so\ \#include\ there}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{comment}{//\ \#include\ <string.h>\ \ //\ C\ string\ library,\ DO\ NOT\ INCLUDE\ HEADER\ FILES\ IF\ NOT\ NEEDED\ HERE}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ Is\ iostream\ needed\ in\ this\ \ file.\ Easy\ to\ check\ by\ commenting\ out\ the\ line\ \#include\ <iostream>}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{comment}{//\ Although\ the\ usage\ of\ unsigned\ here\ is\ fine,\ usage\ of\ unsigned\ type\ can\ be\ problematic.}}
+\DoxyCodeLine{00030\ \textcolor{comment}{//\ Can\ you\ think\ of\ what\ problems\ can\ occur?}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \mbox{\hyperlink{course_8h_a0a074da20a0006b8526250383bf5855a}{CourseNameSize}}\ =\ 10;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCourse}{Course}}\ \{}
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \mbox{\hyperlink{classCourse_a6b959ccf15d9ceed9e9c14a701561982}{Course}}();}
+\DoxyCodeLine{00037\ \ \ \mbox{\hyperlink{classCourse_ac2121e059c09d6f311a5499fa4c3fb1c}{Course}}(\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ nam,\ \textcolor{keywordtype}{char}\ sect,\ \textcolor{keywordtype}{unsigned}\ cred\ );\ \ \textcolor{comment}{//\ nam\ is\ a\ pointer\ to\ char,\ revise\ ict159}}
+\DoxyCodeLine{00038\ \ \ \textcolor{comment}{//\ Construct\ a\ course\ from\ a\ name,\ section\ letter,}}
+\DoxyCodeLine{00039\ \ \ \textcolor{comment}{//\ and\ number\ of\ credits.}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \textcolor{keywordtype}{unsigned}\ \mbox{\hyperlink{classCourse_a0d6ecc51cf62d796d6c795a7e9d76aa0}{GetCredits}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \textcolor{comment}{//\ Get\ the\ number\ of\ credits.}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCourse_ab889c7d28b861ef596262d032330410e}{SetCredits}}(\ \textcolor{keywordtype}{unsigned}\ cred\ );}
+\DoxyCodeLine{00045\ \ \ \textcolor{comment}{//\ Set\ the\ number\ of\ credits.}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \textcolor{comment}{//\ These\ operators\ have\ been\ made\ friends.\ They\ have}}
+\DoxyCodeLine{00048\ \ \ \textcolor{comment}{//\ privileged\ access\ to\ class\ internals.}}
+\DoxyCodeLine{00049\ \ \ \textcolor{comment}{//\ Very\ useful\ for\ debugging\ the\ class,\ but\ not\ very\ good\ for\ class\ design.}}
+\DoxyCodeLine{00050\ \ \ \textcolor{comment}{//\ We\ will\ keep\ using\ it\ for\ now\ but\ you\ will\ have\ a\ chance\ in\ a\ later\ lab}}
+\DoxyCodeLine{00051\ \ \ \textcolor{comment}{//\ to\ redesign\ this\ class.}}
+\DoxyCodeLine{00052\ \ \ \textcolor{keyword}{friend}\ ostream\ \&\ \mbox{\hyperlink{classCourse_a34fb723016b27ed6167580748a679c5d}{operator\ <<}}(\ ostream\ \&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classCourse}{Course}}\ \&\ C\ );}
+\DoxyCodeLine{00053\ \ \ \textcolor{keyword}{friend}\ istream\ \&\ \mbox{\hyperlink{classCourse_a9aad032462b43af24ce44ad784005e14}{operator\ >>}}(\ istream\ \&\ input,\ \mbox{\hyperlink{classCourse}{Course}}\ \&\ C\ );}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00056\ \ \ \textcolor{keywordtype}{char}\ name[\mbox{\hyperlink{course_8h_a0a074da20a0006b8526250383bf5855a}{CourseNameSize}}];\ \ \textcolor{comment}{//\ course\ name,\ C\ style\ string.\ not\ a\ C++\ string\ object}}
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordtype}{char}\ section;\ \ \ \textcolor{comment}{//\ section\ (letter)\ can\ be\ enrolment\ mode}}
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordtype}{int}\ \ credits;\ \ \ \textcolor{comment}{//\ number\ of\ credits}}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{comment}{//\ No\ implementation\ (code\ body)\ should\ be\ found\ after\ the\ line\ \};\ above.}}
+\DoxyCodeLine{00062\ \textcolor{comment}{//\ See\ topic\ 1\ reading\ “Absolute\ C++.\ Pages\ 284-\/293.\ Separate\ }}
+\DoxyCodeLine{00063\ \textcolor{comment}{//\ Implementation/Interface.\ Structs\ vs\ Classes”\ available\ from\ My\ Unit\ Readings}}
+\DoxyCodeLine{00064\ \ }
+\DoxyCodeLine{00065\ \textcolor{comment}{//\ A\ .h\ file\ is\ interface\ or\ header\ file.\ Implementation\ should\ exist\ in}}
+\DoxyCodeLine{00066\ \textcolor{comment}{//\ the\ implementation\ file.\ Implementation\ file\ have\ .cpp\ extensions.}}
+\DoxyCodeLine{00067\ \textcolor{comment}{//\ Implementation\ is\ the\ body\ of\ the\ routine/method}}
+\DoxyCodeLine{00068\ \textcolor{comment}{//\ Concept\ is\ the\ same\ as\ what\ you\ did\ in\ ict159.}}
+\DoxyCodeLine{00069\ \textcolor{comment}{//\ So\ the\ following\ implementation\ needs\ to\ be\ moved\ to\ the\ corresponding}}
+\DoxyCodeLine{00070\ \textcolor{comment}{//\ implementation\ file\ (course.cpp)}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{comment}{//\ The\ method\ is\ inlined\ only\ if\ you\ have\ empirical\ evidence\ that\ inline\ would}}
+\DoxyCodeLine{00073\ \textcolor{comment}{//\ improve\ the\ run-\/time\ execution\ speed.\ Without\ this\ evidence,\ where\ should\ the}}
+\DoxyCodeLine{00074\ \textcolor{comment}{//\ following\ code\ be\ moved\ to?}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{unsigned}\ \mbox{\hyperlink{classCourse_a0d6ecc51cf62d796d6c795a7e9d76aa0}{Course::GetCredits}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00078\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{00079\ \ \ \textcolor{keywordflow}{return}\ credits;}
+\DoxyCodeLine{00080\ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCourse_ab889c7d28b861ef596262d032330410e}{Course::SetCredits}}(\ \textcolor{keywordtype}{unsigned}\ cred\ )}
+\DoxyCodeLine{00083\ \{}
+\DoxyCodeLine{00084\ \ \ credits\ =\ cred;}
+\DoxyCodeLine{00085\ \}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

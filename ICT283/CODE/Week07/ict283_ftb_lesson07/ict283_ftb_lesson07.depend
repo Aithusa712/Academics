@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1718694169 source:/home/kim/Documents/ICT283/CODE/Week07/ict283_ftb_lesson07/main.cpp
+	<iostream>
+	<set>
+
+1718695746 source:/home/kim/Documents/ICT283/CODE/Week07/ict283_ftb_lesson07/MapSample.cpp
+	<map>
+	<iostream>
+	<iomanip>
+	<string>
+
+1718696597 source:/home/kim/Documents/ICT283/CODE/Week07/ict283_ftb_lesson07/MapSample2.cpp
+	<iostream>
+	<iterator>
+	<map>
+	<string>
+

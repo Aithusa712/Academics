@@ -1,0 +1,14 @@
+a.txt
+aaa.txt
+AAk.txt
+Abc.docx
+Ay.txt
+cc.txt
+e.txt
+eCopy.txt
+fred.txt
+lll.txt
+m.txt
+mary.txt
+ors.css
+stdir.txt

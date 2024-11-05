@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1721225333 source:/home/kim/Documents/ICT283/CODE/Week09/LAB09Asses/Date.cpp
+	"Date.h"
+
+1721216981 /home/kim/Documents/ICT283/CODE/Week09/LAB09Asses/Date.h
+	<iostream>
+	<string>
+
+1721551217 source:/home/kim/Documents/ICT283/CODE/Week09/LAB09Asses/dateTreeFP.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	"Date.h"
+	"Bst.h"
+
+1721464479 /home/kim/Documents/ICT283/CODE/Week09/LAB09Asses/Bst.h
+	<iostream>
+
+1721552626 source:/home/kim/Documents/ICT283/CODE/Week09/LAB09Asses/dateTreeText.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	"Date.h"
+	"Bst.h"
+
+1721551145 source:/home/kim/Documents/ICT283/CODE/Week09/LAB09Asses/intTree.cpp
+	<iostream>
+	"Bst.h"
+

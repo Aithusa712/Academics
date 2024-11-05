@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1719245652 source:/home/kim/Documents/ICT283/Assignment/Assignment1/Date.cpp
+	"Date.h"
+
+1719245932 /home/kim/Documents/ICT283/Assignment/Assignment1/Date.h
+	<iostream>
+	<string>
+
+1719245644 source:/home/kim/Documents/ICT283/Assignment/Assignment1/main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+	"Date.h"
+	"Time.h"
+	"vector.h"
+
+1719245882 /home/kim/Documents/ICT283/Assignment/Assignment1/Time.h
+	<iostream>
+	<string>
+
+1719245662 /home/kim/Documents/ICT283/Assignment/Assignment1/vector.h
+
+1719245912 source:/home/kim/Documents/ICT283/Assignment/Assignment1/Time.cpp
+	"Time.h"
+

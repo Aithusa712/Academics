@@ -1,0 +1,116 @@
+======================================================================
+                               GREP 8.0
+       shareware: Find strings or regular expressions in files
+                   UNREGISTERED evaluation version
+======================================================================
+
+
+Contents of This ZIP File
+=========================
+
+-------------------- general information
+0README.1ST    this file
+FILE_ID.DIZ    text file describing this program for other sites
+LICENSE.TXT    program license, warranty, and support info
+                   Please read LICENSE.TXT. Its terms apply whether or not
+                   you register the software.
+REGISTER.TXT   individual registration form
+SITEREG.TXT    site license form
+
+-------------------- interactive tour of GREP
+                   Please see "Test File and Interative Tour" below.
+TOUR.BAT       demo program
+TOURCARE.BAT   subprogram used with TOUR.BAT
+TOURSUB.BAT    subprogram used with TOUR.BAT
+TOURKEY.EXE    prompting program used with TOUR.BAT
+TOURREG1       regex file used with TOUR.BAT
+TEST255        character-class test file used with TOUR.BAT
+
+-------------------- program
+                   For fast help: "GREP32 /? | MORE" or "GREP16 /? | MORE"
+GREP16.EXE     real-mode program, runs in DOS 2.x or later
+GREP32.EXE     protected-mode program, runs on the command line under
+               Windows 9x/ME/NT/2000/XP and uses long filenames
+
+-------------------- documentation
+                   To begin: double-click GREP101.HTM, or on the command line
+                   type "start GREP101.HTM" or "more <GREP101.TXT"
+GREPQRC.DOC    quick reference card in MS-Word (courtesy of Matthew Miner)
+                   On the QRC, strikethroughs mark the features that are
+                   available only in the registered version.
+GREP101.HTM    quick start guide in HTML
+GREPMAN.HTM    reference manual in HTML
+GREPMAN1.GIF   illustration used in GREPMAN.HTM
+GREPHIST.HTM   revision history (what's new) in HTML
+ORS.CSS        style sheet used with the above HTML files
+PCRE.HTM       in-depth description of extended regexes in HTML
+
+
+Evaluation Version and Registered Version
+=========================================
+
+This ZIP file contains the evaluation versions of the GREP executables.
+The registered versions offer additional functions. (For details, type
+"GREP16 /?|more" or look at the "Evaluation" section of the quick
+start guide.) Please register by using the included file REGISTER.TXT or
+SITEREG.TXT, or by credit card on the Web at
+<http://oakroadsystems.com/sharware/>.
+
+If you registered a previous release of GREP, you are entitled to the
+registered version of this release at no additional charge. Send mail
+to Oak Road Systems at <mailto:support@oakroadsystems.com>. Please
+include your license number or the approximate date when you registered.
+
+
+Install and Uninstall
+=====================
+
+There is no special procedure to install GREP. Simply move GREP16.EXE,
+GREP32.EXE, or both to any convenient directory in your path. If you'll
+be using one of them most or all of the time, you may want to rename
+that version to GREP.EXE.
+
+GREP16.EXE and GREP32.EXE are stand-alone programs. They don't need
+any other files from this distribution to run.
+
+To uninstall, simply delete the files.
+
+
+Test File and Interactive Tour of New Features
+==============================================
+
+To run the interactive tour at the command prompt in Windows XP, 2000,
+or NT, type
+        TOUR
+In plain DOS or Windows 95, 98, ME, or 3.x, type
+        command /e:8192 /c TOUR
+The tour walks you through the features added to GREP in the past
+couple of years. If ou're new to the idea of GREP, you may want to
+begin with the Quick Start, GREP101.HTM or GREP101.TXT.
+
+You can also use the binary file TEST255 for your own tests,
+especially with locales and/or extended regexes. TEST255 contains 256
+records of 21 characters. Each record has the form
+        X (code point  88)
+        123456789012345678901
+where X is the character as a character and " 88" is its ASCII value
+in decimal. Remember that this is a binary file and must be processed
+with the /R2 option, because record 26 contains a control-Z character.
+
+Example: To see which characters are considered the same as character
+233 when upper and lower case are merged, use this command
+        grep32 /r2w21 ^\233 test255 /i /mfr
+Example: To see which characters are cconsidered letters, use this
+command:
+        grep32 /r2w21 ^[[:alpha:]] /e2 test255 |more
+More examples are in the tour, and the manual.
+
+
+More Information
+================
+
+You can find the latest news about GREP, as well as some other
+shareware utilities that might interest you, on the Web at
+<http://oakroadsystems.com/sharware/>.
+
+Send e-mail inquiries to <mailto:support@oakroadsystems.com>.

@@ -1,0 +1,15 @@
+* Program can build and run
+* Program can calculate average wind speed and standard deviation for a specific month and year
+* Program can calculate average wind temperature and standard deviation for every month of the year 
+* Program can calculate average wind solar radiation for every month of the year
+* Program can read and record the data into a struct.
+* Program can calculate average wind speed, temperature and their standard deviation and also the solar radiation 
+and print it out into a csv file name WindTempSolar.csv
+* Program loops the menu prompt properly
+* Program correctly reads the correct csv file to bread
+* Program correctly converts the solar radiation values from
+W/m^2 to kWh/m^2
+
+
+- Program cannot simplify the solar radiation values so that
+only solar radiation values of >=  100 W/m^2 are to be used

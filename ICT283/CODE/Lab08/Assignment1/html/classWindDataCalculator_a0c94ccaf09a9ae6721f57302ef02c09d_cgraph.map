@@ -1,0 +1,9 @@
+<map id="WindDataCalculator::GetMonthlyData" name="WindDataCalculator::GetMonthlyData">
+<area shape="rect" id="Node000001" title="Gets the monthly record of wind data." alt="" coords="5,48,144,91"/>
+<area shape="rect" id="Node000002" href="$classVector.html#a4c06178fd032101cd345e35dd3528f89" title="Retrieves the current element specified by the parameter index." alt="" coords="197,5,281,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,45,181,34,183,39,145,51"/>
+<area shape="rect" id="Node000003" href="$classVector.html#a771cb9fc1c1941bcef009df2b55f3c72" title="Add another element into the end of the vector." alt="" coords="192,56,286,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,67,176,67,176,72,144,72"/>
+<area shape="rect" id="Node000004" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the number of elements in the vector." alt="" coords="194,107,284,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,88,180,99,178,104,143,93"/>
+</map>

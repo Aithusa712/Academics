@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="HAVAFXThread2.jnlp">
+  <information>
+    <title>HAVAFXThread2</title>
+    <vendor>20150534</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="HAVAFXThread2.jar" size="4384" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="HAVAFXThread2" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="havafxthread2.FxConcurrencyExample2"  name="HAVAFXThread2" />
+  <update check="always"/>
+</jnlp>

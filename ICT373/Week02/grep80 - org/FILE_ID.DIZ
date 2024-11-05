@@ -1,0 +1,27 @@
+GREP 8.0: Find regular expressions in files
+
+This filter is a greatly enhanced
+replacement for DOS FIND and is similar
+to UNIX grep. Finds all lines containing
+(or NOT containing) one or more strings
+or regular expressions in one or more
+files, with optional search of
+subdirectories. Can search for basic or
+extended regular expressions. Can search
+text or binary files and sense file
+type. Returns a configurable value in
+errorlevel for batch programs.
+
+Runs in plain DOS and DOS under any
+version of WWindows; the included
+32-bit version uses long filenames.
+There is no special installation
+procedure.
+
+Shareware. The *complete* ZIP file may
+be redistributed freely. Register at
+<http://oakroadsystems.com/sharware/>.
+
+author: Stan Brown, Oak Road Systems
+mailto:support@oakroadsystems.com
+http://oakroadsystems.com

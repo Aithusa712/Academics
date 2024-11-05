@@ -1,0 +1,79 @@
+# depslib dependency file v1.0
+1170900038 source:c:\users\smr\desktop\tmp\light code\light.cpp
+	"Light.h"
+
+1647348626 
+
+1170910562 c:\users\smr\desktop\tmp\light code\light.h
+	<iostream>
+	<string>
+
+1170900054 source:c:\users\smr\desktop\tmp\light code\patternlight.cpp
+	"PatternLight.h"
+
+1647348626 ght.h"
+
+1554288269 c:\users\smr\desktop\tmp\light code\patternlight.h
+	"Light.h"
+
+1170899368 source:c:\users\smr\desktop\tmp\light code\patternlighttest.cpp
+	"PatternLight.h"
+	<iostream>
+
+1170899368 
+
+1554292066 source:c:\users\smr\desktop\tmp\light code\constructors.cpp
+	"Light.h"
+	<vector>
+
+1679904015 source:d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic05\content\light code construction counting\light.cpp
+	"Light.h"
+
+1647348626 d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic05\content\light code construction counting\light.h
+	<iostream>
+	<string>
+
+1647348626 source:d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic05\content\light code construction counting\patternlight.cpp
+	"PatternLight.h"
+
+1647348626 d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic05\content\light code construction counting\patternlight.h
+	"Light.h"
+
+1679904268 source:d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic05\content\light code construction counting\constructors.cpp
+	"Light.h"
+	<vector>
+
+1679904353 source:d:\dell\data\od\tmp\data01\onedrive\units\ict283\topicslms\topic05\content\light code construction counting\constructors.cpp
+	"Light.h"
+	<vector>
+
+1647348626 d:\dell\data\od\tmp\data01\onedrive\units\ict283\topicslms\topic05\content\light code construction counting\light.h
+	<iostream>
+	<string>
+
+1679904015 source:d:\dell\data\od\tmp\data01\onedrive\units\ict283\topicslms\topic05\content\light code construction counting\light.cpp
+	"Light.h"
+
+1647348626 source:d:\dell\data\od\tmp\data01\onedrive\units\ict283\topicslms\topic05\content\light code construction counting\patternlight.cpp
+	"PatternLight.h"
+
+1647348626 d:\dell\data\od\tmp\data01\onedrive\units\ict283\topicslms\topic05\content\light code construction counting\patternlight.h
+	"Light.h"
+
+1679904354 source:/home/kim/Documents/ICT283/Topic5-everything/Content/Light code construction counting/Constructors.cpp
+	"Light.h"
+	<vector>
+
+1647348626 /home/kim/Documents/ICT283/Topic5-everything/Content/Light code construction counting/Light.h
+	<iostream>
+	<string>
+
+1679904016 source:/home/kim/Documents/ICT283/Topic5-everything/Content/Light code construction counting/Light.cpp
+	"Light.h"
+
+1647348626 source:/home/kim/Documents/ICT283/Topic5-everything/Content/Light code construction counting/PatternLight.cpp
+	"PatternLight.h"
+
+1647348626 /home/kim/Documents/ICT283/Topic5-everything/Content/Light code construction counting/PatternLight.h
+	"Light.h"
+

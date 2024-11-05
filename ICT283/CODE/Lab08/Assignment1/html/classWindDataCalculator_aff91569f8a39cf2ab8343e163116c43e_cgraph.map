@@ -1,0 +1,15 @@
+<map id="WindDataCalculator::calculateAvgSR" name="WindDataCalculator::calculateAvgSR">
+<area shape="rect" id="Node000001" title="Calculate the average solar radiation." alt="" coords="5,39,144,81"/>
+<area shape="rect" id="Node000002" href="$classWindDataCalculator.html#aafb8875c9e9ac954e8cf20839ef6e283" title="Calculate average." alt="" coords="192,5,330,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,45,176,39,177,44,145,50"/>
+<area shape="rect" id="Node000005" href="$classWindDataCalculator.html#a0c94ccaf09a9ae6721f57302ef02c09d" title="Gets the monthly record of wind data." alt="" coords="192,72,330,115"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="145,70,177,76,176,81,144,75"/>
+<area shape="rect" id="Node000003" href="$classVector.html#a4c06178fd032101cd345e35dd3528f89" title="Retrieves the current element specified by the parameter index." alt="" coords="383,64,467,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="331,45,369,57,367,62,329,51"/>
+<area shape="rect" id="Node000004" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the number of elements in the vector." alt="" coords="380,13,470,40"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="330,24,364,24,364,29,330,29"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="330,84,367,80,368,86,331,89"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="314,69,375,44,377,49,316,74"/>
+<area shape="rect" id="Node000006" href="$classVector.html#a771cb9fc1c1941bcef009df2b55f3c72" title="Add another element into the end of the vector." alt="" coords="378,115,472,141"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="331,105,363,112,362,117,330,111"/>
+</map>

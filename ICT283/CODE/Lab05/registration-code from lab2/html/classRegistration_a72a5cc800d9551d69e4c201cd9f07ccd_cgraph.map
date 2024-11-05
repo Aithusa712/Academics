@@ -1,0 +1,9 @@
+<map id="Registration::GetCredits" name="Registration::GetCredits">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,168,83"/>
+<area shape="rect" id="Node000002" href="$classUnit.html#ab1f83a3955a721e46730773747e4e67e" title=" " alt="" coords="240,5,357,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,53,224,34,226,39,146,58"/>
+<area shape="rect" id="Node000003" href="$classRegistration.html#a6c9a86696e6574e5d83dbb899c5171e1" title=" " alt="" coords="216,56,381,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,67,200,67,200,72,168,72"/>
+<area shape="rect" id="Node000004" href="$classResult.html#afd973c5783ece727554be5c6036ddd67" title=" " alt="" coords="242,107,355,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,81,228,100,226,106,145,86"/>
+</map>

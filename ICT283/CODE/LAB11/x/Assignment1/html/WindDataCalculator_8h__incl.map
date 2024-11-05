@@ -1,0 +1,18 @@
+<map id="WindDataCalculator.h" name="WindDataCalculator.h">
+<area shape="rect" id="Node000001" title="Header file for the Date class." alt="" coords="5,5,155,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="73,229,127,256"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,33,68,61,59,98,55,139,61,181,69,199,81,216,76,219,65,201,56,182,50,139,54,97,63,59,72,32"/>
+<area shape="rect" id="Node000003" href="$WindRecType_8h.html" title="Header file for the WindRecTyoe struct." alt="" coords="100,80,215,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="95,31,135,67,131,71,92,34"/>
+<area shape="rect" id="Node000004" href="$Date_8h.html" title="Header file for the Date class." alt="" coords="71,155,132,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="150,109,122,144,118,141,145,106"/>
+<area shape="rect" id="Node000006" href="$Time_8h.html" title="Header file for the Date class." alt="" coords="156,155,217,181"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="165,106,178,139,173,141,160,108"/>
+<area shape="rect" id="Node000007" href="$vector_8h.html" title=" " alt="" coords="242,155,310,181"/>
+<area shape="poly" id="edge9_Node000003_Node000007" title=" " alt="" coords="179,105,244,144,241,149,177,109"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="104,182,103,214,98,214,98,182"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="151,229,222,256"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="118,180,162,217,159,221,114,184"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="173,184,128,221,125,217,170,180"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="189,182,189,214,184,214,184,182"/>
+</map>

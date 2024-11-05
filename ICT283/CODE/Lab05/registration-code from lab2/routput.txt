@@ -1,0 +1,29 @@
+Student ID: 102234
+Student Name: Kim Andrew
+Semester:   1
+  Unit:  System analysis and design
+  Unit ID: ICT 284
+  Credits: 3
+  Marks: 78
+  Date: 12 April 2024
+
+  Unit:  Principles of computer science
+  Unit ID: ICT 167
+  Credits: 4
+  Marks: 80
+  Date: 9 April 2024
+
+  Unit:  Data structures and abstractions
+  Unit ID: ICT 283
+  Credits: 2
+  Marks: 96
+  Date: 10 April 2024
+
+  Unit:  Information system management
+  Unit ID: ICT 292
+  Credits: 1
+  Marks: 87
+  Date: 2 October 2024
+
+Number of courses = 4
+Total credits     = 10

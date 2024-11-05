@@ -1,0 +1,24 @@
+Student ID: 102234
+Semester:   1
+  Unit:  System_analysis_and_design
+  Unit ID: ICT_284
+  Credits: 3
+  Marks: 78
+
+  Unit:  Principles_of_computer_science
+  Unit ID: ICT_167
+  Credits: 4
+  Marks: 80
+
+  Unit:  Data_structures_and_abstractions
+  Unit ID: ICT_283
+  Credits: 2
+  Marks: 96
+
+  Unit:  Information_system_management
+  Unit ID: ICT_292
+  Credits: 1
+  Marks: 87
+
+Number of courses = 4
+Total credits     = 10

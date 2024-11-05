@@ -1,0 +1,147 @@
+<mxfile host="Electron" modified="2024-07-27T10:32:18.157Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.4 Chrome/124.0.6367.243 Electron/30.3.1 Safari/537.36" etag="bPaSVuPOAB4LptUhq2iA" version="24.6.4" type="device">
+  <diagram name="Page-1" id="ZgY85LNP1_pxqcoRV_VO">
+    <mxGraphModel dx="1008" dy="1136" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GwnkNJraXQp3834MuHaC-1" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="124" y="130" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-2" value="" style="html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="GwnkNJraXQp3834MuHaC-1" parent="1" target="GwnkNJraXQp3834MuHaC-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="189" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-4" value="Online form is submitted" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GwnkNJraXQp3834MuHaC-2">
+          <mxGeometry x="-0.0575" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GwnkNJraXQp3834MuHaC-3" target="GwnkNJraXQp3834MuHaC-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-7" value="System locating for suitable painters" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GwnkNJraXQp3834MuHaC-6">
+          <mxGeometry x="-0.1375" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GwnkNJraXQp3834MuHaC-3" target="GwnkNJraXQp3834MuHaC-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-31" value="Customer&lt;div&gt;cancels&amp;nbsp;&lt;/div&gt;&lt;div&gt;Job&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GwnkNJraXQp3834MuHaC-30">
+          <mxGeometry x="-0.1963" y="-2" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-3" value="Submitted" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="34" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-11" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GwnkNJraXQp3834MuHaC-5" target="GwnkNJraXQp3834MuHaC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-13" value="System cannot find any painters" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GwnkNJraXQp3834MuHaC-11">
+          <mxGeometry x="-0.0461" y="-3" relative="1" as="geometry">
+            <mxPoint x="-5" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GwnkNJraXQp3834MuHaC-5" target="GwnkNJraXQp3834MuHaC-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-14" value="Painters are found and notified" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GwnkNJraXQp3834MuHaC-12">
+          <mxGeometry x="-0.3563" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-5" value="Finding Painters" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="358" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-29" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GwnkNJraXQp3834MuHaC-8" target="GwnkNJraXQp3834MuHaC-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-32" value="Notify&lt;div&gt;Customer&amp;nbsp;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GwnkNJraXQp3834MuHaC-29">
+          <mxGeometry x="-0.2307" y="2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-8" value="No Painters Available" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="254" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GwnkNJraXQp3834MuHaC-9" target="GwnkNJraXQp3834MuHaC-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-16" value="Painters will send their quote to the customer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GwnkNJraXQp3834MuHaC-15">
+          <mxGeometry x="-0.156" y="-2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-9" value="Painters found" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="654" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GwnkNJraXQp3834MuHaC-10" target="GwnkNJraXQp3834MuHaC-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-22" value="Waiting for Customer&#39;s reply" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GwnkNJraXQp3834MuHaC-18">
+          <mxGeometry x="-0.263" y="2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-10" value="Quote sent" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="594" y="424" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GwnkNJraXQp3834MuHaC-17" target="GwnkNJraXQp3834MuHaC-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-35" value="Quote accepted by customer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GwnkNJraXQp3834MuHaC-23">
+          <mxGeometry x="0.2268" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-24" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GwnkNJraXQp3834MuHaC-17" target="GwnkNJraXQp3834MuHaC-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-34" value="No reply within 24 hours" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GwnkNJraXQp3834MuHaC-24">
+          <mxGeometry x="-0.2133" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-17" value="Waiting for reply" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="494" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-28" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GwnkNJraXQp3834MuHaC-20" target="GwnkNJraXQp3834MuHaC-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-33" value="Notify Painters" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GwnkNJraXQp3834MuHaC-28">
+          <mxGeometry x="-0.1793" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-20" value="Quote Accepted" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="394" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GwnkNJraXQp3834MuHaC-21" target="GwnkNJraXQp3834MuHaC-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-36" value="Notify customer and painter" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GwnkNJraXQp3834MuHaC-26">
+          <mxGeometry x="-0.1645" y="-3" relative="1" as="geometry">
+            <mxPoint x="35" y="-22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-21" value="No reply" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="604" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-25" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="314" y="870" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-41" value="State Machine Diagram" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="354" y="30" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-42" value="For a painting job object" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="80" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GwnkNJraXQp3834MuHaC-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="GwnkNJraXQp3834MuHaC-42" target="GwnkNJraXQp3834MuHaC-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

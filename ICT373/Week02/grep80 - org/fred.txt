@@ -1,0 +1,41 @@
+ Volume in drive D is Work
+ Volume Serial Number is B8A9-DFDA
+
+ Directory of D:\Teaching\2018\2018 S1 ICT373\grep80
+
+22/02/2018  11:56 AM    <DIR>          .
+22/02/2018  11:56 AM    <DIR>          ..
+08/02/2016  10:11 AM             4,937 0README.1ST
+07/03/2017  03:16 PM               330 aaa.txt
+07/03/2017  11:06 AM                 0 Abc.docx
+07/03/2017  05:46 PM                22 cc.txt
+07/03/2017  05:36 PM                86 e.txt
+07/03/2017  01:28 PM                57 eCopy.txt
+08/02/2016  10:11 AM               847 FILE_ID.DIZ
+22/02/2018  11:57 AM                 0 fred.txt
+08/02/2016  10:11 AM            38,696 GREP101.HTM
+08/02/2016  10:11 AM            70,322 GREP16.EXE
+08/02/2016  10:11 AM           171,008 GREP32.EXE
+08/02/2016  10:11 AM            54,944 GREPHIST.HTM
+08/02/2016  10:11 AM           297,763 GREPMAN.HTM
+08/02/2016  10:11 AM             2,900 GREPMAN1.GIF
+08/02/2016  10:11 AM            37,376 GREPQRC.DOC
+07/03/2016  11:28 PM             1,976 lab2.txt
+08/02/2016  10:11 AM            13,200 LICENSE.TXT
+07/03/2017  05:42 PM                71 lll.txt
+10/03/2016  01:57 PM               281 m.txt
+10/03/2016  01:57 PM                55 m1.txt
+07/03/2017  05:19 PM                86 m11.txt
+22/02/2018  11:56 AM             3,811 mary.txt
+08/02/2016  10:11 AM            15,948 ors.css
+08/02/2016  10:11 AM            62,569 PCRE.HTM
+08/02/2016  10:11 AM             1,963 REGISTER.TXT
+08/02/2016  10:11 AM             2,385 SITEREG.TXT
+08/02/2016  10:11 AM             5,376 TEST255
+08/02/2016  10:11 AM            34,801 TOUR.BAT
+08/02/2016  10:11 AM             2,583 TOURCARE.BAT
+08/02/2016  10:11 AM            34,304 TOURKEY.EXE
+08/02/2016  10:11 AM                68 TOURREG1
+08/02/2016  10:11 AM             3,081 TOURSUB.BAT
+              32 File(s)        861,846 bytes
+               2 Dir(s)  498,810,961,920 bytes free

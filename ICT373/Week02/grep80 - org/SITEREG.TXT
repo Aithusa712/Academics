@@ -1,0 +1,65 @@
+                    SITE LICENSE FOR GREP 8.0
+
+for _______ users at ____________________________________________
+                     (firm/organization department/division/plant)
+
+(Please see LICENSE.TXT for terms. To pay on line, see
+<http://oakroadsystems.com/sharware/>.)
+
+Please fill in blanks CLEARLY and mail form with payment to:
+    Stan Brown, Oak Road Systems
+    P.O. Box 489
+    Dryden NY 13053    USA
+(If possible, please make sure that this address is current, by
+checking at <http://oakroadsystems.com/about.htm#Contact>.)
+
+Principal contact's name and mailing address:
+
+    _____________________________________________________________
+
+    _____________________________________________________________
+
+    _____________________________________________________________
+
+    _____________________________________________________________
+
+    Country: ____________________________________________________
+
+Your e-mail address:  ___________________________________________
+will be used ONLY to notify you of new versions of GREP or of
+significant bugs discovered. The above information will not be
+given to any other person or organization.
+
+
+User survey: please check as many as apply.
+
+    Which version do you use?    [  ] 16    [  ] 32    [  ] both
+
+    [  ] Win 95/98/ME    [  ] Win NT/2000/XP    [  ] DOS no Windows
+
+[  ] Check here if you DO NOT want e-mail notice of new versions
+     or Oak Road Systems news (no more than once a month).
+
+
+[ X ] Site license fee for ________ users         US $ __________
+            2 to 5 users      US $ 19.00 per user
+            5 to 9                 18.00 per user
+          up to 19            US $ 200 flat
+          up to 49                 450
+          up to 99                 900
+       100 or more users          1250
+
+[   ] Optional source code registration, add $2,500    __________
+
+      Subtotal                                    US $ __________
+
+[   ] Applicable sales tax (New York State customers)  __________
+
+      Total                                       US $ __________
+
+[   ] Foreign currency: please convert amount to
+      your local currency and send nearest amount
+      in notes (no coins or checks).
+
+      Rate _________ times amount yields:        ______ __________
+                                               currency

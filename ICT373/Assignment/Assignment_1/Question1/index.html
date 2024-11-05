@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Information Form</title>
+	<script language="JavaScript">
+		function isNotEmpty(field) {
+			var inputStr = field.value;
+			if (inputStr == "" || inputStr == null) {
+				alert(field.name + " field is required.");
+				field.focus();
+				return false;
+			}
+			return true;
+		}
+
+
+		function validateDay(day, month, year) {
+			const daysInMonth = [31, (isLeapYear(year) ? 29 : 28), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+			if (day < 1 || day > daysInMonth[month - 1]) {
+				alert("Invalid day for the given month and year.");
+				return false;
+			}
+			return true;
+		}
+
+		function isLeapYear(year) {
+			return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+		}
+
+		function validateFutureDate(day, month, year) {
+			var today = new Date();
+			var enteredDate = new Date(year, month - 1, day);
+			if (enteredDate > today) {
+				alert("Birth date cannot be in the future.");
+				return false;
+			}
+			return true;
+		}
+
+		function validateBirthDate(dayField, monthField, yearField) {
+			var day = parseInt(dayField.value);
+			var month = parseInt(monthField.value);
+			var year = parseInt(yearField.value);
+
+			if (!isNotEmpty(dayField) || !isNotEmpty(monthField) || !isNotEmpty(yearField)) return false;
+			if (isNaN(day) || isNaN(month) || isNaN(year) || month < 1 || month > 12 || year < 1900) {
+				alert("Please enter a valid date (day, month, and year).");
+				return false;
+			}
+			if (!validateDay(day, month, year) || !validateFutureDate(day, month, year)) return false;
+			return true;
+		}
+
+		function validateForm(form) {
+			if (isNotEmpty(form.name) &&
+				validateBirthDate(form.day, form.month, form.year) &&
+				isNotEmpty(form.pastime)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	</script>
+</head>
+
+<body>
+
+	<h2>User Information Form</h2>
+	<form method="GET" action="http://www.it.murdoch.edu.au/cgi-bin/reply1.pl" onSubmit="return validateForm(this)">
+
+		<p>
+			Name: <input type="text" name="name" size="30">
+		</p>
+
+		<p>
+			Phone Number: <input type="text" name="phone" size="30">
+		</p>
+
+		<p>
+			Birth Date:
+			<br> Day (1-31): <input name="day" type="text" size="2" value="1">
+			<br> Month (1-12): <input name="month" type="text" size="2" value="1">
+			<br> Year: <input name="year" type="text" size="4" value="2000">
+		</p>
+
+		<p>
+			Favourite Pastime:
+			<select name="pastime">
+				<option value="Surfing the Web">Surfing the Web</option>
+				<option value="Playing Sport">Playing Sport</option>
+				<option value="Listening to Music">Listening to Music</option>
+				<option value="Watching TV">Watching TV</option>
+				<option value="Playing Games">Playing Games</option>
+				<option value="Community Service">Community Service</option>
+				<option value="Daydreaming">Daydreaming</option>
+				<option value="Reading">Reading</option>
+				<option value="Meditation">Meditation</option>
+			</select>
+		</p>
+
+		<p>
+			<input type="submit" value="Submit">
+			<input type="reset">
+		</p>
+
+	</form>
+
+</body>
+
+</html>

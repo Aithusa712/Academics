@@ -1,0 +1,172 @@
+# depslib dependency file v1.0
+830090216 source:c:\users\rai\desktop\new folder\ict209\practice\registration\codeblocks\course.cpp
+	"course.h"
+
+830090216 "
+
+1235478704 c:\users\rai\desktop\new folder\ict209\practice\registration\codeblocks\course.h
+	<iostream>
+	<string.h>
+
+1707906271 
+
+1235478734 source:c:\users\rai\desktop\new folder\ict209\practice\registration\codeblocks\main.cpp
+	<iostream>
+	<fstream>
+	"course.h"
+	"regist.h"
+
+1235478688 c:\users\rai\desktop\new folder\ict209\practice\registration\codeblocks\regist.h
+	<iostream>
+	"course.h"
+
+1235476234 source:c:\users\rai\desktop\new folder\ict209\practice\registration\codeblocks\regist.cpp
+	"regist.h"
+
+830090216 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\practice\session02\registration\codeblocks\course.cpp
+	"course.h"
+
+1235478704 \\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\practice\session02\registration\codeblocks\course.h
+	<iostream>
+	<string.h>
+
+1235478734 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\practice\session02\registration\codeblocks\main.cpp
+	<iostream>
+	<fstream>
+	"course.h"
+	"regist.h"
+
+1235478688 \\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\practice\session02\registration\codeblocks\regist.h
+	<iostream>
+	"course.h"
+
+1235476234 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\practice\session02\registration\codeblocks\regist.cpp
+	"regist.h"
+
+1457336386 source:\\sphinx\s900391h\smr\smr\ict209-ict283\2017\tj - 6x4\placed in lms\session01\01 - pre-workshop\topic02\practical\registration\codeblocks\course.cpp
+	"course.h"
+
+1457336962 \\sphinx\s900391h\smr\smr\ict209-ict283\2017\tj - 6x4\placed in lms\session01\01 - pre-workshop\topic02\practical\registration\codeblocks\course.h
+	<iostream>
+	<string.h>
+
+1457337038 source:\\sphinx\s900391h\smr\smr\ict209-ict283\2017\tj - 6x4\placed in lms\session01\01 - pre-workshop\topic02\practical\registration\codeblocks\main.cpp
+	<iostream>
+	<fstream>
+	"course.h"
+	"regist.h"
+
+1488617813 \\sphinx\s900391h\smr\smr\ict209-ict283\2017\tj - 6x4\placed in lms\session01\01 - pre-workshop\topic02\practical\registration\codeblocks\regist.h
+	<iostream>
+	"course.h"
+
+1457336550 source:\\sphinx\s900391h\smr\smr\ict209-ict283\2017\tj - 6x4\placed in lms\session01\01 - pre-workshop\topic02\practical\registration\codeblocks\regist.cpp
+	"regist.h"
+
+1707906646 source:d:\dell\data\od\tmp\data01\onedrive\units\ict283\topicslms\topic02\practical\registration-code\regist.cpp
+	"regist.h"
+
+1707907262 d:\dell\data\od\tmp\data01\onedrive\units\ict283\topicslms\topic02\practical\registration-code\regist.h
+	"course.h"
+	<iostream>
+
+1707908626 d:\dell\data\od\tmp\data01\onedrive\units\ict283\topicslms\topic02\practical\registration-code\course.h
+	<iostream>
+
+1707907262 source:d:\dell\data\od\tmp\data01\onedrive\units\ict283\topicslms\topic02\practical\registration-code\course.cpp
+	"course.h"
+	<string.h>
+
+1707906271 source:d:\dell\data\od\tmp\data01\onedrive\units\ict283\topicslms\topic02\practical\registration-code\main.cpp
+	"course.h"
+	"regist.h"
+	<iostream>
+	<fstream>
+
+1707907264 source:/home/kim/Downloads/Practical/registration-code from lab2/COURSE.CPP
+	"course.h"
+	<string.h>
+
+1707906648 source:/home/kim/Downloads/Practical/registration-code from lab2/REGIST.CPP
+	"regist.h"
+
+1707907264 source:/home/kim/Downloads/Practical/registration-code from lab2/course.cpp
+	"course.h"
+	<string.h>
+
+1707909082 /home/kim/Downloads/Practical/registration-code from lab2/course.h
+	<iostream>
+
+1718176129 source:/home/kim/Downloads/Practical/registration-code from lab2/regist.cpp
+	"regist.h"
+
+1718176123 /home/kim/Downloads/Practical/registration-code from lab2/regist.h
+	"Unit.h"
+	"Result.h"
+	<iostream>
+
+1718007498 source:/home/kim/Downloads/Practical/registration-code from lab2/main.cpp
+	"Unit.h"
+	"regist.h"
+	<iostream>
+	<fstream>
+
+1718173269 /home/kim/Downloads/Practical/registration-code from lab2/Unit.h
+	<iostream>
+
+1718176602 source:/home/kim/Downloads/Practical/registration-code from lab2/Result.cpp
+	"Result.h"
+
+1718176526 /home/kim/Downloads/Practical/registration-code from lab2/Result.h
+	"Unit.h"
+	<iostream>
+
+1718012767 source:/home/kim/Downloads/Practical/registration-code from lab2/Unit.cpp
+	"Unit.h"
+	<string.h>
+
+1718336316 source:/home/kim/Documents/ICT283/CODE/Lab04/registration-code from lab2/main.cpp
+	"Unit.h"
+	"Result.h"
+	"Date.h"
+	"Regist.h"
+	<iostream>
+	<fstream>
+
+1718336853 /home/kim/Documents/ICT283/CODE/Lab04/registration-code from lab2/Unit.h
+	<iostream>
+	<string>
+
+1718330696 /home/kim/Documents/ICT283/CODE/Lab04/registration-code from lab2/regist.h
+	"Result.h"
+	<iostream>
+
+1718339877 /home/kim/Documents/ICT283/CODE/Lab04/registration-code from lab2/Result.h
+	"Unit.h"
+	"Date.h"
+	<iostream>
+
+1718330858 source:/home/kim/Documents/ICT283/CODE/Lab04/registration-code from lab2/Result.cpp
+	"Result.h"
+
+1718337078 source:/home/kim/Documents/ICT283/CODE/Lab04/registration-code from lab2/Unit.cpp
+	"Unit.h"
+	<string>
+
+1718329570 source:/home/kim/Documents/ICT283/CODE/Lab04/registration-code from lab2/regist.cpp
+	"regist.h"
+
+1718339847 /home/kim/Documents/ICT283/CODE/Lab04/registration-code from lab2/Date.h
+	<iostream>
+	<string>
+
+1718329533 source:/home/kim/Documents/ICT283/CODE/Lab04/registration-code from lab2/Date.cpp
+	"Date.h"
+
+1718694856 source:/home/kim/Documents/ICT283/CODE/Lab04/registration-code from lab2/Regist.cpp
+	"Regist.h"
+
+1718339868 /home/kim/Documents/ICT283/CODE/Lab04/registration-code from lab2/Regist.h
+	"Result.h"
+	<iostream>
+

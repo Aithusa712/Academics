@@ -1,0 +1,7 @@
+<map id="WindRecType" name="WindRecType">
+<area shape="rect" id="Node000001" title=" " alt="" coords="51,203,144,272"/>
+<area shape="rect" id="Node000002" href="$class_date.html" title="Date class contains the Setter and Getter methods to set and get the date." alt="" coords="5,5,85,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,138,84,186,79,188,64,139"/>
+<area shape="rect" id="Node000003" href="$class_time.html" title="Time class contains the Setter and Getter methods to set and get the time." alt="" coords="109,5,189,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,139,123,179,120,187,115,186,117,178,130,137"/>
+</map>

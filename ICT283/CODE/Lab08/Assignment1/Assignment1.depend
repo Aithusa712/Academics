@@ -1,0 +1,266 @@
+# depslib dependency file v1.0
+1719382194 source:/home/kim/Documents/ICT283/Assignment/Assignment1/Date.cpp
+	"Date.h"
+
+1719458335 
+
+1719307915 /home/kim/Documents/ICT283/Assignment/Assignment1/Date.h
+	<iostream>
+	<string>
+
+1719388107 source:/home/kim/Documents/ICT283/Assignment/Assignment1/main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+	"Date.h"
+	"Time.h"
+	"vector.h"
+
+1719307915 /home/kim/Documents/ICT283/Assignment/Assignment1/Time.h
+	<iostream>
+	<string>
+
+1719307915 /home/kim/Documents/ICT283/Assignment/Assignment1/vector.h
+
+1719307915 source:/home/kim/Documents/ICT283/Assignment/Assignment1/Time.cpp
+	"Time.h"
+
+1719413020 source:c:\users\aithusa\downloads\assignment\assignment1\date.cpp
+	"Date.h"
+
+1719413019 c:\users\aithusa\downloads\assignment\assignment1\date.h
+	<iostream>
+	<string>
+
+1719461995 source:c:\users\aithusa\downloads\assignment\assignment1\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+	"Date.h"
+	"Time.h"
+	"vector.h"
+	"WindRecType.h"
+	"CSVReader.h"
+	"WindDataCalculator.h"
+
+1719461995 alculator.h"
+
+1719413018 c:\users\aithusa\downloads\assignment\assignment1\time.h
+	<iostream>
+	<string>
+
+1719458785 c:\users\aithusa\downloads\assignment\assignment1\vector.h
+
+1719413019 source:c:\users\aithusa\downloads\assignment\assignment1\time.cpp
+	"Time.h"
+
+1719413021 source:c:\users\aithusa\downloads\assignment\assignment1\windrectype.cpp
+	"WindRecType.h"
+
+1719461990 pe.h"
+
+1719458335 c:\users\aithusa\downloads\assignment\assignment1\windrectype.h
+	"Date.h"
+	"Time.h"
+	"vector.h"
+
+1719458785 c:\users\aithusa\downloads\assignment\assignment1\csvreader.h
+	<iostream>
+	<fstream>
+	<sstream>
+	"vector.h"
+	"WindRecType.h"
+
+1719456645 source:c:\users\aithusa\downloads\assignment\assignment1\csvreader.cpp
+	"CSVReader.h"
+
+1719456645 .h"
+
+1719462028 source:c:\users\aithusa\downloads\assignment\assignment1\winddatacalculator.cpp
+	"WindDataCalculator.h"
+	<cmath>
+	<iostream>
+	<fstream>
+	"Date.h"
+	"Time.h"
+
+1719461990 c:\users\aithusa\downloads\assignment\assignment1\winddatacalculator.h
+	<string>
+	"WindRecType.h"
+
+1719491618 source:/home/kim/Downloads/Assignment/Assignment/Assignment1/CSVReader.cpp
+	"CSVReader.h"
+
+1719487584 /home/kim/Downloads/Assignment/Assignment/Assignment1/CSVReader.h
+	<iostream>
+	<fstream>
+	<sstream>
+	"vector.h"
+	"WindRecType.h"
+
+1719492576 /home/kim/Downloads/Assignment/Assignment/Assignment1/vector.h
+
+1719487697 /home/kim/Downloads/Assignment/Assignment/Assignment1/WindRecType.h
+	"Date.h"
+	"Time.h"
+	"vector.h"
+
+1719487451 /home/kim/Downloads/Assignment/Assignment/Assignment1/Date.h
+	<iostream>
+	<string>
+
+1719487486 /home/kim/Downloads/Assignment/Assignment/Assignment1/Time.h
+	<iostream>
+	<string>
+
+1719413020 source:/home/kim/Downloads/Assignment/Assignment/Assignment1/Date.cpp
+	"Date.h"
+
+1719498243 source:/home/kim/Downloads/Assignment/Assignment/Assignment1/main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+	"Date.h"
+	"Time.h"
+	"vector.h"
+	"WindRecType.h"
+	"CSVReader.h"
+	"WindDataCalculator.h"
+
+1719488912 /home/kim/Downloads/Assignment/Assignment/Assignment1/WindDataCalculator.h
+	<string>
+	"WindRecType.h"
+
+1719413019 source:/home/kim/Downloads/Assignment/Assignment/Assignment1/Time.cpp
+	"Time.h"
+
+1719481359 source:/home/kim/Downloads/Assignment/Assignment/Assignment1/WindDataCalculator.cpp
+	"WindDataCalculator.h"
+	<cmath>
+	<iostream>
+	<fstream>
+	"Date.h"
+	"Time.h"
+
+1719476354 source:/home/kim/Downloads/Assignment/Assignment/Assignment1/WindRecType.cpp
+	"WindRecType.h"
+
+1719491618 source:/home/kim/Downloads/Untitled Folder/Assignment1/CSVReader.cpp
+	"CSVReader.h"
+
+1719487584 /home/kim/Downloads/Untitled Folder/Assignment1/CSVReader.h
+	<iostream>
+	<fstream>
+	<sstream>
+	"vector.h"
+	"WindRecType.h"
+
+1719492576 /home/kim/Downloads/Untitled Folder/Assignment1/vector.h
+
+1719487697 /home/kim/Downloads/Untitled Folder/Assignment1/WindRecType.h
+	"Date.h"
+	"Time.h"
+	"vector.h"
+
+1719487451 /home/kim/Downloads/Untitled Folder/Assignment1/Date.h
+	<iostream>
+	<string>
+
+1719487486 /home/kim/Downloads/Untitled Folder/Assignment1/Time.h
+	<iostream>
+	<string>
+
+1719413020 source:/home/kim/Downloads/Untitled Folder/Assignment1/Date.cpp
+	"Date.h"
+
+1719498243 source:/home/kim/Downloads/Untitled Folder/Assignment1/main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+	"Date.h"
+	"Time.h"
+	"vector.h"
+	"WindRecType.h"
+	"CSVReader.h"
+	"WindDataCalculator.h"
+
+1719488912 /home/kim/Downloads/Untitled Folder/Assignment1/WindDataCalculator.h
+	<string>
+	"WindRecType.h"
+
+1719413019 source:/home/kim/Downloads/Untitled Folder/Assignment1/Time.cpp
+	"Time.h"
+
+1719476354 source:/home/kim/Downloads/Untitled Folder/Assignment1/WindRecType.cpp
+	"WindRecType.h"
+
+1719498966 source:/home/kim/Downloads/Untitled Folder/Assignment1/WindDataCalculator.cpp
+	"WindDataCalculator.h"
+	<cmath>
+	<iostream>
+	<fstream>
+	"Date.h"
+	"Time.h"
+
+1721046789 source:/home/kim/Downloads/Lab08/Assignment1/CSVReader.cpp
+	"CSVReader.h"
+
+1719487584 /home/kim/Downloads/Lab08/Assignment1/CSVReader.h
+	<iostream>
+	<fstream>
+	<sstream>
+	"vector.h"
+	"WindRecType.h"
+
+1719492576 /home/kim/Downloads/Lab08/Assignment1/vector.h
+
+1719487697 /home/kim/Downloads/Lab08/Assignment1/WindRecType.h
+	"Date.h"
+	"Time.h"
+	"vector.h"
+
+1719487451 /home/kim/Downloads/Lab08/Assignment1/Date.h
+	<iostream>
+	<string>
+
+1719487486 /home/kim/Downloads/Lab08/Assignment1/Time.h
+	<iostream>
+	<string>
+
+1719413020 source:/home/kim/Downloads/Lab08/Assignment1/Date.cpp
+	"Date.h"
+
+1719413019 source:/home/kim/Downloads/Lab08/Assignment1/Time.cpp
+	"Time.h"
+
+1719498966 source:/home/kim/Downloads/Lab08/Assignment1/WindDataCalculator.cpp
+	"WindDataCalculator.h"
+	<cmath>
+	<iostream>
+	<fstream>
+	"Date.h"
+	"Time.h"
+
+1719488912 /home/kim/Downloads/Lab08/Assignment1/WindDataCalculator.h
+	<string>
+	"WindRecType.h"
+
+1719476354 source:/home/kim/Downloads/Lab08/Assignment1/WindRecType.cpp
+	"WindRecType.h"
+
+1721023032 source:/home/kim/Downloads/Lab08/Assignment1/main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+	"Date.h"
+	"Time.h"
+	"vector.h"
+	"WindRecType.h"
+	"CSVReader.h"
+	"WindDataCalculator.h"
+

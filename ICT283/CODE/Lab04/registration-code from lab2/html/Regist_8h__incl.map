@@ -1,0 +1,17 @@
+<map id="registration&#45;code from lab2/Regist.h" name="registration&#45;code from lab2/Regist.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,153,48"/>
+<area shape="rect" id="Node000002" href="$Result_8h.html" title=" " alt="" coords="101,96,172,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,47,121,82,116,85,92,50"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="89,245,160,272"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="83,48,92,122,119,230,114,231,87,123,78,49"/>
+<area shape="rect" id="Node000003" href="$Unit_8h.html" title=" " alt="" coords="131,171,187,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="143,122,153,155,148,157,138,124"/>
+<area shape="poly" id="edge8_Node000002_Node000004" title=" " alt="" coords="134,124,122,171,120,201,122,230,117,230,115,201,116,170,129,123"/>
+<area shape="rect" id="Node000006" href="$Date_8h.html" title=" " alt="" coords="212,171,272,197"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="156,121,212,159,209,164,153,125"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="155,199,139,232,134,230,151,197"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="199,245,252,272"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="173,196,206,232,202,236,169,200"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="223,200,159,239,156,235,220,196"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="241,198,234,231,229,230,236,197"/>
+</map>

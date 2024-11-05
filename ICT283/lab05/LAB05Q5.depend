@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1718683525 source:/home/kim/Documents/ICT283/CODE/Lab05/LAB05Q5/main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+	<vector>
+	"Date.h"
+	"Time.h"
+	"vector.h"
+
+1718679672 /home/kim/Documents/ICT283/CODE/Lab05/LAB05Q5/Date.h
+	<iostream>
+	<string>
+
+1718682751 /home/kim/Documents/ICT283/CODE/Lab05/LAB05Q5/Time.h
+	<iostream>
+	<string>
+
+1718536393 /home/kim/Documents/ICT283/CODE/Lab05/LAB05Q5/vector.h
+
+1718632268 source:/home/kim/Documents/ICT283/CODE/Lab05/LAB05Q5/Date.cpp
+	"Date.h"
+
+1718682856 source:/home/kim/Documents/ICT283/CODE/Lab05/LAB05Q5/Time.cpp
+	"Time.h"
+
+1719245650 source:c:\users\aithusa\downloads\lab05q5\lab05q5\date.cpp
+	"Date.h"
+
+1719245930 c:\users\aithusa\downloads\lab05q5\lab05q5\date.h
+	<iostream>
+	<string>
+
+1719245643 source:c:\users\aithusa\downloads\lab05q5\lab05q5\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+	"Date.h"
+	"Time.h"
+	"vector.h"
+
+1719245881 c:\users\aithusa\downloads\lab05q5\lab05q5\time.h
+	<iostream>
+	<string>
+
+1719245660 c:\users\aithusa\downloads\lab05q5\lab05q5\vector.h
+
+1719245910 source:c:\users\aithusa\downloads\lab05q5\lab05q5\time.cpp
+	"Time.h"
+

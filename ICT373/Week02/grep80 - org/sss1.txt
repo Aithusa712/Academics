@@ -1,0 +1,5 @@
+
+---------- sohel.txt
+ Directory of C:\Ferdous\S1 2020 ICT373\grep80
+22/02/2018  11:57 AM             1,908 fred.txt
+               2 Dir(s)  81,391,095,808 bytes free

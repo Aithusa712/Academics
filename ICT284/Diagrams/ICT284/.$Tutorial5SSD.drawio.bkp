@@ -1,0 +1,123 @@
+<mxfile host="Electron" modified="2024-06-10T09:29:18.717Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.0.2 Chrome/120.0.6099.291 Electron/28.3.3 Safari/537.36" etag="4eNbl7KBUMTnLeSfj9A_" version="23.0.2" type="device">
+  <diagram name="Page-1" id="58cdce13-f638-feb5-8d6f-7d28b1aa9fa0">
+    <mxGraphModel dx="819" dy="518" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;strokeColor=#FF0000;" edge="1" parent="1" source="-_AwfBAAS0Wp28k-llsh-1" target="-_AwfBAAS0Wp28k-llsh-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-22" value="Paper is allocated" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-_AwfBAAS0Wp28k-llsh-21">
+          <mxGeometry x="-0.0183" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-35" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#FF0000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-_AwfBAAS0Wp28k-llsh-1" target="-_AwfBAAS0Wp28k-llsh-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-36" value="Paper is withdrawn" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-_AwfBAAS0Wp28k-llsh-35">
+          <mxGeometry x="0.0651" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-1" value="Submitted" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="360" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;strokeColor=#FF0000;" edge="1" parent="1" source="-_AwfBAAS0Wp28k-llsh-7" target="-_AwfBAAS0Wp28k-llsh-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-24" value="Reviews are completed" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-_AwfBAAS0Wp28k-llsh-23">
+          <mxGeometry x="0.0161" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-7" value="Under Review" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="220" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-25" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;strokeColor=#FF0000;" edge="1" parent="1" source="-_AwfBAAS0Wp28k-llsh-9" target="-_AwfBAAS0Wp28k-llsh-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-29" value="Paper is accepted" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-_AwfBAAS0Wp28k-llsh-25">
+          <mxGeometry x="0.0157" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=open;endFill=0;strokeColor=#FF0000;" edge="1" parent="1" source="-_AwfBAAS0Wp28k-llsh-9" target="-_AwfBAAS0Wp28k-llsh-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-30" value="Paper is accepted with revisions" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-_AwfBAAS0Wp28k-llsh-26">
+          <mxGeometry x="0.39" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=open;endFill=0;strokeColor=#FF0000;" edge="1" parent="1" source="-_AwfBAAS0Wp28k-llsh-9" target="-_AwfBAAS0Wp28k-llsh-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-31" value="Paper is rejected" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-_AwfBAAS0Wp28k-llsh-27">
+          <mxGeometry x="0.0131" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-9" value="Reviewed" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="800" y="220" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF0000;" edge="1" parent="1" source="-_AwfBAAS0Wp28k-llsh-10" target="-_AwfBAAS0Wp28k-llsh-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-19" value="Camera-Ready PDF Uploaded" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];horizontal=1;" vertex="1" connectable="0" parent="-_AwfBAAS0Wp28k-llsh-16">
+          <mxGeometry x="-0.5743" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-10" value="Accepted" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="340" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FF0000;" edge="1" parent="1" source="-_AwfBAAS0Wp28k-llsh-11" target="-_AwfBAAS0Wp28k-llsh-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-18" value="Camera-Ready PDF Uploaded" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];horizontal=1;textDirection=ltr;" vertex="1" connectable="0" parent="-_AwfBAAS0Wp28k-llsh-17">
+          <mxGeometry x="-0.0259" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-11" value="Accepted with Revisions" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="390" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=open;endFill=0;strokeColor=#FF0000;" edge="1" parent="1" source="-_AwfBAAS0Wp28k-llsh-12" target="-_AwfBAAS0Wp28k-llsh-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-12" value="Rejected" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="790" y="440" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-34" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#FF0000;" edge="1" parent="1" source="-_AwfBAAS0Wp28k-llsh-13" target="-_AwfBAAS0Wp28k-llsh-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-13" value="Camera Ready" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;resizeLast=1;container=0;fontColor=#000000;collapsible=0;rounded=1;arcSize=30;strokeColor=#ff0000;fillColor=#ffffc0;swimlaneFillColor=#ffffc0;dropTarget=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="540" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-14" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="160" y="240" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-15" value="" style="html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#FF0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="-_AwfBAAS0Wp28k-llsh-14" parent="1" target="-_AwfBAAS0Wp28k-llsh-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="195" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-20" value="Paper is Submitted" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-_AwfBAAS0Wp28k-llsh-15">
+          <mxGeometry x="-0.1004" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-28" value="State Machine Diagram for Paper Object of CCIS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="670" y="170" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-32" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="615" y="680" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-_AwfBAAS0Wp28k-llsh-37" value="End" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="575" y="740" width="40" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

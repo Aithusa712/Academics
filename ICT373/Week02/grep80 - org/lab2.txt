@@ -1,0 +1,42 @@
+ICT373: Lab TWO
+mode 
+Code
+code 5 ibnbjbgjh; 
+AAA
+Abb
+bk in A
+coder 8 bhj mode
+
+1.	Use a DOS (command prompt) window to test pipe and filter commands. Try examples of pipelines using dir, sort and grep. Try different regular expressions with grep.
+
+(Note: GREP for windows is available on the web. If you do not have access to GREP, you can use the command line tool FINDSTR which emulates GREP. For information on FINDSTR, enter FINDSTR/? at the command prompt.)
+
+Below are some suggestions for exercises to attempt:
+a)	see if dir /b | sort | grep “x” > m.txt works.
+
+dir /b | sort | grep32  "x" > m.txt https://technet.microsoft.com/en-us/library/bb490907.aspx 
+
+
+b)	write a pipeline using grep to put into e.txt all the files whose names start with a lower case letter
+
+dir /B | sort| grep32 ^[a-z] >  e.txt
+
+c)	ditto, but files with only lower case letters on both sides of a full stop.
+
+dir /B | sort| grep32 [a-z][a-z]*[.][a-z][a-z]* >  e.txt
+
+d)	find all the lines in a big text file that do not have the capital letter A in them.
+
+e)	ditto, but do have capital B as well as no capital As. (do this in two ways: via one regular expression and via a pipeline of several greps).
+
+
+2.	Use the browser to display files with extensions .htm, .html and .txt in the local directory. View them via 3 methods:
+(a)	find and open them under the file menu of the browser.
+(b)	drag and drop them into the browser from the Windows Explorer.
+(c)	while displaying them in the browser, view the Page Source (under browser’s View menu). This is a useful way of learning new ways of using HTML.
+Note: use example files from the unit LMS site and local network sites.
+
+
+3.	Use a text editor to create your own HTML page based on example 1 in Topic 2 (also available on-line). Eg, make a web page containing the Murdoch logo as a link to the Murdoch home page.
+
+Note: Programmer’s File Editor (available on-line) is a good text editor to use but Notepad will do.

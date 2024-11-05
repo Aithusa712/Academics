@@ -1,0 +1,851 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US"><head>
+<meta name="viewport" content="width=device-width">
+<title>GREP 8.0 Quick Start</title>
+<meta name="description" content="GREP program finds strings or regular expressions in any files (shareware) (Oak Road Systems)">
+<meta name="keywords" content="GREP, find, regular expression, regular expressions, regexp, DOS program, DOS utility, DOS programs, DOS utilities, command-line utilities, shareware, Oak Road Systems">
+<link rel="stylesheet" type="text/css" href="ors.css">
+</head><body>
+
+<div class="maintitle">
+<h1>GREP&nbsp;&#8212; Find Regular Expressions in&nbsp;Files
+<br>Quick&nbsp;Start for Release&nbsp;8.0</h1>
+<p><strong class="key">Program Dated 4 May 2005&nbsp;&nbsp;/&nbsp; Document Dated 7&nbsp;Feb&nbsp;2016</strong></p>
+<p> Copyright &copy; 1986&#8211;2016 by Stan&nbsp;Brown, <a href="http://oakroadsystems.com/">Oak&nbsp;Road&nbsp;Systems</a></p>
+</div>
+
+
+
+<p class="Summary" id="Summary"><span class="SummaryH"><strong class="key">Summary:</strong></span>
+GREP searches named input files, or the standard input, and
+displays lines that match one or more patterns called 
+<a href="#Regex">regular expressions or regexes</a>. 
+GREP can also search <a href="#InputsBinary">binary files</a>
+and display records or buffers that contain matches. 
+This Quick Start is your overview of GREP.</p>
+
+<div class="Summary" id="TOC0"><span class="SummaryH"><strong class="key">Contents:</strong></span>
+
+<ul class="TOC">
+<li><a href="#Why">Why GREP? Why <em>This</em> GREP?</a></li>
+<li><a href="#Starting">Getting Started</a>
+<ul>
+<li><a href="#Requirements">System Requirements</a></li>
+<li><a href="#Installation">Installation and Demo</a></li>
+<li><a href="#License">Evaluation, License, and Warranty</a></li>
+<li><a href="#Uninstall">Uninstall</a></li>
+</ul></li>
+<li><a href="#User">Command Line</a></li>
+<li><a href="#Inputs">Inputs</a>
+<ul>
+<li><a href="#InputsNamed">Named Input Files</a></li>
+<li><a href="#InputsSubdirs">Subdirectory Searches</a></li>
+<li><a href="#InputStandard">Standard Input and Redirection</a></li>
+<li><a href="#InputsBinary">Binary Files and Text Files</a></li>
+</ul></li>
+<li><a href="#Outputs">Outputs</a></li>
+<li><a href="#Options">Options</a>
+<ul>
+<li><a href="#OptList">List of Options</a></li>
+<li><a href="#OptSpecify">How to Specify Options</a></li>
+</ul></li>
+<li><a href="#Regex">Regular Expressions (Regexes)</a>
+<ul>
+<li><a href="#RegexExamples">Regexes by Example</a></li>
+<li><a href="#RegexSummary">Regex Language Summary</a></li>
+</ul></li>
+<li class="nonprint"><a href="#WhatsNew">What&#8217;s New in this Quick Start</a></li>
+</ul>
+</div>
+
+<div class="Summary"><span class="SummaryH"><strong class="key">See also:</strong></span>
+GREP&#8217;s basic operation is simple enough, but if you&#8217;re a power user
+you can take advantage of many, many options and special features. The
+following documents are included
+with this <cite>GREP Quick Start</cite>:
+<ul class="purelist">
+<li><a href="grepman.htm"><cite>GREP Manual</cite></a>  (also available on line),
+a full reference to every aspect of GREP
+</li>
+<li><a href="grephist.htm"><cite>GREP Revision History</cite></a>, a chronological list
+of significant changes in the program and documents</li>
+<li>GREPQRC.DOC, the <cite>Quick Reference Card</cite>, a Microsoft
+Word file that prints in 8&frac12;&#215;11 or A4 format</li>
+<li>TOUR.BAT, an interactive demo of GREP, with emphasis on the newer
+features</li></ul>
+<p class="secondhalf">These documents are sometimes revised between software
+releases&nbsp;&#8212; you may
+want to check for revisions at
+&lt;<small><a href="http://oakroadsystems.com/sharware/grep.htm">http://oakroadsystems.com/sharware/grep.htm</a></small>&gt;.</p>
+</div>
+
+
+<h2 id="Why">Why GREP? Why <em>This</em> GREP?</h2>
+
+
+<p class="brk">At the Windows command prompt, FIND is useful for finding a given string in one or
+more files. But what if you want to find the word <i>the</i> in caps
+or lower case, without also finding <i>other,</i> <i>There,</i>
+<i>then,</i> and so on? You don&#8217;t really want to search for a specific
+string. Rather, what you&#8217;re looking for is a <a href="#Regex">regular
+expression or <em>regex</em></a>, namely <i>the</i> preceded and
+followed by something other than a letter. GREP to the rescue!</p>
+
+<p class="nonbrk">GREP takes one or more <a href="#Regex">regexes</a>, matches them
+against <a href="#Inputs">the input files</a>, and displays the hits.</p>
+
+<p class="nonbrk">Oak Road Systems GREP combines most features of
+UNIX grep, egrep, and fgrep. GREP has many other advantages over FIND
+besides using regular expressions. Indeed, customers have cited some
+of these as features they couldn&#8217;t find in competing GREPs:</p>
+
+<ul>
+
+<li>You get extensive documentation with lots of
+examples&nbsp;&#8212; over 400&nbsp;KB worth of HTML as of release
+8.0, plus a one-page reference card in Word format.</li>
+
+<li>You get tech support direct from the program author, and upgrades are
+free.</li>
+
+<li>You can search for multiple strings or <a href="#Regex">regular
+expressions</a> in a single pass through the input file(s).</li>
+
+<li>Both
+<a href="grepman.htm#R4.1.1-RegexTwoKinds">basic and extended regular expressions</a>
+are supported, alongside simple string searching.</li>
+
+<li>You can search multiple files in multiple directories, including
+automatic search of <a href="#InputsSubdirs">subdirectories</a>.</li>
+
+<li>You can search <a href="#InputsBinary">text and binary files</a>,
+and you can even have GREP figure out which is which. GREP displays
+the hits in binary files; it doesn&#8217;t just tell you whether the file
+contained the regex.</li>
+
+<li>You can read text files as
+<a href="grepman.htm#R5x-OptG">lines or paragraphs</a>, whether formatted
+for DOS/Windows, UNIX, or a Macintosh.</li>
+
+<li>You can select files using
+<a href="#InputsNamed">DOS conventions and UNIX-style
+globbing</a> or give GREP a file that contains a
+<a href="grepman.htm#R5x-OptAt">list of files to search</a>, and you can tell GREP to
+<a href="grepman.htm#R5x-OptX">exclude certain files or groups of files</a>.</li>
+
+<li>You can show any number of 
+<a href="grepman.htm#R5x-OptP">context lines or bytes</a>
+before and after the matching lines.</li>
+
+<li>You have a wide range of choices for
+<a href="grepman.htm#R5.4-OptOutput">output format</a>:
+whether to show the file names or not; whether to show the hits, just
+count them, or just list the files that contain hits; 
+whether to display in hex or as characters;
+and whether to use DOS FIND-style or UNIX grep-style output format.</li>
+
+<li>You can store often-used options in an 
+<a href="grepman.htm#R5.1.2-Envvar">environment variable</a>
+instead of typing them on the command line every
+time.</li>
+
+<li>GREP returns <a href="grepman.htm#R3.3-ERRORLEVEL">status values</a>
+(ERRORLEVEL) that can be useful in batch files or scripts, and you
+can control which condition returns which value.</li>
+
+</ul>
+
+
+
+
+<h2 id="Starting">Getting Started</h2>
+
+
+<h3 id="Requirements" class="secondheader">System Requirements</h3>
+
+<p class="brk">The 32-bit version, GREP32, runs in a command window
+under Windows 95 through Windows 10, both 32-bit and 64-bit
+Windows.</p>
+
+<p class="nonbrk">The legacy 16-bit version, GREP16, runs under DOS 2.0 through
+7.0, including a command window under any 32-bit version of Windows.
+It lacks support for <a href="#InputsNamed">long filenames</a>,
+<a href="grepman.htm#R5x-OptE">extended regexes</a>,
+and <a href="grepman.htm#R5x-OptM">character mapping</a>,
+but is the same as GREP32 in all other respects.</p>
+
+<p class="brk">GREP handles text in 256-character sets like the ISO-8859
+group, ANSI, and Windows-1252. It is not compatible with multibyte
+Unicode characters.</p>
+
+
+<h3 id="Installation">Installation and Demo</h3>
+
+<p class="brk">There&#8217;s no special installation procedure. Simply move GREP16.EXE,
+GREP32.EXE, or both to any convenient directory in your path. Each
+executable is completely self-contained. There&#8217;s no need to
+apply any Windows compatibility settings.</p>
+
+<p class="nonbrk">An interactive program tour is included as file TOUR.BAT; just type
+<kbd>TOUR</kbd> after unZIPping the archive.</p>
+
+<p class="brk">You may wish to rename the executable you use more often to the
+simpler GREP.EXE. All the examples in this <cite>GREP Quick Start</cite> assume you&#8217;ve
+done that. Otherwise, just substitute <kbd>GREP16</kbd> or
+<kbd>GREP32</kbd> wherever you see <kbd>GREP</kbd> in the
+examples.</p>
+
+<p class="brk">Starting with release 7.5, a <cite>Quick Reference Card</cite> is included
+as an MS-Word file, GREPQRC.DOC. It&#8217;s suitable for printing in
+8&frac12;&#215;11 or A4 format.</p>
+
+
+<h3 id="License">Evaluation, License, and Warranty</h3>
+
+<p class="brk">GREP is shareware. You are encouraged to &#8220;try before
+you buy&#8221; with the
+free download.</p>
+
+<p class="nonbrk">If you use GREP past a 30-day evaluation period,
+you must register and pay for it. Please
+see the file LICENSE.TXT for full details,
+including support and warranty information.</p>
+
+<p class="brk">The unregistered evaluation version displays a 
+registration reminder when
+you run it, and a request for feedback at the end.</p>
+
+<p class="nonbrk"><strong class="key">Warning for batch files:</strong>
+About once per hundred runs, the unregistered version prompts you to
+press a key to continue execution.
+GREP works just fine in batch files, but you need to be at your
+computer when running unregistered GREP so that you can answer that
+prompt.
+If you like GREP enough to put it into batch files that run
+unattended, you like it enough to register it!</p>
+
+<p class="brk">When you register, you get the registered version with these benefits:</p>
+
+<ul>
+<li>You get priority in tech support, directly from the program
+author.</li>
+<li>You can have GREP <a href="#InputsBinary">sense whether each input
+file is text or binary</a>. (The unregistered evaluation version handles text and
+binary files, but you have to tell GREP which files are binary.)</li>
+<li>You can store regexes in a file with the <a href="grepman.htm#R5x-OptF"><kbd>/F</kbd> option</a>. (In the
+evaluation version you can test multiple regexes by typing them when
+prompted; see the <a href="grepman.htm#R5x-OptF"><kbd>/F-</kbd> option</a>.)</li>
+<li>You can suppress the program logo and warning messages with the
+<a href="grepman.htm#R5x-OptQ"><kbd>/Q</kbd> option</a>.</li>
+<li>You can do full <a href="#InputsSubdirs">directory tree searches</a>
+with the <a href="grepman.htm#R5x-OptS"><kbd>/S</kbd> option</a>.
+(The unregistered evaluation version searches only two levels.)</li>
+<li>You can store frequently-used options in an
+<a href="grepman.htm#R5.1.2-Envvar">environment variable</a>.</li>
+<li>You no longer get the reminder to register, and you get the
+satisfaction of supporting shareware development.</li>
+</ul>
+
+<h3 id="Uninstall">Uninstall</h3>
+
+<p class="brk">There&#8217;s no special uninstall procedure; simply delete the GREP
+files. GREP doesn&#8217;t write any secret files or modify the Windows
+registry.</p>
+
+
+
+<h2 id="User">Command Line</h2>
+
+
+<p class="brk">The basic GREP command form is</p>
+<pre>
+        grep <var>options</var> <var>regex</var> <var>inputfiles</var> </pre>
+
+<p class="brk">(You can also run GREP from the <strong class="key">Windows desktop</strong>; see the 
+<a href="grepman.htm#R1-CmdLine"><cite>GREP Manual</cite></a>.</p>
+
+<ul class="purelist">
+
+<li><p><a href="#Options"><var>Options</var></a> are listed later in this
+<cite>GREP Quick Start</cite> and are <a href="grepman.htm#R5-Options">fully explained</a> in the
+<cite>GREP Manual</cite>.</p></li>
+
+<li><p><var>regex</var> is a string or a special pattern-matching string
+called a <dfn>regular expression or regex</dfn>.
+<a href="#Regex">Regex patterns</a> are listed later in this <cite>GREP Quick Start</cite>
+and are <a href="grepman.htm#R4-Regex">explained in detail</a> in the
+<cite>GREP Manual</cite>.
+(A regex is normally required on the
+command line; however, if you use the
+<a href="grepman.htm#R5x-OptF"><kbd>/F</kbd> option</a>,
+one or more regexes are taken from a file or the keyboard instead of the
+command line.)</p></li>
+
+<li><p>You can specify <a href="#Inputs"><var>inputfiles</var></a> on the
+command line; otherwise GREP reads the standard input.</p></li>
+
+</ul>
+
+<p class="brk">As with any command, you can redirect or pipe <a href="#Inputs">inputs</a>
+or <a href="#Outputs">output</a>. GREP can return a useful value in
+<a href="grepman.htm#R3.3-ERRORLEVEL">ERRORLEVEL</a>, as
+explained in the <cite>GREP Manual</cite>.</p>
+
+<p class="brk">Here are two simple examples. First,
+<pre class="secondhalf">
+        grep /I pic[t\s] \proj\*.cob </pre>
+<p class="secondhalf">examines every COBOL source file in the root-level PROJ
+directory and displays
+every line that contains a picture clause (&#8220;pic&#8221; followed by either
+&#8220;t&#8221; or a space) in caps or lower case (the
+<a href="grepman.htm#R5x-OptI"><kbd>/I</kbd> option</a>). Adding the <a href="grepman.htm#R5x-OptS"><kbd>/S</kbd> option</a>
+<pre class="secondhalf">
+        grep /I pic[t\s] \*.cob /S </pre>
+<p class="secondhalf">examines every COBOL source file in all directories on the current
+disk.</p>
+
+
+<p class="brk">For a summary of operating instructions, type</p>
+<pre>
+        grep /? | more </pre>
+
+<p class="brk">Since the help text is over 100 lines long, you might prefer
+to redirect it to a file for viewing:</p>
+<pre>
+        grep /? &gt;grephelp.txt </pre>
+
+
+
+
+
+
+<h2 id="Inputs">Inputs</h2>
+
+
+<p class="brk">GREP scans either <a href="#InputsNamed">named input files</a>
+or the <a href="#InputStandard">standard
+input</a>&nbsp;&#8212; the standard input can be a named file, a
+pipe, or the keyboard.</p>
+
+
+
+<h3 id="InputsNamed">Named Input Files</h3>
+
+<p class="brk">Named input files provide the greatest flexibility.
+They can be read as <a href="#InputsBinary">text or binary</a>, and
+you can search <a href="#InputsSubdirs">subdirectory trees</a>.</p>
+
+<p class="nonbrk">GREP32 can use long filenames; GREP16 requires short (8.3)
+filenames.</p>
+
+<p class="brk">GREP expands any wildcards in named input files.
+Not only DOS-style <kbd>*</kbd> and <kbd>?</kbd>, but
+UNIX-style <kbd>[&#133;]</kbd> can be used. For instance,
+<kbd>"c:\My Documents\[abc]*doc"</kbd> tells GREP to read every
+file in the indicated directory whose name starts with A, B, or C and ends
+with DOC (including &#8220;.DOC&#8221;). Please see
+<a href="grepman.htm#R2.1-InputsNamed">Named Input Files</a>
+in the <cite>GREP Manual</cite> for complete rules.</p>
+
+<p class="brk">You can
+use the <a href="grepman.htm#R5x-OptX"><kbd>/X</kbd> option</a> to
+exclude some files or groups of files from consideration. For
+instance, if you want all 2001 reports except December, you might
+specify something like</p>
+<pre class="secondhalf">
+        grep [<i>options</i>] [<i>regex</i>] *2001* -x*dec2001* </pre>
+
+<p class="brk">If you have many named input files, you may want to store the
+list in a file; see the <a href="grepman.htm#R5x-OptAt"><kbd>/@</kbd> option</a>.</p>
+
+
+<h3 id="InputsSubdirs">Subdirectory Searches</h3>
+
+<p class="brk">If you set the
+<kbd>/S</kbd> option, GREP
+searches not only the files indicated on the command line, but also
+the same-named files in subdirectories.</p>
+
+<p class="nonbrk">(The <kbd>/S</kbd> option is fully functional in the
+<a href="#License">registered version</a>, and searches all the way
+to the bottom of a directory tree. In the unregistered evaluation version, GREP
+searches the named or implied directories and all directories
+immediately below them, but no further in any one execution. You can
+either make multiple runs, or <a href="#License">register GREP</a> for
+the convenience of searching the entire directory tree.)</p>
+
+<p class="brk">For example, with the command
+<pre class="secondhalf">
+        grep /S regex \hazax* *.c g:\mumble\*.htm </pre>
+<p class="secondhalf">GREP examines all files on the entire current drive whose names
+start with &#8220;hazax&#8221;; then it looks at all C source files
+in the current directory and all subdirectories under it; finally it
+looks at all .htm files in directory &#8220;g:\mumble&#8221; and
+all subdirectories under it.</p>
+
+<p class="nonbrk">Perhaps a more realistic example: you have a document about
+Vandelay Industries somewhere on your disk, but you can&#8217;t remember
+where. You can find it this way:</p>
+<pre class="secondhalf">
+        grep /S Vandelay \*
+or:     grep /S Vandelay \*.* </pre>
+<p class="secondhalf">(Both <kbd>*</kbd> and <kbd>*.*</kbd> select all files; see
+<a href="grepman.htm#R2.1.1-InputsWildcards">Wildcard Expansion</a> in the
+<cite>GREP Manual</cite>.) You might
+want to add the <a href="grepman.htm#R5x-OptI"><kbd>/I</kbd> option</a>
+if you can&#8217;t remember how &#8220;Vandelay&#8221; was capitalized.</p>
+
+
+<h3 id="InputStandard">Standard Input and Redirection</h3>
+
+<p class="brk">If you don&#8217;t specify any <a href="#InputsNamed">named input
+files</a>, GREP takes its input from the standard input. That can
+mean any of these three sources:</p>
+
+<ul>
+
+<li><p>Input redirected from a single file (Windows doesn&#8217;t allow
+wildcards):</p>
+<pre>
+        grep [<var>options</var>] [<var>regex</var>] &lt;<var>inputfile</var> </pre>
+
+<li><p>Another command&#8217;s output piped into GREP for further
+processing:</p>
+<pre>
+        <var>other-command</var> | grep [<var>options</var>] [<var>regex</var>] </pre>
+
+<li><p>Keyboard input (GREP prompts you):</p>
+<pre>
+        grep [<var>options</var>] [<var>regex</var>] </pre>
+
+</ul>
+
+<p class="brk">Example:</p>
+<pre class="secondhalf">
+        tracert oakroadsystems.com | grep 123</pre>
+<p class="secondhalf">tells GREP to read the <kbd>tracert</kbd> command&#8217;s output and display any
+lines that contain the string &#8220;123&#8221;.</p>
+
+
+<h3 id="InputsBinary">Binary Files and Text Files</h3>
+
+<p class="brk">GREP was originally written with plain text files in mind, but
+you can also use it quite well with binary files like word-processing
+files, databases, and executable programs. GREP not only reads binary
+files differently, it also adjusts the display format for matches.</p>
+
+<p class="nonbrk">Windows doesn&#8217;t mark a file as text or binary; the program
+that reads the file just has to know. GREP &#8220;knows&#8221; files are binary when you
+tell it via the <a href="grepman.htm#R5x-OptR"><kbd>/R2</kbd> or <kbd>/R3</kbd> option</a>; otherwise it treats input files as text.
+Use the <a href="grepman.htm#R5x-OptR"><kbd>/R3</kbd> option</a> when you don&#8217;t
+know any details of the internal structure of the binary file; please see
+<a href="grepman.htm#R2.4-InputsBinary">Binary Files and Text
+Files</a> in the <cite>GREP Manual</cite> for much more about binary files.</p>
+
+
+<p class="brk"><a href="#License">Registered users</a> can use
+the <a href="grepman.htm#R5x-OptR"><kbd>/R-1</kbd> or <kbd>/R-2</kbd> option</a> to
+have GREP examine each file and decide whether it&#8217;s text or
+free-form binary; please see the <a href="grepman.htm#R5x-OptR"><kbd>/R</kbd> option</a> in the
+<cite>GREP Manual</cite> for details.
+If you have the registered version, I recommend <kbd>/R-1</kbd>.</p>
+
+
+
+
+<h2 id="Outputs">Outputs</h2>
+
+
+<p class="brk">Normally, GREP displays hits on your screen. &#8220;<dfn>Hits</dfn>&#8221;
+are the text lines, binary records, or binary buffers that contain matches
+for the regex(es). As part of the output, GREP displays the file
+path and name as a header above the group of hits from that file.
+You can use
+various <a href="#Options">options</a> to display abbreviated or
+expanded forms of hits or to suppress those headers,
+move them to the lines with the hits, or display headers even for
+files that had no hits.</p>
+
+<p class="nonbrk">You can also redirect GREP&#8217;s output into a file or pipe GREP&#8217;s
+output to another command (even another GREP command). To redirect
+GREP output, follow the usual rules and put one of these at the end of
+the GREP command line:</p><ul>
+
+<li><p><code>&gt;&gt;</code><var>reportfile</var>
+appends GREP&#8217;s output to an existing file, or creates the file and writes
+to it if it doesn&#8217;t exist.</p>
+
+<li><p><code>&gt;</code><var>reportfile</var>
+overwrites an existing file with GREP&#8217;s output, or creates the file
+and writes to it if it doesn&#8217;t exist.</p>
+
+<li><p><code>|</code>&nbsp;<var>other-command</var>
+pipes GREP&#8217;s output to the standard input stream of the other
+command.</p>
+
+</ul>
+
+<p class="brk">You can pipe or redirect output regardless of whether
+<a href="#Inputs">input</a> was piped or redirected.</p>
+
+<p class="nonbrk">Only the hits (and file path\name headers, if present) are
+redirected by the above syntax.
+<a href="grepman.htm#R6-Messages">Errors and warning messages</a> are
+still sent to the standard error stream. That is usually your screen,
+though some
+OSes or shell replacements let you redirect error
+output. For example, in 4DOS, 4NT, and <a href="http://jpsoft.com"> TCC</a>
+type <kbd>help&nbsp;piping</kbd> or
+<kbd>help&nbsp;redirection</kbd> for information.</p>
+
+<p class="brk">The <a href="grepman.htm#R5x-OptD"><kbd>/D</kbd> option</a> lets you
+create extra debugging output and send it to a named file or the
+standard error output.</p>
+
+
+
+
+
+<h2 id="Options">Options</h2>
+
+
+<h3 id="OptList" class="secondheader">List of Options</h3>
+
+<p class="brk">Each description is hyperlinked
+to the full description in the <cite>GREP Manual</cite>.</p>
+
+<div class="acchild"><table class="mystd" border="2"><thead>
+<tr><th colspan="2">Option and Effect</th>
+    <th style="width:5em">UNIX<br>grep*</th>
+    <th style="width:4em">Windows<br>FIND*</th></tr>
+</thead><tbody>
+
+<tr><td>&nbsp;<kbd>?</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptHelp">Display help</a> for files,
+    regexes, and options.</td>
+    <td><kbd>--help</kbd></td><td><kbd>/?</kbd></td></tr>
+
+<tr><td>&nbsp;<kbd>@</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptAt">Take input file names from keyboard or file.</a></td>
+    <td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>A</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptA">Include hidden and system files when expanding wildcards.</a></td>
+    <td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>B</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptB">Display a header for every file</a>,
+    even if it contains no hits.</td>
+    <td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>C</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptC">Display the hit count</a>, not the actual hits.</td>
+    <td><kbd>-c</kbd></td><td><kbd>/C</kbd></td></tr>
+
+<tr><td>&nbsp;<kbd>D</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptD">Display debugging output.</a></td>
+    <td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>E</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptE">Select extended regular expressions</a>
+    or strings, or search for a word.</td>
+    <td>(<kbd>-E</kbd>), (<kbd>-w</kbd>)</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>F</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptF">Read regexes from keyboard or file.</a></td>
+    <td>(<kbd>-f</kbd>)</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>G</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptG">Read variable-length text lines or paragraphs.</a></td>
+    <td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>H</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptH">Don&#8217;t display headers</a> (file names) in output.</td>
+    <td><kbd>-h</kbd></td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>I</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptI">Ignore case when matching.</a></td>
+    <td><kbd>-i</kbd></td><td><kbd>/I</kbd></td></tr>
+
+<tr><td>&nbsp;<kbd>J</kbd>&nbsp;</td>
+    <td>Display <a href="grepman.htm#R5x-OptJ">just the part of each line that matches</a> the regex.</td>
+    <td><kbd>-o</kbd></td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>K</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptK">Report only the first few hits.</a></td>
+    <td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>L</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptL">List the files that contain hits</a>, not the actual hits.</td>
+    <td><kbd>-l</kbd></td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>M</kbd>&nbsp;</td>
+    <td>Specify <a href="grepman.htm#R5x-OptM">character mapping and define &#8220;word&#8221;</a>.</td>
+    <td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>N</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptN">Show line numbers</a> with hits.</td>
+    <td><kbd>-n</kbd></td><td><kbd>/N</kbd></td></tr>
+
+<tr><td>&nbsp;<kbd>O</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptO">Set output format.</a>
+    <td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>P</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptP">Show context lines</a> around matching lines.</td>
+    <td>(<kbd>-A</kbd>, <kbd>-B</kbd>, <kbd>-C</kbd>)</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>Q</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptQ">Suppress program logo and some or all warnings.</a></td>
+    <td>(<kbd>-s</kbd>)</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>R</kbd>&nbsp;</td>
+    <td>Read and display <a href="grepman.htm#R5x-OptR">input files as binary or text</a>.</td>
+    <td><kbd>-U</kbd>, (<kbd>-a</kbd>)</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>S</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptS">Scan files in subdirectories</a> too.</td>
+    <td><kbd>-r</kbd></td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>U</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptU">UNIX-style output</a>: show filespec with each hit.</td>
+    <td>(implied)</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>V</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptV">Display lines that <em>don&#8217;t</em> contain a match.</a></td>
+    <td><kbd>-v</kbd></td><td><kbd>/V</kbd></td></tr>
+
+<tr><td>&nbsp;<kbd>W</kbd>&nbsp;</td>
+    <td>Specify <a href="grepman.htm#R5x-OptW">line width or binary block length.</a></td>
+    <td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>X</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptX">Exclude specified files from scan.</a></td>
+    <td><kbd>-x</kbd></td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>Y</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptY">Multiple regexes must all match.</a></td>
+    <td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>Z</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-OptZ">Reset all options</a> (recommended for batch files).</td>
+    <td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>0</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-Opt0">Set ERRORLEVEL to 0 if any hits were found.</a></td>
+    <td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>1</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-Opt1">Set ERRORLEVEL to 1 if any hits were found.</a></td>
+    <td>(<kbd>-v</kbd>)</td><td>&nbsp;</td></tr>
+
+<tr><td>&nbsp;<kbd>3</kbd>&nbsp;</td>
+    <td><a href="grepman.htm#R5x-Opt1">Set ERRORLEVEL to 3 if warnings were displayed.</a></td>
+    <td>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr><td colspan=4>* <small>UNIX grep options are case sensitive; GREP and
+FIND options are not.
+<br>(An option is shown in parentheses if the GREP option&#8217;s effect is
+similar but not identical.)</small></td></tr>
+</tbody></table></div>
+
+<h3 id="OptSpecify">How to Specify Options</h3>
+
+<p class="brk">On the <a href="#User">command line</a>, options can
+appear anywhere, before or after the <a href="#Regex">regex</a> and
+the input files. All options are processed before any files are
+read.</p>
+
+<p class="nonbrk">You have a lot of freedom about how you enter options: use
+a leading hyphen or slash, use upper- or lower-case
+letters, leave spaces between options or combine them. For
+instance, the following are just some of the different ways of turning
+on the <a href="grepman.htm#R5x-OptP"><kbd>/P3</kbd> option</a> and
+<a href="grepman.htm#R5x-OptB"><kbd>/B</kbd> option</a>:</p>
+<pre class="secondhalf">
+        /p3 -b    /b/P3    /p3B    -B/P3    -P3 -b </pre>
+
+<p class="brk">This <cite>GREP Quick Start</cite> always uses capital letters for the options, to make
+it easier to distinguish letter l and figure 1.</p>
+
+<p class="nonbrk">For clarity, you should always use a hyphen or slash before the numeric
+<a href="grepman.htm#R5x-Opt0"><kbd>/0</kbd> option</a>, <a href="grepman.htm#R5x-Opt1"><kbd>/1</kbd> option</a>, or <a href="grepman.htm#R5x-Opt3"><kbd>/3</kbd> option</a>.
+Example: <kbd>/E0</kbd> means the
+<a href="grepman.htm#R5x-OptE"><kbd>/E</kbd> option</a> with a value of 0, but
+<kbd>/E/0</kbd> means the <kbd>/E</kbd> option with no value
+specified, followed by the <kbd>/0</kbd> option.</p>
+
+<p class="brk">The <cite>GREP Manual</cite> gives more information about the
+<a href="grepman.htm#R5.1.2-Envvar">environment variable</a>, including
+instructions for overriding a particular stored option on the command
+line.</p>
+
+
+
+
+<h2 id="Regex">Regular Expressions (Regexes)</h2>
+
+
+<p class="brk">A regular expression or <dfn>regex</dfn> is a pattern of characters
+to compare to lines, records, or buffers from one or more
+input files. GREP reports a hit if the input contains a match with
+the pattern in the regex.</p>
+
+<p class="nonbrk">A regex can be a simple text string, like <kbd>mother</kbd>, or
+something more complex. (If you want to search only for simple
+strings, use the <a href="grepman.htm#R5x-OptE"><kbd>/E0</kbd> option</a> and
+ignore all this regex stuff.)</p>
+
+<h3 id="RegexExamples">Regexes by Example</h3>
+
+<p class="brk">Example 1: If you want both the English and the
+American spellings of the word &#8220;grey/gray&#8221;,
+use</p>
+<pre class="secondhalf">
+        gr[ea]y</pre>
+<p class="secondhalf">as your regex. (See Example 5 for &#8220;colour/color&#8221;.)</p>
+
+<p class="brk">Example 2: The basic regex for any word starting with &#8220;moth&#8221;
+is</p>
+<pre class="secondhalf">
+        moth[a-z]*</pre>
+<p class="secondhalf">which is the letters &#8220;moth&#8221; followed by any
+number of letters a through z. Yes, that regex does match &#8220;moth&#8221;
+itself: see
+<a href="grepman.htm#R4.4-RegexStarPlus"><kbd>*</kbd> or <kbd>+</kbd> for Repetition</a>
+in the <cite>GREP Manual</cite>.</p>
+
+<p class="brk">Example 3: A word in double quotes would be matched by</p>
+<pre class="secondhalf">
+        \"[a-z]+\"</pre>
+<p class="secondhalf">Read that regex as &#8220;a double quote mark,
+followed by one or more letters, followed by another double quote
+mark.&#8221; (You need the backslashes <kbd>\</kbd> to tell 
+the Windows command prompt to pass
+the quote marks forward to GREP. See
+<a href="grepman.htm#R4.1.3-RegexQuotes">Quotes in a Regex</a> in the
+<cite>GREP Manual</cite>.)</p>
+
+<p class="brk">Example 4: A U.S. local telephone number has the basic regex</p>
+<pre class="secondhalf">
+        [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9] </pre>
+<p class="secondhalf">That signifies three digits, followed by a hyphen, followed by
+four digits. (You could express it more simply with an
+<a href="grepman.htm#R5x-OptE">extended regex</a>:
+<kbd>[0-9]{3}-[0-9]{4}</kbd> or even <kbd>\d{3}-\d{4}</kbd>.)</p>
+
+<p class="brk">Example 5: To get the American and English spellings of
+&#8220;color/colour&#8221; is easy with GREP32: specify an extended regex
+(with the <a href="grepman.htm#R5x-OptE"><kbd>/E2</kbd> option</a>) of</p>
+<pre class="secondhalf">
+        colou?r</pre>
+<p class="secondhalf">GREP16 doesn&#8217;t support extended
+regexes, so you could either use <kbd>colou*r</kbd> (which would
+also match the non-words colouur, colouuuuur, etc.), or
+else use the <a href="grepman.htm#R5x-OptF"><kbd>/F-</kbd> option</a> and
+enter <kbd>color</kbd> and <kbd>colour</kbd> as two regexes.</p>
+
+<h3 id="RegexSummary">Regex Language Summary</h3>
+
+<p class="brk">From the <a href="#RegexExamples">examples</a>
+you can see that a regex is essentially a string of characters with a bunch
+of operators thrown in to express possibilities like &#8220;any of these
+characters&#8221; and &#8220;repeated&#8221;.
+Here&#8217;s a quick summary of the characters that have special meaning
+in a regex; note that some work in any regex and others only in an
+extended regex (<a href="grepman.htm#R5x-OptE"><kbd>/E2</kbd> option</a>).
+Each one is hyperlinked
+to the section of the <cite>GREP Manual</cite> where you&#8217;ll find a full description.</p>
+
+<div class="acchild"><table class="mystd" border="2">
+
+<thead><tr><td></td>
+       <th>which regexes?</th>
+       <th>description</th></tr></thead>
+<tbody>
+
+<tr><th colspan=3 class="al1">Characters with special meaning outside <a href="grepman.htm#R4.7-RegexClass">square brackets</a>:&nbsp; &nbsp; &nbsp; &nbsp;</th></tr>
+
+<tr><td><kbd>.</kbd> period</td>
+    <td>any</td>
+    <td>Match <a href="grepman.htm#R4.3-RegexPeriod">any character</a>.</td></tr>
+<tr><td><kbd>*</kbd> asterisk</td>
+    <td>any</td>
+    <td>Match <a href="grepman.htm#R4.4-RegexStarPlus">0 or more occurrences</a> of the preceding.</td></tr>
+<tr><td><kbd>+</kbd> plus sign</td>
+    <td>any</td>
+    <td>Match <a href="grepman.htm#R4.4-RegexStarPlus">1 or more occurrences</a> of the preceding.</td></tr>
+<tr><td><kbd>?</kbd> question mark</td>
+    <td>extended</td>
+    <td>Match <a href="grepman.htm#R4.5-RegexQuestion">0 or 1 occurrence</a> of the preceding.</td></tr>
+<tr><td><kbd>[</kbd> left square bracket</td>
+    <td>any</td>
+    <td>Start a <a href="grepman.htm#R4.7-RegexClass">character class</a>, like <kbd>[abcde]</kbd> to match any one of a, b, c, d, e.</td></tr>
+<tr><td><kbd>^</kbd> caret</td>
+    <td>any</td>
+    <td>Match <a href="grepman.htm#R4.8-RegexAnchor">start of line</a> in text mode or <a href="grepman.htm#R4.8-RegexAnchor">start of record</a> in <a href="grepman.htm#R2.4-InputsBinary">binary mode</a>.</td></tr>
+<tr><td><kbd>$</kbd> dollar sign</td>
+    <td>any</td>
+    <td>Match <a href="grepman.htm#R4.8-RegexAnchor">end of line</a> in text mode or <a href="grepman.htm#R4.8-RegexAnchor">end of record</a> in <a href="grepman.htm#R2.4-InputsBinary">binary mode</a>.</td></tr>
+<tr><td><kbd>\</kbd> backslash</td>
+    <td>any</td>
+    <td><a href="grepman.htm#R4.11.1-RegexBackslashEscape">Treat any of the listed special characters as normal</a>.</td></tr>
+<tr><td><kbd>\</kbd> backslash</td>
+    <td>extended</td>
+    <td>(1) <a href="grepman.htm#R4.11.2-RegexBackslashType">character types</a> like <kbd>\w</kbd> for a word character;
+        <br>(2) <a href="grepman.htm#R4.11.3-RegexBackslashAssert">simple assertions</a> like <kbd>\b</kbd> for a word boundary;
+        <br>(3) <a href="grepman.htm#R4.11.4-RegexBackslashBackref">back references</a> to <a href="grepman.htm#R4.10-RegexSub">parenthesized subexpressions</a>;
+        <br>(4) <a href="grepman.htm#R4.11.5-RegexBackslashEncode">character encoding</a> for odd characters like <kbd>\x3c</kbd> for&nbsp;&lt;.</td></tr>
+<tr><td><kbd>{</kbd> left brace</td>
+    <td>extended</td>
+    <td><a href="grepman.htm#R4.6-RegexBrace">Repetition count</a>, like
+    <kbd>{3,}</kbd> for three or more occurrences of the preceding.</td></tr>
+<tr><td><kbd>|</kbd> vertical bar</td>
+    <td>extended</td>
+    <td><a href="grepman.htm#R4.9-RegexBar">Alternatives</a>, like <kbd>mother|father</kbd> to match &#8220;mother&#8221; or &#8220;father&#8221;.</td></tr>
+<tr><td><kbd>(&#133;)</kbd> parentheses<br>or round brackets</td>
+    <td>extended</td>
+    <td><a href="grepman.htm#R4.10-RegexSub">Subexpressions</a>, like <kbd>(&amp;nbsp;)+</kbd> to match one or more occurrences of &#8220;&amp;nbsp;&#8221;.</td></tr>
+
+<tr><th colspan=3 class="al1">Characters with special meaning inside <a href="grepman.htm#R4.7-RegexClass">square brackets</a>:&nbsp; &nbsp; &nbsp; &nbsp;</th></tr>
+
+<tr><td><kbd>]</kbd> right square bracket</td>
+    <td>any</td>
+    <td>End the <a href="grepman.htm#R4.7-RegexClass">character class</a>.</td></tr>
+<tr><td><kbd>-</kbd> minus sign or hyphen</td>
+    <td>any</td>
+    <td><a href="grepman.htm#R4.7.1-RegexClassMinus">Character range</a>, like <kbd>[a-z]</kbd> to match any lower-case English letter.</td></tr>
+<tr><td><kbd>^</kbd> caret</td>
+    <td>any</td>
+    <td><a href="grepman.htm#R4.7.2-RegexClassCaret">Negate</a> the <a href="grepman.htm#R4.7-RegexClass">character class</a>, like <kbd>[^a-z]</kbd> to match any character except a lower-case English letter.</td></tr>
+<tr><td><kbd>\</kbd> backslash</td>
+    <td>any</td>
+    <td><a href="grepman.htm#R4.7-RegexClass">Treat the next character as normal</a>.</td></tr>
+<tr><td><kbd>\</kbd> backslash</td>
+    <td>extended</td>
+    <td><a href="grepman.htm#R4.11.5-RegexBackslashEncode">Character encoding</a>.</td></tr>
+<tr><td><kbd>[:</kbd> left square bracket<br>followed by colon</td>
+    <td>extended</td>
+    <td>Introduce a <a href="grepman.htm#R4.7.4-RegexClassName">named character class</a>, like <kbd>[[:punct:]0-9]</kbd> for any punctuation character or a digit.</td></tr>
+
+</tbody>
+</table></div>
+
+<div class="nonprint">
+<p class="ar">[ on to the <a href="grepman.htm"><cite>GREP Manual</cite></a> ]</p>
+</div>
+
+
+<div class="nonprint">
+<h2 id="WhatsNew">What&#8217;s New in this Quick Start</h2>
+<p class="brk"><strong class="key">7 Feb 2016</strong>:<ul>
+<li>Links to the <a href="grepman.htm"><cite>GREP Manual</cite></a> are all live now, since the manual is now
+also on line.</li>
+<li>Drop mention of the ORS_GREP environment variable; it&#8217;s now
+fully documented in the <a href="grepman.htm"><cite>GREP Manual</cite></a>.</li>
+<li>Update mention of Windows versions and compatibility with Windows
+command prompts. Drop all mention of DOS and DOSisms like
+<kbd>prn:</kbd> and <kbd>config.sys</kbd>.</li>
+</ul></div>
+</body></html>

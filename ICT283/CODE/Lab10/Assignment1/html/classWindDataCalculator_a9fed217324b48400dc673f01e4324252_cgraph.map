@@ -1,0 +1,21 @@
+<map id="WindDataCalculator::calculateAvgTemp" name="WindDataCalculator::calculateAvgTemp">
+<area shape="rect" id="Node000001" title="Calculate the average temperature." alt="" coords="5,105,144,148"/>
+<area shape="rect" id="Node000002" href="$classWindDataCalculator.html#aafb8875c9e9ac954e8cf20839ef6e283" title="Calculate average." alt="" coords="192,5,330,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,102,190,58,199,53,202,58,193,62,114,107"/>
+<area shape="rect" id="Node000005" href="$classWindDataCalculator.html#ae3236343ed4b4241e157df9fe8b11a8f" title="Calculate standard deviation." alt="" coords="192,72,330,115"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="144,112,176,106,177,111,145,117"/>
+<area shape="rect" id="Node000006" href="$classWindDataCalculator.html#a0c94ccaf09a9ae6721f57302ef02c09d" title="Gets the monthly record of wind data." alt="" coords="192,139,330,181"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="145,136,177,142,176,147,144,142"/>
+<area shape="rect" id="Node000008" href="$classWindDataCalculator.html#ac92f1b237abfb452c0a15905dcf48594" title="Rounds off numbers." alt="" coords="192,205,330,248"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="114,146,193,191,202,196,199,200,190,196,111,151"/>
+<area shape="rect" id="Node000003" href="$classVector.html#a4c06178fd032101cd345e35dd3528f89" title="Retrieves the current element specified by the parameter index." alt="" coords="383,88,467,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="311,46,381,79,379,84,309,51"/>
+<area shape="rect" id="Node000004" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the number of elements in the vector." alt="" coords="380,37,470,64"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="331,34,365,39,364,45,330,39"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="330,94,367,96,367,101,330,99"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="330,73,365,64,366,69,331,78"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="321,136,370,118,372,123,323,141"/>
+<area shape="poly" id="edge10_Node000006_Node000004" title=" " alt="" coords="310,136,328,125,352,100,376,74,381,70,384,75,380,78,356,103,332,129,313,140"/>
+<area shape="rect" id="Node000007" href="$classVector.html#a771cb9fc1c1941bcef009df2b55f3c72" title="Add another element into the end of the vector." alt="" coords="378,147,472,173"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="330,157,362,157,362,163,330,163"/>
+</map>

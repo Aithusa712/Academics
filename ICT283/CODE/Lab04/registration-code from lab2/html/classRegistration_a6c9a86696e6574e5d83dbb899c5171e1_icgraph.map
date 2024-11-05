@@ -1,0 +1,9 @@
+<map id="Registration::GetResults" name="Registration::GetResults">
+<area shape="rect" id="Node000001" title=" " alt="" coords="313,31,478,57"/>
+<area shape="rect" id="Node000002" href="$classRegistration.html#a72a5cc800d9551d69e4c201cd9f07ccd" title=" " alt="" coords="103,5,265,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="297,35,265,31,266,26,298,30"/>
+<area shape="rect" id="Node000004" href="$Regist_8cpp.html#a0fd17e4423f843b3a2d6d265ef12419e" title=" " alt="" coords="142,56,226,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="298,58,227,67,226,62,297,53"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

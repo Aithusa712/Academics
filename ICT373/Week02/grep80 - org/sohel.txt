@@ -1,0 +1,56 @@
+ Volume in drive C is Windows
+ Volume Serial Number is 2AB6-9DC2
+
+ Directory of C:\Ferdous\S1 2020 ICT373\grep80
+
+26/02/2020  10:45 PM    <DIR>          .
+26/02/2020  10:45 PM    <DIR>          ..
+08/02/2016  10:11 AM             4,937 0README.1ST
+22/02/2018  12:07 PM               365 a.txt
+04/03/2018  10:29 AM                 0 AA.txt
+07/03/2017  03:16 PM               330 aaa.txt
+04/03/2018  10:29 AM                 0 AAk.txt
+07/03/2017  11:06 AM                 0 Abc.docx
+04/03/2018  10:29 AM                 0 Ay.txt
+13/03/2018  02:20 PM             1,781 cc.txt
+04/03/2018  10:45 AM             1,783 ccc.txt
+18/02/2019  05:41 PM                 0 cccccccc.txt
+04/03/2019  10:35 AM               258 e.txt
+04/03/2018  10:35 AM               125 e1.txt
+04/03/2018  10:34 AM               125 eA.txt
+07/03/2017  01:28 PM                57 eCopy.txt
+08/02/2016  10:11 AM               847 FILE_ID.DIZ
+22/02/2018  11:57 AM             1,908 fred.txt
+08/02/2016  10:11 AM            38,696 GREP101.HTM
+08/02/2016  10:11 AM            70,322 GREP16.EXE
+08/02/2016  10:11 AM           171,008 GREP32.EXE
+08/02/2016  10:11 AM            54,944 GREPHIST.HTM
+08/02/2016  10:11 AM           297,763 GREPMAN.HTM
+08/02/2016  10:11 AM             2,900 GREPMAN1.GIF
+08/02/2016  10:11 AM            37,376 GREPQRC.DOC
+04/03/2018  11:24 AM                 0 k.txt
+04/03/2018  03:02 PM               321 kk.txt
+04/03/2018  11:02 AM             1,991 lab2.txt
+08/02/2016  10:11 AM            13,200 LICENSE.TXT
+07/03/2017  05:42 PM                71 lll.txt
+04/03/2019  10:31 AM                 7 m.txt
+10/03/2016  01:57 PM                55 m1.txt
+07/03/2017  05:19 PM                86 m11.txt
+22/02/2018  11:57 AM             1,908 mary.txt
+18/02/2019  05:40 PM                 0 mmmm.txt
+18/02/2019  05:39 PM               184 mmmmm.txt
+08/02/2016  10:11 AM            15,948 ors.css
+08/02/2016  10:11 AM            62,569 PCRE.HTM
+08/02/2016  10:11 AM             1,963 REGISTER.TXT
+08/02/2016  10:11 AM             2,385 SITEREG.TXT
+26/02/2020  10:45 PM                 0 sohel.txt
+22/02/2018  12:00 PM             1,958 stdir.txt
+08/02/2016  10:11 AM             5,376 TEST255
+08/02/2016  10:11 AM            34,801 TOUR.BAT
+08/02/2016  10:11 AM             2,583 TOURCARE.BAT
+08/02/2016  10:11 AM            34,304 TOURKEY.EXE
+08/02/2016  10:11 AM                68 TOURREG1
+08/02/2016  10:11 AM             3,081 TOURSUB.BAT
+04/03/2019  10:37 AM             1,781 x.txt
+              47 File(s)        870,165 bytes
+               2 Dir(s)  81,391,095,808 bytes free

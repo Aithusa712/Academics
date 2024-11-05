@@ -1,0 +1,1233 @@
+<!-- TARGETDIR = ./ -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US"><head>
+<link rel="StyleSheet" type="text/css" href="ors.css">
+<meta name="description" content="GREP program ASCII finds strings or regular expressions in any files (shareware) (Oak Road Systems)">
+<meta name="keywords" content="GREP, find, regular expression, regular expressions, regexp, DOS program, DOS utility, DOS programs, DOS utilities, shareware, Oak Road Systems">
+<title>GREP 8.0 Revision History</title>
+</head><body class="minor">
+
+
+<div class="maintitle">
+<h1>GREP&nbsp;&#8212; Find Regular Expressions in&nbsp;Files
+<br>Revision&nbsp;History for Release&nbsp;8.0</h1>
+<p>Program Dated 4 May 2005&nbsp;&nbsp;/&nbsp; This Document Dated 5&nbsp;May&nbsp;2005</p>
+<p> Copyright &copy; 1986&#8211;2005 Stan&nbsp;Brown, <a href="http://oakroadsystems.com">Oak&nbsp;Road&nbsp;Systems</a> </p>
+</div>
+
+
+<p class="Summary" id="Summary"><span class="SummaryH"><strong class="key">Summary:</strong>&nbsp;</span>
+This document is the complete revision history, starting with the 
+most recent changes. To use GREP, please see the <a href="grep101.htm"><cite>GREP Quick Start</cite></a> 
+and the <a href="grepman.htm"><cite>GREP Manual</cite></a>.</p>
+
+<div class="TOC"><p class="secondhalf"><span class="TOCH"><a name="TOC0"><strong class="key">Contents:</strong>&nbsp; </a></span>
+<table cellspacing=0 cellpadding=0 border=0>
+<tr><td><a href="#V8.0">Release 8.0, 5 May 2005</a></td></tr>
+<tr><td><a href="#v7.52">Release 7.52, 17 Jan 2005</a></td></tr>
+<tr><td><a href="#v7.51">Release 7.51, 29 Dec 2004</a></td></tr>
+<tr><td><a href="#v7.5">Release 7.5, 19 Dec 2004</a></td></tr>
+<tr><td><a href="#v7.41">Release 7.41, 30 Oct 2004</a></td></tr>
+<tr><td><a href="#v7.4">Release 7.4, 23 Oct 2004</a></td></tr>
+<tr><td><a href="#v7.31">Release 7.31, 8 Jul 2004</a></td></tr>
+<tr><td><a href="#v7.3">Release 7.3, 5 Jul 2004</a></td></tr>
+<tr><td><a href="#v7.2">Release 7.2, 13 Jan 2003</a></td></tr>
+<tr><td><a href="#v7.11">Release 7.11, 29 Apr 2002</a></td></tr>
+<tr><td><a href="#v7.1">Release 7.1, 27 Mar 2002</a></td></tr>
+<tr><td><a href="#v7.01">Release 7.01, 10 Feb 2002</a></td></tr>
+<tr><td><a href="#v7.0">Release 7.0, 21 Jan 2002</a></td></tr>
+<tr><td><a href="#v6.9">Release 6.9, 22 Dec 2001</a></td></tr>
+<tr><td><a href="#v6.0">Release 6.0, 8 Sep 2001</a></td></tr>
+<tr><td><a href="#v5.33">Release 5.33, 19 Aug 2001</a></td></tr>
+<tr><td><a href="#v5.32">Release 5.32, 20 May 2001</a></td></tr>
+<tr><td><a href="#v5.31">Release 5.31, 18 April 2001</a></td></tr>
+<tr><td><a href="#v5.3">Release 5.3, 17 April 2001</a></td></tr>
+<tr><td><a href="#v5.2">Release 5.2, 4 Jan 2001</a></td></tr>
+<tr><td><a href="#v5.1">Release 5.1, 31 May 2000</a></td></tr>
+<tr><td><a href="#v5.0">Release 5.0, 7 May 2000</a></td></tr>
+<tr><td><a href="#v4.5">Release 4.5, 25 Sep 1999</a></td></tr>
+<tr><td><a href="#v4.4">Release 4.4, 18 Sep 1999 (limited release)</a></td></tr>
+<tr><td><a href="#v4.3">Release 4.3, 4 Aug 1999</a></td></tr>
+<tr><td><a href="#v4.2">Release 4.2, 20 Feb 1999</a></td></tr>
+<tr><td><a href="#v4.1">Release 4.1, 22 Jan 1999</a></td></tr>
+<tr><td><a href="#v4.0">Release 4.0, May 1998</a></td></tr>
+<tr><td><a href="#v3.4">Release 3.4, March 1998</a></td></tr>
+<tr><td><a href="#v3.3">Release 3.3, Feb 1998</a></td></tr>
+<tr><td><a href="#v3.2">Release 3.2, June 1997</a></td></tr>
+<tr><td><a href="#v3.1">Release 3.1, Jan 1997</a></td></tr>
+<tr><td><a href="#v3.0">Release 3.0, Dec 1996</a></td></tr>
+<tr><td><a href="#v2.4">Release 2.4, April 1990</a></td></tr>
+<tr><td><a href="#v2.3">Release 2.3, March 1990</a></td></tr>
+<tr><td><a href="#v2.2">Release 2.2, Jan 1990</a></td></tr>
+<tr><td><a href="#v2.1">Release 2.1, Dec 1989</a></td></tr>
+<tr><td><a href="#v2.0">Release 2.0, July 1989</a></td></tr>
+<tr><td><a href="#v1.0">Release 1.0, April 1986</a></td></tr>
+</table>
+
+</div>
+
+
+<h2 id="V8.0">Release 8.0, 5 May 2005</h2>
+
+
+<p class="brk">New features:</p><ul>
+
+<li> The new letter <a href="grepman.htm#R5x-OptO"><kbd>/o</kbd> option</a> lets you specify
+output format independent of input format.
+<p class="nonbrk"><strong class="key">Compatibility note:</strong> Release 8.0
+changes the default output format for text lines (not paragraphs).
+Earlier releases simply dumped the input lines na&iuml;vely. Release 8.0
+displays control characters in <samp>^<var>letter</var></samp> format
+and other non-printing characters in <samp>&lt;<var>nn</var>&gt;</samp>
+format. In most cases this is a good thing, but if you want the old
+behavior specify the <kbd>/o1</kbd> option on the command line or in the 
+<a href="grepman.htm#R5.1.2-Envvar">environment variable</a>.</p>
+</li>
+
+
+<li> The functions that read text files were
+completely overhauled. Now GREP recognizes line terminators in DOS,
+UNIX, or Macintosh-format files; and Control-Z and NUL are treated
+like any other characters. This affects paragraph mode
+(<a href="grepman.htm#R5x-OptG"><kbd>/G2</kbd> option</a>) and both line modes (<a href="grepman.htm#R5x-OptG"><kbd>/G0</kbd> or <kbd>/G1</kbd> option</a>).
+I'm grateful to Scott Brueckner
+for an excellent set of
+<a href="http://www.mrx.net/c/input.files.html">test cases</a> in his
+<a href="http://www.mrx.net/c/index.html"><cite>Reading Text Files in
+C</cite></a>. Although I didn't use any of his C code, I did benefit
+greatly from his research into the issues with the standard C library.
+<p class="nonbrk">With the <a href="grepman.htm#R5x-OptG"><kbd>/G0</kbd> option</a> (fixed-width text lines), earlier
+releases of GREP would chop the line into chunks of <var>txwid</var>+1
+characters as specified in the <a href="grepman.htm#R5x-OptW"><kbd>/W</kbd> option</a>;
+release 8.0 chops the line into chunks of exactly
+<var>txwid</var> characters.</p></li>
+
+<li> The <a href="grepman.htm#R5x-OptP"><kbd>/P</kbd> option</a> (show context lines)
+was previously illegal with
+the <a href="grepman.htm#R5x-OptR"><kbd>/R3</kbd> option</a>. Now, <kbd>GREP32&nbsp;/J&nbsp;/R3&nbsp;/P<var>b,a</var></kbd>
+supplies context in bytes, up to
+<var>b</var> bytes before and <var>a</var> bytes after. (The 
+<a href="grepman.htm#R5x-OptJ"><kbd>/J</kbd> option</a> is required.)</li>
+
+<li> When GREP prompts you to enter input files,
+regexes, or input lines at the keyboard, it now tells you the maximum
+length of input allowed.</li>
+
+<li> The exit status is now displayed with the
+numbers of hits and files.</li>
+
+<li> If you specify the new <a href="grepman.htm#R5x-Opt3"><kbd>/3</kbd> option</a>, then
+GREP will set the return value to 3 if there are warnings but no
+errors.</li>
+
+<li> The debug message (<a href="grepman.htm#R5x-OptD"><kbd>/D</kbd> option</a>) at the end
+of each file now gives you both the item count and the line or byte
+count.</li>
+
+</ul>
+<p class="brk">Bugs fixed:</p><ul>
+
+<li> Two long-standing bugs in basic regexes
+(unnoticed since May 2000!) were
+discovered and fixed:
+the regex <kbd>.*</kbd> wasn't matching an empty line, as it should;
+and the naked dollar sign <kbd>$</kbd>, which should match every line,
+wasn't matching any.
+(Extended regexes, <a href="grepman.htm#R5x-OptE"><kbd>/E2</kbd> option</a>, were not implicated.)</li>
+
+<li> Release 7.5, if you used the <a href="grepman.htm#R5x-OptU"><kbd>/U</kbd> option</a>,
+<a href="grepman.htm#R5x-OptN"><kbd>/N</kbd> option</a>, <a href="grepman.htm#R5x-OptR"><kbd>/R2</kbd> option</a>, and <a href="grepman.htm#R5x-OptP"><kbd>/P</kbd> option</a> all used
+together, failed to distinguish visually between records that contain
+matches and records displayed for context. As in previous releases, in
+release 8.0 a colon follows the file name only for the records that
+contain matches.</li>
+
+
+
+
+
+</ul>
+<p class="brk">Other program changes:</p><ul>
+
+<li> With the <a href="grepman.htm#R5x-OptN"><kbd>/N</kbd> option</a> in paragraph mode
+(<a href="grepman.htm#R5x-OptG"><kbd>/G2</kbd> option</a>), GREP now displays the line number 
+followed in
+parentheses by the paragraph number.
+Also with the <kbd>/N</kbd> option, byte numbers from
+free-format binary files (<a href="grepman.htm#R5x-OptR"><kbd>/R3</kbd> option</a>) are now prefixed with B
+to distinguish them from line numbers.</li>
+
+<li> The <a href="grepman.htm#R5x-OptX"><kbd>/X</kbd> option</a> exclusions now apply only to
+input filespecs that contain wildcards. The idea is that if you
+explicitly specify a single file without wildcards, you must want GREP
+to process it. (Previously, if the 
+<a href="grepman.htm#R5.1.2-Envvar">environment variable</a> contained
+<kbd>/X*txt</kbd> and you typed <kbd>grep&nbsp;warning&nbsp;prog.txt</kbd> on
+the command line, GREP would ignore the prog.txt input file because it
+matched the exclusion.)</li> 
+
+<li> The pseudo-file <kbd>NUL</kbd> is now ignored.
+(Previously, GREP interpreted it as an interactive device.)</li>
+
+<li> When input is
+<a href="grepman.htm#R2.2-InputStandard">redirected from file or piped
+from another command</a>, GREP now ignores the <a href="grepman.htm#R5x-OptR"><kbd>/R</kbd> option</a>.</li>
+
+<li> The binary buffer size (<a href="grepman.htm#R5x-OptW"><kbd>/W</kbd> option</a>)
+must be an even number
+with the <a href="grepman.htm#R5x-OptR"><kbd>/R3</kbd> or <kbd>/R-1</kbd> or <kbd>/R-2</kbd> option</a>.
+Previously, GREP enforced this requirement by means of a fatal error.
+Now, GREP displays a level-1 warning, adjusts the binary width to the
+next even number, and continues.</li>
+
+<li> With fixed-length records (<a href="grepman.htm#R5x-OptR"><kbd>/R2</kbd> option</a>),
+GREP now warns you if the last record is short, which could mean the
+<a href="grepman.htm#R5x-OptW"><kbd>/W</kbd> option</a> option wasn't specified correctly.</li>
+
+<li> The warning "^ and $ are not recommended in
+a basic regex with /R3" (or /R&#8722;1 or /R&#8722;2) was
+eliminated because it didn't always appear when it should and often
+appeared where it shouldn't.</li>
+
+
+<li> The nag message at the beginning of the
+unregistered version was shortened.</li>
+
+</ul>
+<p class="brk">Documentation changes:</p><ul>
+
+<li> The help message (<kbd>grep&nbsp;/?</kbd>)
+is now much more explicit about
+the <a href="grepman.htm#R5x-Opt0"><kbd>/0</kbd> or <kbd>/1</kbd> option</a>,
+and reserved modes /G3 and higher are no longer mentioned. The
+placement of "(default)" is now uniform.</li>
+
+<li> The interactive tour never got thoroughly tested
+under Windows XP because I didn't have free access to an XP system
+until early 2005.
+Caret (<kbd>^</kbd>) characters in regexes were a particular problem. Now the
+tour should work in DOS 5.0 through Windows XP.</li>
+
+<li>The <a href="grepman.htm#desktop"><cite>GREP Manual</cite></a> now explains how
+to run GREP from the Windows desktop.</li>
+
+<li> In the <cite>GREP Manual</cite>, the terms
+<a href="grepman.htm#stdin">standard input</a>,
+<a href="grepman.htm#stdout">standard output</a>, and
+<a href="grepman.htm#stderr">standard error</a> are now defined;
+and uses of those
+terms are cross referenced to the definitions.
+Similarly, the
+<cite>GREP Manual</cite> now defines <a href="grepman.htm#whitespace">whitespace
+characters</a>; and uses of the terms
+<a href="grepman.htm#hits">hits</a>,
+<a href="grepman.htm#filespec">filespec</a>,
+and
+<a href="grepman.htm#wildcard">wildcard</a> now link to the
+definitions of those terms.</li>
+
+<li> The 0README.1ST file was reorganized, and a few
+usage notes were added.</li>
+
+
+
+</ul>
+
+
+
+<h2 id="v7.52">Release 7.52, 17 Jan 2005</h2>
+
+<p class="brk">The TOURKEY program (see <a href="#v7.51">release 7.51</a>)
+was compiled with a 16-bit compiler to keep it small. It worked fine
+on my Windows XP Pro, but a user reported that it didn't work on his.
+I recompiled it with a 32-bit compiler. Also, though TOURKEY isn't
+intended for standalone use, I added a program identification  and
+help message if you run it with the <kbd>/?</kbd> option.</p>
+
+<p class="brk">In the tour itself, I simplified the regex used with GREP32 to
+illustrate paragraph mode .</p>
+
+<p class="brk">The GREP executables and the other documentation are unchanged
+from <a href="#v7.5">release 7.5</a>.</p>
+
+
+<h2 id="v7.51">Release 7.51, 29 Dec 2004</h2>
+
+<p class="brk">Following a report that the tour didn't work in Windows&nbsp;XP, I
+investigated and found that the default installation of Windows&nbsp;XP
+doesn't have the CHOICE program, which the tour uses to get
+instructions from the user. I wrote a workalike, TOURKEY, which is now
+included with the distribution.</p>
+
+<p class="brk">The executables and documentation are unchanged.</p>
+
+<h2 id="v7.5">Release 7.5, 19 Dec 2004</h2>
+
+<p class="brk">Program changes affecting <strong class="key">text files</strong>:</p><ul>
+
+<li>The new <a href="grepman.htm#R5x-OptG"><kbd>/G2</kbd> option</a> makes GREP
+<strong class="key">search paragraphs rather than lines</strong>.
+This is very handy for text files where a match might begin on
+one line and end on a later line; it's also a more flexible way to
+show context than the <a href="grepman.htm#R5x-OptP"><kbd>/P</kbd> option</a>.</li>
+
+<li>You no longer need to preset the text width (first number in the
+<a href="grepman.htm#R5x-OptW"><kbd>/W</kbd> option</a>): GREP now allocates memory dynamically to take in
+<strong class="key">any length of text line</strong>.
+(This change affects GREP16 users much more than GREP32 users, because
+the default line length was already very large in GREP32.)
+If you really want the old behavior, where GREP chops lines in the
+middle at the stated width, use the new <a href="grepman.htm#R5x-OptG"><kbd>/G0</kbd> option</a>.</li>
+
+<li>Large text files should now be processed <strong class="key">about 16% faster</strong>
+than before.
+(I benchmarked read speeds for pairs of identical 7&nbsp;MB files
+that, to the best of my understanding, were not cached.)</li>
+
+</ul>
+
+<p class="brk">Program changes in the handling of <strong class="key">multiple regexes</strong>
+(<a href="grepman.htm#R5x-OptF"><kbd>/F</kbd> option</a>) with the <a href="grepman.htm#R5x-OptJ"><kbd>/J2</kbd> or <kbd>/J3</kbd> option</a>:</p><ul>
+
+<li>GREP now <strong class="key">reports all matches in the order they occur</strong> on
+the input line. (Previously, within any given line or buffer GREP
+first reported all matches for the first regex in the /F file, then
+all matches for the second regex, and so on.)</li>
+
+<li>With multiple regexes, the <a href="grepman.htm#R5x-OptJ"><kbd>/J2</kbd> option</a> (display all matching
+parts of the line, without overlaps) was documented in release 7.4 to
+report overlaps of matches for different regexes but not overlaps of
+matches for the same regex. Now, <kbd>GREP&nbsp;/J2</kbd> won't display a
+given part of the input more than once, even if it matches more than
+one regex.</li>
+</ul>
+<p class="secondhalf">The above two changes don't affect single regexes with the
+<a href="grepman.htm#R5x-OptJ"><kbd>/J2</kbd> or <kbd>/J3</kbd> option</a>.</p>
+
+<p class="brk">Other program changes:</p><ul>
+
+<li>There is a <strong class="key">new format for binary output</strong>, a change that was
+overwhelmingly favored in a GREP user poll. Previously,
+binary output was the same as text output except that non-printable
+characters were replaced by a hex representation in
+<samp>&lt;&nbsp;&gt;</samp> angle brackets. Now,
+<a href="grepman.htm#R2.4.2-BinaryHits">binary output</a> shows
+a hex dump and text representation side by
+side; with non-printable characters represented by dots.</li>
+
+<li><strong class="key">Line numbers and <a href="grepman.htm#R5x-OptC"><kbd>/C</kbd> option</a> counts</strong> can now go as high as
+2<sup>32</sup>&#8722;1, which is 4,294,967,295 (an unsigned long),
+after which they will silently roll over to 0. Previously, GREP16
+counts went to 32,767 and GREP32 counts went to 2,147,483,647, after
+which they silently rolled over to negative numbers. (Thanks to Scott
+McEndree for the suggestion.)</li>
+
+<li>Prompts are now written to the standard error output.
+This affects prompts for regexes (<a href="grepman.htm#R5x-OptF"><kbd>/F-</kbd> option</a>) and files
+(<a href="grepman.htm#R5x-OptAt"><kbd>/@-</kbd> option</a>) and lines to test (if no input files are
+specified). Previously they were written to the C
+library "console", which on some systems gets redirected along with
+standard output.</li>
+
+<li>In the <strong class="key">debug output</strong> (<a href="grepman.htm#R5x-OptD"><kbd>/D</kbd> option</a>), messages about memory
+allocation are now headed "grep GA". Previously they were distributed
+among the other categories.</li>
+
+<li>Some warnings about combinations of command-line options used to
+be displayed before the program logo. Now the logo is displayed
+first.</li>
+
+<li>The unregistered version now displays a
+<strong class="key">request for feedback</strong> at the end of execution.
+Also, about one time in a hundred it
+requires a keypress at the start of execution.</li>
+
+</ul>
+
+
+<p class="brk">Documentation changes (in addition to descriptions of the
+program changes):</p><ul>
+
+<li>Thanks to Matthew Miner, the download now includes a
+<strong class="key"><cite>Quick Reference Card</cite></strong> for GREP. The MS-Word file GREPQRC.DOC
+prints on A4 or 8&frac12;&#215;11 paper.</li>
+
+<li>The interactive demo, TOUR.BAT, used to fail if you renamed
+grep32.exe or grep16.exe to grep.exe as the
+<a href="grep101.htm#Installation"><cite>GREP Quick Start</cite></a>
+recommends; now the tour runs. Ilustrations of
+the <a href="grepman.htm#R5x-OptG"><kbd>/G2</kbd> option</a> and the new binary format are now included.</li>
+
+<li>A new chapter called <a href="grepman.htm#R8-Future">Future
+Directions</a> was added to the <cite>GREP Manual</cite>.</li>
+
+<li>A note was added to the <cite>GREP Manual</cite> about
+<a href="grepman.htm#N20041115">optimizing the order of multiple regexes</a>
+in a file.</li>
+
+<li><a href="grepman.htm#R7.2-redirectoutput05">Redirecting output
+with &gt;<var>outputfile</var> makes GREP hang up!</a> was added to
+the Troubleshooting and How-To section of the <cite>GREP Manual</cite>.</li>
+
+<li>The questions in the
+<a href="grepman.htm#R7-QandA">Troubleshooting and How-To</a> section
+of the <cite>GREP Manual</cite> are now listed in the table of contents.</li>
+
+<li>At a user's request, the two CSS files in the distribution were
+renamed to begin with GREP. If you unpack GREP over a previous
+release, you should manually delete the old files print.css and
+screen.css.</li>
+</ul>
+
+
+
+
+<h2 id="v7.41">Release 7.41, 30 Oct 2004</h2>
+
+<p class="brk">This release fixes two bugs that were introduced in release
+7.4. Both have to do with the <a href="grepman.htm#R5x-OptJ"><kbd>/J2</kbd> or <kbd>/J3</kbd> option</a>:</p><ul>
+
+<li>GREP&nbsp;7.4 had a problem with reading a partial buffer to
+replace a partially used buffer in a binary file. This could result in
+over- or under-reporting matches if you used the <a href="grepman.htm#R5x-OptR"><kbd>/R3</kbd> option</a>
+with <kbd>/J2</kbd> or <kbd>/J3</kbd>. This was not an issue if your
+buffer was large enough to hold the file as recommended.</li>
+
+<li>GREP&nbsp;7.4 counted matches wrong for all file types with the
+<a href="grepman.htm#R5x-OptJ"><kbd>/J2</kbd> or <kbd>/J3</kbd> option</a>. Specifically, the counts reported with the
+<a href="grepman.htm#R5x-OptC"><kbd>C</kbd> option</a> and the summary at the end were the sum of the number of
+matches and the number of lines containing matches, instead of just
+the number of matches. (Counts with the <a href="grepman.htm#R5x-OptJ"><kbd>/J1</kbd> option</a> or with no
+<kbd>/J</kbd> option were correct.)</li>
+
+</ul>
+
+
+<h2 id="v7.4">Release 7.4, 23 Oct 2004</h2>
+
+<p class="brk">Program changes:</p><ul>
+
+<li>The <a href="grepman.htm#R5x-OptJ"><kbd>/J</kbd> option</a> is now a numeric option
+<code>/J0</code> through <code>/J3</code>. When a line, record, or
+buffer contains one or more matches, you can now tell GREP to display
+the entire line, only the first matching part, or every matching part
+with or without overlaps.</li>
+
+<li>The <a href="grepman.htm#R5x-OptY"><kbd>/Y</kbd> option</a> and <a href="grepman.htm#R5x-OptJ"><kbd>/J</kbd> option</a> options make no logical
+sense together. Previously GREP tried to make sense of the
+combination; now it's just not allowed.</li>
+
+<li>The <a href="grepman.htm#R5x-OptC"><kbd>/C</kbd> option</a> and <a href="grepman.htm#R5x-OptK"><kbd>/K</kbd> option</a> are now allowed together.
+Perhaps you might want to count matches in the file without displaying
+them, but stop reading a big file if the number of hits reaches a
+certain value.</li>
+
+<li>GREP now displays a grand total of the number of
+matches, number of files containing matches, and number of files
+examined. (GREP with the <a href="grepman.htm#R5x-OptL"><kbd>/L</kbd> option</a> displays the number of files
+containing matches and the number of files examined.) This new
+information is written to the standard error stream, so that it won't
+interfere with any processing you do of the redirected output; and you
+can suppress it entirely with the <a href="grepman.htm#R5x-OptQ"><kbd>/Q</kbd> option</a>.</li>
+
+<li>Previously, if you supplied GREP a directory name with trailing
+backslash, it didn't find any matching files. Now it assumes * after a
+trailing backslash in a
+<a href="grepman.htm#R2.1-InputsNamed">filespec</a>.</li>
+
+<li>The tour (TOUR.BAT) now lets you quit at any point, without
+answering N to every offered demonstration.</li>
+
+<li>bug fix: <code>GREP /R3 /J /N</code> was displaying the byte
+number of the start of the buffer. Now it displays the byte number
+of the start of the match, as it should.</li>
+
+</ul>
+
+<p class="brk">Document changes:</p><ul>
+
+<li>The <cite>GREP Manual</cite> describes the
+redesigned <a href="grepman.htm#R5x-OptJ"><kbd>/J</kbd> option</a>. In addition, with the new <code>/J2</code>
+and <code>/J3</code> selections there are some changes to how
+<a href="grepman.htm#R5-R3mode">free-format binary files</a> are read
+(<a href="grepman.htm#R5x-OptR"><kbd>/R3</kbd> option</a>) and to the
+recommended buffer width (<a href="grepman.htm#R5x-OptW"><kbd>/W</kbd> option</a>).</li>
+
+<li>The <a href="grep101.htm#OptList">list of options</a> in the
+<cite>GREP Quick Start</cite> now shows UNIX <code>-o</code> as equivalent to the
+<a href="grepman.htm#R5x-OptJ"><kbd>/J</kbd> option</a>.</li>
+
+<li>The <a href="grepman.htm"><cite>GREP Manual</cite></a> now warns you if you read it
+without its associated CSS style sheets. They provide helpful formatting
+and spacing, particularly in tables of regexes and options.</li>
+
+</ul>
+
+
+
+<h2 id="v7.31">Release 7.31, 8 Jul 2004</h2>
+
+<p class="brk">Program change: Add a warning in the help message about regexes
+that start with <code>-</code> or <code>/</code>, in response to a
+user's question.</p>
+
+<p class="brk">Documentation changes:</p><ul>
+<li>Add the above warning to the
+<a href="grepman.htm#R4.1.4-RegexConfuse"><cite>GREP Manual</cite></a> in
+the section on regexes.</li>
+<li>Add a <a href="grepman.htm#20040707b">quick reference table</a> of
+special characters to the regex overview in the <cite>GREP Manual</cite>.</li>
+</ul>
+
+
+<h2 id="v7.3">Release 7.3, 5 Jul 2004</h2>
+
+<p class="brk">Program changes:</p><ul>
+<li>GREP no longer strips off a pair of quotes that enclose a regex.
+Recent versions of DOS appear to do this automatically, and therefore you
+should see no difference in final processing. What will be different
+is that now it becomes easier to specify a regex that contains quotes,
+such as <code>\"something\"</code>.</li>
+
+<li>If you specify a directory name as an input file, GREP no longer
+displays a warning and ignores it, but now scans all files in that
+directory.</li>
+
+<li>Debug output was improved: command-line arguments are now
+numbered, and regexes are no longer quoted in the debug output.</li>
+
+<li>Exactly one error message, "character class never ended", ended
+with a period; it's now consistent with the rest. "Unsupported locale"
+became "unsupported locale in M option". "The E3 option is accepted
+for E2 plus J" became "the E3 option is treated as E2 plus J".</li>
+</ul>
+
+<p class="brk">Documentation changes:</p><ul>
+
+<li>The user guide and reference manual were reorganized from the
+ground up, into a <a href="grep101.htm"><cite>GREP Quick Start</cite></a> targeted at new users
+and a large self-contained <a href="grepman.htm"><cite>GREP Manual</cite></a> with full
+information on all topics.
+Previously, the main discussions of binary files, subdirectory
+searches, and ERRORLEVEL were in the user guide, and some
+discussions were split between the two documents. Now, experienced
+users need search only the <a href="grepman.htm"><cite>GREP Manual</cite></a> to answer
+any question.</li>
+
+<li>For the first time in a couple of years, both documents were reread
+beginning to end. A few small errors were corrected, and many
+clarifications and hyperlinks were added.</li>
+
+<li>Navigation in the <a href="grepman.htm"><cite>GREP Manual</cite></a>
+should now be much easier. Sections are numbered, and each chapter now
+has a table of its own contents.
+The <a href="grepman.htm#FULLTOC">whacking great table of contents</a>
+at the beginning was moved to the end, and at the
+beginning there's now a manageable list of chapters.</li>
+
+<li><a href="grepman.htm#R2.3-InputsSubdirs">Subdirectory Searches</a>
+now explains the search order in full detail, with new examples.</li>
+
+<li>The <a href="grepman.htm#R2.1-InputsNamed">Input Filespecs</a>
+section of the <cite>GREP Manual</cite> now explains how to search a file
+whose name contains a <code>[</code> character.</li>
+
+<li>The <cite>GREP Manual</cite> now explains interactions between the
+<a href="grepman.htm#R5x-OptL"><kbd>/L</kbd> option</a> and multiple
+regexes, and how to find a file that contains multiple regexes not on
+the same line.</li>
+</ul>
+
+
+<h2 id="v7.2">Release 7.2, 13 Jan 2003</h2>
+
+<p>Program changes: The latest changes from PCRE release 3.9 were adapted
+into the code for the <a href="grepman.htm#R5x-OptE"><code>/E2</code> and
+<code>/E4</code> options</a>. Those changes fixed some esoteric bugs
+but did not add any features. (This affects only GREP32 since those
+options don't exist in GREP16, but the GREP16 release number was updated
+for consistency.)</p>
+
+<p class="brk">Documentation changes:</p><ul>
+
+<li>In response to a user query, the reference manual clarified that
+many options are toggles, and if used multiple times on the command
+line will reverse themselves.
+
+<li>The GREP*.HTM documents were styled to match the Oak Road Systems
+Web site. As part of this, the style sheet ORSSW.CSS has been replaced
+by the separate style sheets SCREEN.CSS and PRINT.CSS.
+
+</ul>
+
+<p class="brk"><strong class="key">Release 7.21, 12 Apr 2004,</strong> fixed a bug:
+when the regex contained an opening [ but no closing ],
+the command-line parser mistakenly diagnosed it as a bad filename
+instead of a bad regex.</p>
+
+
+<h2 id="v7.11">Release 7.11, 29 Apr 2002</h2>
+
+<p>This release fixed a memory allocation bug that affected the
+<a href="grepman.htm#R5x-OptE"><code>/E4</code> option</a>. For some
+regexes, an internal error was generated.</p>
+
+
+<h2 id="v7.1">Release 7.1, 27 Mar 2002</h2>
+
+<p>The new <a href="grepman.htm#R5x-OptE"><code>/E4</code> option</a>
+tells GREP to search for your regex as a word.</p>
+
+<p>An optional second argument on the
+<a href="grepman.htm#R5x-OptM"><code>/M</code> option</a> now lets
+you define what is a "word" character, if you need to.</p>
+
+
+<p class="brk"><strong class="key">Release 7.02, 24 Mar 2002</strong>,
+was an internal checkpoint release for a few minor changes:</p><ul>
+
+<li><p>Per user request, when you specify a list of input files with the
+<a href="grepman.htm#R5x-OptAt"><code>/@</code> option</a> leading and
+trailing blanks are now removed from the filespecs.</p>
+
+<li><p>The new value 4 is returned in
+<a href="grepman.htm#R3.3-ERRORLEVEL">ERRORLEVEL</a> if GREP found no
+files to match any of your input filespecs. A warning message also
+appears, if you specified multiple filespecs on the command line or
+used the <a href="grepman.htm#R5x-OptAt"><code>/@</code> option</a>.</p>
+
+<li><p>The message "no files at all matched <i>filespec</i>" became "no
+files exist like <i>filespec</i>". This should reduce confusion with the
+(possibly normal) situation where the input file exists but none of its
+lines match the regex.</p>
+
+<li><p>The warning message "Some matches in the middle of long lines may
+have been missed. You might want to try the /W<i>n</i> option" now
+suggests both text and binary widths, when GREP is deciding whether
+files are text or binary (<a href="grepman.htm#R5x-OptR"><code>/R-1</code>
+or <code>/R-2</code> option</a>), This is just a clarification of the
+warning message; there is no change in how GREP handles files.</p>
+
+<li><p>The <a href="grepman.htm#R2.1.3-InputsMissing">reference manual</a>
+says that, when an input filespec doesn't match any files, GREP
+reminds you to check your <a href="grepman.htm#R5x-OptX">exclusions</a>.
+In 7.0 and 7.01 the warning appeared even if you never used the
+<code>/X</code> option; now it doesn't.</p>
+</ul>
+
+
+<h2 id="v7.01">Release 7.01, 10 Feb 2002</h2>
+
+<p>Program changes:</p><ul>
+
+<li><p>The warning message "the <a href="grepman.htm#R5x-OptX">X option</a> is
+useful only with named input files" is now "the X option is ignored
+when reading only standard input", and is suppressed
+when you have only stored <code>/X</code> options in the
+<a href="grepman.htm#R5.1.2-Envvar">environment variable</a>.</p>
+
+<li><p>The warning message "the <a href="grepman.htm#R5x-OptR">R option</a>
+applies only to named files, not standard input" now appears only when
+you told GREP to read files in binary (<code>/R2</code> or
+<code>/R3</code>), not when you told GREP to sense the file type
+(<code>/R-1</code> or <code>/R-2</code>).</p>
+
+<li><p>In reading text files, GREP 7.01 doesn't check for error unless
+the read function returns a non-normal status. The way it was done in
+7.0 was correct but wasted a very few CPU cycles.</p>
+
+</ul>
+
+
+<p>Documentation changes:</p><ul>
+
+<li><p>In the <a href="grepman.htm#R7.1-QandARegex">Troubleshooting</a>
+section of the user guide, "GREP is finding too many matches!" was
+changed to "How do I search for a word?" New question "How do I find
+all files that contain 'this' and 'that'?" was added.</p>
+
+<li><p>The style sheet was developed further, and validated.</p>
+
+</ul>
+
+<h2 id="v7.0">Release 7.0, 21 Jan 2002</h2>
+
+<p>As promised, this release was driven by users' responses to the
+poll distributed with release 6.9.</p>
+
+<p class="brk">Program changes:</p><ul>
+
+<li><p>Filenames have
+<a href="grepman.htm#R2.1.1-InputsWildcards">more extensive
+wildcards</a>. The wildcard rules were added
+to the help message.</p>
+
+<p>GREP16 users, please note that <code>ABC*</code> now means the same
+thing as <code>ABC*.*</code>, namely all filenames that begin with
+ABC.</p>
+
+<li><p>You can use the new
+<a href="grepman.htm#R5x-OptAt"><code>/@</code> option</a> to give GREP a
+file list in a file, when a program generates your list of input files
+or there are simply too many for the command line.</p>
+
+<li><p>You can use the new
+<a href="grepman.htm#R5x-OptX"><code>/X</code> option</a> to exclude
+filenames that match certain patterns.</p>
+
+<li><p>The
+<a href="grepman.htm#R5x-OptK"><code>/K</code><i>count</i> option</a> was
+added, to tell GREP to stop reading each file after reporting the
+first <i>count</i> matches.</p>
+
+<li><p>When no input files are named, and
+input is from the keyboard (not redirected from file), GREP now
+prompts you to enter each line. Previously, it just sat there and waited
+for you to realize your mistake.</p>
+
+<li><p>The message prompting you for regexes
+(<a href="grepman.htm#R5x-OptF"><code>/F-</code> option</a>) is now
+written directly to the console, not to standard error (which could be
+redirected in some operating systems.) And a prompt appears for each
+regex after the first.</p>
+
+<li><p>The text of several error and warning
+messages was tweaked slightly for consistency, and the help text was
+expanded a bit more. Customized text was removed from all
+"insufficient memory" messages, in favor of automatically generated
+file and line numbers.</p>
+
+</ul>
+
+<p>Documentation changes:</p><ul>
+
+<li><p>A complete list of <a href="grepman.htm#R6-Messages">GREP's
+warnings and error messages</a>, with explanations, was added to the reference
+manual.</p>
+
+<li><p>The description of
+<a href="grep101.htm#User">command line syntax</a> was overhauled.
+<a href="grep101.htm#Inputs">Input redirection</a> was clarified,
+and a section was added on <a href="grep101.htm#Outputs">output
+redirection</a>. The description of
+<a href="grep101.htm#InputsNamed">named input files</a> was greatly
+simplified, with the detailed (and new) rules moved to the
+<a href="grepman.htm#R2.1-InputsNamed">reference manual</a>.</p>
+
+<li><p>The HTML versions now use an
+experimental style sheet, which should make them slightly more
+attractive on your screen.</p>
+
+</ul>
+
+<h2 id="v6.9">Release 6.9, 22 Dec 2001</h2>
+
+<p>This was a pre-release of 7.0. A poll distributed with this
+release asked users to indicate which requested features they would
+like to see in the program.</p>
+
+<p class="brk">Program changes:</p>
+<ul>
+
+<li><p>Binary file modes have been completely overhauled. The old
+<code>/R</code> toggle has been replaced by a mode selection
+via the <a href="grepman.htm#R5x-OptR"><code>/R2</code> option</a>
+for record-oriented binary or the
+<a href="grepman.htm#R5x-OptR"><code>/R3</code> option</a>
+for free-format binary. This solves a known but serious problem
+with the old binary mode, where a match would be missed if it
+crossed a block boundary.</p>
+
+<li><p>The new <a href="grepman.htm#R5x-OptR"><code>/R-1</code> or
+<code>/R-2</code> option</a> lets you tell GREP to figure out on its
+own whether each input file is text or binary. (<code>/R-1</code> and
+<code>/R-2</code> are available only with the registered version.)</p>
+
+<li><p>You can now specify different widths for binary blocks and text
+lines with the <a href="grepman.htm#R5x-OptW"><code>/W</code> option.</a>
+The <code>/W</code> option minimum value, formerly 10 characters, is
+now 2.</p>
+
+<li><p>(GREP32 only) The new <a href="grepman.htm#R5x-OptM"><code>/M</code>
+option</a> allows correct
+<a href="grepman.htm#R5x-OptI">case-blind matching</a> and
+<a href="grepman.htm#R4.7.4-RegexClassName">character classes</a> with
+non-English letters and other 8-bit characters.
+(A test file is included.)
+Binary output now displays the hex value
+<code>&lt;<i>nn</i>&gt;</code> for every non-printing character,
+according to the current character set
+(<a href="grepman.htm#R5x-OptM"><code>/M</code> option</a>).</p>
+
+<li><p>A new demo file, TOUR.BAT, is included.</p>
+
+<li><p>The new <a href="grepman.htm#R5x-OptJ"><code>/J</code> option</a>
+tells GREP to display from each line only the portion that matched the
+search string, basic regex, or extended regex. In release 6.0, this
+was added for extended regexes only, and you specified the
+<a href="grepman.htm#R5x-OptE"><code>/E3</code> option</a>. <code>/E3</code>
+is still allowed, but is equivalent to <code>/E2 /J</code>.</p>
+
+<li><p>In record-oriented binary files
+(<a href="grepman.htm#R5x-OptR"><code>/R2</code> option</a>),
+the <a href="grepman.htm#R4.8-RegexAnchor"><code>^</code>
+anchor</a> at the start and <a href="grepman.htm#R4.8-RegexAnchor"><code>$</code>
+anchor</a> at the end of a basic regex now mean the start and end of
+block, for better consistency with extended regexes.</p>
+
+<li><p>GREP is now about 5% faster on text files, and NUL (ASCII 0) will
+no longer cause the rest of a line to be ignored.</p>
+
+<li><p>With the <a href="grepman.htm#R5x-OptL"><code>/L</code> option</a>,
+GREP now stops reading a file as soon as it finds a match, unless the
+<a href="grepman.htm#R5x-OptV"><code>/V</code> option</a> is also set.</p>
+
+<li><p><a href="grepman.htm#R5x-OptD">Debug output</a> now includes
+additional information:<ul>
+<li>per-file execution time and number of lines/records/buffers read
+<li>the maximum line length of any individual text file that exceeds
+the <i>txwid</i> in the <a href="grepman.htm#R5x-OptW"><code>/W</code> option</a>
+<li>total execution time, number of files scanned, and number of
+files that contained matches
+<li>the compiled form of extended regexes
+<li>blank lines and dashes at the start of debug output when
+written to a real file
+<br>&nbsp;</ul>
+
+<li><p>Bug fix: Release 6.0 began diagnosing
+wildcard filespecs that produce no files at all, even when the
+<code>/S</code> (subdirectory) option is set. Unfortunately, the code
+to do that broke the previous code that diagnosed missing single
+files. The code to check the various cases is now collected in one
+place, and diagnosis should be correct and complete.</p>
+
+<li><p>Bug fix: The numeric values of the
+<a href="grepman.htm#R5x-OptQ"><code>/Q</code> option</a> were added to
+debug output and the help message, where they should have been for
+release 6.0.</p>
+
+</ul>
+
+<p>Documentation changes (in addition to those driven by the above program
+changes):</p><ul>
+
+<li><p>The user guide had grown more and more unwieldy. All the
+details of options and regexes are now split off into a separate
+<a href="grepman.htm">reference manual</a>, which is included in the
+download file but not published on the Web.</p>
+
+<li><p>A <a href="grep101.htm#Options">table of options</a> with
+one-line descriptions and a <a href="grep101.htm#Regex">summary of
+regexes</a> were added to the user guide; both are hyperlinked to
+sections in the reference manual. This may make it easier to find the
+feature you need.</p>
+
+<li><p>Information on <a href="grepman.htm#R4.6.1-RegexGreedy">greedy and
+ungreedy quantifiers</a> was added to the reference manual and to the
+<a href="grepman.htm#R5x-OptHelp">help message</a>.</p>
+
+<li><p>The groups of options in the
+<a href="grepman.htm#R5-Options">reference manual</a> and the
+<a href="grepman.htm#R5x-OptHelp">help message</a> were rearranged to
+input, pattern-matching, output, and general.</p>
+
+<li><p>The writeups of several options in the
+<a href="grepman.htm#R5x-OptHelp">help message</a> were expanded.</p>
+
+</ul>
+<h2 id="v6.0">Release 6.0, 8 Sep 2001</h2>
+
+<p>Note: There were beta test releases numbered 5.95, 5.97, and
+5.98. For users who participated in the beta test, a number in
+parentheses indicates the release where a particular change was made.</p>
+
+<p class="brk">Program changes:</p>
+
+<ul>
+<li><p>(5.95) The big news is the addition of <a href="grepman.htm#R5x-OptE">extended
+regular expressions</a>. GREP can now handle constructs like
+alternatives |, optionals ?, general quantifiers {...},
+subexpressions (...), and more. With extended regexes, you can choose
+whether GREP reports matching lines as usual, or just the portion of
+each line that matches the extended regex.</p>
+
+<li><p>(5.95) You can now bypass regular expressions entirely and just
+<a href="grepman.htm#R5x-OptE">search for literal text</a>.</p>
+
+<li><p>(5.97) You can now turn the
+<a href="grepman.htm#R4.12-RegexCmdLine">Special Rules for the Command
+Line</a> on and off.</p>
+
+<li><p>(5.98) You now have finer-grained control over warning messages
+with numeric levels for the <a href="grepman.htm#R5x-OptQ"><code>/Q</code>
+option</a>.</p>
+
+<li><p>(5.97) GREP now displays a
+warning message for any file spec that matches no files, even if the
+<a href="grepman.htm#R5x-OptS"><code>/S</code> option</a> (search
+subdirectories) is on.</p>
+
+<li><p>(5.97) You can now put a plus sign
+after an option to turn it on (as opposed to toggling it). Example:
+repeated <code>/N</code> will flip the option between on and off, but
+<code>/N+</code> turns on the option regardless of any previous
+settings.</p>
+
+<li><p>(5.98) Character types and assertions were added to the
+help message.</p>
+
+<li><p>(5.95) When you put a regex on the command line, you may need to
+enclose it in quotes, and if you do then GREP strips them (as past
+releases did). But, in agreement with the user guide, it no longer
+does that with regexes entered in a file or at the keyboard
+(<a href="grepman.htm#R5x-OptF"><code>/F</code> option</a>).</p>
+
+<li><p>(5.95) Two bugs in parsing oddly constructed character classes
+were fixed.
+(1)&nbsp;If you had a regex like <code>[]abc]</code>, GREP
+wrongly took the first square bracket as ending the class. GREP now
+correctly treats a ] at the beginning of a character class as an
+ordinary character.
+(2)&nbsp;A minus sign at the end of a class, like <code>[abc-]</code>,
+is now treated correctly as a normal character.</p>
+
+<li><p>(5.95) The user guide told you
+that when your regex begins with a - or / character, you should prefix
+it with a \ to keep it from being taken as an option. GREP was
+considering that leading \ as part of the regex; it doesn't any
+more.</p>
+
+<li><p>(5.98) If you specify named input files and also redirected input
+(&lt;<i>file</i>), GREP has always ignored the redirected input. A
+warning message now appears in this case.</p>
+
+<li><p>(5.97) The <a href="grepman.htm#R5x-OptZ"><code>/Z</code>
+option</a> used to reset all options except <code>/F</code>; it now
+resets all options as documented.</p>
+
+</ul>
+
+<p>User guide changes:</p>
+
+<ul>
+
+<li><p>(5.95) The section on <a href="grepman.htm#R4-Regex">regular
+expressions</a> was pretty much rewritten, rather than try to shoehorn
+in all the stuff for extended regexes. (Only about 80% of the syntax of
+extended regular expressions was added to the user guide, though all
+is supported in the program. For a complete description, the relevant
+parts of the <a href="pcre.htm">PCRE man page</a> are also
+included.)</p>
+
+<li><p>(5.95) A section on <a href="grepman.htm#R7-QandA">troubleshooting</a> was
+added.</p>
+
+<li><p>(5.97) The section on the <a href="grepman.htm#R5.1.2-Envvar">environment
+variable</a> now makes clear that the <code>/Z</code> option resets all
+options including <code>/D</code> and <code>/F</code>.</p>
+
+<li><p>(5.97) The section on <a href="grepman.htm#R4.12-RegexCmdLine">Special Rules
+for the Command Line</a> was reorganized to make it clearer when you do
+and don't need the rules, and information was added on the new ability
+to turn them on and off.</p>
+
+</ul>
+
+<h2 id="v5.33">Release 5.33, 19 Aug 2001</h2>
+
+<p>This is a repackaging for Simtel; there are no significant functional
+changes.</p>
+
+<h2 id="v5.32">Release 5.32, 20 May 2001</h2>
+
+<p>If you specified current directory on another disk, such as "d:*.htm",
+GREP was taking that as root directory, "d:\*.htm". Apparently no one
+but the program author ever does such a thing!</p>
+
+<h2 id="v5.31">Release 5.31, 18 April 2001</h2>
+
+<p>Unfortunately, a bug was introduced in release 5.3: under certain
+circumstances, GREP got confused about whether it was working from
+standard input or input files. This release corrects that bug, with my
+apologies to everyone who downloaded the buggy 5.3. </p>
+
+<h2 id="v5.3">Release 5.3, 17 April 2001</h2>
+<p>New features: <ul>
+<li>The new <a href="grepman.htm#R5x-OptY"><code>/Y</code> option</a> lets you search
+for lines that contain multiple regexes in any order.
+<li>The <a href="grepman.htm#R5x-OptD"><code>/D</code> option</a> now allows the pseudo
+filename "-", for debugging display on standard output.
+<li>Options can now appear anywhere on the <a href="grep101.htm#User">command
+line</a>, not just before the first file spec.
+</ul>
+
+<p class="secondhalf">Other changes:</p><ul>
+<li>If the <a href="grepman.htm#R4-Regex">regex</a> began with a
+single or double quote but did not end with one, GREP formerly assumed you
+meant to put it in quotes but forgot the closing quote. Now, it
+interprets the quote mark as the first character of the regex.
+<li>If GREP detects an internal error, it returns 128 in
+<a href="grepman.htm#R3.3-ERRORLEVEL">ERRORLEVEL</a> instead of 252.
+<li>Two facilities for "canning" GREP parameters are now restricted to
+the registered version of the program:
+the <a href="grepman.htm#R5.1.2-Envvar">environment variable</a> and
+<a href="grepman.htm#R5x-OptF">multiple regexes from file</a>. (Multiple
+regexes can still be <a href="grepman.htm#R5x-OptF">entered "live" at the
+keyboard</a>.)
+<li>Some internal functions of the code were factored out into common
+routines used by multiple Oak Road Systems programs. There should be
+no significant change visible to users beyond the formatting of some
+messages.
+<li>For people who license the source code, the build procedure was
+streamlined to use a single makefile.
+</ul>
+
+
+<h2 id="v5.2">Release 5.2, 4 Jan 2001</h2>
+<ul>
+<li>In the user guide, split out the <a href="grepman.htm#R5.2-OptInFile">file input
+options</a> and <a href="grepman.htm#R5.3-OptPattern">pattern-matching</a> options
+from the big group of <a href="grepman.htm#R5.5-OptGeneral">general options</a>, and
+provide a road map to the plethora of <a href="grepman.htm#R5.4-OptOutput">output
+options</a>.
+
+<li>In the <a href="grepman.htm#R5x-OptHelp">help message</a>,
+describe the <a href="grepman.htm#R5x-OptC">/C option</a> and
+<a href="grepman.htm#R5x-OptV">/V option</a> a bit more explicitly,
+arrange the options to match the functional groups in the user guide,
+and add a tip about using <code>more</code> to paginate the message.
+
+<li>In the list of option settings (displayed if you turn on the
+<a href="grepman.htm#R5x-OptD">/D option</a>),
+arrange the options to match the functional groups in the user guide,
+add the relevant option letter to each setting,
+and show the setting of the /1 or /0 option.
+
+<li>Replace a lot of funky macros with more straightforward functions
+for displaying diagnostic messages, and clarify the text of a few
+messages.
+
+<li>Tie <a href="grep101.htm#License">certain features</a> to the
+registered version of GREP. Make the logo and the
+<a href="grepman.htm#R5x-OptD">debugging output</a> reflect the
+registration status.
+</ul>
+
+
+<h2 id="v5.1">Release 5.1, 31 May 2000</h2>
+<ul>
+<li>fix a bug: a redundant *-expression preceding $ at the end of a regular
+expression should have matched the end of line, but did not. Example: ab*$
+would match ab, abb, abbb, etc. at end of line; but it did not
+match an a at end of line, as it should have.
+</ul>
+
+
+<h2 id="v5.0">Release 5.0, 7 May 2000</h2>
+<p>Program changes:</p><ul>
+<li>Add the <a href="grepman.htm#R5x-OptR"><code>/R</code> option</a> to read and
+display files in binary mode
+<li>Add the <a href="grepman.htm#R5x-OptW"><code>/W</code> option</a> to set the line width
+(formerly fixed at 255 characters), and warn the user if longer lines
+were found
+<li>Add the <a href="grepman.htm#R5x-OptZ"><code>/Z</code> option</a> to reset all
+options
+<li>Disallow out-of-order <a href="grepman.htm#R4.7.1-RegexClassMinus">character ranges</a>
+like <code>z-a</code>; previously they were silently treated like the three
+characters "z", "-", "a"
+<li>Add new <a href="grepman.htm#R3.3-ERRORLEVEL">return values</a> 2 and 252-254
+<li>Expand the treatment of regular expressions in the
+<a href="grepman.htm#R5x-OptHelp">help message</a>
+<li>Send the <a href="grepman.htm#R5x-OptHelp">help message</a> to stdout instead of stderr
+as previously
+<li>Don't display the help screens when the user types
+<code>grep</code> with no options or regular expression; instead,
+suggest using <code>grep&nbsp;/? |more</code>
+<li>In debug mode, add more trace messages for opening input files
+<li>When displaying a regular expression in debug mode, use a numeric
+to show number of members in a character class
+<li>Fix bug in 4.5: if you used wildcards with drive but no directory,
+e.g. <code>d:*</code>, the drive was ignored
+</ul>
+
+<p class="secondhalf">User guide changes:</p><ul>
+<li>Change file name to GREPUSER.HTM from GREP.HTM.
+<li>Add an <a href="grep101.htm">alphabetical index of options</a>
+<li>Add note about using double quotes around filenames that contain
+spaces.
+</ul>
+
+<h2 id="v4.5">Release 4.5, 25 Sep 1999</h2>
+<p>Program changes:</p><ul>
+<li>Fix a bug: on the command line, regular expressions like
+<code>[\244-\246\248-\255]</code>,
+with adjacent escaped 8-bit character ranges, were not expanded
+correctly
+<li>Systematize the debugging output somewhat, in the course of fixing the
+preceding bug
+<li>Fix a bug: on the command line, <code>\e</code> in regular
+expressions was expanded to
+Control-W (octal 27) instead of Escape (decimal 27)
+</ul>
+
+<p>User guide changes:
+Clarify and expand
+"Special rules for the command line"
+section of the user guide,
+clarify the descriptions of
+the <code>/D</code> and <code>/I</code> options,
+and add quite a few internal hyperlinks</p>
+
+<h2 id="v4.4" class="secondheader">Release 4.4, 18 Sep 1999 (limited release)</h2>
+<p>Program changes:</p><ul>
+<li>Add the <code>/S</code> option for searching subdirectories
+<li>Add the <code>/A</code> option
+for searching hidden and system files
+</ul>
+
+<p>User guide changes:</p><ul>
+<li>Add a section to describe input files and redirection
+</ul>
+
+<h2 id="v4.3">Release 4.3, 4 Aug 1999</h2>
+<ul>
+<li>Update contact information (new physical address and URL)
+<li>Simplify registration options
+<li>Add site license pricing
+</ul>
+
+<h2 id="v4.2">Release 4.2, 20 Feb 1999</h2>
+<ul>
+<li>Allow 8-bit characters in regular expressions
+<li>Allow multiple regular expressions to be typed in directly, with
+the <code>/F-</code> option
+<li>Fix a bug: with <code>/I</code>, character classes entered in
+lower case were expanded incorrectly
+</ul>
+
+<h2 id="v4.1">Release 4.1, 22 Jan 1999</h2>
+<ul>
+<li>Add the <code>/U</code> option (UNIX-style output) and the
+<code>/Q</code> option (quiet). Distinguish between option errors in
+the environment variable and on the command line
+<li>Make all output options toggles (except
+<code>/P</code>); diagnose conflicts
+only after the last option has been scanned
+<li>Take an optional output file name with <code>/D</code> (debug), which
+is no longer a toggle
+<li>Default <code>/P</code> (show context lines) to 2,2 if user specifies
+<code>/P</code> without numbers
+<li>Honor the special escape sequences only
+on the command line, since they're not needed when entering regular
+expressions in a file
+<li>Rewrite and greatly expand the user guide. Use HTML instead of MS
+Word for Windows
+</ul>
+
+<h2 id="v4.0">Release 4.0, May 1998</h2>
+<ul>
+<li>Add the <code>/F</code> option (multiple regular expressions in a
+file)
+<li>Build a 32-bit version (to accept long filenames) along with
+the 16-bit version, using a single set of source files
+</ul>
+
+<p class="brk"><strong class="key">First shareware release:</strong> On 19 Nov 1998 the documents
+were updated and GREP was packaged for release, with no changes to the
+program.</p>
+
+<h2 id="v3.4">Release 3.4, March 1998</h2>
+<ul>
+<li>With the <code>/P</code> option, remove the &lt;&nbsp;&gt; widgets
+around the line numbers of the context lines, so that the lines
+that actually match are more easily seen
+</ul>
+
+<h2 id="v3.3">Release 3.3, Feb 1998</h2>
+<ul>
+<li>Add the <code>/L</code> option
+<li>Accept options from an environment variable
+<li>In the output, show the file path as specified on the
+command line, not just the filename
+<li>Prefix program messages with "grep:" or "grep/debug:"
+<li>Add warning messages for incompatible or redundant sets of options
+<li>Diagnose a regular expression containing
+empty brackets <code>[]</code> as a user error, not an internal error
+<li>Remove the <code>/S</code> option (search subdirectories), because
+GREP's code now uses the C run-time library to interpret file specs on
+the command line
+<li>Fix a bug: inside <code>[...]</code> in regular expressions, the
+backslash was swallowing an extra character
+</ul>
+
+<h2 id="v3.2">Release 3.2, June 1997</h2>
+<ul>
+<li>Add the <code>/0</code> and <code>/1</code> options to control
+exit status
+<li><code>/D</code> now shows the number of matches in each
+file, total matches, and exit status
+</ul>
+
+<h2 id="v3.1">Release 3.1, Jan 1997</h2>
+<ul>
+<li>Allow numeric escapes like <code>\0x9A</code>, <code>\045</code>,
+and <code>\211</code> in the regular expression
+</ul>
+
+<h2 id="v3.0">Release 3.0, Dec 1996</h2>
+<ul>
+<li>Add the <code>/P</code> option (show context lines around the
+actual matches)
+<li>Display the values of all options when <code>/D</code> is on the command line
+</ul>
+
+<h2 id="v2.4">Release 2.4, April 1990</h2>
+<ul>
+<li>Add <code>+</code> in regular expressions (match one or more
+occurrences)
+<li>Allow options both before and after the regular expression
+<li>Add the <code>/S</code> option (search subdirectories)
+</ul>
+
+<h2 id="v2.3">Release 2.3, March 1990</h2>
+<ul>
+<li>Reverse the meaning of the <code>/B</code> option: now the default
+is to show only the names of matching files
+<li>Suppress "matched 0 lines" when <code>/C</code> (count matches) is
+specified and <code>/B</code> is not
+<li>Fix a bug: <code>[...]</code> character classes containing the range
+character <code>-</code> weren't always expanded correctly
+</ul>
+
+<h2 id="v2.2">Release 2.2, Jan 1990</h2>
+<ul>
+<li>Add the <code>/B</code> option (show only the names of files that
+contain matches)
+</ul>
+
+<h2 id="v2.1">Release 2.1, Dec 1989</h2>
+<ul>
+<li>Make the <code>/D</code> option show the input pattern as well as
+the decoded version
+<li>Fix a bug: character classes <code>[...]</code> weren't working with
+the <code>/I</code> option
+</ul>
+
+<h2 id="v2.0">Release 2.0, July 1989</h2>
+<ul>
+<li>Complete rewrite
+<li>Add the <code>/I</code> option (ignore case)
+<li>In the regular expression, add <code>\e</code> (escape) and
+<code>\q</code> (equal sign)
+</ul>
+
+<h2 id="v1.0">Release 1.0, April 1986</h2>
+<ul>
+<li>initial release (to clients only): Though all code was developed
+independently, I got some ideas from <cite>PC Tech Journal,</cite> May
+1996, pages 191-199.
+</ul>
+
+
+</body></html>

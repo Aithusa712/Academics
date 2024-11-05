@@ -1,0 +1,23 @@
+<map id="WindDataCalculator::calculateAll" name="WindDataCalculator::calculateAll">
+<area shape="rect" id="Node000001" title="Calculate the average wind speed, temperature, and solar radiation." alt="" coords="5,133,144,175"/>
+<area shape="rect" id="Node000002" href="$classWindDataCalculator.html#aafb8875c9e9ac954e8cf20839ef6e283" title="Calculate average." alt="" coords="192,33,330,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,130,190,85,199,80,202,85,193,90,114,134"/>
+<area shape="rect" id="Node000003" href="$classVector.html#a4c06178fd032101cd345e35dd3528f89" title="Retrieves the current element specified by the parameter index." alt="" coords="383,53,467,79"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="85,131,101,103,125,72,155,41,191,18,228,5,260,3,331,18,362,28,390,42,388,47,360,33,329,23,259,9,229,11,193,23,158,46,129,75,106,106,89,134"/>
+<area shape="rect" id="Node000004" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the number of elements in the vector." alt="" coords="380,115,470,142"/>
+<area shape="poly" id="edge13_Node000001_Node000004" title=" " alt="" coords="105,174,145,199,193,218,231,229,262,234,293,232,329,218,345,207,354,193,362,178,376,160,389,150,392,154,380,164,367,180,359,196,349,211,331,223,294,237,262,239,230,234,191,223,143,203,103,178"/>
+<area shape="rect" id="Node000005" href="$classWindDataCalculator.html#ae3236343ed4b4241e157df9fe8b11a8f" title="Calculate standard deviation." alt="" coords="192,99,330,142"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="144,139,176,133,177,139,145,144"/>
+<area shape="rect" id="Node000006" href="$classWindDataCalculator.html#a0c94ccaf09a9ae6721f57302ef02c09d" title="Gets the monthly record of wind data." alt="" coords="192,166,330,209"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="145,164,177,170,176,175,144,169"/>
+<area shape="rect" id="Node000008" href="$classWindDataCalculator.html#ac92f1b237abfb452c0a15905dcf48594" title="Rounds off numbers." alt="" coords="192,283,330,326"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="98,174,140,217,193,263,208,273,205,277,190,267,137,221,94,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="330,57,368,59,367,65,330,62"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="311,74,381,106,379,111,309,79"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="326,96,367,82,369,87,328,101"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="330,121,365,123,364,129,330,127"/>
+<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="310,163,328,152,353,128,376,102,393,87,396,91,380,105,357,132,332,156,313,168"/>
+<area shape="poly" id="edge11_Node000006_Node000004" title=" " alt="" coords="321,163,370,145,372,150,323,168"/>
+<area shape="rect" id="Node000007" href="$classVector.html#a771cb9fc1c1941bcef009df2b55f3c72" title="Add another element into the end of the vector." alt="" coords="378,174,472,201"/>
+<area shape="poly" id="edge10_Node000006_Node000007" title=" " alt="" coords="330,185,362,185,362,190,330,190"/>
+</map>

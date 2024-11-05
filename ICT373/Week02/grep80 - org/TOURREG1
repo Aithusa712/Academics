@@ -1,0 +1,4 @@
+[^a-zA-Z]plain[^a-zA-Z]
+^plain[^a-zA-Z]
+[^a-zA-Z]plain$
+^plain$

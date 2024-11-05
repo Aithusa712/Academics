@@ -1,0 +1,5 @@
+
+---------- lab2.txt
+Below are some suggestions for exercises to attempt:
+dir /B | sort| grep32 ^[a-z] >  e.txt
+dir /B | sort| grep32 [a-z][a-z]*[.][a-z][a-z]* >  e.txt

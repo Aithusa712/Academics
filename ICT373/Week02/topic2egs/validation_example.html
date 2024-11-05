@@ -1,0 +1,98 @@
+﻿<html>
+
+<head>
+
+	<title>Validation Example</title>
+
+	<!-- we only check for numbers in the fields-->
+
+	<script language="JavaScript">
+		today = new Date()
+
+		function isNotEmpty(field) {
+			var inputStr = field.value
+			if (inputStr == "" || inputStr == null) {
+				alert("This field requires an entry.")
+				field.focus()
+				field.select()
+				return false
+			}
+			return true
+		}
+
+		function validateDay(field) {
+			if (field.value < 1 || field.value > 31) {
+				alert("Value must be (1-31)")
+				return false
+			}
+			return true
+
+		}
+		function validateMonth(field) {
+			if (field.value < 1 || field.value > 12) {
+				alert("Value must be (1-12)")
+				return false
+			}
+			return true
+		}
+
+		function isNumber(field) {
+			if (isNotEmpty(field)) {
+				var inputStr = field.value
+				for (var i = 0; i < inputStr.length; i++) {
+					var oneChar = inputStr.substring(i, i + 1)
+					if (oneChar < "0" || oneChar > "9") {
+						alert("Numbers only.")
+						field.focus()
+						field.select()
+						return false
+					}
+				}
+
+				return true
+			}
+			return false
+		}
+
+		function validate(form) {
+			if (isNumber(form.day) && isNumber(form.month) && isNumber(form.year))
+				return true
+			else
+				return false
+		}
+
+		function makeToday(form) {
+			form.day.value = today.getDate()
+			form.month.value = today.getMonth() + 1
+			form.year.value = today.getYear() + 1900
+		}
+
+
+
+	</script>
+</head>
+
+
+<body>
+
+	<form method="POST" action="http://www.it.murdoch.edu.au/cgi-bin/reply1.pl" onSubmit="return validate(this)">
+
+		<p>Please enter the date of your next birthday.</p>
+
+		<p>Day(1-31): <input name="day" type="text" size="10" value="1" onChange="isNumber(this)"></p>
+
+		<p>Month(1-12): <input name="month" type="text" size="10" value="1" onChange="isNumber(this)"></p>
+
+		<p>Year: <input name="year" type="text" size="10" value="2000" onChange="isNumber(this)"></p>
+
+		<p>
+			<input type="submit" value="Submit">
+			<input type="reset">
+			<input type="button" value="today" onClick="makeToday(this.form)">
+		</p>
+
+	</form>
+
+</body>
+
+</html>

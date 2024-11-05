@@ -1,0 +1,5 @@
+102234 1 4
+System_analysis_and_design ICT_284 3 78 12 4 2024
+Principles_of_computer_science ICT_167 4 80 9 4 2024
+Data_structures_and_abstractions ICT_283 2 96 10 4 2024
+Information_system_management ICT_292 1 87 2 10 2024

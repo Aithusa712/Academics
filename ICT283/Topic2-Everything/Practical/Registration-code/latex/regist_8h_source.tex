@@ -1,0 +1,68 @@
+\doxysection{regist.\+h}
+\hypertarget{regist_8h_source}{}\label{regist_8h_source}\index{ICT283/Topic2-\/Everything/Practical/Registration-\/code/regist.h@{ICT283/Topic2-\/Everything/Practical/Registration-\/code/regist.h}}
+\mbox{\hyperlink{regist_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ REGIST.H\ -\/\ Registration\ class\ definition/interface}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ author\ KRI}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ modified\ smr}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ REGIST\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ REGIST\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{course_8h}{course.h}}"{}}\ \textcolor{comment}{//\#include\ your\ own\ files\ first}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \mbox{\hyperlink{regist_8h_ab25b60dda84db104dc226855d3814d03}{MaxCourses}}\ =\ 10;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classRegistration}{Registration}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \mbox{\hyperlink{classRegistration_aac811faf22fe96a7f657a282d6d679ab}{Registration}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \textcolor{keywordtype}{unsigned}\ \mbox{\hyperlink{classRegistration_a72a5cc800d9551d69e4c201cd9f07ccd}{GetCredits}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00022\ \ \ \textcolor{keywordtype}{unsigned}\ \mbox{\hyperlink{classRegistration_a729a2d6ae08aefd2dbe10ec7b3e5ce48}{GetCount}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \textcolor{comment}{//\ These\ operators\ have\ been\ made\ friends.\ They\ have}}
+\DoxyCodeLine{00026\ \ \ \textcolor{comment}{//\ privileged\ access\ to\ class\ internals.}}
+\DoxyCodeLine{00027\ \ \ \textcolor{comment}{//\ Very\ useful\ for\ debugging\ the\ class,\ but\ not\ very\ good\ for\ class\ design.}}
+\DoxyCodeLine{00028\ \ \ \textcolor{comment}{//\ We\ will\ keep\ using\ it\ for\ now\ but\ you\ will\ have\ a\ chance\ in\ a\ later\ lab}}
+\DoxyCodeLine{00029\ \ \ \textcolor{comment}{//\ to\ redesign\ this\ class.}}
+\DoxyCodeLine{00030\ \ \ \textcolor{keyword}{friend}\ ostream\ \&\ \mbox{\hyperlink{classRegistration_a0fd17e4423f843b3a2d6d265ef12419e}{operator\ <<}}(\ ostream\ \&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classRegistration}{Registration}}\ \&\ R);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \textcolor{keyword}{friend}\ istream\ \&\ \mbox{\hyperlink{classRegistration_ac6e479de58958d2b0a2295ceb04926da}{operator\ >>}}(\ istream\ \&\ input,\ \mbox{\hyperlink{classRegistration}{Registration}}\ \&\ R\ );}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \textcolor{keywordtype}{long}\ studentId;\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ student\ ID\ number}}
+\DoxyCodeLine{00036\ \ \ \textcolor{keywordtype}{unsigned}\ semester;\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ semester\ year,\ number}}
+\DoxyCodeLine{00037\ \ \ \textcolor{keywordtype}{unsigned}\ count;\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ number\ of\ courses}}
+\DoxyCodeLine{00038\ \ \ \mbox{\hyperlink{classCourse}{Course}}\ courses[\mbox{\hyperlink{regist_8h_ab25b60dda84db104dc226855d3814d03}{MaxCourses}}];\ \textcolor{comment}{//\ array\ of\ courses}}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{comment}{//\ No\ implementation\ (code\ body)\ should\ be\ found\ after\ the\ line\ \};\ above.}}
+\DoxyCodeLine{00042\ \textcolor{comment}{//\ See\ topic\ 1\ reading\ “Absolute\ C++.\ Pages\ 284-\/293.\ Separate\ }}
+\DoxyCodeLine{00043\ \textcolor{comment}{//\ Implementation/Interface.\ Structs\ vs\ Classes”\ available\ from\ My\ Unit\ Readings}}
+\DoxyCodeLine{00044\ \ }
+\DoxyCodeLine{00045\ \textcolor{comment}{//\ A\ .h\ file\ is\ interface\ or\ header\ file.\ Implementation\ should\ exist\ in}}
+\DoxyCodeLine{00046\ \textcolor{comment}{//\ the\ implementation\ file.\ Implementation\ file\ have\ .cpp\ extensions.}}
+\DoxyCodeLine{00047\ \textcolor{comment}{//\ Implementation\ is\ the\ body\ of\ the\ routine/method}}
+\DoxyCodeLine{00048\ \textcolor{comment}{//\ Concept\ is\ the\ same\ as\ what\ you\ did\ in\ ict159.}}
+\DoxyCodeLine{00049\ \textcolor{comment}{//\ So\ the\ following\ implementation\ needs\ to\ be\ moved\ to\ the\ corresponding}}
+\DoxyCodeLine{00050\ \textcolor{comment}{//\ implementation\ file\ (Regist.cpp)}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{comment}{//\ The\ method\ is\ inlined\ only\ if\ you\ have\ empirical\ evidence\ that\ inline\ would}}
+\DoxyCodeLine{00053\ \textcolor{comment}{//\ improve\ the\ run-\/time\ execution\ speed.\ It\ needs\ to\ be\ moved\ to\ the\ }}
+\DoxyCodeLine{00054\ \textcolor{comment}{//\ implementation\ file\ .cpp\ without\ this\ evidence.}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{unsigned}\ \mbox{\hyperlink{classRegistration_a729a2d6ae08aefd2dbe10ec7b3e5ce48}{Registration::GetCount}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00057\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordflow}{return}\ count;}
+\DoxyCodeLine{00059\ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00062\ }
+
+\end{DoxyCode}

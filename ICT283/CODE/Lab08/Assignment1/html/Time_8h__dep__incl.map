@@ -1,0 +1,23 @@
+<map id="Time.h" name="Time.h">
+<area shape="rect" id="Node000001" title="Header file for the Date class." alt="" coords="218,5,279,32"/>
+<area shape="rect" id="Node000002" href="$Time_8cpp.html" title=" " alt="" coords="5,80,81,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,38,80,82,78,77,202,33"/>
+<area shape="rect" id="Node000003" href="$WindDataCalculator_8cpp.html" title=" " alt="" coords="85,229,249,256"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,45,181,93,161,123,146,155,143,175,146,194,161,228,156,230,141,196,138,175,140,154,156,120,177,89,220,41"/>
+<area shape="rect" id="Node000004" href="$WindRecType_8h.html" title="Header file for the WindRecTyoe struct." alt="" coords="322,80,436,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="286,38,357,77,355,82,283,42"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html" title=" " alt="" coords="522,229,596,256"/>
+<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="295,18,370,25,414,34,461,46,506,63,549,86,587,116,619,153,623,164,623,176,614,197,598,216,579,231,576,227,594,212,610,194,618,175,618,165,614,156,584,120,546,91,504,68,459,51,413,39,369,31,294,23"/>
+<area shape="rect" id="Node000005" href="$CSVReader_8h.html" title="Header file for the CsvReader class." alt="" coords="328,155,430,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="382,122,382,154,376,154,376,122"/>
+<area shape="poly" id="edge11_Node000004_Node000007" title=" " alt="" coords="452,103,538,122,574,136,597,153,604,174,598,195,587,215,573,231,569,227,582,212,594,193,598,174,593,156,572,141,537,128,451,108"/>
+<area shape="rect" id="Node000008" href="$WindDataCalculator_8h.html" title="Header file for the Date class." alt="" coords="155,155,304,181"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="340,116,257,156,255,152,338,111"/>
+<area shape="rect" id="Node000009" href="$WindRecType_8cpp.html" title=" " alt="" coords="455,155,583,181"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="418,112,496,152,493,156,416,117"/>
+<area shape="rect" id="Node000006" href="$CSVReader_8cpp.html" title=" " alt="" coords="321,229,437,256"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="382,197,382,229,376,229,376,197"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="425,185,528,226,526,231,423,190"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="211,195,180,231,176,227,207,192"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="303,183,522,230,521,236,302,188"/>
+</map>

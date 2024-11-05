@@ -1,0 +1,7 @@
+<map id="WindDataCalculator::calculateAvg" name="WindDataCalculator::calculateAvg">
+<area shape="rect" id="Node000001" title="Calculate average." alt="" coords="5,23,144,65"/>
+<area shape="rect" id="Node000002" href="$classVector.html#a4c06178fd032101cd345e35dd3528f89" title="Retrieves the current element specified by the parameter index." alt="" coords="195,5,279,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,31,179,25,180,30,144,36"/>
+<area shape="rect" id="Node000003" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the number of elements in the vector." alt="" coords="192,56,282,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,52,177,57,176,63,144,57"/>
+</map>

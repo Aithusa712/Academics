@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1721200322 source:/home/kim/Documents/ICT283/CODE/Week09/BST/intBst.cpp
+	<iostream>
+	"intBst.h"
+
+1721203600 /home/kim/Documents/ICT283/CODE/Week09/BST/intBst.h
+	<iostream>
+
+1721203435 source:/home/kim/Documents/ICT283/CODE/Week09/BST/main.cpp
+	<iostream>
+	"intBst.h"
+

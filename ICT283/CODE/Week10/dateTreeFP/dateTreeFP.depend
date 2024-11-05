@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1721225333 source:/home/kim/Documents/ICT283/CODE/Week10/dateTreeFP/Date.cpp
+	"Date.h"
+
+1721216981 /home/kim/Documents/ICT283/CODE/Week10/dateTreeFP/Date.h
+	<iostream>
+	<string>
+
+1721225051 source:/home/kim/Documents/ICT283/CODE/Week10/dateTreeFP/main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	"Date.h"
+	"intBst.h"
+
+1721285509 /home/kim/Documents/ICT283/CODE/Week10/dateTreeFP/intBst.h
+	<iostream>
+

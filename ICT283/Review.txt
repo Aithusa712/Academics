@@ -1,0 +1,408 @@
+1.) UML R
+High LevelModel - only shows names of classes and their relationships
+Low Level Model - shows all inluding attributes and methods of a class
+
+Dependency - is a class required by another class ---->
+Composition - has a data member/object in another class cannot exist without the parent class ------<> solid
+Aggregation - has a data member/object in another class can independently existwithout relying to the parent class ------<> hollow
+Specialisation - inheritance, inherits the characteristics of another class ------|> straight --- hollow |>
+Realization - Abstract, Template, interface classes   ------|>  straight --- hollow |>
+
+
+2.) Model View controller MVC  R
+
+View - display ui elements to user 
+Controller - handles the logic and processing of data
+Model - is the data storage
+
+View <-> Controller <-> Model
+
+3.) Vector.h + Resize() + Big O **
+Big O notations:
+insert = O(n)
+search = O(n)
+delete = O(n)
+access = O(1)
+
+Vector.h:
+// Private Variables
+private:
+int m_capacity;
+int m_current;
+T* arr; 
+
+// Constructor
+Vector()
+{
+	m_capacity = 1;
+	m_current = 0;
+	arr = new T[m_capacity];
+}
+
+// Deconstructor
+~Vector()
+{
+	delete[] arr;
+}
+
+// Copy Constructor
+Vector(const Vector& other)
+{
+	m_capacity = other.m_capacity;
+	m_current = other.m_current;
+	for(int i = 0; i < current ; i++)
+	{
+		arr[i] = other.arr[i];
+	}
+}
+
+// Add/Insert/Push/Push_back
+Vector add(const T& value)
+{
+	if(current == capacity)
+	{
+		resize();
+	}
+	arr[current]=value;
+	current++;
+}
+
+// Resize
+Vector resize()
+{
+	
+	T* temp = new T[m_capacity*2];
+	for(int i = 0; i < current; i++)
+	{
+		temp[i] = arr[i];
+	}
+	delete[] arr;
+	m_capacity *= 2;
+	arr = temp;
+}
+
+// Get
+
+T& get(int index) 
+{
+	return arr[index];
+}
+
+
+4.) BST.h + Big O on search **
+search = O(Logn)
+
+
+template <typename T>
+struct Node
+{
+	T info;
+	Node* left;
+	Node* right;
+	Node(T newInfo)
+	{
+		info = newInfo;
+		left = nullptr;
+		right = nullptr;
+	}
+};
+
+template <typename T>
+class BST
+{
+public:
+	BST();
+	~BST();
+	typedef void (*PN)(T&);
+	void Insert(T newData);
+	void Insert(Node<T>* node, Node<T>* root);
+	bool Search(Node<T>* node, T target);
+	bool Search(T target);
+	void Delete(Node<T>* root);
+	void inOrder(Node<T>* root, PN processNode);
+	void preOrder(Node<T>* root, PN processNode);
+	void postOrder(Node<T>* root, PN processNode);
+	void inOrder(PN processNode);
+	void preOrder(PN processNode);
+	void postOrder(PN processNode);
+	
+private:
+
+Node<T>* root;
+	
+};
+
+// implementation
+
+// constructors/deconstructors
+
+template <typename T>
+BST<T>::BST()
+{
+	root = nullptr;
+}
+
+template <typename T>
+BST<T>::~BST()
+{
+	Delete(root);
+}
+
+// insert/delete/search
+
+template <typename T>
+void BST<T>::Insert(T newData)
+{
+	Node<T>* newNode = new Node<T>(newData);
+	if(root == nullptr)
+	{
+		root = newNode;
+	}
+	else
+	{
+		Insert(newNode, root);
+	}
+
+}
+
+template <typename T>
+void BST<T>::Insert(Node<T>* newNode, Node<T>* root)
+{
+	if(newNode->info < root->info)
+	{
+		if (root->left == nullptr)
+		{
+			root->left = newNode;
+		}
+		else
+		{
+			Insert(newNode, root->left);
+		}
+	}
+	else
+	{
+		if(root->right == nullptr)
+		{
+			root->right = newNode;
+		}
+		else
+		{
+			Insert(newNode, root->right);
+		}
+	}
+}
+
+template <typename T>
+void BST<T>::Delete(Node<T>* root)
+{
+	if(root==nullptr)
+	{
+		return;
+	}
+	
+	Delete(root->left);
+	Delete(root->right);
+
+	delete root;
+	root = nullptr;
+}
+
+template <typename T>
+bool BST<T>::Search(Node<T>* node, T target)
+{
+	if (node==nullptr)
+	{
+	return false;
+	}
+	if (node->info == target)
+	{
+	return true;
+	}
+	if (target < node->info)
+	{
+		return Search(node->left, target);
+	}
+	else
+	{
+		return Search(node->right, target);
+	}
+}
+template <typename T>
+bool BST<T>::Search(T target)
+{
+	if (Search(root,target))
+	{
+		return true;
+	}
+	else 
+	{
+		return false;
+	}
+}
+
+
+
+// Traversal
+
+template <typename T>
+void BST<T>::inOrder(Node<T>* root, PN processNode)
+{
+	if(root == nullptr)
+	{
+		return;
+	}
+
+	else
+	{
+	inOrder(root->left, processNode);
+	processNode(root->info);
+	inOrder(root->right, processNode);
+	}
+
+
+}
+
+template <typename T>
+void BST<T>::preOrder(Node<T>* root, PN processNode)
+{
+	if(root == nullptr)
+	{
+		return;
+	}
+
+	else
+	{
+	processNode(root->info);
+	preOrder(root->left,processNode);
+	preOrder(root->right,processNode);
+	}
+
+
+}
+
+template <typename T>
+void BST<T>::postOrder(Node<T>* root, PN processNode)
+{
+	if(root == nullptr)
+	{
+		return;
+	}
+
+	else
+	{
+	postOrder(root->left,processNode);
+	postOrder(root->right,processNode);
+	processNode(root->info);
+	}
+
+
+}
+
+
+// we will need a function to call the root within the class
+
+template <typename T>
+void BST<T>::inOrder(PN processNode)
+{
+	if(root == nullptr)
+	{
+		cout<<"Tree is empty"<< endl;
+	}
+	else
+	{
+		inOrder(root, processNode);
+	}
+}
+
+template <typename T>
+void BST<T>::preOrder(PN processNode)
+{
+	if(root == nullptr)
+	{
+		cout<<"Tree is empty"<< endl;
+	}
+	else
+	{
+		preOrder(root, processNode);
+	}
+}
+
+template <typename T>
+void BST<T>::postOrder(PN processNode)
+{
+	if(root == nullptr)
+	{
+		cout<<"Tree is empty"<< endl;
+	}
+	else
+	{
+		postOrder(root, processNode);
+	}
+}
+
+
+5.) Queue + Stack (can use arrays, STL Queue, STL Stack, vector or Vector.h) *
+6.) Test Plans (Table in Word/Excel) **
+
+| Test No. || Test Case Name || Description || Actual Data || Expected Output || Passed/Failed |  
+
+7.) Unit Tests (C++ Code) **
+
+Unit tests are used to check if methods of a class are working as intended.
+
+Ex.
+void test(Object& obj, int expectedData)
+{
+	if (obj.actualData == expectedData)
+	{
+		cout << "Passed" << endl; 
+	}
+	else 
+	{
+		cout << "Failed" << endl;
+		cout << "Expected Data: << expectedData << endl;
+		cout << "Actual Data: << obj.actualData << endl;
+	}
+}
+
+8.) Merge *
+9.) Set Operations *
+
+Subset = return true if all of set a's elements is in set b, else false. 
+Union = Create a new set with all the elements from set a and b.
+Intersection = Create a new set with only elements that are contained in both set a and set b.
+Difference = Create a new set with elements in set a that are not contained in set b.
+
+STL Set Methods
+
+ex.clear()
+ex.empty()
+ex.begin()
+ex.end()
+ex.erase()
+ex.find()
+ex.insert()
+ex.size()
+ex.swap()
+
+10.) SOLID principles R
+
+S - Solid-Responsibility Principle (SRP) - a class should only have a single, well-defined responisibility. (High Cohesion)
+
+O - Open/Closed Principle (OCP) - A software modules should be open for extension but closed for modification. Extend/add new features, functions without modifying the existing codebase.
+
+L - Liskov Substitution Principle (LSP) - Child classes must be substituatble for their base or parent class. Any class of a parent class should be usable in place of its parent without any unexpected behavior.
+
+I - Interface  Segregation Principle (ISP) - Do not force any client to implement and interface which is irrelevent to them.
+
+D - Dependency Inversion Principle (DIP) - High-Level modules should not depend on low-level modules. Both should depend on abstractions. (Decoupling)
+11.) Recursion vs Iteration
+Recursion - a subroutine that calls itself. Consists of a Base/General Case to stop the recursion, and a recursive call.
+
+Iteration - uses Do, While, loop constructs. Goes through
+12.) Pointers
+13.) Inheritance R 
+14.) Abstract R
+15.) Deep and Shallow Copy *
+Shallow copy - Shallow copy is when the pointer address is being copied and the two variables share the memory, this can lead to unintentional duplicate deletion.
+Deep Copy - Deep copy allocates a new memory for the data and copies the target value into that new memory that was created;

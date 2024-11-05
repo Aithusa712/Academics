@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1720056686 source:/home/kim/Documents/ICT283/CODE/Week08/StackCalculator/main.cpp
+	<iostream>
+	<stack>
+	<sstream>
+	<string>
+

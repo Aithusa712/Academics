@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1719198935 source:/home/kim/Documents/ICT283/CODE/Week08/week08/week08/QueueTest.cpp
+	"Queue.h"
+	<iostream>
+	<ctime>
+
+1719198678 /home/kim/Documents/ICT283/CODE/Week08/week08/week08/Queue.h
+	<queue>
+	<iostream>
+

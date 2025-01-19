@@ -1,0 +1,125 @@
+STRUCT CUSTOMER
+	String name
+	int coinAmount
+	String currency
+	int coinDenoCount1
+	int coinDenoCount2
+	int coinDenoCount3
+	int coinDenoCount4
+END STRUCT
+
+MAIN
+	Array<Customer> records = new Array <Customer>
+	readChange(record)
+	calculateChange(records)
+
+	WHILE(ExitLoop==False)
+	
+	PRINT(//MENU PROMPT...)
+	SCAN(String choice)
+
+	SWITCH(choice)
+		CASE 1:
+		findCustomer(Array)
+		CASE 2:
+		printChange
+		ExitLoop=True
+		BREAK
+	END SWITCH
+
+	END WHILE LOOP
+
+END MAIN
+
+
+readChange(Array<Customer> record)
+	READ FILE("coins.txt")
+	
+	WHILE(!EOF) //End of file
+		WHILE(!EOL) //End of line
+		String name
+		String change
+		String currency
+		String skip
+		
+		// Example line:
+		// Jane 30 cents in AU$
+
+		name = first word
+		change = second word
+		skip = third word
+		skip = fourth word
+		currency = fifth word
+		
+
+		record.name(name)
+		record.change(change)
+		record.currency(currency)
+		END WHILE
+	END WHILE
+END readChange
+
+calculateChange(Array<Customer> record)
+	Int total
+
+	IF(record.currency == "//CurrencyCode(ex. US$)")
+		WHILE(total != 0)
+			IF(total >= 50)
+				total -=50
+				record.coinDenoCount1++
+			IF(total....
+				.... // Repeat for all coin Denominations
+		END WHILE
+	END IF
+
+	IF(record.currenc.....
+			......
+			...... // Repeat for other currencies
+
+END calculateChange
+
+findCustomer(Array<Customer> record)
+	    DISPLAY "Name: "
+	INPUT customerName
+	BOOL found = FALSE
+
+	FOR EACH customer IN records
+        	IF (customerName == customer.name) 
+			SET found = TRUE
+			printCustomerDetails(customer)
+        	ENDIF
+    	ENDFOR
+    
+    	IF NOT found THEN
+        DISPLAY "Not found"
+    	END IF
+
+END FindCustomer
+
+
+printCustomerDetails(Customer customer)
+	PRINT ("Customer: " + customer.name + " " + customer.coinAmount + " cents in" +  customer.currency + " Change: ")
+
+	IF(record.currency = "//currency code (Ex. US$)")
+		IF (record.coinDenoCount1 != 0)
+		PRINT ("50 Cents: " + record.coinDenoCount1)
+		IF (record.coinDen... //Repeat for all coin denominations
+	IF(record.curr... 
+		      ...
+		      ... //Repeat for other currencies
+END PrintCustomerDetails
+
+printChange(Array<Customer> records)
+	OUTPUT FILE("change.csv")
+
+	FOR(int i = 0; i < records.size ;i++)
+		PRINT (records.name + ","
+			records.coinAmount + " cents in "
+			records.currency + " is "
+			records.coinDenoCount1 + ","
+			records.coinDenoCount2 + ","
+			records.coinDenoCount3 + ","
+			records.coinDenoCount4)
+	END FOR
+
+END printChange

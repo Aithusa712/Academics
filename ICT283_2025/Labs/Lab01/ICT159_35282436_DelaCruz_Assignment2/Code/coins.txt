@@ -1,0 +1,4 @@
+Jane 30 cents in AU$
+Joe  85 cents in EUR
+Jane 25 cents in AU$
+Jane 15 cents in US$

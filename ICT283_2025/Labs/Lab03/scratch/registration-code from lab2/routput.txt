@@ -1,0 +1,14 @@
+Student ID: 35282436
+Semester:   1
+  Unit ID:  ICT_283
+  Unit Name: Data_Structures
+  Credits: 4
+  Mark: 87
+
+  Unit ID:  MSP_200
+  Unit Name: Managing_Career
+  Credits: 2
+  Mark: 94
+
+Number of Units = 2
+Total credits   = 6

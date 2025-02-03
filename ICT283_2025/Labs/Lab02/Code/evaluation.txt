@@ -1,0 +1,12 @@
+The program can:
+- Read .txt files
+- Insert customer information from .txt files into a data structure
+- Calculate change amount into coin denomination for every customer
+- Handle user input.
+- Find and display Customer and their information.
+- Generate/update .csv files with customer information
+
+
+The program cannot:
+- Accept characters other than 0-9 or else it will go into an infinite loop.
+- Accept customer information with different phrasing or format.

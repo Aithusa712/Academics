@@ -1,0 +1,4 @@
+<map id="Registration::GetResult" name="Registration::GetResult">
+<area shape="rect" id="node1" title="Returns a Result object Returns a targeted (idx parameter) Result object from an Array of Result." alt="" coords="139,5,296,32"/>
+<area shape="rect" id="node2" href="$_registration_8h.html#a11fafbd3f2e74179c493a4e8df2d9931" title="overloading the &lt;&lt; operator" alt="" coords="5,5,91,32"/>
+</map>

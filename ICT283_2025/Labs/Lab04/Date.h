@@ -87,7 +87,7 @@ private:
 
   int m_year; ///< contains the year value
 
-}
+};
 
 /// overloading the << operator
 ostream &operator<<(ostream &os, const Date &date);

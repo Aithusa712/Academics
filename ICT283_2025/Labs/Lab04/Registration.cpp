@@ -1,5 +1,4 @@
 #include "Registration.h"
-#include "Result.h"
 
 // Default Constructor
 
@@ -70,33 +69,5 @@ istream &operator>>(istream &input, Registration &registration) {
     input >> tempResult;
     registration.SetResult(i, tempResult);
   }
-  return input;
-}
-
-
-ostream &operator<<(ostream &os, const Result &R) {
-
-  int day = R.GetDate().GetDay();
-  int month = R.GetDate().GetMonth();
-  int year = R.GetDate().GetYear();
-  string date = R.ConvertDate(day, month, year); // Call Helper function to convert integer date values into string value
-
-  os << R.GetUnit();
-  os << "  Mark: " << R.GetMarks() << '\n';
-  os << "  Date: " << date << '\n';
-  return os;
-}
-
-istream &operator>>(istream &input, Result &R) {
-
-  Unit tempUnit;
-  Date tempDate;
-  int tempMarks;
-
-  input >> tempUnit >> tempMarks >> tempDate;
-
-  R.SetUnit(tempUnit);
-  R.SetMarks(tempMarks);
-  R.SetDate(tempDate);
   return input;
 }

@@ -18,5 +18,11 @@ Semester:   1
   Mark: 97
   Date: 7 July 2025
 
-Number of Units = 3
-Total credits   = 8
+  Unit ID:  MSP 700
+  Unit Name: Managing SomethingElseElse
+  Credits: 2
+  Mark: 94
+  Date: 6 February 2025
+
+Number of Units = 4
+Total credits   = 10

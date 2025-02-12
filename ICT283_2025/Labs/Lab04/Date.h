@@ -93,5 +93,7 @@ private:
 ostream &operator<<(ostream &os, const Date &date);
 /// overloading the >> operator
 istream &operator>>(istream &input, Date &date);
+/// Helper Function to convert the date's integer form into readable string
+string ConvertDate (int day, int month, int year);
 
 #endif

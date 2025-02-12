@@ -1,6 +1,7 @@
 #ifndef DATE_H
 #define DATE_H
 
+#include <iomanip>
 #include <iostream>
 using namespace std;
 
@@ -84,9 +85,10 @@ private:
 
   int m_month;  ///< contains the month value
 
-    int m_year; ///< contains the year value
+  int m_year; ///< contains the year value
 
-};
+}
+
 /// overloading the << operator
 ostream &operator<<(ostream &os, const Date &date);
 /// overloading the >> operator

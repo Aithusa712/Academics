@@ -24,6 +24,10 @@ using namespace std;
 
 class Date {
 public:
+  /**
+   * @brief Constructor
+   * @details Initializes date with default values
+   */
   Date();
   
   /**
@@ -76,12 +80,12 @@ public:
   void SetYear(int year);
 
 private:
-  /// contains the day value
-  int m_day;
-  /// contains the month value
-  int m_month;
-  /// contains the year value
-  int m_year;
+  int m_day; ///< contains the day value
+
+  int m_month;  ///< contains the month value
+
+    int m_year; ///< contains the year value
+
 };
 /// overloading the << operator
 ostream &operator<<(ostream &os, const Date &date);

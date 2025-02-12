@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['unit_70',['Unit',['../class_unit.html#a8e46f663a95736c8002d85ab271a7581',1,'Unit::Unit()'],['../class_unit.html#addba0193993823f9f532350d3dc3209f',1,'Unit::Unit(const string unitName, const string unitId, unsigned credits)']]]
+  ['registration_0',['Registration',['../classRegistration.html#aac811faf22fe96a7f657a282d6d679ab',1,'Registration']]],
+  ['result_1',['Result',['../classResult.html#a90f44667e23d25ccdeac37f00a74657b',1,'Result']]]
 ];

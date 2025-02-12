@@ -4,9 +4,6 @@
 #include "Unit.h"
 #include "Date.h"
 
-#include <fstream>
-#include <iostream>
-#include <ostream>
 
 using namespace std;
 
@@ -33,6 +30,10 @@ using namespace std;
 
 class Result {
 public:
+  /**
+   * @brief Constructor
+   * @details Initializes Result with default values
+   */
   Result();
   /**
    * @brief  Returns the credit value
@@ -51,8 +52,14 @@ public:
    * @return Unit
    */
   Unit GetUnit() const;
-  //insert doxygen here
 
+  /**
+   * @brief  Returns the Date object stored in this class
+   *
+   * I use this to access other function that is a part of the Date class
+   *
+   * @return Date
+   */  
   Date GetDate() const;
   /**
    * @brief  Returns the value of marks stored in this class
@@ -96,7 +103,7 @@ public:
    *
    * @return string
    */ 
-  string convertDate (int day, int month, int year) const;
+  string ConvertDate (int day, int month, int year) const;
 private:
   /// contains unit details
   Unit m_unit;

@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['unit_32',['Unit',['../class_unit.html',1,'Unit'],['../class_unit.html#a8e46f663a95736c8002d85ab271a7581',1,'Unit::Unit()'],['../class_unit.html#addba0193993823f9f532350d3dc3209f',1,'Unit::Unit(const string unitName, const string unitId, unsigned credits)']]],
-  ['unit_2ecpp_33',['Unit.cpp',['../_unit_8cpp.html',1,'']]],
-  ['unit_2eh_34',['Unit.h',['../_unit_8h.html',1,'']]]
+  ['registration_0',['Registration',['../classRegistration.html',1,'Registration'],['../classRegistration.html#aac811faf22fe96a7f657a282d6d679ab',1,'Registration::Registration()']]],
+  ['registration_2ecpp_1',['Registration.cpp',['../Registration_8cpp.html',1,'']]],
+  ['registration_2eh_2',['Registration.h',['../Registration_8h.html',1,'']]],
+  ['result_3',['Result',['../classResult.html',1,'Result'],['../classResult.html#a90f44667e23d25ccdeac37f00a74657b',1,'Result::Result()']]],
+  ['result_2ecpp_4',['Result.cpp',['../Result_8cpp.html',1,'']]],
+  ['result_2eh_5',['Result.h',['../Result_8h.html',1,'']]]
 ];

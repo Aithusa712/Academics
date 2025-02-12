@@ -1,0 +1,5 @@
+<map id="Unit::GetUnitName" name="Unit::GetUnitName">
+<area shape="rect" id="Node000001" title="Returns the value stored in unitName." alt="" coords="138,5,271,32"/>
+<area shape="rect" id="Node000002" href="$Unit_8cpp.html#aa9e3ba68bb560f2809ba004eeb489983" title="overloading the &lt;&lt; operator" alt="" coords="5,5,90,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,21,90,21,90,16,122,16"/>
+</map>

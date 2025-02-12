@@ -2,9 +2,6 @@
 #define REGISTRATION_H
 
 #include "Result.h"
-#include <iostream>
-
-using namespace std;
 
 /**
  * @class Registration
@@ -30,6 +27,10 @@ const int MaxResults = 10;
 
 class Registration {
 public:
+  /**
+   * @brief Constructor
+   * @details Initializes Registration with default values
+   */
   Registration();
   /**
    * @brief  Returns the sum of credits from each Unit object from the Array of

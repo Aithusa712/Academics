@@ -28,7 +28,7 @@ void Result::SetMarks(int marks) { m_marks = marks; }
 
 // Helper Function
 
-string Result::convertDate (int day, int month, int year) const{
+string Result::ConvertDate (int day, int month, int year) const{
 
   string s_day = "";
   string s_year = "";
@@ -88,7 +88,7 @@ ostream &operator<<(ostream &os, const Result &R) {
   int day = R.GetDate().GetDay();
   int month = R.GetDate().GetMonth();
   int year = R.GetDate().GetYear();
-  string date = R.convertDate(day, month, year); // Call Helper function to convert integer date values into string value
+  string date = R.ConvertDate(day, month, year); // Call Helper function to convert integer date values into string value
 
   os << R.GetUnit();
   os << "  Mark: " << R.GetMarks() << '\n';

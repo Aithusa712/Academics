@@ -26,6 +26,10 @@ using namespace std;
 
 class Unit {
 public:
+  /**
+   * @brief Constructor
+   * @details Initializes Unit with default values
+   */
   Unit();
   /**
    * @brief  Returns the value stored in unitName

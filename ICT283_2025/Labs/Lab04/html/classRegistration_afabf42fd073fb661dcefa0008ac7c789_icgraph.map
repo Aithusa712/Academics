@@ -1,0 +1,6 @@
+<map id="Registration::GetCredits" name="Registration::GetCredits">
+<area shape="rect" id="Node000001" title="Returns the sum of credits from each Unit object from the Array of Result object." alt="" coords="103,29,265,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="210,16,201,10,184,8,168,10,160,14,158,20,162,28,157,30,152,21,156,11,166,5,184,3,203,5,213,12"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,29,55,56"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="87,45,55,45,55,40,87,40"/>
+</map>

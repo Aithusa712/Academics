@@ -1,0 +1,7 @@
+<map id="operator&lt;&lt;" name="operator&lt;&lt;">
+<area shape="rect" id="node1" title="overloading the &lt;&lt; operator" alt="" coords="5,81,91,108"/>
+<area shape="rect" id="node2" href="$class_registration.html#a729a2d6ae08aefd2dbe10ec7b3e5ce48" title="Returns the value of count stored in this class." alt="" coords="149,5,304,32"/>
+<area shape="rect" id="node3" href="$class_registration.html#a493c27ebc2641917d4ccf934500eb726" title="Returns a Result object Returns a targeted (idx parameter) Result object from an Array of Result." alt="" coords="148,56,305,83"/>
+<area shape="rect" id="node4" href="$class_registration.html#a4c1f5de4ca28183644910b90de6856eb" title="Returns the value of semester stored in this class." alt="" coords="139,107,315,133"/>
+<area shape="rect" id="node5" href="$class_registration.html#ab8864cecbcbc90e8a70e9d004af31925" title="Returns the value of studentId stored in this class." alt="" coords="139,157,314,184"/>
+</map>

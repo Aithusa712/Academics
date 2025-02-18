@@ -1,0 +1,8 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,55,69"/>
+<area shape="rect" id="Node000002" href="$classRegistration.html#a8e26bff537aa274bf94cebf7b087cc3b" title="Returns the value of count stored in this class." alt="" coords="106,5,262,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,47,111,34,112,39,56,53"/>
+<area shape="rect" id="Node000003" href="$classRegistration.html#afabf42fd073fb661dcefa0008ac7c789" title="Returns the sum of credits from each Unit object from the Array of Result object." alt="" coords="103,80,265,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,59,112,73,111,78,55,65"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="157,81,152,71,156,62,166,56,184,53,203,56,213,63,210,67,201,61,184,59,168,61,160,65,158,71,162,78"/>
+</map>

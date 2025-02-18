@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1573372721 source:d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\code\from desktop\lights\constructors\constructors.cpp
+	"Light.h"
+	<vector>
+
+1573368042 d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\code\from desktop\lights\constructors\light.h
+	<iostream>
+	<string>
+
+1573368247 source:d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\code\from desktop\lights\constructors\light.cpp
+	"Light.h"
+
+1647347743 source:d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic05\content\light testing lec-13 code\constructors.cpp
+	"Light.h"
+	<vector>
+
+1647347960 d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic05\content\light testing lec-13 code\light.h
+	<iostream>
+	<string>
+
+1573368247 source:d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic05\content\light testing lec-13 code\light.cpp
+	"Light.h"
+
+1647347743 source:d:\dell\data\od\tmp\data01\onedrive\units\ict283\topicslms\topic05\content\light testing lec-13 code\constructors.cpp
+	"Light.h"
+	<vector>
+
+1679475121 d:\dell\data\od\tmp\data01\onedrive\units\ict283\topicslms\topic05\content\light testing lec-13 code\light.h
+	<iostream>
+	<string>
+
+1647348123 source:d:\dell\data\od\tmp\data01\onedrive\units\ict283\topicslms\topic05\content\light testing lec-13 code\light.cpp
+	"Light.h"
+

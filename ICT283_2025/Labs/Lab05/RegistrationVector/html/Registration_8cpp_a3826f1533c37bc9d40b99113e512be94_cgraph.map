@@ -1,0 +1,13 @@
+<map id="operator&gt;&gt;" name="operator&gt;&gt;">
+<area shape="rect" id="Node000001" title="overloading the &gt;&gt; operator" alt="" coords="5,107,90,133"/>
+<area shape="rect" id="Node000002" href="$classRegistration.html#a8e26bff537aa274bf94cebf7b087cc3b" title="Returns the value of count stored in this class." alt="" coords="148,5,303,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,104,92,73,136,42,149,36,151,40,139,46,96,77,63,108"/>
+<area shape="rect" id="Node000003" href="$classRegistration.html#a0267d16441c27bce03f341ef4d35a469" title="Set the count value stored in this class." alt="" coords="148,56,302,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="89,106,160,85,162,90,91,111"/>
+<area shape="rect" id="Node000004" href="$classRegistration.html#a1b8f67fb70532426fa4214c84fd9eec1" title="Allocate a Result object into the target index of a Result Object Array inside this class." alt="" coords="147,107,304,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="90,117,131,117,131,123,90,123"/>
+<area shape="rect" id="Node000005" href="$classRegistration.html#a680410308e663cdbd23c0eb0ac9ad542" title="Set the semester value stored in this class." alt="" coords="138,157,313,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="91,129,162,150,160,155,89,134"/>
+<area shape="rect" id="Node000006" href="$classRegistration.html#aff8c1a738f6ea932a230712db262180e" title="Set the studentId value stored in this class." alt="" coords="138,208,313,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="63,132,96,163,139,194,151,200,149,204,136,198,92,167,59,136"/>
+</map>

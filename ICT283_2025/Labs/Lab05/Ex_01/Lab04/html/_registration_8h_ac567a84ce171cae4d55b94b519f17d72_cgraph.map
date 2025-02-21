@@ -1,8 +1,0 @@
-<map id="operator&gt;&gt;" name="operator&gt;&gt;">
-<area shape="rect" id="node1" title="overloading the &gt;&gt; operator" alt="" coords="5,107,91,133"/>
-<area shape="rect" id="node2" href="$class_registration.html#a729a2d6ae08aefd2dbe10ec7b3e5ce48" title="Returns the value of count stored in this class." alt="" coords="149,5,303,32"/>
-<area shape="rect" id="node3" href="$class_registration.html#a8806e95a1f1159a9c0b317bcb6104a6f" title="Set the count value stored in this class." alt="" coords="149,56,303,83"/>
-<area shape="rect" id="node4" href="$class_registration.html#abb41da56002bf64e9db2e4a09dd5bcfa" title="Allocate a Result object into the target index of a Result Object Array inside this class." alt="" coords="148,107,304,133"/>
-<area shape="rect" id="node5" href="$class_registration.html#a30bc191dbd0ec35e961c6682b2833a3b" title="Set the semester value stored in this class." alt="" coords="139,157,313,184"/>
-<area shape="rect" id="node6" href="$class_registration.html#aff8c1a738f6ea932a230712db262180e" title="Set the studentId value stored in this class." alt="" coords="139,208,313,235"/>
-</map>

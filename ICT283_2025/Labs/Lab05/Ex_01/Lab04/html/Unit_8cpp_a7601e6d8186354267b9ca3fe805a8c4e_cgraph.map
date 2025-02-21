@@ -1,9 +1,0 @@
-<map id="operator&gt;&gt;" name="operator&gt;&gt;">
-<area shape="rect" id="Node000001" title="overloading the &gt;&gt; operator" alt="" coords="5,56,90,83"/>
-<area shape="rect" id="Node000002" href="$classUnit.html#a8dfd5c0b5feb22e7e9c482b463accf0b" title="Sets the credits value stored in this class." alt="" coords="146,5,262,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,53,145,35,147,40,91,58"/>
-<area shape="rect" id="Node000003" href="$classUnit.html#af556970e2cde1c08c3ae7b42582fdd64" title="Sets the unitId value stored in this class." alt="" coords="150,56,258,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="90,67,134,67,134,72,90,72"/>
-<area shape="rect" id="Node000004" href="$classUnit.html#afcdc59c5f5ee62cffa856fa8dbbde04a" title="Sets the unitName value stored in this class." alt="" coords="138,107,270,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="91,80,147,99,145,104,89,85"/>
-</map>

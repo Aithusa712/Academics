@@ -1,5 +1,0 @@
-<map id="Unit::GetCredits" name="Unit::GetCredits">
-<area shape="rect" id="node1" title="Returns the value stored in credits." alt="" coords="183,31,297,57"/>
-<area shape="rect" id="node2" href="$class_result.html#ab4772c61e1094931099000f5792aeaa6" title="Returns the credit value." alt="" coords="5,5,135,32"/>
-<area shape="rect" id="node3" href="$_unit_8h.html#ad23498e5a1b05ae4bde29e8592984fe7" title="overloading the &lt;&lt; operator" alt="" coords="27,56,113,83"/>
-</map>

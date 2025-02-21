@@ -1,0 +1,64 @@
+data.txt - contains a list of numbers
+	 - the first number in the txt file is the count of (N) of floating point values
+
+ --------- Program ---------
+
+ - Extract the numbers from data.txt
+ - convert and assign the numbers into a dynamic array (Vector) of float values
+ - print the following value:
+ 	The number of floating point values (N): 
+	The mean of the floating point values:
+	The sample standard deviation (s): 
+- use sqrt() from <cmath> library to get the squareroot
+
+Algorithm to get mean and sample standard deviation, and data extraction:
+
+
+----------------------------------------------------
+
+function GetMean(array)
+
+sum = 0
+	for (i = 0; i < array.size; i++)
+	sum += array(i)
+	end for
+
+return sum /= array.size
+
+
+end GetMean()
+
+-----------------------------------------------------
+
+function GetSsd(mean, array)
+
+sum = 0 
+	for(i = 0; i < array.size; i++)
+	sum += (array(i)-mean)* (array(i)-mean)
+	end for
+
+sum = sqrt(sum/(array.size - 1))
+
+return sqrt;
+
+end GetSsd
+
+-----------------------------------------------------
+
+function extractData(dataArray, count)
+import ifstream
+imporst sstream
+
+line = ""
+count = 0
+temp = ""
+ifstream file
+
+file.open(data.txt)
+
+	while(getline(file, line))
+	stringstream ss(line)
+		while(ss >> temp)
+		dataArray.push(temp)
+		end while
+	end while

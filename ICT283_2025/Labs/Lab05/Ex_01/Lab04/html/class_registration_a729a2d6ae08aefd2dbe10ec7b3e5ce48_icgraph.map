@@ -1,5 +1,0 @@
-<map id="Registration::GetCount" name="Registration::GetCount">
-<area shape="rect" id="node1" title="Returns the value of count stored in this class." alt="" coords="139,31,293,57"/>
-<area shape="rect" id="node2" href="$_registration_8h.html#a11fafbd3f2e74179c493a4e8df2d9931" title="overloading the &lt;&lt; operator" alt="" coords="5,5,91,32"/>
-<area shape="rect" id="node3" href="$_registration_8h.html#ac567a84ce171cae4d55b94b519f17d72" title="overloading the &gt;&gt; operator" alt="" coords="5,56,91,83"/>
-</map>

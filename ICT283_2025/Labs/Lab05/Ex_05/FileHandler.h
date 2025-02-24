@@ -39,11 +39,11 @@ public:
 
     istringstream ss(line);
 
-    // int ctest = 0;
+      int ctest = 0;
     while (getline(ss, token, ',')) {
       vecHeader.push(token);
-      // cout << "Header" << ctest << " = [" << trim(token) << "]" << endl;
-      // ctest++;
+      cout << "Header" << ctest << " = [" << token<< "]" << endl;
+      ctest++;
     }
 
     ss.clear();

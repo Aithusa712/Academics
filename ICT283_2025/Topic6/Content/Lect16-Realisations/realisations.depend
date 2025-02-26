@@ -1,0 +1,237 @@
+# depslib dependency file v1.0
+1171258712 source:c:\users\rai\desktop\new folder\ict209\new folder (2)\topic06\realisations\realisations\rectangle.cpp
+	"Rectangle.h"
+
+1396850691 c:\users\rai\desktop\new folder\ict209\new folder (2)\topic06\realisations\realisations\rectangle.h
+	<iostream>
+	"Shape.h"
+
+1396850691 c:\users\rai\desktop\new folder\ict209\new folder (2)\topic06\realisations\realisations\shape.h
+	<iostream>
+	<string>
+
+1238584088 source:c:\users\rai\desktop\new folder\ict209\new folder (2)\topic06\realisations\realisations\shape.cpp
+	"Shape.h"
+
+1171258668 source:c:\users\rai\desktop\new folder\ict209\new folder (2)\topic06\realisations\realisations\square.cpp
+	"Square.h"
+
+1396850691 c:\users\rai\desktop\new folder\ict209\new folder (2)\topic06\realisations\realisations\square.h
+	<iostream>
+	"Shape.h"
+
+1171258744 source:c:\users\rai\desktop\new folder\ict209\new folder (2)\topic06\realisations\realisations\triangle.cpp
+	"Triangle.h"
+
+1396850691 c:\users\rai\desktop\new folder\ict209\new folder (2)\topic06\realisations\realisations\triangle.h
+	<iostream>
+	"Shape.h"
+
+1171258712 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\.old14\lectures\topic06\ict283\lect16-realisations\rectangle.cpp
+	"Rectangle.h"
+
+1396850692 \\sphinx\s900391h\units\ict209\_7y9uq~q\.old14\lectures\topic06\ict283\lect16-realisations\rectangle.h
+	<iostream>
+	"Shape.h"
+
+1428910588 \\sphinx\s900391h\units\ict209\_7y9uq~q\.old14\lectures\topic06\ict283\lect16-realisations\shape.h
+	<iostream>
+	<string>
+
+1238584088 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\.old14\lectures\topic06\ict283\lect16-realisations\shape.cpp
+	"Shape.h"
+
+1171258668 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\.old14\lectures\topic06\ict283\lect16-realisations\square.cpp
+	"Square.h"
+
+1428910430 \\sphinx\s900391h\units\ict209\_7y9uq~q\.old14\lectures\topic06\ict283\lect16-realisations\square.h
+	<iostream>
+	"Shape.h"
+
+1428910431 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\.old14\lectures\topic06\ict283\lect16-realisations\triangle.cpp
+	"Triangle.h"
+
+1428910430 \\sphinx\s900391h\units\ict209\_7y9uq~q\.old14\lectures\topic06\ict283\lect16-realisations\triangle.h
+	<iostream>
+	"Shape.h"
+
+1428910431 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\.old14\lectures\topic06\ict283\lect16-realisations\realisations.cpp
+	<vector>
+	<cstring>
+	"Triangle.h"
+	"Square.h"
+	"Rectangle.h"
+
+1171262450 \\sphinx\s900391h\units\ict209\_7y9uq~q\.old14\lectures\topic06\ict283\lect16-realisations\node.h
+
+1428910431 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\lectures\topic06\lect16-realisations\realisations.cpp
+	<vector>
+	<cstring>
+	"Triangle.h"
+	"Square.h"
+	"Rectangle.h"
+
+1460115381 \\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\lectures\topic06\lect16-realisations\triangle.h
+	<iostream>
+	"Shape.h"
+
+1460114997 \\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\lectures\topic06\lect16-realisations\shape.h
+	<string>
+
+1460115235 \\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\lectures\topic06\lect16-realisations\square.h
+	<iostream>
+	"Shape.h"
+
+1460115093 \\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\lectures\topic06\lect16-realisations\rectangle.h
+	<iostream>
+	"Shape.h"
+
+1171258712 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\lectures\topic06\lect16-realisations\rectangle.cpp
+	"Rectangle.h"
+
+1460114917 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\lectures\topic06\lect16-realisations\shape.cpp
+	<iostream>
+	"Shape.h"
+
+1171258668 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\lectures\topic06\lect16-realisations\square.cpp
+	"Square.h"
+
+1428910431 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\lectures\topic06\lect16-realisations\triangle.cpp
+	"Triangle.h"
+
+1485782502 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\topics\2018\topic06\content\lect16-realisations\realisations.cpp
+	<vector>
+	<cstring>
+	"Shape.h"
+	"Triangle.h"
+	"Square.h"
+	"Rectangle.h"
+
+1522756909 \\sphinx\s900391h\units\ict209\_7y9uq~q\topics\2018\topic06\content\lect16-realisations\shape.h
+	<string>
+
+1485783754 \\sphinx\s900391h\units\ict209\_7y9uq~q\topics\2018\topic06\content\lect16-realisations\triangle.h
+	<iostream>
+	"Shape.h"
+
+1522756986 \\sphinx\s900391h\units\ict209\_7y9uq~q\topics\2018\topic06\content\lect16-realisations\square.h
+	<iostream>
+	"Shape.h"
+
+1485783820 \\sphinx\s900391h\units\ict209\_7y9uq~q\topics\2018\topic06\content\lect16-realisations\rectangle.h
+	<iostream>
+	"Shape.h"
+
+1485783932 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\topics\2018\topic06\content\lect16-realisations\rectangle.cpp
+	"Rectangle.h"
+
+1460114918 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\topics\2018\topic06\content\lect16-realisations\shape.cpp
+	<iostream>
+	"Shape.h"
+
+1171258668 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\topics\2018\topic06\content\lect16-realisations\square.cpp
+	"Square.h"
+
+1428910432 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\topics\2018\topic06\content\lect16-realisations\triangle.cpp
+	"Triangle.h"
+
+1554465605 source:d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\rectangle.cpp
+	"Rectangle.h"
+
+1554465623 d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\rectangle.h
+	<iostream>
+	"Shape.h"
+
+1648445333 d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\shape.h
+	<string>
+
+1554465391 source:d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\shape.cpp
+	<iostream>
+	"Shape.h"
+
+1554465676 source:d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\square.cpp
+	"Square.h"
+
+1648445384 d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\square.h
+	<iostream>
+	"Shape.h"
+
+1554465698 source:d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\triangle.cpp
+	"Triangle.h"
+
+1554465720 d:\smr-opti990\d\smr\cloudstor-owncloud\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\triangle.h
+	<iostream>
+	"Shape.h"
+
+1672223185 source:c:\users\sr\data-temp\clodstor\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\realisations.cpp
+	"Shape.h"
+	"Triangle.h"
+	"Square.h"
+	"Rectangle.h"
+	<vector>
+	<cstring>
+
+1672223895 c:\users\sr\data-temp\clodstor\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\shape.h
+	<string>
+
+1648445852 c:\users\sr\data-temp\clodstor\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\triangle.h
+	<iostream>
+	"Shape.h"
+
+1648445796 c:\users\sr\data-temp\clodstor\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\square.h
+	<iostream>
+	"Shape.h"
+
+1648445693 c:\users\sr\data-temp\clodstor\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\rectangle.h
+	"Shape.h"
+	<iostream>
+
+1672223999 source:c:\users\sr\data-temp\clodstor\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\rectangle.cpp
+	"Rectangle.h"
+
+1648445616 source:c:\users\sr\data-temp\clodstor\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\shape.cpp
+	<iostream>
+	"Shape.h"
+
+1648445731 source:c:\users\sr\data-temp\clodstor\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\square.cpp
+	"Square.h"
+
+1648445944 source:c:\users\sr\data-temp\clodstor\units\ict283 ict209\topics\topicslms\topic06\content\lect16-realisations\triangle.cpp
+	"Triangle.h"
+
+1712129648 source:c:\users\sr\onedrive\units\ict283\topicslms\topic06\content\lect16-realisations\realisations.cpp
+	"Shape.h"
+	"Triangle.h"
+	"Square.h"
+	"Rectangle.h"
+	<vector>
+	<cstring>
+
+1712129608 c:\users\sr\onedrive\units\ict283\topicslms\topic06\content\lect16-realisations\shape.h
+	<string>
+
+1712130152 c:\users\sr\onedrive\units\ict283\topicslms\topic06\content\lect16-realisations\triangle.h
+	<iostream>
+	"Shape.h"
+
+1712129953 c:\users\sr\onedrive\units\ict283\topicslms\topic06\content\lect16-realisations\square.h
+	"Shape.h"
+	<iostream>
+
+1712130105 c:\users\sr\onedrive\units\ict283\topicslms\topic06\content\lect16-realisations\rectangle.h
+	"Shape.h"
+	<iostream>
+
+1712130277 source:c:\users\sr\onedrive\units\ict283\topicslms\topic06\content\lect16-realisations\rectangle.cpp
+	"Rectangle.h"
+
+1712130330 source:c:\users\sr\onedrive\units\ict283\topicslms\topic06\content\lect16-realisations\shape.cpp
+	<iostream>
+	"Shape.h"
+
+1712130068 source:c:\users\sr\onedrive\units\ict283\topicslms\topic06\content\lect16-realisations\square.cpp
+	"Square.h"
+
+1648445944 source:c:\users\sr\onedrive\units\ict283\topicslms\topic06\content\lect16-realisations\triangle.cpp
+	"Triangle.h"
+

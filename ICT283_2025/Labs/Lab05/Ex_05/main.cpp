@@ -31,14 +31,15 @@ int main() {
 
   handleFile.readCSV("data/MetData-31-3.csv", wind_data);
 
-  for (int i = 0; i < wind_data.size(); i++) {
-    cout << wind_data[i].speed << ", ";
-  }
+  /*for (int i = 0; i < wind_data.size(); i++) {*/
+  /*  cout << wind_data[i].speed << ", ";*/
+  /*}*/
   mean = calculateMean(wind_data);
   ssd = calculateSSD(wind_data, mean);
-  cout << "\n The number of floating point values (N):" << wind_data.size() << endl
-       << "The mean of the floating point values:" <<  mean <<
-      endl << "The sample standard deviation (s):" << ssd << endl;
+  cout << "\nThe number of floating point values (N):" << wind_data.size()
+       << endl
+       << "The mean of the floating point values:" << mean << endl
+       << "The sample standard deviation (s):" << ssd << endl;
 
   return 0;
 }

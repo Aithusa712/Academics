@@ -42,13 +42,13 @@ istream &operator>>(istream &input, Date &date) {
 
 ostream &operator<<(ostream &os, const Date &date) {
 
-  os << date.GetDay() << " " << date.GetMonth()<< " " << date.GetYear();
+  os << date.GetDay() << " " << date.GetMonth() << " " << date.GetYear();
   return os;
 }
 
 // Helper Function
 
-string ConvertDate (int day, int month, int year){
+string ConvertDate(int day, int month, int year) {
 
   string s_day = "";
   string s_year = "";
@@ -56,7 +56,7 @@ string ConvertDate (int day, int month, int year){
 
   s_day = to_string(day);
   s_year = to_string(year);
-  
+
   switch (month) {
   case 1:
     s_month = "January";

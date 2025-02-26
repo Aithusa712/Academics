@@ -14,6 +14,13 @@ using namespace std;
 class FileHandler {
 
 public:
+  //  NOTE:  When running in a linux or unix based environment make sure file
+  //  format of the csv file is set to unix
+  //         else it will retrieve the '\r'
+
+  //  TODO:  Remove the trim function if converting csv files into UNIX format
+  //  does not cause any issue in windows
+
   string trim(const std::string &input) {
 
     string result;
@@ -39,11 +46,18 @@ public:
 
     istringstream ss(line);
 
-      int ctest = 0;
+    /*int ctest = 0;*/
+
+    //  TODO:  Check if running a unix format csv file in windows causes any
+    //  issues
     while (getline(ss, token, ',')) {
       vecHeader.push(token);
-      cout << "Header" << ctest << " = [" << token<< "]" << endl;
-      ctest++;
+
+      /*cout*/
+      /*    << "Header" << ctest << " = [" << token << "]"*/
+      /*    << endl; // TODO: Remove this line and use a unit testing file
+       * instead*/
+      /*ctest++;*/
     }
 
     ss.clear();

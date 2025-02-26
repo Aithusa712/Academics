@@ -5,32 +5,85 @@
 // Follow the style in modelfile.h
 
 #include <stdexcept>
+/**
+ * @brief A custom vector class template implementation
+ * @tparam T The type of elements stored in the vector
+ */
 template <class T>
 class Vector // This is NOT the std::vector.
 {
 public:
+  /**
+   * @brief Default constructor
+   */
   Vector();
+
+  /**
+   * @brief Copy constructor
+   * @param t Vector to copy from
+   */
   Vector(const Vector<T> &t);
+
+  /**
+   * @brief Constructor with initial size
+   * @param n Initial size of the vector
+   */
   Vector(int n); // done for you
+
+  /**
+   * @brief Destructor
+   */
   ~Vector();
+
+  /**
+   * @brief Adds an element to the end of the vector
+   * @param data Element to be added
+   */
   void push(T data);
+
+  /**
+   * @brief Access operator for modifiable elements
+   * @param index Position of the element to access
+   * @return Reference to the element at specified index
+   * @throw std::out_of_range if index is invalid
+   */
   T &operator[](int index);
+
+  /**
+   * @brief Access operator for const elements
+   * @param index Position of the element to access
+   * @return Const reference to the element at specified index
+   * @throw std::out_of_range if index is invalid
+   */
   const T &operator[](int index) const;
+
+  /**
+   * @brief Assignment operator
+   * @param other Vector to copy from
+   * @return Reference to this vector
+   */
   Vector<T> &operator=(const Vector<T> &other);
+
+  /**
+   * @brief Gets the current size of the vector
+   * @return Number of elements in the vector
+   */
   int size() const;
+
+  /**
+   * @brief Removes all elements from the vector
+   */
   void Clear();
 
-  // you fill in the rest and include Doxygen comments
-  // make sure only method declarations are here, otherwise
-  // no marks can be given.
-  // So do not clutter the class declaration and keep the class
-  // interface clean.
-  // operator[] is required/mandatory
 private:
+  /**
+   * @brief Increases the capacity of the internal array
+   */
   void Resize();
-  T *arr;
-  int current_size;
-  int capacity;
+
+  T *arr;           ///< Pointer to the dynamic array
+  int current_size; ///< Current number of elements
+  int capacity;     ///< Current capacity of the array
 }; // end of interface/declaration of the template class
 
 template <typename T> Vector<T>::Vector() {
@@ -109,7 +162,7 @@ template <typename T> Vector<T> &Vector<T>::operator=(const Vector<T> &other) {
 template <typename T> void Vector<T>::Clear() {
   delete[] arr;
   arr = new T[1];
-  capacity = 1;   
+  capacity = 1;
   current_size = 0;
 }
 

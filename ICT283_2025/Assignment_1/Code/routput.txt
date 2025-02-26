@@ -1,0 +1,28 @@
+Student ID: 35282436
+Semester:   1
+  Unit ID:  ICT 283
+  Unit Name: Data Structures
+  Credits: 4
+  Mark: 87
+  Date: 2 December 2025
+
+  Unit ID:  MSP 200
+  Unit Name: Managing Career
+  Credits: 2
+  Mark: 94
+  Date: 5 August 2025
+
+  Unit ID:  MSP 500
+  Unit Name: Managing SomethingElse
+  Credits: 2
+  Mark: 97
+  Date: 7 July 2025
+
+  Unit ID:  MSP 700
+  Unit Name: Managing SomethingElseElse
+  Credits: 2
+  Mark: 94
+  Date: 6 February 2025
+
+Number of Units = 4
+Total credits   = 10

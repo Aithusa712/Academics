@@ -6,24 +6,25 @@
 #include <ostream>
 using namespace std; // check textbook for details of the namespace concept
 
-void prompt(SensorLog &sensor_data, bool &exit);
+void prompt(SensorLog &sensor_data, Calculator &calculate, bool &exit);
 int Prompt_Year(string year, bool &valid_year);
 int Month_to_Int(string month);
 
 int main() {
   SensorLog sensor_data;
   FileHandler handleFile;
+  Calculator calculate;
   handleFile.readSource("data/data_source.txt", sensor_data);
   bool exit = false;
 
   while (!exit) {
-    prompt(sensor_data, exit);
+    prompt(sensor_data, calculate, exit);
   }
 
   return 0;
 }
 
-void prompt(SensorLog &sensor_data, bool &exit) {
+void prompt(SensorLog &sensor_data, Calculator &calculate, bool &exit) {
 
   cout
       << "1. The average wind speed and sample standard deviation for this\n"
@@ -48,6 +49,7 @@ void prompt(SensorLog &sensor_data, bool &exit) {
   string year = "";
   int month_int = 0;
   int year_int = 0;
+  bool found = false;
   int choice;
   bool valid_month = false;
   bool valid_year = false;
@@ -62,12 +64,30 @@ void prompt(SensorLog &sensor_data, bool &exit) {
       if (Month_to_Int(month) != 0) {
         valid_month = true;
       } else {
-        cout << "\n!!!Enter Valid Month!!!";
+        cout << "\n!!!Enter Valid Month!!!" << endl;
       }
     }
     month_int = Month_to_Int(month);
     year_int = Prompt_Year(year, valid_year);
 
+    // TODO: Add an assumption: For every month that is available there is at
+    // least at the minimum of two records logged
+    for (int index = 0; index < sensor_data.size(); index++) {
+      if (sensor_data[index].date.GetYear() == year_int &&
+          sensor_data[index].date.GetMonth() == month_int) {
+        found = true;
+      }
+    }
+    if (found) {
+      float average = calculate.AverageSpeed(sensor_data, month_int, year_int);
+      float standard_deviation =
+          calculate.StdDevSpeed(sensor_data, average, month_int, year_int);
+      cout << month << year << ":" << endl
+           << "Average Speed: " << average << endl
+           << "Sample stdev: " << standard_deviation << endl;
+    } else {
+      cout << month << year << ": No Data" << endl;
+    }
     break;
   case 2:
 
@@ -82,7 +102,7 @@ void prompt(SensorLog &sensor_data, bool &exit) {
   }
 }
 
-int Prompt_Year(string year, bool valid_year) {
+int Prompt_Year(string year, bool &valid_year) {
   int yearNum;
   while (!valid_year) {
     cout << "\nEnter Year (numeric only): ";
@@ -109,11 +129,12 @@ int Month_to_Int(string month) {
   string month_arr[12] = {"January",   "February", "March",     "April",
                           "May",       "June",     "July",      "August",
                           "September", "October",  " November", "December"};
-  string month_arr_small[12] = {
+  string month_arr_small_case[12] = {
       "january", "february", "march",     "april",   "may",       "june",
       "july",    "august",   "september", "october", " november", "december"};
+
   for (int index = 0; index < 12; index++) {
-    if (month == month_arr[index]) {
+    if (month == month_arr[index] || month == month_arr_small_case[index]) {
       return index + 1;
     }
   }

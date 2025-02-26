@@ -95,8 +95,11 @@ float Calculator::StdDevSolarRadiation(SensorLog &sensor_data, float mean,
   int count = 0;
   for (int index = 0; index < sensor_data.size(); index++) {
     if (sensor_data[index].date.GetYear() == year &&
-        sensor_data[index].date.GetMonth() == month) {
-      float diff = sensor_data[index].solar_radiation - mean;
+        sensor_data[index].date.GetMonth() == month &&
+        sensor_data[index].solar_radiation > 100) {
+      float solar_radiation_kWh =
+          sensor_data[index].solar_radiation * (1.0f / 6.0f) / 1000.0f;
+      float diff = solar_radiation_kWh - mean;
       sum_sqrt += diff * diff;
       count++;
     }

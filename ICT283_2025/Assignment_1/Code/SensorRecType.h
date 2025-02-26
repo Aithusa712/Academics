@@ -1,3 +1,5 @@
+#ifndef SENSOR_REC_TYPE_H
+#define SENSOR_REC_TYPE_H
 #include "Date.h" // your Date class from a previous lab
 // --TODO: Date.h
 //
@@ -14,3 +16,4 @@ typedef struct {
 } SensorRecType; // Sensor Record Type
 
 typedef Vector<SensorRecType> SensorLog;
+#endif

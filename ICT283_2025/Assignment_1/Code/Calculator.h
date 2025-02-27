@@ -15,7 +15,7 @@ public:
   float StdDevSpeed(SensorLog &sensor_data, float mean, int month, int year);
   float StdDevTemperature(SensorLog &sensor_data, float mean, int month,
                           int year);
-  float StdDevSolarRadiation(SensorLog &sensor_data, float mean, int month,
-                             int year);
+  float TotalSolarRadiation(SensorLog &sensor_data, int month, int year);
 };
+float roundOff(float &value); // subroutine
 #endif

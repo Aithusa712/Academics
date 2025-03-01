@@ -4,12 +4,18 @@
 #include "SensorRecType.h"
 #include <sstream>
 
+// Prompt Menu prompt and handles all handle functions
 void Menu::prompt(const SensorLog &sensor_data, bool &exit) const {
+
+  // Initialize local variables
   string choice_string = "";
   int choice = 0;
   bool valid_choice = false;
+
+  // While loop to validate correct user input
   while (!valid_choice) {
 
+    // The prompt to be prompted
     cout << endl;
     cout << "\n1. The average wind speed and sample standard deviation for "
             "this\n"
@@ -33,27 +39,40 @@ void Menu::prompt(const SensorLog &sensor_data, bool &exit) const {
 
     cin >> choice_string;
 
+    // Try catch to catch any invalid user input such range or non-numerical
+    // string
     try {
+      // Check if the input the user entered contains any non digit, if yes,
+      // throw choice_string (string).
       for (char c : choice_string) {
         if (!isdigit(c)) {
           throw choice_string;
         }
       }
+      // If no exception has been thrown, convert the string into integer.
       choice = stoi(choice_string);
 
+      // The condition checks if the user input is within range [1-5], if yes,
+      // throw choice (integer), else assign valid_choice as 'true' to exit
+      // loop.
       if (choice < 1 || choice > 5) {
         throw choice;
       } else {
         valid_choice = true;
       }
-    } catch (const string &error) {
-
+    }
+    // Catch any thrown string
+    catch (const string &error) {
       cout << "Error: Please enter a valid numerical number\n\n" << endl;
       cin.clear();
-    } catch (const int &out_of_range) {
+    }
+    // Catch any thrown integer
+    catch (const int &out_of_range) {
       cout << "Please enter a valid option [1-5]." << endl;
     }
   }
+
+  // Switch case to Call a function the User has chosen.
 
   switch (choice) {
   case 1:
@@ -66,53 +85,80 @@ void Menu::prompt(const SensorLog &sensor_data, bool &exit) const {
     HandleMonthlySolarRadiation(sensor_data);
     break;
   case 4:
-    // TODO: Print All to WindSolarTemp.csv
     HandleAllData(sensor_data);
-
     break;
   case 5:
+    // exit is a parameter, if true, the while loop in main.cpp will break.
     exit = true;
     break;
   }
 }
 
+// Handles the Monthly speed prompt
 void Menu::HandleMonthlySpeed(const SensorLog &sensor_data) const {
+
+  // Initialize local variables
+
   Calculator calculate;
   string month = "";
   int month_int = 0;
   int year_int = 0;
   float average = 0.0f;
   float standard_deviation = 0.0f;
-  bool month_exist = false;
   bool valid_month = false;
 
+  // While loop to validate user input for month
   while (!valid_month) {
+
+    // Prompt user for month
+
     cout << "Enter Month: ";
     cin >> month;
+
+    // Try catch to check if user input is a valid month
+    // if month_to_int returns 0, the month the user input is misspelled or not
+    // a month, in that case, throw valid_month(bool).
+
     try {
       if (month_to_int(month) == 0) {
         throw valid_month;
-      } else {
+      }
+      // assign valid_month as true to exit the loop
+      else {
         valid_month = true;
       }
 
-    } catch (bool &error) {
+    }
+    // Catch if any bool is thrown
+    catch (bool &error) {
 
       cout << "\nInvalid Month" << endl;
     }
   }
+
+  // Call month_to_int routine to convert user's string month into an integer
+  // (the month's index, starting from 1)
+
   month_int = month_to_int(month);
+
+  // Call GetValidYear routine to prompt a user for a Year and validate if its a
+  // numerical string or out of range
+
   year_int = GetValidYear();
 
-  month_exist = ValidateMonth(sensor_data, month_int, year_int);
-  if (month_exist) {
+  // Condition to check if the month and year contains any data, if it does,
+  // calculate and prompt results
+  if (ValidateMonth(sensor_data, month_int, year_int, "S")) {
+
     average = calculate.AverageSpeed(sensor_data, month_int, year_int);
     standard_deviation =
         calculate.StdDevSpeed(sensor_data, average, month_int, year_int);
     cout << month << " " << year_int << ":" << endl
          << "Average Speed: " << average << "km/h" << endl
          << "Sample stdev: " << standard_deviation << endl;
-  } else {
+  }
+  // If no data is found
+  else {
     cout << month << " " << year_int << ": No Data" << endl;
   }
 }
@@ -136,14 +182,14 @@ void Menu::HandleMonthlyTemperature(const SensorLog &sensor_data) const {
     cout << endl << year_int << ": " << endl;
     for (int month_index = 1; month_index < MAX_MONTHS; month_index++) {
       month_int = month_index;
-      if (ValidateMonth(sensor_data, month_int, year_int)) {
+      if (ValidateMonth(sensor_data, month_int, year_int, "T")) {
         average =
             calculate.AverageTemperature(sensor_data, month_int, year_int);
         standard_deviation = calculate.StdDevTemperature(sensor_data, average,
                                                          month_int, year_int);
 
         cout << int_to_month(month_int) << ":"
-             << "average: " << average
+             << " average: " << average
              << " degrees C, Sample stdev: " << standard_deviation << endl;
       } else {
         cout << int_to_month(month_int) << ": No Data" << endl;
@@ -172,7 +218,7 @@ void Menu::HandleMonthlySolarRadiation(const SensorLog &sensor_data) const {
     cout << endl << year_int << ": " << endl;
     for (int month_index = 1; month_index < MAX_MONTHS; month_index++) {
       month_int = month_index;
-      if (ValidateMonth(sensor_data, month_int, year_int)) {
+      if (ValidateMonth(sensor_data, month_int, year_int, "SR")) {
         total_solar_radiation =
             calculate.TotalSolarRadiation(sensor_data, month_int, year_int);
 
@@ -211,39 +257,54 @@ void Menu::HandleAllData(const SensorLog &sensor_data) const {
   if (month_exist) {
     output << year_int << ": " << endl;
     for (int month_index = 1; month_index < MAX_MONTHS; month_index++) {
-      month_int = month_index;
-      if (ValidateMonth(sensor_data, month_int, year_int)) {
-        average_speed =
-            calculate.AverageSpeed(sensor_data, month_int, year_int);
-        stdev_speed = calculate.StdDevSpeed(sensor_data, average_temperature,
-                                            month_int, year_int);
-        average_temperature =
-            calculate.AverageTemperature(sensor_data, month_int, year_int);
-        stdev_temperature = calculate.StdDevTemperature(
-            sensor_data, average_temperature, month_int, year_int);
-        total_solar_radiation =
-            calculate.TotalSolarRadiation(sensor_data, month_int, year_int);
 
-        output << int_to_month(month_int);
-        if (average_speed != 0) {
-          output << "," << average_speed;
-        }
-        if (stdev_speed != 0) {
-          output << "(" << stdev_speed << ")";
-        }
-        if (average_temperature != 0) {
-          output << "," << average_temperature;
-        }
-        if (stdev_temperature != 0) {
-          output << "(" << stdev_temperature << ")";
-        }
-        if (total_solar_radiation != 0) {
-          output << "," << total_solar_radiation;
-        }
-        output << endl;
+      month_int = month_index;
+
+      int empty_data = 0;
+
+      average_speed = calculate.AverageSpeed(sensor_data, month_int, year_int);
+      stdev_speed = calculate.StdDevSpeed(sensor_data, average_speed, month_int,
+                                          year_int);
+      average_temperature =
+          calculate.AverageTemperature(sensor_data, month_int, year_int);
+      stdev_temperature = calculate.StdDevTemperature(
+          sensor_data, average_temperature, month_int, year_int);
+      total_solar_radiation =
+          calculate.TotalSolarRadiation(sensor_data, month_int, year_int);
+
+      output << int_to_month(month_int);
+
+      if (average_speed != 0) {
+        output << "," << average_speed;
+
       } else {
-        output << int_to_month(month_int) << ": No Data" << endl;
+        empty_data++;
       }
+      if (stdev_speed != 0) {
+        output << "(" << stdev_speed << ")";
+      } else {
+        empty_data++;
+      }
+      if (average_temperature != 0) {
+        output << "," << average_temperature;
+      } else {
+        empty_data++;
+      }
+      if (stdev_temperature != 0) {
+        output << "(" << stdev_temperature << ")";
+      } else {
+        empty_data++;
+      }
+      if (total_solar_radiation != 0) {
+        output << "," << total_solar_radiation;
+      } else {
+        empty_data++;
+      }
+      if (empty_data == 5) {
+        output << ": No Data";
+      }
+
+      output << endl;
     }
   }
 
@@ -251,14 +312,44 @@ void Menu::HandleAllData(const SensorLog &sensor_data) const {
 }
 
 bool Menu::ValidateMonth(const SensorLog &sensor_data, const int month,
-                         const int year) const {
-
-  for (int index = 0; index < sensor_data.size(); index++) {
-    if (sensor_data[index].date.GetMonth() == month &&
-        sensor_data[index].date.GetYear() == year) {
-      return true;
+                         const int year, const string sensor_type) const {
+  if (sensor_type == "S") {
+    for (int index = 0; index < sensor_data.size(); index++) {
+      if (sensor_data[index].date.GetMonth() == month &&
+          sensor_data[index].date.GetYear() == year &&
+          sensor_data[index].speed != 0) {
+        return true;
+      }
     }
   }
+  if (sensor_type == "T") {
+    for (int index = 0; index < sensor_data.size(); index++) {
+      if (sensor_data[index].date.GetMonth() == month &&
+          sensor_data[index].date.GetYear() == year &&
+          sensor_data[index].temperature != 0) {
+        return true;
+      }
+    }
+  }
+  if (sensor_type == "SR") {
+    for (int index = 0; index < sensor_data.size(); index++) {
+      if (sensor_data[index].date.GetMonth() == month &&
+          sensor_data[index].date.GetYear() == year &&
+          sensor_data[index].solar_radiation != 0) {
+        return true;
+      }
+    }
+  }
+
+  if (sensor_type == "ALL") {
+    for (int index = 0; index < sensor_data.size(); index++) {
+      if (sensor_data[index].date.GetMonth() == month &&
+          sensor_data[index].date.GetYear() == year) {
+        return true;
+      }
+    }
+  }
+
   return false;
 }
 
@@ -301,8 +392,8 @@ int Menu::GetValidYear() const {
 
 string int_to_month(const int month) {
   string month_arr[MAX_MONTHS] = {
-      "January", "February", "March",     "April",   "May",      "June",
-      "July",    "August",   "September", "October", "November", "December"};
+      " ",    "January", "February",  "March",   "April",    "May",     "June",
+      "July", "August",  "September", "October", "November", "December"};
   return month_arr[month];
 }
 int month_to_int(const string month) {

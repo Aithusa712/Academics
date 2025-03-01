@@ -1,90 +1,115 @@
 #ifndef VECTOR_H
 #define VECTOR_H
 
-// The class interface/declaration must have Doxygen comments – put these in
-// Follow the style in modelfile.h
-
 #include <cassert>
+
 /**
- * @brief A custom vector class template implementation
- * @tparam T The type of elements stored in the vector
+ * @class Vector
+ * @brief A dynamic array implementation that grows automatically
+ *
+ * This template class provides a resizable array (vector) implementation
+ * that automatically manages memory allocation and deallocation.
+ * The vector grows dynamically when elements are added, doubling its
+ * capacity when needed.
+ *
+ * @author Kim Andrew Dela Cruz
+ * @version 01
+ * @date 16/02/2025 Kim Andrew Dela Cruz
  */
-template <class T>
-class Vector // This is NOT the std::vector.
-{
+template <class T> class Vector {
 public:
   /**
    * @brief Default constructor
+   *
+   * Initializes an empty vector with default capacity.
+   * Sets current_size to 0 and allocates initial memory.
    */
   Vector();
 
   /**
    * @brief Copy constructor
-   * @param t Vector to copy from
+   *
+   * Creates a deep copy of the provided vector.
+   *
+   * @param t Reference to the vector to be copied
    */
   Vector(const Vector<T> &t);
 
   /**
-   * @brief Constructor with initial size
-   * @param n Initial size of the vector
+   * @brief Parameterized constructor
+   *
+   * Creates a vector with initial capacity of n.
+   *
+   * @param n Initial capacity of the vector
    */
   Vector(int n); // done for you
 
   /**
    * @brief Destructor
+   *
+   * Deallocates all memory used by the vector.
    */
   ~Vector();
 
   /**
    * @brief Adds an element to the end of the vector
-   * @param data Element to be added
+   *
+   * Automatically resizes the vector if necessary before adding the element.
+   *
+   * @param data Element to be added to the vector
    */
   void push(T data);
 
   /**
-   * @brief Access operator for modifiable elements
+   * @brief Array subscript operator
+   *
+   * Provides access to elements at specified index.
+   *
    * @param index Position of the element to access
    * @return Reference to the element at specified index
-   * @throw std::out_of_range if index is invalid
    */
   T &operator[](int index);
 
   /**
-   * @brief Access operator for const elements
+   * @brief Const array subscript operator
+   *
+   * Provides read-only access to elements at specified index.
+   *
    * @param index Position of the element to access
    * @return Const reference to the element at specified index
-   * @throw std::out_of_range if index is invalid
    */
   const T &operator[](int index) const;
 
   /**
-   * @brief Assignment operator
-   * @param other Vector to copy from
-   * @return Reference to this vector
-   */
-  Vector<T> &operator=(const Vector<T> &other);
-
-  /**
-   * @brief Gets the current size of the vector
-   * @return Number of elements in the vector
+   * @brief Returns the current number of elements
+   *
+   * @return Current size of the vector
    */
   int size() const;
 
   /**
    * @brief Removes all elements from the vector
+   *
+   * Resets the vector to its initial empty state.
    */
   void Clear();
 
 private:
   /**
-   * @brief Increases the capacity of the internal array
+   * @brief Doubles the capacity of the vector
+   *
+   * Called automatically when more space is needed.
    */
   void Resize();
 
-  T *arr;           ///< Pointer to the dynamic array
-  int current_size; ///< Current number of elements
-  int capacity;     ///< Current capacity of the array
-}; // end of interface/declaration of the template class
+  T *arr;           ///< Dynamic array holding the elements
+  int current_size; ///< Number of elements currently in the vector
+  int capacity;     ///< Total capacity of the allocated memory
+};
+
+/*######################################################################*/
+/*++++++++++++++++++++++++++++IMPLEMENTATION++++++++++++++++++++++++++++*/
+/*######################################################################*/
 
 template <typename T> Vector<T>::Vector() {
   arr = new T[1];
@@ -143,18 +168,6 @@ template <typename T> const T &Vector<T>::operator[](int index) const {
   return arr[index];
 }
 
-template <typename T> Vector<T> &Vector<T>::operator=(const Vector<T> &other) {
-  if (this != &other) {
-    delete[] arr;
-    current_size = other.current_size;
-    capacity = other.capacity;
-    arr = new T[capacity];
-    for (int i = 0; i < current_size; i++) {
-      arr[i] = other.arr[i];
-    }
-  }
-  return *this;
-}
 template <typename T> void Vector<T>::Clear() {
   delete[] arr;
   arr = new T[1];

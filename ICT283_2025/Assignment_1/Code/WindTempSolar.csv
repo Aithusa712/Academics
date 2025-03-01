@@ -1,13 +1,13 @@
-2015: 
-January: No Data
-February: No Data
-March,5.3(5.9),21.4(4.6),122.3
-April,5.6(16),18.6(4.2),93
-May,4.8(14.1),14.9(4.6),70
-June,5.2(10.1),14.4(4.4),57.7
-July,4.8(9.9),13.2(3.9),59.9
-August,4.9(8.8),14.8(4),73.6
-September,5.5(9.8),15.9(5),122.1
-October,4.9(11.2),19.1(4.6),134.6
-November,6.1(13.3),21.7(5.2),177.1
-December,6.1(15.8),23(5.6),198.6
+2023: 
+January,19.4(temp2.1),0.1
+February,5.5(speed1.2),19.3(temp1.7),0.1
+March,5.4(speed1.1),19.1(temp1.7)
+April,5.9(speed1.2),0.1
+May,5.4(speed1.1),18.6(temp1.7),0.1
+June,6(speed1.2),19.6(temp1.8),0.1
+July: No Data
+August,5.3(speed1.1),18.4(temp1.7),0.1
+September,5.7(speed1.2),19.3(temp1.8),0.1
+October,5.5(speed1.2),18.9(temp1.7),0.1
+November: No Data
+December: No Data

@@ -9,19 +9,18 @@ using namespace std;
  * @class Time
  * @brief  Contains time data in integer form
  *
- * Time class Stores and retrieves time data in integer form. 
+ * Time class Stores and retrieves time data in integer form.
  *
  *
  *
  *
  * @author Kim Andrew Dela Cruz
  * @version 01
- * @time 03/02/2025
+ * @date 16/02/2025 Kim Andrew Dela Cruz
  *
  *
  *
  */
-
 
 class Time {
 public:
@@ -30,7 +29,7 @@ public:
    * @details Initializes time with default values
    */
   Time();
-  
+
   /**
    * @brief  Returns the m_minutes value
    *
@@ -39,15 +38,15 @@ public:
    * @return int
    */
   int GetMinutes() const;
-   /**
+  /**
    * @brief  Returns the m_hours value
    *
    * Returns the m_hours value stored in this class
    *
    * @return int
-   */ 
+   */
   int GetHours() const;
-    /**
+  /**
    * @brief  Returns the m_year value
    *
    * Returns the m_year value stored in this class
@@ -56,7 +55,7 @@ public:
    */
 
   void SetMinutes(int minutes);
-   /**
+  /**
    * @brief  Set the m_hours value stored in this class
    *
    *
@@ -68,8 +67,7 @@ public:
 private:
   int m_minutes; ///< contains the day value
 
-  int m_hours;  ///< contains the month value
-
+  int m_hours; ///< contains the month value
 };
 
 /// overloading the << operator
@@ -77,6 +75,6 @@ ostream &operator<<(ostream &os, const Time &time);
 /// overloading the >> operator
 istream &operator>>(istream &input, Time &time);
 /// Helper Function to convert the time's integer form into readable string
-string ConvertTime (int minutes, int hours, int year);
+string ConvertTime(int minutes, int hours, int year);
 
 #endif

@@ -2,8 +2,8 @@
 #include <cmath>
 using namespace std;
 
-// TODO: Remove sqrt() and cmath. Add round off
-float Calculator::AverageSpeed(SensorLog &sensor_data, int month, int year) {
+float Calculator::AverageSpeed(const SensorLog &sensor_data, const int month,
+                               const int year) const {
   float sum = 0.0f;
   float average = 0.0f;
   int count = 0;
@@ -15,12 +15,15 @@ float Calculator::AverageSpeed(SensorLog &sensor_data, int month, int year) {
       count++;
     }
   }
-
-  average = sum / count;
-  return roundOff(average);
+  if (count < 2) {
+    return 0;
+  } else {
+    average = sum / count;
+    return round(10 * average) / 10.0;
+  }
 }
-float Calculator::AverageTemperature(SensorLog &sensor_data, int month,
-                                     int year) {
+float Calculator::AverageTemperature(const SensorLog &sensor_data,
+                                     const int month, const int year) const {
   float sum = 0.0f;
   float average = 0.0f;
   int count = 0;
@@ -33,11 +36,16 @@ float Calculator::AverageTemperature(SensorLog &sensor_data, int month,
     }
   }
 
-  average = sum / count;
-  return roundOff(average);
+  if (count < 2) {
+    return 0;
+  } else {
+    average = sum / count;
+    return round(10 * average) / 10.0;
+  }
 }
-float Calculator::AverageSolarRadiation(SensorLog &sensor_data, int month,
-                                        int year) {
+
+float Calculator::AverageSolarRadiation(const SensorLog &sensor_data,
+                                        const int month, const int year) const {
 
   float sum = 0.0f;
   float average = 0.0f;
@@ -50,15 +58,19 @@ float Calculator::AverageSolarRadiation(SensorLog &sensor_data, int month,
       count++;
     }
   }
+  if (count < 2) {
+    return 0;
+  } else {
+    average = sum / count;
 
-  average = sum / count;
-  return roundOff(average);
+    return round(10 * average) / 10.0;
+  }
 }
 
 // STD DEV CALCULATION
 
-float Calculator::StdDevSpeed(SensorLog &sensor_data, float mean, int month,
-                              int year) {
+float Calculator::StdDevSpeed(const SensorLog &sensor_data, const float mean,
+                              const int month, const int year) const {
   float sum_sqrt = 0.0f;
   float standard_deviation = 0.0f;
   int count = 0;
@@ -70,11 +82,16 @@ float Calculator::StdDevSpeed(SensorLog &sensor_data, float mean, int month,
       count++;
     }
   }
-  standard_deviation = sqrt(sum_sqrt / (count - 1));
-  return roundOff(standard_deviation);
+  if (count < 2) {
+    return 0;
+  } else {
+    standard_deviation = sqrt(sum_sqrt / (count - 1));
+    return round(10 * standard_deviation) / 10.0;
+  }
 }
-float Calculator::StdDevTemperature(SensorLog &sensor_data, float mean,
-                                    int month, int year) {
+float Calculator::StdDevTemperature(const SensorLog &sensor_data,
+                                    const float mean, const int month,
+                                    const int year) const {
   float sum_sqrt = 0.0f;
   float standard_deviation = 0.0f;
   int count = 0;
@@ -86,13 +103,18 @@ float Calculator::StdDevTemperature(SensorLog &sensor_data, float mean,
       count++;
     }
   }
-  standard_deviation = sqrt(sum_sqrt / (count - 1));
-  return roundOff(standard_deviation);
-}
-float Calculator::TotalSolarRadiation(SensorLog &sensor_data, int month,
-                                      int year) {
-  float totalRadiation = 0.0f;
+  if (count < 2) {
+    return 0;
+  } else {
+    standard_deviation = sqrt(sum_sqrt / (count - 1));
 
+    return round(10 * standard_deviation) / 10.0;
+  }
+}
+float Calculator::TotalSolarRadiation(const SensorLog &sensor_data,
+                                      const int month, const int year) const {
+  float totalRadiation = 0.0f;
+  int count = 0;
   for (int index = 0; index < sensor_data.size(); index++) {
     if (sensor_data[index].date.GetYear() == year &&
         sensor_data[index].date.GetMonth() == month &&
@@ -102,10 +124,12 @@ float Calculator::TotalSolarRadiation(SensorLog &sensor_data, int month,
       float kWh_conversion =
           sensor_data[index].solar_radiation * (10.0f / 60.0f) / 1000.0f;
       totalRadiation += kWh_conversion;
+      count++;
     }
   }
-
-  return roundOff(totalRadiation);
+  if (count < 2) {
+    return 0;
+  } else {
+    return round(10 * totalRadiation) / 10.0;
+  }
 }
-// TODO: Add assumption: all values are positive
-float roundOff(float &value) { return (int)(value * 10.0f + 0.5f) / 10.0f; }

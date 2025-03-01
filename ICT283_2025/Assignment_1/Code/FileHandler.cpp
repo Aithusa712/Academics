@@ -1,5 +1,23 @@
 #include "FileHandler.h"
-void FileHandler::readSource(const string &filename, SensorLog &sensor_data) {
+
+void FileHandler::writeToFile(const string &filename,
+                              const string &content) const {
+  ofstream outputFile;
+
+  outputFile.open(filename);
+
+  if (!outputFile.is_open()) {
+    cerr << "Error: Could not open file '" << filename << "' for writing."
+         << endl;
+  }
+
+  outputFile << content;
+
+  outputFile.close();
+}
+
+void FileHandler::readSource(const string &filename,
+                             SensorLog &sensor_data) const {
   ifstream file(filename);
   if (!file.is_open()) {
     cerr << "Error Opening file " << filename << endl;
@@ -9,7 +27,9 @@ void FileHandler::readSource(const string &filename, SensorLog &sensor_data) {
     readCSV(temp_name, sensor_data);
   }
 }
-void FileHandler::readCSV(const string &filename, SensorLog &sensor_data) {
+
+void FileHandler::readCSV(const string &filename,
+                          SensorLog &sensor_data) const {
   ifstream file("data/" + filename);
   // error handling
   if (!file.is_open()) {
@@ -27,18 +47,10 @@ void FileHandler::readCSV(const string &filename, SensorLog &sensor_data) {
 
   istringstream ss(line);
 
-  /*int ctest = 0;*/
-
   //  TODO:  Check if running a unix file format csv file in windows causes
   //  any issues
   while (getline(ss, token, ',')) {
     vecHeader.push(token);
-
-    /*cout*/
-    /*    << "Header" << ctest << " = [" << token << "]"*/
-    /*    << endl; // TODO: Remove this line and use a unit testing file
-     * instead*/
-    /*ctest++;*/
   }
 
   ss.clear();

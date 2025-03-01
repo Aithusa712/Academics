@@ -9,7 +9,7 @@ using namespace std;
  * @class Date
  * @brief  Contains date data in integer form
  *
- * Date class Stores and retrieves date data in integer form. 
+ * Date class Stores and retrieves date data in integer form.
  *
  *
  *
@@ -22,7 +22,6 @@ using namespace std;
  *
  */
 
-
 class Date {
 public:
   /**
@@ -30,7 +29,7 @@ public:
    * @details Initializes date with default values
    */
   Date();
-  
+
   /**
    * @brief  Returns the m_day value
    *
@@ -39,15 +38,15 @@ public:
    * @return int
    */
   int GetDay() const;
-   /**
+  /**
    * @brief  Returns the m_month value
    *
    * Returns the m_month value stored in this class
    *
    * @return int
-   */ 
+   */
   int GetMonth() const;
-    /**
+  /**
    * @brief  Returns the m_year value
    *
    * Returns the m_year value stored in this class
@@ -63,7 +62,7 @@ public:
    * @return void
    */
   void SetDay(int day);
-   /**
+  /**
    * @brief  Set the m_month value stored in this class
    *
    *
@@ -71,7 +70,7 @@ public:
    * @return void
    */
   void SetMonth(int month);
-    /**
+  /**
    * @brief  Set the m_year value stored in this class
    *
    *
@@ -83,17 +82,14 @@ public:
 private:
   int m_day; ///< contains the day value
 
-  int m_month;  ///< contains the month value
+  int m_month; ///< contains the month value
 
   int m_year; ///< contains the year value
-
 };
 
 /// overloading the << operator
 ostream &operator<<(ostream &os, const Date &date);
 /// overloading the >> operator
 istream &operator>>(istream &input, Date &date);
-/// Helper Function to convert the date's integer form into readable string
-string ConvertDate (int day, int month, int year);
 
 #endif

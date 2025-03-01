@@ -4,7 +4,7 @@
 // The class interface/declaration must have Doxygen comments – put these in
 // Follow the style in modelfile.h
 
-#include <stdexcept>
+#include <cassert>
 /**
  * @brief A custom vector class template implementation
  * @tparam T The type of elements stored in the vector
@@ -134,16 +134,12 @@ template <typename T> void Vector<T>::Resize() {
 }
 
 template <typename T> T &Vector<T>::operator[](int index) {
-  if (index >= current_size) {
-    throw std::out_of_range("Index is out of bounds");
-  }
+  assert(index < current_size && "Index is out of bounds");
   return arr[index];
 }
 
 template <typename T> const T &Vector<T>::operator[](int index) const {
-  if (index >= current_size) {
-    throw std::out_of_range("Index is out of bounds");
-  }
+  assert(index < current_size && "Index is out of bounds");
   return arr[index];
 }
 

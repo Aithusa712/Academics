@@ -8,14 +8,18 @@ using namespace std;
 class Calculator {
 
 public:
-  float AverageSpeed(SensorLog &sensor_data, int month, int year);
-  float AverageTemperature(SensorLog &sensor_data, int month, int year);
-  float AverageSolarRadiation(SensorLog &sensor_data, int month, int year);
+  float AverageSpeed(const SensorLog &sensor_data, const int month,
+                     const int year) const;
+  float AverageTemperature(const SensorLog &sensor_data, const int month,
+                           const int year) const;
+  float AverageSolarRadiation(const SensorLog &sensor_data, const int month,
+                              const int year) const;
 
-  float StdDevSpeed(SensorLog &sensor_data, float mean, int month, int year);
-  float StdDevTemperature(SensorLog &sensor_data, float mean, int month,
-                          int year);
-  float TotalSolarRadiation(SensorLog &sensor_data, int month, int year);
+  float StdDevSpeed(const SensorLog &sensor_data, float mean, const int month,
+                    const int year) const;
+  float StdDevTemperature(const SensorLog &sensor_data, const float mean,
+                          const int month, const int year) const;
+  float TotalSolarRadiation(const SensorLog &sensor_data, const int month,
+                            const int year) const;
 };
-float roundOff(float &value); // subroutine
 #endif

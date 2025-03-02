@@ -1,0 +1,13 @@
+<map id="Results::DisplayTotalSolarRadiation" name="Results::DisplayTotalSolarRadiation">
+<area shape="rect" id="Node000001" title="Calculates and displays total solar radiation for each month of specified year." alt="" coords="5,73,182,116"/>
+<area shape="rect" id="Node000002" href="$Results_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month index into a readable month string." alt="" coords="282,5,378,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,70,229,48,270,35,272,40,230,53,163,75"/>
+<area shape="rect" id="Node000003" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="479,107,570,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,86,301,83,367,86,431,92,468,99,467,105,431,97,366,91,301,89,182,91"/>
+<area shape="rect" id="Node000004" href="$classCalculator.html#ad0516c4e99ee4b164221167c2a3ead84" title="Calculates the total solar radiation for a given month and year." alt="" coords="230,107,431,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,101,214,105,214,110,182,107"/>
+<area shape="rect" id="Node000005" href="$classResults.html#a935d60d849b540951e4be2eac4809c7f" title="Checks if data exists for specified month and year." alt="" coords="252,157,408,184"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="150,114,230,143,256,150,255,155,229,148,148,119"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="431,117,464,117,464,123,431,123"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="386,154,430,143,463,134,465,139,432,148,388,159"/>
+</map>

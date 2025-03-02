@@ -110,7 +110,7 @@ $(function(){initNavTree('classMenu.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>Handles user interaction and data processing for weather sensor information.  
+<p>Handles user interaction.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Menu_8h_source.html">Menu.h</a>&gt;</code></p>
@@ -119,7 +119,7 @@ Collaboration diagram for Menu:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMenu__coll__graph.png" border="0" usemap="#aMenu_coll__map" alt="Collaboration graph"/></div>
 <map name="aMenu_coll__map" id="aMenu_coll__map">
-<area shape="rect" title="Handles user interaction and data processing for weather sensor information." alt="" coords="5,5,209,203"/>
+<area shape="rect" title="Handles user interaction." alt="" coords="5,5,161,117"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -129,32 +129,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a042879989da9d5ba48f2e5091ca7de61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays main menu and handles user input.  <br /></td></tr>
 <tr class="separator:a042879989da9d5ba48f2e5091ca7de61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1692acad1cdf7ea5115467a4d0669efd" id="r_a1692acad1cdf7ea5115467a4d0669efd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1692acad1cdf7ea5115467a4d0669efd">HandleMonthlySpeed</a> (const <a class="el" href="SensorRecType_8h.html#a168a97ffccc292cea26c3fcbbfdc67c4">SensorLog</a> &amp;sensor_data) const</td></tr>
-<tr class="memdesc:a1692acad1cdf7ea5115467a4d0669efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and displays average wind speed and standard deviation for specified month/year.  <br /></td></tr>
+<tr class="memdesc:a1692acad1cdf7ea5115467a4d0669efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets and validate user input for specific month and year.  <br /></td></tr>
 <tr class="separator:a1692acad1cdf7ea5115467a4d0669efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85b8e00988585aeb4058160cf861c7b2" id="r_a85b8e00988585aeb4058160cf861c7b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85b8e00988585aeb4058160cf861c7b2">HandleMonthlyTemperature</a> (const <a class="el" href="SensorRecType_8h.html#a168a97ffccc292cea26c3fcbbfdc67c4">SensorLog</a> &amp;sensor_data) const</td></tr>
-<tr class="memdesc:a85b8e00988585aeb4058160cf861c7b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and displays average temperature and standard deviation for each month of specified year.  <br /></td></tr>
-<tr class="separator:a85b8e00988585aeb4058160cf861c7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5806096cfb9ada4aeb28df9db1fa357f" id="r_a5806096cfb9ada4aeb28df9db1fa357f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5806096cfb9ada4aeb28df9db1fa357f">HandleMonthlySolarRadiation</a> (const <a class="el" href="SensorRecType_8h.html#a168a97ffccc292cea26c3fcbbfdc67c4">SensorLog</a> &amp;sensor_data) const</td></tr>
-<tr class="memdesc:a5806096cfb9ada4aeb28df9db1fa357f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and displays total solar radiation for each month of specified year.  <br /></td></tr>
-<tr class="separator:a5806096cfb9ada4aeb28df9db1fa357f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66947a482d702a840513f5a031115b51" id="r_a66947a482d702a840513f5a031115b51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66947a482d702a840513f5a031115b51">HandleAllData</a> (const <a class="el" href="SensorRecType_8h.html#a168a97ffccc292cea26c3fcbbfdc67c4">SensorLog</a> &amp;sensor_data) const</td></tr>
-<tr class="memdesc:a66947a482d702a840513f5a031115b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes wind speed, temperature and solar radiation data to WindTempSolar.csv.  <br /></td></tr>
-<tr class="separator:a66947a482d702a840513f5a031115b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbe93fcd2ac501f79524f5177ac5b28f" id="r_acbe93fcd2ac501f79524f5177ac5b28f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbe93fcd2ac501f79524f5177ac5b28f">ValidateMonth</a> (const <a class="el" href="SensorRecType_8h.html#a168a97ffccc292cea26c3fcbbfdc67c4">SensorLog</a> &amp;sensor_data, const int month, const int year, const string sensor_type) const</td></tr>
-<tr class="memdesc:acbe93fcd2ac501f79524f5177ac5b28f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if data exists for specified month and year.  <br /></td></tr>
-<tr class="separator:acbe93fcd2ac501f79524f5177ac5b28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdb35007ed6ed2b1cf476776edde519d" id="r_acdb35007ed6ed2b1cf476776edde519d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdb35007ed6ed2b1cf476776edde519d">GetValidYear</a> () const</td></tr>
 <tr class="memdesc:acdb35007ed6ed2b1cf476776edde519d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets and validates year input from user.  <br /></td></tr>
 <tr class="separator:acdb35007ed6ed2b1cf476776edde519d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Handles user interaction and data processing for weather sensor information. </p>
-<p>This class provides functionality to display menus, process user input, and perform various calculations on weather sensor data including wind speed, temperature, and solar radiation measurements.</p>
+<div class="textblock"><p>Handles user interaction. </p>
+<p>This class provides functionality to display menus, and process user input.</p>
 <dl class="section author"><dt>Author</dt><dd>Kim Andrew Dela Cruz </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>01 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>16/02/2025 Kim Andrew Dela Cruz </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Menu_8h_source.html#l00024">24</a> of file <a class="el" href="Menu_8h_source.html">Menu.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Menu_8h_source.html#l00018">18</a> of file <a class="el" href="Menu_8h_source.html">Menu.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="acdb35007ed6ed2b1cf476776edde519d" name="acdb35007ed6ed2b1cf476776edde519d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acdb35007ed6ed2b1cf476776edde519d">&#9670;&#160;</a></span>GetValidYear()</h2>
@@ -174,157 +162,20 @@ Public Member Functions</h2></td></tr>
 <p>Gets and validates year input from user. </p>
 <dl class="section return"><dt>Returns</dt><dd>Valid year between 2005-2025 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Menu_8cpp_source.html#l00473">473</a> of file <a class="el" href="Menu_8cpp_source.html">Menu.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Menu_8cpp_source.html#l00162">162</a> of file <a class="el" href="Menu_8cpp_source.html">Menu.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMenu_acdb35007ed6ed2b1cf476776edde519d_icgraph.png" border="0" usemap="#aclassMenu_acdb35007ed6ed2b1cf476776edde519d_icgraph" alt=""/></div>
 <map name="aclassMenu_acdb35007ed6ed2b1cf476776edde519d_icgraph" id="aclassMenu_acdb35007ed6ed2b1cf476776edde519d_icgraph">
-<area shape="rect" title="Gets and validates year input from user." alt="" coords="520,93,657,120"/>
-<area shape="rect" href="classMenu.html#a66947a482d702a840513f5a031115b51" title="Writes wind speed, temperature and solar radiation data to WindTempSolar.csv." alt="" coords="290,5,435,32"/>
-<area shape="poly" title=" " alt="" coords="552,87,514,66,471,46,434,35,436,30,473,42,516,61,555,83"/>
-<area shape="rect" href="classMenu.html#a5806096cfb9ada4aeb28df9db1fa357f" title="Calculates and displays total solar radiation for each month of specified year." alt="" coords="273,56,451,99"/>
-<area shape="poly" title=" " alt="" coords="505,99,451,92,452,86,505,93"/>
-<area shape="rect" href="classMenu.html#a1692acad1cdf7ea5115467a4d0669efd" title="Calculates and displays average wind speed and standard deviation for specified month/year." alt="" coords="270,123,455,149"/>
-<area shape="poly" title=" " alt="" coords="505,120,456,127,455,121,505,115"/>
-<area shape="rect" href="classMenu.html#a85b8e00988585aeb4058160cf861c7b2" title="Calculates and displays average temperature and standard deviation for each month of specified year." alt="" coords="252,173,472,200"/>
-<area shape="poly" title=" " alt="" coords="550,130,473,164,434,175,432,170,471,159,548,125"/>
-<area shape="rect" href="classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,93,204,120"/>
-<area shape="poly" title=" " alt="" coords="275,38,253,46,209,70,173,95,170,91,206,66,251,42,273,33"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,93,55,120"/>
-<area shape="poly" title=" " alt="" coords="87,109,55,109,55,104,87,104"/>
-<area shape="poly" title=" " alt="" coords="258,95,205,102,204,97,258,89"/>
-<area shape="poly" title=" " alt="" coords="254,124,204,116,205,111,255,118"/>
-<area shape="poly" title=" " alt="" coords="273,171,251,164,209,144,174,123,177,118,212,139,253,159,275,166"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a66947a482d702a840513f5a031115b51" name="a66947a482d702a840513f5a031115b51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66947a482d702a840513f5a031115b51">&#9670;&#160;</a></span>HandleAllData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Menu::HandleAllData </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="SensorRecType_8h.html#a168a97ffccc292cea26c3fcbbfdc67c4">SensorLog</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sensor_data</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Writes wind speed, temperature and solar radiation data to WindTempSolar.csv. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sensor_data</td><td>Reference to sensor log containing all data </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="Menu_8cpp_source.html#l00310">310</a> of file <a class="el" href="Menu_8cpp_source.html">Menu.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classMenu_a66947a482d702a840513f5a031115b51_cgraph.png" border="0" usemap="#aclassMenu_a66947a482d702a840513f5a031115b51_cgraph" alt=""/></div>
-<map name="aclassMenu_a66947a482d702a840513f5a031115b51_cgraph" id="aclassMenu_a66947a482d702a840513f5a031115b51_cgraph">
-<area shape="rect" title="Writes wind speed, temperature and solar radiation data to WindTempSolar.csv." alt="" coords="5,208,151,235"/>
-<area shape="rect" href="classCalculator.html#a432b0a174d6036792fa598c01216dcae" title="Calculates the average speed for a given month and year." alt="" coords="216,5,390,32"/>
-<area shape="poly" title=" " alt="" coords="83,206,98,174,123,132,156,87,197,49,219,36,222,41,200,53,160,91,127,135,103,177,88,209"/>
-<area shape="rect" href="classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="455,183,546,209"/>
-<area shape="poly" title=" " alt="" coords="85,206,101,180,127,148,159,116,197,92,255,71,303,64,351,71,408,92,433,107,454,127,486,167,482,171,450,130,430,111,406,97,350,76,303,70,256,77,200,97,162,120,131,151,106,183,89,209"/>
-<area shape="rect" href="classCalculator.html#a991f6cbf0f18c17f1abf8dfe5ae75d23" title="Calculates the average temperature for a given month and year." alt="" coords="199,107,407,133"/>
-<area shape="poly" title=" " alt="" coords="95,205,140,174,198,143,217,136,219,141,200,148,143,179,98,210"/>
-<area shape="rect" href="classMenu.html#acdb35007ed6ed2b1cf476776edde519d" title="Gets and validates year input from user." alt="" coords="235,157,371,184"/>
-<area shape="poly" title=" " alt="" coords="140,205,225,185,226,191,141,210"/>
-<area shape="rect" href="Menu_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month name to month number." alt="" coords="255,208,351,235"/>
-<area shape="poly" title=" " alt="" coords="151,219,239,219,239,224,151,224"/>
-<area shape="rect" href="classCalculator.html#aa4650f4b9536b08a5aa02661c7551d34" title="Calculates the standard deviation of speed for a given month and year." alt="" coords="218,259,388,285"/>
-<area shape="poly" title=" " alt="" coords="141,233,226,252,225,257,140,238"/>
-<area shape="rect" href="classCalculator.html#a1d690cbec689cb1bfb1ea9b31c2685dd" title="Calculates the standard deviation of temperature for a given month and year." alt="" coords="201,309,405,336"/>
-<area shape="poly" title=" " alt="" coords="98,233,143,264,200,295,219,302,217,307,198,300,140,269,95,237"/>
-<area shape="rect" href="classCalculator.html#ad0516c4e99ee4b164221167c2a3ead84" title="Calculates the total solar radiation for a given month and year." alt="" coords="202,360,404,387"/>
-<area shape="poly" title=" " alt="" coords="90,234,133,289,164,320,200,346,211,351,208,356,197,350,161,324,129,292,86,237"/>
-<area shape="rect" href="classFileHandler.html#a89530c8ca2d597f40ead571fb7ce41f4" title="Writes content to a specified file." alt="" coords="224,411,382,437"/>
-<area shape="poly" title=" " alt="" coords="87,234,102,267,126,312,159,358,200,397,211,403,208,407,197,401,155,361,121,315,97,270,82,236"/>
-<area shape="poly" title=" " alt="" coords="374,30,409,49,437,76,460,107,491,167,486,170,456,110,433,79,405,53,372,35"/>
-<area shape="poly" title=" " alt="" coords="372,131,408,143,466,172,463,177,406,148,371,136"/>
-<area shape="poly" title=" " alt="" coords="371,256,406,244,463,215,466,220,408,249,372,261"/>
-<area shape="poly" title=" " alt="" coords="381,306,406,295,428,279,448,260,480,221,484,224,452,263,431,283,408,300,383,311"/>
-<area shape="poly" title=" " alt="" coords="385,357,405,346,434,318,457,286,488,223,492,225,462,288,438,322,409,350,388,362"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classMenu_a66947a482d702a840513f5a031115b51_icgraph.png" border="0" usemap="#aclassMenu_a66947a482d702a840513f5a031115b51_icgraph" alt=""/></div>
-<map name="aclassMenu_a66947a482d702a840513f5a031115b51_icgraph" id="aclassMenu_a66947a482d702a840513f5a031115b51_icgraph">
-<area shape="rect" title="Writes wind speed, temperature and solar radiation data to WindTempSolar.csv." alt="" coords="252,5,397,32"/>
-<area shape="rect" href="classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,5,204,32"/>
-<area shape="poly" title=" " alt="" coords="237,21,204,21,204,16,237,16"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a5806096cfb9ada4aeb28df9db1fa357f" name="a5806096cfb9ada4aeb28df9db1fa357f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5806096cfb9ada4aeb28df9db1fa357f">&#9670;&#160;</a></span>HandleMonthlySolarRadiation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Menu::HandleMonthlySolarRadiation </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="SensorRecType_8h.html#a168a97ffccc292cea26c3fcbbfdc67c4">SensorLog</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sensor_data</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calculates and displays total solar radiation for each month of specified year. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sensor_data</td><td>Reference to sensor log containing all data </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="Menu_8cpp_source.html#l00243">243</a> of file <a class="el" href="Menu_8cpp_source.html">Menu.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classMenu_a5806096cfb9ada4aeb28df9db1fa357f_cgraph.png" border="0" usemap="#aclassMenu_a5806096cfb9ada4aeb28df9db1fa357f_cgraph" alt=""/></div>
-<map name="aclassMenu_a5806096cfb9ada4aeb28df9db1fa357f_cgraph" id="aclassMenu_a5806096cfb9ada4aeb28df9db1fa357f_cgraph">
-<area shape="rect" title="Calculates and displays total solar radiation for each month of specified year." alt="" coords="5,99,184,141"/>
-<area shape="rect" href="classMenu.html#acdb35007ed6ed2b1cf476776edde519d" title="Gets and validates year input from user." alt="" coords="264,5,400,32"/>
-<area shape="poly" title=" " alt="" coords="128,96,175,68,231,42,251,34,253,39,233,46,178,73,131,100"/>
-<area shape="rect" href="Menu_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month name to month number." alt="" coords="284,56,380,83"/>
-<area shape="poly" title=" " alt="" coords="184,98,269,80,270,85,185,104"/>
-<area shape="rect" href="classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="481,157,572,184"/>
-<area shape="poly" title=" " alt="" coords="184,119,303,127,433,143,467,150,466,155,433,148,303,132,184,125"/>
-<area shape="rect" href="classCalculator.html#ad0516c4e99ee4b164221167c2a3ead84" title="Calculates the total solar radiation for a given month and year." alt="" coords="232,157,433,184"/>
-<area shape="poly" title=" " alt="" coords="185,136,252,151,251,156,184,142"/>
-<area shape="rect" href="classMenu.html#acbe93fcd2ac501f79524f5177ac5b28f" title="Checks if data exists for specified month and year." alt="" coords="261,208,404,235"/>
-<area shape="poly" title=" " alt="" coords="131,140,178,167,233,194,253,201,251,206,231,198,175,172,128,144"/>
-<area shape="poly" title=" " alt="" coords="433,168,466,168,466,173,433,173"/>
-<area shape="poly" title=" " alt="" coords="388,205,432,193,465,185,467,190,434,199,390,210"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classMenu_a5806096cfb9ada4aeb28df9db1fa357f_icgraph.png" border="0" usemap="#aclassMenu_a5806096cfb9ada4aeb28df9db1fa357f_icgraph" alt=""/></div>
-<map name="aclassMenu_a5806096cfb9ada4aeb28df9db1fa357f_icgraph" id="aclassMenu_a5806096cfb9ada4aeb28df9db1fa357f_icgraph">
-<area shape="rect" title="Calculates and displays total solar radiation for each month of specified year." alt="" coords="252,5,430,48"/>
-<area shape="rect" href="classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,13,204,40"/>
-<area shape="poly" title=" " alt="" coords="236,29,204,29,204,24,236,24"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,55,40"/>
-<area shape="poly" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
+<area shape="rect" title="Gets and validates year input from user." alt="" coords="485,31,622,57"/>
+<area shape="rect" href="classMenu.html#a1692acad1cdf7ea5115467a4d0669efd" title="Gets and validate user input for specific month and year." alt="" coords="252,5,437,32"/>
+<area shape="poly" title=" " alt="" coords="470,37,437,33,438,27,471,31"/>
+<area shape="rect" href="classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,31,204,57"/>
+<area shape="poly" title=" " alt="" coords="470,47,204,47,204,41,470,41"/>
+<area shape="poly" title=" " alt="" coords="237,36,205,40,204,35,237,30"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" title=" " alt="" coords="87,47,55,47,55,41,87,41"/>
 </map>
 </div>
 
@@ -345,7 +196,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Calculates and displays average wind speed and standard deviation for specified month/year. </p>
+<p>Gets and validate user input for specific month and year. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sensor_data</td><td>Reference to sensor log containing all data </td></tr>
@@ -353,27 +204,29 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Menu_8cpp_source.html#l00098">98</a> of file <a class="el" href="Menu_8cpp_source.html">Menu.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Menu_8cpp_source.html#l00112">112</a> of file <a class="el" href="Menu_8cpp_source.html">Menu.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMenu_a1692acad1cdf7ea5115467a4d0669efd_cgraph.png" border="0" usemap="#aclassMenu_a1692acad1cdf7ea5115467a4d0669efd_cgraph" alt=""/></div>
 <map name="aclassMenu_a1692acad1cdf7ea5115467a4d0669efd_cgraph" id="aclassMenu_a1692acad1cdf7ea5115467a4d0669efd_cgraph">
-<area shape="rect" title="Calculates and displays average wind speed and standard deviation for specified month/year." alt="" coords="5,107,191,133"/>
-<area shape="rect" href="classCalculator.html#a432b0a174d6036792fa598c01216dcae" title="Calculates the average speed for a given month and year." alt="" coords="239,5,412,32"/>
-<area shape="poly" title=" " alt="" coords="120,104,173,73,238,42,255,35,257,40,240,46,175,78,123,108"/>
-<area shape="rect" href="classMenu.html#acdb35007ed6ed2b1cf476776edde519d" title="Gets and validates year input from user." alt="" coords="257,56,394,83"/>
-<area shape="poly" title=" " alt="" coords="161,103,247,84,248,89,162,109"/>
-<area shape="rect" href="Menu_8cpp.html#ad401f86677144b9ca5f90eb6fc5b07c9" title="Converts month name to month number." alt="" coords="277,107,374,133"/>
-<area shape="poly" title=" " alt="" coords="191,117,262,117,262,123,191,123"/>
-<area shape="rect" href="classCalculator.html#aa4650f4b9536b08a5aa02661c7551d34" title="Calculates the standard deviation of speed for a given month and year." alt="" coords="241,157,410,184"/>
-<area shape="poly" title=" " alt="" coords="162,131,248,151,247,156,161,137"/>
-<area shape="rect" href="classMenu.html#acbe93fcd2ac501f79524f5177ac5b28f" title="Checks if data exists for specified month and year." alt="" coords="254,208,397,235"/>
-<area shape="poly" title=" " alt="" coords="123,132,175,162,240,194,257,200,255,205,238,198,173,167,120,136"/>
-<area shape="rect" href="classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="460,157,551,184"/>
-<area shape="poly" title=" " alt="" coords="392,30,414,42,440,65,462,91,494,142,489,145,458,94,436,68,410,46,390,35"/>
-<area shape="poly" title=" " alt="" coords="410,168,444,168,444,173,410,173"/>
-<area shape="poly" title=" " alt="" coords="375,205,445,185,446,190,376,210"/>
+<area shape="rect" title="Gets and validate user input for specific month and year." alt="" coords="5,111,191,137"/>
+<area shape="rect" href="classResults.html#aab2d1793b03f766af73da66b272697cd" title="Calculates and displays average wind speed and standard deviation for specified month/year." alt="" coords="239,73,439,116"/>
+<area shape="poly" title=" " alt="" coords="191,110,223,106,223,111,191,115"/>
+<area shape="rect" href="classMenu.html#acdb35007ed6ed2b1cf476776edde519d" title="Gets and validates year input from user." alt="" coords="271,140,407,167"/>
+<area shape="poly" title=" " alt="" coords="191,133,256,141,255,146,191,138"/>
+<area shape="rect" href="classCalculator.html#a432b0a174d6036792fa598c01216dcae" title="Calculates the average speed for a given month and year." alt="" coords="487,5,660,32"/>
+<area shape="poly" title=" " alt="" coords="401,70,486,41,509,34,510,40,488,47,403,75"/>
+<area shape="rect" href="Results_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month index into a readable month string." alt="" coords="526,56,622,83"/>
+<area shape="poly" title=" " alt="" coords="439,81,510,73,511,79,440,86"/>
+<area shape="rect" href="classCalculator.html#aa4650f4b9536b08a5aa02661c7551d34" title="Calculates the standard deviation of speed for a given month and year." alt="" coords="489,107,658,133"/>
+<area shape="poly" title=" " alt="" coords="440,103,474,107,473,112,439,108"/>
+<area shape="rect" href="classResults.html#a935d60d849b540951e4be2eac4809c7f" title="Checks if data exists for specified month and year." alt="" coords="496,157,652,184"/>
+<area shape="poly" title=" " alt="" coords="406,114,440,125,488,143,510,150,508,155,486,148,438,131,405,119"/>
+<area shape="rect" href="classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="708,107,800,133"/>
+<area shape="poly" title=" " alt="" coords="634,30,662,42,699,67,730,94,727,98,696,71,659,46,632,35"/>
+<area shape="poly" title=" " alt="" coords="659,117,693,117,693,123,659,123"/>
+<area shape="poly" title=" " alt="" coords="623,154,693,134,694,139,625,159"/>
 </map>
 </div>
 <div class="dynheader">
@@ -381,71 +234,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMenu_a1692acad1cdf7ea5115467a4d0669efd_icgraph.png" border="0" usemap="#aclassMenu_a1692acad1cdf7ea5115467a4d0669efd_icgraph" alt=""/></div>
 <map name="aclassMenu_a1692acad1cdf7ea5115467a4d0669efd_icgraph" id="aclassMenu_a1692acad1cdf7ea5115467a4d0669efd_icgraph">
-<area shape="rect" title="Calculates and displays average wind speed and standard deviation for specified month/year." alt="" coords="252,5,437,32"/>
+<area shape="rect" title="Gets and validate user input for specific month and year." alt="" coords="252,5,437,32"/>
 <area shape="rect" href="classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,5,204,32"/>
 <area shape="poly" title=" " alt="" coords="236,21,204,21,204,16,236,16"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
-<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a85b8e00988585aeb4058160cf861c7b2" name="a85b8e00988585aeb4058160cf861c7b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85b8e00988585aeb4058160cf861c7b2">&#9670;&#160;</a></span>HandleMonthlyTemperature()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Menu::HandleMonthlyTemperature </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="SensorRecType_8h.html#a168a97ffccc292cea26c3fcbbfdc67c4">SensorLog</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sensor_data</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calculates and displays average temperature and standard deviation for each month of specified year. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sensor_data</td><td>Reference to sensor log containing all data </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="Menu_8cpp_source.html#l00173">173</a> of file <a class="el" href="Menu_8cpp_source.html">Menu.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classMenu_a85b8e00988585aeb4058160cf861c7b2_cgraph.png" border="0" usemap="#aclassMenu_a85b8e00988585aeb4058160cf861c7b2_cgraph" alt=""/></div>
-<map name="aclassMenu_a85b8e00988585aeb4058160cf861c7b2_cgraph" id="aclassMenu_a85b8e00988585aeb4058160cf861c7b2_cgraph">
-<area shape="rect" title="Calculates and displays average temperature and standard deviation for each month of specified year." alt="" coords="5,132,226,159"/>
-<area shape="rect" href="classCalculator.html#a991f6cbf0f18c17f1abf8dfe5ae75d23" title="Calculates the average temperature for a given month and year." alt="" coords="274,5,482,32"/>
-<area shape="poly" title=" " alt="" coords="135,129,195,90,273,48,308,35,310,40,275,53,198,95,138,134"/>
-<area shape="rect" href="classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="530,132,621,159"/>
-<area shape="poly" title=" " alt="" coords="149,129,206,108,273,92,332,83,378,78,425,80,483,92,515,104,544,121,542,125,513,109,481,97,424,86,379,83,333,88,274,97,208,114,151,134"/>
-<area shape="rect" href="classMenu.html#acdb35007ed6ed2b1cf476776edde519d" title="Gets and validates year input from user." alt="" coords="310,107,446,133"/>
-<area shape="poly" title=" " alt="" coords="226,132,294,125,294,131,226,137"/>
-<area shape="rect" href="Menu_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month name to month number." alt="" coords="330,157,426,184"/>
-<area shape="poly" title=" " alt="" coords="226,153,315,162,314,167,226,159"/>
-<area shape="rect" href="classCalculator.html#a1d690cbec689cb1bfb1ea9b31c2685dd" title="Calculates the standard deviation of temperature for a given month and year." alt="" coords="276,208,480,235"/>
-<area shape="poly" title=" " alt="" coords="158,157,274,193,303,201,302,206,273,199,156,162"/>
-<area shape="rect" href="classMenu.html#acbe93fcd2ac501f79524f5177ac5b28f" title="Checks if data exists for specified month and year." alt="" coords="306,259,450,285"/>
-<area shape="poly" title=" " alt="" coords="136,157,195,200,234,224,275,244,293,251,291,256,273,249,231,228,192,204,133,161"/>
-<area shape="poly" title=" " alt="" coords="442,30,483,48,525,82,557,118,553,121,521,86,481,53,440,35"/>
-<area shape="poly" title=" " alt="" coords="446,205,481,194,538,165,541,170,483,198,447,210"/>
-<area shape="poly" title=" " alt="" coords="449,258,481,244,503,228,523,209,555,170,559,173,527,213,506,232,483,249,451,263"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classMenu_a85b8e00988585aeb4058160cf861c7b2_icgraph.png" border="0" usemap="#aclassMenu_a85b8e00988585aeb4058160cf861c7b2_icgraph" alt=""/></div>
-<map name="aclassMenu_a85b8e00988585aeb4058160cf861c7b2_icgraph" id="aclassMenu_a85b8e00988585aeb4058160cf861c7b2_icgraph">
-<area shape="rect" title="Calculates and displays average temperature and standard deviation for each month of specified year." alt="" coords="252,5,472,32"/>
-<area shape="rect" href="classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,5,204,32"/>
-<area shape="poly" title=" " alt="" coords="237,21,204,21,204,16,237,16"/>
 <area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>
@@ -481,63 +272,62 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Menu_8cpp_source.html#l00008">8</a> of file <a class="el" href="Menu_8cpp_source.html">Menu.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Menu_8cpp_source.html#l00006">6</a> of file <a class="el" href="Menu_8cpp_source.html">Menu.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMenu_a042879989da9d5ba48f2e5091ca7de61_cgraph.png" border="0" usemap="#aclassMenu_a042879989da9d5ba48f2e5091ca7de61_cgraph" alt=""/></div>
 <map name="aclassMenu_a042879989da9d5ba48f2e5091ca7de61_cgraph" id="aclassMenu_a042879989da9d5ba48f2e5091ca7de61_cgraph">
-<area shape="rect" title="Displays main menu and handles user input." alt="" coords="5,329,107,355"/>
-<area shape="rect" href="classMenu.html#a66947a482d702a840513f5a031115b51" title="Writes wind speed, temperature and solar radiation data to WindTempSolar.csv." alt="" coords="192,299,338,326"/>
-<area shape="poly" title=" " alt="" coords="107,332,176,322,177,328,108,337"/>
-<area shape="rect" href="classMenu.html#a5806096cfb9ada4aeb28df9db1fa357f" title="Calculates and displays total solar radiation for each month of specified year." alt="" coords="176,350,354,393"/>
-<area shape="poly" title=" " alt="" coords="108,346,161,354,160,359,107,352"/>
-<area shape="rect" href="classMenu.html#a1692acad1cdf7ea5115467a4d0669efd" title="Calculates and displays average wind speed and standard deviation for specified month/year." alt="" coords="172,438,358,465"/>
-<area shape="poly" title=" " alt="" coords="78,354,156,402,214,429,212,434,153,407,75,358"/>
-<area shape="rect" href="classMenu.html#a85b8e00988585aeb4058160cf861c7b2" title="Calculates and displays average temperature and standard deviation for each month of specified year." alt="" coords="155,249,375,275"/>
-<area shape="poly" title=" " alt="" coords="77,326,112,305,154,285,175,277,177,282,156,290,114,309,79,330"/>
-<area shape="rect" href="classCalculator.html#a432b0a174d6036792fa598c01216dcae" title="Calculates the average speed for a given month and year." alt="" coords="440,510,614,537"/>
-<area shape="poly" title=" " alt="" coords="339,316,359,323,377,336,393,356,400,377,402,418,403,458,410,477,425,496,429,500,426,504,421,500,405,480,398,459,396,418,395,378,388,359,373,340,356,328,337,321"/>
-<area shape="rect" href="classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="679,307,771,334"/>
-<area shape="poly" title=" " alt="" coords="337,299,374,285,388,275,396,263,406,252,422,242,479,224,527,218,575,224,632,242,673,265,705,294,701,298,670,270,630,247,574,229,527,223,480,229,424,247,410,256,401,266,391,278,376,290,339,304"/>
-<area shape="rect" href="classCalculator.html#a991f6cbf0f18c17f1abf8dfe5ae75d23" title="Calculates the average temperature for a given month and year." alt="" coords="423,105,631,131"/>
-<area shape="poly" title=" " alt="" coords="337,304,356,297,373,285,387,269,394,251,396,215,399,178,406,159,421,141,425,138,429,142,425,145,411,162,404,179,402,216,399,253,392,271,377,289,359,301,339,309"/>
-<area shape="rect" href="classMenu.html#acdb35007ed6ed2b1cf476776edde519d" title="Gets and validates year input from user." alt="" coords="459,358,595,385"/>
-<area shape="poly" title=" " alt="" coords="328,324,450,351,449,357,327,329"/>
-<area shape="rect" href="Menu_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month name to month number." alt="" coords="479,257,575,283"/>
-<area shape="poly" title=" " alt="" coords="338,298,463,278,464,283,339,303"/>
-<area shape="rect" href="classCalculator.html#aa4650f4b9536b08a5aa02661c7551d34" title="Calculates the standard deviation of speed for a given month and year." alt="" coords="442,459,612,486"/>
-<area shape="poly" title=" " alt="" coords="339,317,359,324,377,336,389,349,397,364,402,392,407,420,413,433,425,445,431,450,428,454,421,449,409,436,402,421,396,393,391,365,385,352,373,340,356,329,337,322"/>
-<area shape="rect" href="classCalculator.html#a1d690cbec689cb1bfb1ea9b31c2685dd" title="Calculates the standard deviation of temperature for a given month and year." alt="" coords="425,54,629,81"/>
-<area shape="poly" title=" " alt="" coords="337,305,357,297,373,285,390,262,398,239,399,215,396,190,394,165,395,140,403,115,421,91,424,88,428,92,425,94,408,118,400,141,400,165,402,190,404,215,403,240,395,265,377,289,359,302,339,310"/>
-<area shape="rect" href="classCalculator.html#ad0516c4e99ee4b164221167c2a3ead84" title="Calculates the total solar radiation for a given month and year." alt="" coords="426,307,628,334"/>
-<area shape="poly" title=" " alt="" coords="338,312,411,314,411,320,338,317"/>
-<area shape="rect" href="classFileHandler.html#a89530c8ca2d597f40ead571fb7ce41f4" title="Writes content to a specified file." alt="" coords="448,155,606,182"/>
-<area shape="poly" title=" " alt="" coords="337,302,356,295,373,285,390,265,397,244,404,221,421,199,441,186,444,191,425,203,408,223,402,245,395,268,377,289,358,300,339,307"/>
-<area shape="poly" title=" " alt="" coords="611,507,630,496,662,462,686,423,703,383,714,348,719,350,708,385,691,425,666,466,633,500,614,512"/>
-<area shape="poly" title=" " alt="" coords="614,130,633,141,666,176,691,216,708,257,719,291,714,293,703,259,686,218,662,179,630,145,611,134"/>
-<area shape="poly" title=" " alt="" coords="608,456,630,445,655,423,677,398,709,347,713,349,682,401,659,427,633,449,610,461"/>
-<area shape="poly" title=" " alt="" coords="615,79,633,91,654,113,672,138,698,193,715,247,723,291,718,292,709,248,693,195,668,140,650,116,630,95,612,83"/>
-<area shape="poly" title=" " alt="" coords="628,318,664,318,664,323,628,323"/>
-<area shape="poly" title=" " alt="" coords="330,391,355,405,377,424,389,441,395,458,398,491,403,521,411,534,425,546,478,575,503,583,527,585,551,582,576,575,630,546,652,527,671,504,697,450,712,395,719,349,724,350,718,396,702,452,675,507,656,531,633,551,578,580,552,588,527,590,502,588,476,580,421,551,407,537,398,522,393,491,390,459,384,443,373,428,352,410,328,396"/>
-<area shape="poly" title=" " alt="" coords="354,369,443,369,443,374,354,374"/>
-<area shape="poly" title=" " alt="" coords="350,347,374,336,388,325,397,315,407,304,422,293,463,278,465,283,424,298,410,308,401,318,391,329,376,340,352,352"/>
-<area shape="poly" title=" " alt="" coords="354,351,439,335,440,340,355,357"/>
-<area shape="rect" href="classMenu.html#acbe93fcd2ac501f79524f5177ac5b28f" title="Checks if data exists for specified month and year." alt="" coords="456,409,599,435"/>
-<area shape="poly" title=" " alt="" coords="355,386,441,403,440,408,354,391"/>
-<area shape="poly" title=" " alt="" coords="598,406,630,394,668,370,699,343,702,347,671,374,633,399,600,411"/>
-<area shape="poly" title=" " alt="" coords="312,463,424,495,453,503,452,508,422,501,310,468"/>
-<area shape="poly" title=" " alt="" coords="302,435,422,394,450,386,451,391,424,399,303,440"/>
-<area shape="poly" title=" " alt="" coords="358,456,427,462,427,467,358,461"/>
-<area shape="poly" title=" " alt="" coords="358,438,439,429,440,434,358,444"/>
-<area shape="rect" href="Menu_8cpp.html#ad401f86677144b9ca5f90eb6fc5b07c9" title="Converts month name to month number." alt="" coords="479,611,575,638"/>
-<area shape="poly" title=" " alt="" coords="280,463,338,524,379,560,424,590,465,608,463,613,422,595,376,564,334,528,276,467"/>
-<area shape="poly" title=" " alt="" coords="268,247,286,204,317,145,338,115,362,86,390,60,422,40,479,14,530,3,555,4,580,11,605,22,633,40,661,65,682,96,699,130,710,166,723,236,727,291,722,292,718,236,705,167,694,132,678,99,657,69,630,44,603,27,578,16,554,10,530,8,481,19,424,44,393,64,366,89,342,118,322,148,291,206,273,249"/>
-<area shape="poly" title=" " alt="" coords="278,246,337,195,378,166,422,141,438,134,440,139,424,146,381,170,341,199,282,250"/>
-<area shape="poly" title=" " alt="" coords="352,273,376,285,393,300,401,315,410,330,425,344,445,354,443,359,421,348,405,333,397,318,388,303,374,289,350,278"/>
-<area shape="poly" title=" " alt="" coords="376,263,463,265,463,271,375,268"/>
-<area shape="poly" title=" " alt="" coords="273,246,295,214,329,172,372,128,422,90,433,85,435,89,424,95,375,132,333,175,299,217,277,250"/>
-<area shape="poly" title=" " alt="" coords="358,274,377,285,389,299,397,313,402,341,407,369,413,382,425,395,443,406,440,410,421,399,409,385,402,371,396,342,391,315,385,302,373,289,355,278"/>
+<area shape="rect" title="Displays main menu and handles user input." alt="" coords="5,212,107,239"/>
+<area shape="rect" href="classResults.html#a4a4faf662090164cb2c873e49c4c54b4" title="Calculates and displays average temperature and standard deviation for each month of specified year." alt="" coords="388,150,588,192"/>
+<area shape="poly" title=" " alt="" coords="107,214,154,206,372,179,373,185,155,211,108,219"/>
+<area shape="rect" href="classResults.html#ab02523d4983775f3c2255d44934c988e" title="Calculates and displays total solar radiation for each month of specified year." alt="" coords="400,83,576,126"/>
+<area shape="poly" title=" " alt="" coords="81,209,154,177,272,142,384,119,385,124,274,148,156,182,83,214"/>
+<area shape="rect" href="classMenu.html#acdb35007ed6ed2b1cf476776edde519d" title="Gets and validates year input from user." alt="" coords="420,216,556,243"/>
+<area shape="poly" title=" " alt="" coords="107,224,404,226,404,232,107,229"/>
+<area shape="rect" href="classMenu.html#a1692acad1cdf7ea5115467a4d0669efd" title="Gets and validate user input for specific month and year." alt="" coords="155,263,340,290"/>
+<area shape="poly" title=" " alt="" coords="108,236,180,256,179,261,106,242"/>
+<area shape="rect" href="classResults.html#aef3159df1c45e68eb77af91747358a89" title="Writes wind speed, temperature and solar radiation data to WindTempSolar.csv." alt="" coords="430,334,546,360"/>
+<area shape="poly" title=" " alt="" coords="72,238,108,270,131,286,156,299,222,321,291,335,357,342,415,345,415,351,357,348,290,340,221,326,154,304,128,291,104,274,69,242"/>
+<area shape="rect" href="classCalculator.html#a991f6cbf0f18c17f1abf8dfe5ae75d23" title="Calculates the average temperature for a given month and year." alt="" coords="636,232,845,259"/>
+<area shape="poly" title=" " alt="" coords="555,190,637,218,665,226,664,231,636,223,554,196"/>
+<area shape="rect" href="classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="893,232,984,259"/>
+<area shape="poly" title=" " alt="" coords="568,147,587,136,602,118,609,100,617,82,635,66,692,41,741,32,766,33,791,40,846,66,865,80,882,98,907,138,924,180,934,216,929,218,919,182,902,140,877,101,862,84,843,71,789,45,765,39,742,37,693,46,638,71,621,85,614,102,606,121,590,140,571,152"/>
+<area shape="rect" href="Results_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month index into a readable month string." alt="" coords="692,182,789,208"/>
+<area shape="poly" title=" " alt="" coords="589,178,677,186,677,192,589,183"/>
+<area shape="rect" href="classCalculator.html#a1d690cbec689cb1bfb1ea9b31c2685dd" title="Calculates the standard deviation of temperature for a given month and year." alt="" coords="638,283,843,310"/>
+<area shape="poly" title=" " alt="" coords="571,191,590,202,606,220,614,237,622,254,638,269,646,274,644,279,635,273,618,257,610,239,602,223,587,206,568,195"/>
+<area shape="rect" href="classResults.html#a935d60d849b540951e4be2eac4809c7f" title="Checks if data exists for specified month and year." alt="" coords="662,80,819,107"/>
+<area shape="poly" title=" " alt="" coords="555,147,587,135,635,117,661,109,663,114,637,122,589,140,557,152"/>
+<area shape="poly" title=" " alt="" coords="845,243,877,243,877,248,845,248"/>
+<area shape="poly" title=" " alt="" coords="799,280,844,268,877,260,878,265,845,274,800,285"/>
+<area shape="poly" title=" " alt="" coords="820,104,846,117,873,139,895,166,927,217,922,220,891,169,869,143,843,121,818,109"/>
+<area shape="poly" title=" " alt="" coords="522,80,586,46,626,29,670,14,715,5,761,3,805,11,846,30,868,48,887,71,913,122,929,173,937,217,932,218,924,175,908,124,882,74,865,52,843,35,803,16,760,9,716,11,671,20,628,34,588,51,524,85"/>
+<area shape="poly" title=" " alt="" coords="563,124,590,135,614,152,637,167,678,181,676,186,635,172,611,156,587,140,561,129"/>
+<area shape="poly" title=" " alt="" coords="577,98,647,95,647,100,577,103"/>
+<area shape="rect" href="classCalculator.html#ad0516c4e99ee4b164221167c2a3ead84" title="Calculates the total solar radiation for a given month and year." alt="" coords="640,131,841,158"/>
+<area shape="poly" title=" " alt="" coords="577,116,637,125,636,131,576,121"/>
+<area shape="poly" title=" " alt="" coords="817,156,846,167,884,192,916,220,912,224,881,196,843,172,815,161"/>
+<area shape="poly" title=" " alt="" coords="319,260,404,243,405,248,320,265"/>
+<area shape="rect" href="classResults.html#aab2d1793b03f766af73da66b272697cd" title="Calculates and displays average wind speed and standard deviation for specified month/year." alt="" coords="388,267,588,310"/>
+<area shape="poly" title=" " alt="" coords="341,278,373,280,372,285,340,284"/>
+<area shape="poly" title=" " alt="" coords="562,264,587,253,611,235,635,218,676,204,678,209,638,223,614,240,590,257,564,269"/>
+<area shape="poly" title=" " alt="" coords="572,264,586,253,599,237,606,220,609,186,613,151,620,134,635,117,647,108,650,112,638,121,625,137,618,153,614,187,611,222,604,239,590,257,575,269"/>
+<area shape="rect" href="classCalculator.html#a432b0a174d6036792fa598c01216dcae" title="Calculates the average speed for a given month and year." alt="" coords="654,384,827,411"/>
+<area shape="poly" title=" " alt="" coords="568,308,590,320,605,333,614,346,623,358,638,370,649,376,647,381,635,375,619,362,610,349,601,336,587,324,566,313"/>
+<area shape="rect" href="classCalculator.html#aa4650f4b9536b08a5aa02661c7551d34" title="Calculates the standard deviation of speed for a given month and year." alt="" coords="656,334,825,360"/>
+<area shape="poly" title=" " alt="" coords="583,308,665,327,664,332,582,313"/>
+<area shape="poly" title=" " alt="" coords="821,382,843,370,869,349,891,323,922,272,927,275,895,326,873,352,846,375,823,386"/>
+<area shape="poly" title=" " alt="" coords="815,331,843,319,881,295,912,268,916,272,884,299,846,324,817,336"/>
+<area shape="poly" title=" " alt="" coords="546,336,587,319,601,308,610,295,619,282,635,269,647,263,649,267,638,273,623,285,615,298,605,311,590,324,548,341"/>
+<area shape="poly" title=" " alt="" coords="511,359,572,394,612,412,657,429,705,441,753,445,800,439,843,421,862,407,877,390,902,351,919,310,929,274,934,275,924,312,907,353,882,394,865,411,846,425,801,444,753,450,704,446,656,434,610,417,569,398,509,363"/>
+<area shape="poly" title=" " alt="" coords="546,339,568,331,587,320,598,308,604,296,610,270,615,244,623,231,635,218,654,206,676,199,678,204,657,211,638,222,627,234,620,246,615,272,609,298,602,311,590,324,570,336,548,344"/>
+<area shape="poly" title=" " alt="" coords="546,333,655,311,656,316,547,338"/>
+<area shape="poly" title=" " alt="" coords="546,340,568,332,587,320,601,302,608,284,610,246,612,207,619,187,634,168,638,164,642,169,638,172,624,190,617,208,615,246,613,285,605,305,590,324,570,337,548,345"/>
+<area shape="poly" title=" " alt="" coords="547,356,656,378,655,383,546,361"/>
+<area shape="poly" title=" " alt="" coords="547,344,640,344,640,350,547,350"/>
+<area shape="rect" href="classFileHandler.html#a89530c8ca2d597f40ead571fb7ce41f4" title="Writes content to a specified file." alt="" coords="661,486,820,512"/>
+<area shape="poly" title=" " alt="" coords="505,359,560,410,597,439,638,465,668,478,666,483,635,469,594,444,556,414,501,363"/>
 </map>
 </div>
 <div class="dynheader">
@@ -548,81 +338,6 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Displays main menu and handles user input." alt="" coords="103,5,204,32"/>
 <area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="acbe93fcd2ac501f79524f5177ac5b28f" name="acbe93fcd2ac501f79524f5177ac5b28f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbe93fcd2ac501f79524f5177ac5b28f">&#9670;&#160;</a></span>ValidateMonth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Menu::ValidateMonth </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="SensorRecType_8h.html#a168a97ffccc292cea26c3fcbbfdc67c4">SensorLog</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sensor_data</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>month</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>year</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const string</td>          <td class="paramname"><span class="paramname"><em>sensor_type</em></span>&#160;) const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks if data exists for specified month and year. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sensor_data</td><td>Reference to sensor log containing all data </td></tr>
-    <tr><td class="paramname">month</td><td>Month to validate </td></tr>
-    <tr><td class="paramname">year</td><td>Year to validate </td></tr>
-    <tr><td class="paramname">sensor_type</td><td>to validate </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if data exists, false otherwise </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="Menu_8cpp_source.html#l00427">427</a> of file <a class="el" href="Menu_8cpp_source.html">Menu.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classMenu_acbe93fcd2ac501f79524f5177ac5b28f_cgraph.png" border="0" usemap="#aclassMenu_acbe93fcd2ac501f79524f5177ac5b28f_cgraph" alt=""/></div>
-<map name="aclassMenu_acbe93fcd2ac501f79524f5177ac5b28f_cgraph" id="aclassMenu_acbe93fcd2ac501f79524f5177ac5b28f_cgraph">
-<area shape="rect" title="Checks if data exists for specified month and year." alt="" coords="5,5,149,32"/>
-<area shape="rect" href="classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="197,5,288,32"/>
-<area shape="poly" title=" " alt="" coords="149,16,181,16,181,21,149,21"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classMenu_acbe93fcd2ac501f79524f5177ac5b28f_icgraph.png" border="0" usemap="#aclassMenu_acbe93fcd2ac501f79524f5177ac5b28f_icgraph" alt=""/></div>
-<map name="aclassMenu_acbe93fcd2ac501f79524f5177ac5b28f_icgraph" id="aclassMenu_acbe93fcd2ac501f79524f5177ac5b28f_icgraph">
-<area shape="rect" title="Checks if data exists for specified month and year." alt="" coords="520,72,664,99"/>
-<area shape="rect" href="classMenu.html#a5806096cfb9ada4aeb28df9db1fa357f" title="Calculates and displays total solar radiation for each month of specified year." alt="" coords="273,5,451,48"/>
-<area shape="poly" title=" " alt="" coords="521,70,448,51,449,46,523,65"/>
-<area shape="rect" href="classMenu.html#a1692acad1cdf7ea5115467a4d0669efd" title="Calculates and displays average wind speed and standard deviation for specified month/year." alt="" coords="270,72,455,99"/>
-<area shape="poly" title=" " alt="" coords="505,88,455,88,455,83,505,83"/>
-<area shape="rect" href="classMenu.html#a85b8e00988585aeb4058160cf861c7b2" title="Calculates and displays average temperature and standard deviation for each month of specified year." alt="" coords="252,123,472,149"/>
-<area shape="poly" title=" " alt="" coords="514,105,427,125,425,119,512,100"/>
-<area shape="rect" href="classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,72,204,99"/>
-<area shape="poly" title=" " alt="" coords="271,55,204,74,203,69,269,50"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,72,55,99"/>
-<area shape="poly" title=" " alt="" coords="87,88,55,88,55,83,87,83"/>
-<area shape="poly" title=" " alt="" coords="254,88,204,88,204,83,254,83"/>
-<area shape="poly" title=" " alt="" coords="284,121,251,113,204,101,205,96,253,108,286,116"/>
 </map>
 </div>
 

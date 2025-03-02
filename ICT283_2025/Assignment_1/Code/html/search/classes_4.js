@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sensorrectype_0',['SensorRecType',['../structSensorRecType.html',1,'']]]
+  ['results_0',['Results',['../classResults.html',1,'']]]
 ];

@@ -1,12 +1,14 @@
 <map id="Calculator::StdDevSpeed" name="Calculator::StdDevSpeed">
-<area shape="rect" id="Node000001" title="Calculates the standard deviation of speed for a given month and year." alt="" coords="485,31,655,57"/>
-<area shape="rect" id="Node000002" href="$classMenu.html#a66947a482d702a840513f5a031115b51" title="Writes wind speed, temperature and solar radiation data to WindTempSolar.csv." alt="" coords="272,5,417,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="470,35,418,30,418,24,470,30"/>
-<area shape="rect" id="Node000005" href="$classMenu.html#a1692acad1cdf7ea5115467a4d0669efd" title="Calculates and displays average wind speed and standard deviation for specified month/year." alt="" coords="252,56,437,83"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="470,58,438,62,438,56,470,53"/>
-<area shape="rect" id="Node000003" href="$classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,31,204,57"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="257,33,205,40,204,35,256,28"/>
-<area shape="rect" id="Node000004" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,47,55,47,55,41,87,41"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="237,58,204,53,205,48,237,52"/>
+<area shape="rect" id="Node000001" title="Calculates the standard deviation of speed for a given month and year." alt="" coords="734,43,903,69"/>
+<area shape="rect" id="Node000002" href="$classResults.html#aab2d1793b03f766af73da66b272697cd" title="Calculates and displays average wind speed and standard deviation for specified month/year." alt="" coords="485,5,686,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="718,46,686,42,687,37,719,41"/>
+<area shape="rect" id="Node000006" href="$classResults.html#aef3159df1c45e68eb77af91747358a89" title="Writes wind speed, temperature and solar radiation data to WindTempSolar.csv." alt="" coords="286,68,403,95"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="719,64,403,81,403,76,718,59"/>
+<area shape="rect" id="Node000003" href="$classMenu.html#a1692acad1cdf7ea5115467a4d0669efd" title="Gets and validate user input for specific month and year." alt="" coords="252,16,437,43"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="470,31,438,31,438,26,470,25"/>
+<area shape="rect" id="Node000004" href="$classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,43,204,69"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="237,47,205,52,204,46,236,42"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,43,55,69"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,59,55,59,55,53,87,53"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="271,74,204,65,205,60,272,69"/>
 </map>

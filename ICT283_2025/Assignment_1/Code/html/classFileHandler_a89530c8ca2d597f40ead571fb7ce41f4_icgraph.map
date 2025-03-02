@@ -1,9 +1,9 @@
 <map id="FileHandler::writeToFile" name="FileHandler::writeToFile">
-<area shape="rect" id="Node000001" title="Writes content to a specified file." alt="" coords="445,5,604,32"/>
-<area shape="rect" id="Node000002" href="$classMenu.html#a66947a482d702a840513f5a031115b51" title="Writes wind speed, temperature and solar radiation data to WindTempSolar.csv." alt="" coords="252,5,397,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="430,21,398,21,398,16,430,16"/>
+<area shape="rect" id="Node000001" title="Writes content to a specified file." alt="" coords="416,5,575,32"/>
+<area shape="rect" id="Node000002" href="$classResults.html#aef3159df1c45e68eb77af91747358a89" title="Writes wind speed, temperature and solar radiation data to WindTempSolar.csv." alt="" coords="252,5,368,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="401,21,369,21,369,16,401,16"/>
 <area shape="rect" id="Node000003" href="$classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,5,204,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="237,21,204,21,204,16,237,16"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="236,21,205,21,205,16,236,16"/>
 <area shape="rect" id="Node000004" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>

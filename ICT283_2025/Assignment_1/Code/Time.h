@@ -65,9 +65,9 @@ public:
   void SetHours(int hours);
 
 private:
-  int m_minutes; ///< contains the day value
+  int m_minutes; ///< contains the minutes value
 
-  int m_hours; ///< contains the month value
+  int m_hours; ///< contains the hours value
 };
 
 /// overloading the << operator

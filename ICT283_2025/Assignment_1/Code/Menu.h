@@ -2,12 +2,24 @@
 #define MENU_H
 #include "Calculator.h"
 #include "FileHandler.h"
+#include "Results.h"
 #include "SensorRecType.h"
 #include <iostream>
 using namespace std;
 
-const int MAX_MONTHS = 13;
-
+/**
+ * @class Menu
+ * @brief Handles user interaction and data processing for weather sensor
+ * information
+ *
+ * This class provides functionality to display menus, process user input,
+ * and perform various calculations on weather sensor data including wind speed,
+ * temperature, and solar radiation measurements.
+ *
+ * @author Kim Andrew Dela Cruz
+ * @version 01
+ * @date 16/02/2025 Kim Andrew Dela Cruz
+ */
 class Menu {
 public:
   /**

@@ -33,7 +33,7 @@ public:
    *
    * @param t Reference to the vector to be copied
    */
-  Vector(const Vector<T> &t);
+  Vector(const Vector<T> &other);
 
   /**
    * @brief Parameterized constructor

@@ -96,7 +96,6 @@ void FileHandler::readCSV(const string &filename,
       SR_Index = i;
     }
   }
-  int count = 0;
   // Go through the remaining lines and extract the sensor data
   while (getline(file, line)) {
 
@@ -128,8 +127,6 @@ void FileHandler::readCSV(const string &filename,
     float f_temperature = 0.0f;
     float f_solar_radiation = 0.0f;
 
-    cout << "INDEX ===== " << count << endl;
-    count++;
     // Loop through all the columns
     for (int i = 0; i < vecHeader.size(); ++i) {
 
@@ -148,30 +145,20 @@ void FileHandler::readCSV(const string &filename,
         getline(timeStream, sHour, ':');
         getline(timeStream, sMinute);
 
-        cout << sDay << endl;
-        cout << sMonth << endl;
-        cout << sYear << endl;
-
-        cout << sHour << endl;
-        cout << sMinute << endl;
       }
       // Extract speed data
       else if (i == S_Index) {
         getline(ss, s_speed, ',');
         if (s_speed.empty()) {
           s_speed = "0";
-          cout << "S EMPTY" << endl;
         }
-        cout << "S =" << s_speed << endl;
       }
       // Extract temperature data
       else if (i == T_Index) {
         getline(ss, s_temperature, ',');
         if (s_temperature.empty()) {
           s_temperature = "0";
-          cout << "T EMPTY" << endl;
         }
-        cout << "T =" << s_temperature << endl;
 
       }
       // Extract solar radiation data
@@ -179,14 +166,11 @@ void FileHandler::readCSV(const string &filename,
         getline(ss, s_solar_radiation, ',');
         if (s_solar_radiation.empty()) {
           s_solar_radiation = "0";
-          cout << "SR EMPTY" << endl;
         }
-        cout << "SR =" << s_solar_radiation << endl;
       }
       // Skip Column
       else {
         getline(ss, skip, ',');
-        cout << "skip" << endl;
       }
     }
 

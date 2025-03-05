@@ -67,16 +67,15 @@ void Results::DisplayAverageStdevTemperature(const SensorLog &sensor_data,
     // Loop through all the months of a year
     for (int month_index = 1; month_index < MAX_MONTHS; month_index++) {
 
+      // month_index = the month to be validated
+      month = month_index;
+
       for (int index = 0; index < sensor_data.size(); index++) {
         if (sensor_data[index].date.GetMonth() == month &&
             sensor_data[index].date.GetYear() == year) {
           data.push(sensor_data[index].temperature);
         }
       }
-
-      // month_index = the month to be validated
-
-      month = month_index;
 
       // Check if there is data for the current month index
       // The "T" inside the ValidateMonth parameter stands for temperature
@@ -125,13 +124,6 @@ void Results::DisplayTotalSolarRadiation(const SensorLog &sensor_data,
 
   if (month_exist) {
 
-    for (int index = 0; index < sensor_data.size(); index++) {
-      if (sensor_data[index].date.GetMonth() == month &&
-          sensor_data[index].date.GetYear() == year) {
-        data.push(sensor_data[index].solar_radiation);
-      }
-    }
-
     // Print the year
     cout << endl << year << ": " << endl;
 
@@ -142,6 +134,12 @@ void Results::DisplayTotalSolarRadiation(const SensorLog &sensor_data,
 
       month = month_index;
 
+      for (int index = 0; index < sensor_data.size(); index++) {
+        if (sensor_data[index].date.GetMonth() == month &&
+            sensor_data[index].date.GetYear() == year) {
+          data.push(sensor_data[index].solar_radiation);
+        }
+      }
       // Check if there is data for the current month index
       // The "SR" inside the ValidateMonth parameter stands for Solar Radiation
 

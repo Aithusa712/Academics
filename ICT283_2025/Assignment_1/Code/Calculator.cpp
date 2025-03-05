@@ -1,10 +1,10 @@
 #include "Calculator.h"
+#include "Vector.h"
 using namespace std;
 
 /*  Calculate Average Speed   */
 
-float Calculator::AverageSpeed(const SensorLog &sensor_data, const int month,
-                               const int year) const {
+float Calculator::AverageSpeed(const Vector<float> &data) const {
 
   // Initialize local variables
 
@@ -15,15 +15,12 @@ float Calculator::AverageSpeed(const SensorLog &sensor_data, const int month,
   // Loop through all the sensor data, and check if it matches the year and
   // month parameter to get the sum of speed records
 
-  for (int index = 0; index < sensor_data.size(); index++) {
-    if (sensor_data[index].date.GetYear() == year &&
-        sensor_data[index].date.GetMonth() == month) {
-      sum += sensor_data[index].speed;
-      data_count++;
-    }
+  for (int index = 0; index < data.size(); index++) {
+    sum += data[index];
+    data_count++;
   }
 
-  // Check if there are more than 1 sensor_data, return 0 if data is
+  // Check if there are more than 1 data, return 0 if data is
   // insufficient
 
   if (data_count < 2) {
@@ -36,8 +33,7 @@ float Calculator::AverageSpeed(const SensorLog &sensor_data, const int month,
 
 /*  Calculate Average Temperature   */
 
-float Calculator::AverageTemperature(const SensorLog &sensor_data,
-                                     const int month, const int year) const {
+float Calculator::AverageTemperature(const Vector<float> &data) const {
 
   // Initialize local variables
 
@@ -48,15 +44,13 @@ float Calculator::AverageTemperature(const SensorLog &sensor_data,
   // Loop through all the sensor data, and check if it matches the year and
   // month parameter to get the sum of temperature records
 
-  for (int index = 0; index < sensor_data.size(); index++) {
-    if (sensor_data[index].date.GetYear() == year &&
-        sensor_data[index].date.GetMonth() == month) {
-      sum += sensor_data[index].temperature;
-      data_count++;
-    }
+  for (int index = 0; index < data.size(); index++) {
+
+    sum += data[index];
+    data_count++;
   }
 
-  // Check if there are more than 1 sensor_data, return 0 if data is
+  // Check if there are more than 1 data, return 0 if data is
   // insufficient
 
   if (data_count < 2) {
@@ -69,8 +63,8 @@ float Calculator::AverageTemperature(const SensorLog &sensor_data,
 
 /*  Calculate Sample Standard Deviation of Speed   */
 
-float Calculator::StdDevSpeed(const SensorLog &sensor_data, const float mean,
-                              const int month, const int year) const {
+float Calculator::StdDevSpeed(const Vector<float> &data,
+                              const float mean) const {
 
   //  Initialize local variables
 
@@ -81,16 +75,14 @@ float Calculator::StdDevSpeed(const SensorLog &sensor_data, const float mean,
   // Loop through all the sensor data, and check if it matches the year and
   // month parameter to get the sum of squared difference of speed records.
 
-  for (int index = 0; index < sensor_data.size(); index++) {
-    if (sensor_data[index].date.GetYear() == year &&
-        sensor_data[index].date.GetMonth() == month) {
-      float diff = sensor_data[index].speed - mean;
-      sum_square_diff += diff * diff;
-      data_count++;
-    }
+  for (int index = 0; index < data.size(); index++) {
+
+    float diff = data[index] - mean;
+    sum_square_diff += diff * diff;
+    data_count++;
   }
 
-  // Check if there are more than 1 sensor_data, return 0 if data is
+  // Check if there are more than 1 data, return 0 if data is
   // insufficient
 
   if (data_count < 2) {
@@ -103,9 +95,8 @@ float Calculator::StdDevSpeed(const SensorLog &sensor_data, const float mean,
 
 /*  Calculate Sample Standard Deviation of Temperature   */
 
-float Calculator::StdDevTemperature(const SensorLog &sensor_data,
-                                    const float mean, const int month,
-                                    const int year) const {
+float Calculator::StdDevTemperature(const Vector<float> &data,
+                                    const float mean) const {
 
   // Initialize local variables
 
@@ -116,16 +107,14 @@ float Calculator::StdDevTemperature(const SensorLog &sensor_data,
   // Loop through all the sensor data, and check if it matches the year and
   // month parameter to get the sum of squared difference of speed records.
 
-  for (int index = 0; index < sensor_data.size(); index++) {
-    if (sensor_data[index].date.GetYear() == year &&
-        sensor_data[index].date.GetMonth() == month) {
-      float diff = sensor_data[index].temperature - mean;
-      sum_square_diff += diff * diff;
-      data_count++;
-    }
+  for (int index = 0; index < data.size(); index++) {
+
+    float diff = data[index] - mean;
+    sum_square_diff += diff * diff;
+    data_count++;
   }
 
-  // Check if there are more than 1 sensor_data, return 0 if data is
+  // Check if there are more than 1 data, return 0 if data is
   // insufficient
 
   if (data_count < 2) {
@@ -139,30 +128,26 @@ float Calculator::StdDevTemperature(const SensorLog &sensor_data,
 
 /*  Calculate Sample Standard Deviation of Speed   */
 
-float Calculator::TotalSolarRadiation(const SensorLog &sensor_data,
-                                      const int month, const int year) const {
+float Calculator::TotalSolarRadiation(const Vector<float> &data) const {
   float totalRadiation = 0.0f;
   int data_count = 0;
 
   // Loop through all the sensor data, and check if it matches the year and
   // month parameter to get the sum of solar radiation
 
-  for (int index = 0; index < sensor_data.size(); index++) {
-    if (sensor_data[index].date.GetYear() == year &&
-        sensor_data[index].date.GetMonth() == month &&
-        sensor_data[index].solar_radiation >= 100) {
+  for (int index = 0; index < data.size(); index++) {
+    if (data[index] >= 100) {
 
       // Convert W/m^2 to kWh/m^2:
       // W/m^2 * (10minutes / 60min/hour) / 1000W/kW
 
-      float kWh_conversion =
-          sensor_data[index].solar_radiation * (10.0f / 60.0f) / 1000.0f;
+      float kWh_conversion = data[index] * (10.0f / 60.0f) / 1000.0f;
       totalRadiation += kWh_conversion;
       data_count++;
     }
   }
 
-  // Check if there are more than 1 sensor_data, return 0 if data is
+  // Check if there are more than 1 data, return 0 if data is
   // insufficient
 
   if (data_count < 2) {

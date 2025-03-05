@@ -1,5 +1,5 @@
 #include "Results.h"
-#include "Calculator.h"
+#include "Vector.h"
 
 void Results::DisplayAverageStdevSpeed(const SensorLog &sensor_data,
                                        const int month, const int year) const {
@@ -7,16 +7,23 @@ void Results::DisplayAverageStdevSpeed(const SensorLog &sensor_data,
   Calculator calculate;
   float average = 0.0f;
   float standard_deviation = 0.0f;
+  Vector<float> data;
 
   // Condition to check if the month and year contains any data, if it does,
   // calculate and prompt results
   // The "S" in the ValidateMonth parameter stands for Speed
   if (ValidateMonth(sensor_data, month, year, "S")) {
 
+    for (int index = 0; index < sensor_data.size(); index++) {
+      if (sensor_data[index].date.GetMonth() == month &&
+          sensor_data[index].date.GetYear() == year) {
+        data.push(sensor_data[index].speed);
+      }
+    }
+
     // Call functions from the Calculator class
-    average = calculate.AverageSpeed(sensor_data, month, year);
-    standard_deviation =
-        calculate.StdDevSpeed(sensor_data, average, month, year);
+    average = calculate.AverageSpeed(data);
+    standard_deviation = calculate.StdDevSpeed(data, average);
 
     // Print Results
     cout << month << " " << year << ":" << endl
@@ -38,7 +45,7 @@ void Results::DisplayAverageStdevTemperature(const SensorLog &sensor_data,
   float standard_deviation = 0.0f;
   int month = 0;
   bool month_exist = false;
-
+  Vector<float> data;
   // Loop through the sensor data vector struct to
   // find if there is any data on
   // the year the user entered
@@ -60,6 +67,13 @@ void Results::DisplayAverageStdevTemperature(const SensorLog &sensor_data,
     // Loop through all the months of a year
     for (int month_index = 1; month_index < MAX_MONTHS; month_index++) {
 
+      for (int index = 0; index < sensor_data.size(); index++) {
+        if (sensor_data[index].date.GetMonth() == month &&
+            sensor_data[index].date.GetYear() == year) {
+          data.push(sensor_data[index].temperature);
+        }
+      }
+
       // month_index = the month to be validated
 
       month = month_index;
@@ -70,9 +84,8 @@ void Results::DisplayAverageStdevTemperature(const SensorLog &sensor_data,
       if (ValidateMonth(sensor_data, month, year, "T")) {
 
         // Call functions from the Calculator class
-        average = calculate.AverageTemperature(sensor_data, month, year);
-        standard_deviation =
-            calculate.StdDevTemperature(sensor_data, average, month, year);
+        average = calculate.AverageTemperature(data);
+        standard_deviation = calculate.StdDevTemperature(data, average);
         // Print Results
         cout << int_to_month(month) << ":"
              << " average: " << average
@@ -96,7 +109,7 @@ void Results::DisplayTotalSolarRadiation(const SensorLog &sensor_data,
   Calculator calculate;
   int month = 0;
   float total_solar_radiation = 0;
-
+  Vector<float> data;
   bool month_exist = false;
   // Loop through the sensor data vector struct to find if there is any data on
   // the year the user entered
@@ -111,6 +124,14 @@ void Results::DisplayTotalSolarRadiation(const SensorLog &sensor_data,
   // If month exists for that year
 
   if (month_exist) {
+
+    for (int index = 0; index < sensor_data.size(); index++) {
+      if (sensor_data[index].date.GetMonth() == month &&
+          sensor_data[index].date.GetYear() == year) {
+        data.push(sensor_data[index].solar_radiation);
+      }
+    }
+
     // Print the year
     cout << endl << year << ": " << endl;
 
@@ -128,8 +149,7 @@ void Results::DisplayTotalSolarRadiation(const SensorLog &sensor_data,
 
         // Call function from the Calculator Class
 
-        total_solar_radiation =
-            calculate.TotalSolarRadiation(sensor_data, month, year);
+        total_solar_radiation = calculate.TotalSolarRadiation(data);
 
         // Print Results
 
@@ -160,6 +180,9 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
   float total_solar_radiation = 0.0f;
   int month = 0;
   bool month_exist = false;
+  Vector<float> speed_data;
+  Vector<float> temperature_data;
+  Vector<float> solar_radiation_data;
 
   // Loop through the sensor data vector struct to find if there is any data on
   // the year the user entered
@@ -191,22 +214,28 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
 
       int empty_data = 0;
 
+      for (int index = 0; index < sensor_data.size(); index++) {
+        if (sensor_data[index].date.GetMonth() == month &&
+            sensor_data[index].date.GetYear() == year) {
+          speed_data.push(sensor_data[index].speed);
+          temperature_data.push(sensor_data[index].temperature);
+          solar_radiation_data.push(sensor_data[index].solar_radiation);
+        }
+      }
       // Call functions from the calculate class
 
       // Average Speed
-      average_speed = calculate.AverageSpeed(sensor_data, month, year);
+      average_speed = calculate.AverageSpeed(speed_data);
       // Sample Standard Deviation Speed
-      stdev_speed =
-          calculate.StdDevSpeed(sensor_data, average_speed, month, year);
+      stdev_speed = calculate.StdDevSpeed(speed_data, average_speed);
       // Average Temperature
-      average_temperature =
-          calculate.AverageTemperature(sensor_data, month, year);
+      average_temperature = calculate.AverageTemperature(temperature_data);
       // Sample Standard Deviation Temperature
-      stdev_temperature = calculate.StdDevTemperature(
-          sensor_data, average_temperature, month, year);
+      stdev_temperature =
+          calculate.StdDevTemperature(temperature_data, average_temperature);
       // Total solar Radiation
       total_solar_radiation =
-          calculate.TotalSolarRadiation(sensor_data, month, year);
+          calculate.TotalSolarRadiation(solar_radiation_data);
 
       // Print month name to output stream
 

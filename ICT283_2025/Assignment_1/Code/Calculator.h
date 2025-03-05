@@ -1,7 +1,7 @@
 #ifndef CALCULATOR_H
 #define CALCULATOR_H
 
-#include "SensorRecType.h"
+#include "Vector.h"
 #include <cmath>
 #include <iostream>
 using namespace std;
@@ -23,58 +23,53 @@ class Calculator {
 public:
   /**
    * @brief Calculates the average speed for a given month and year
-   * @param sensor_data Reference to the sensor log data
+   * @param data Reference to the data to be calculated
    * @param month The month to calculate for
    * @param year The year to calculate for
    * @return float The average speed, returns 0 if insufficient data
    */
-  float AverageSpeed(const SensorLog &sensor_data, const int month,
-                     const int year) const;
+  float AverageSpeed(const Vector<float> &data) const;
 
   /**
    * @brief Calculates the average temperature for a given month and year
-   * @param sensor_data Reference to the sensor log data
+   * @param data Reference to the data to be calculated
    * @param month The month to calculate for
    * @param year The year to calculate for
    * @return float The average temperature, returns 0 if insufficient data
    */
-  float AverageTemperature(const SensorLog &sensor_data, const int month,
-                           const int year) const;
+  float AverageTemperature(const Vector<float> &data) const;
 
   /**
    * @brief Calculates the standard deviation of speed for a given month and
    * year
-   * @param sensor_data Reference to the sensor log data
+   * @param data Reference to the data to be calculated
    * @param mean The mean speed value
    * @param month The month to calculate for
    * @param year The year to calculate for
    * @return float The standard deviation of speed, returns 0 if insufficient
    * data
    */
-  float StdDevSpeed(const SensorLog &sensor_data, float mean, const int month,
-                    const int year) const;
+  float StdDevSpeed(const Vector<float> &data, const float mean) const;
 
   /**
    * @brief Calculates the standard deviation of temperature for a given month
    * and year
-   * @param sensor_data Reference to the sensor log data
+   * @param data Reference to the data to be calculated
    * @param mean The mean temperature value
    * @param month The month to calculate for
    * @param year The year to calculate for
    * @return float The standard deviation of temperature, returns 0 if
    * insufficient data
    */
-  float StdDevTemperature(const SensorLog &sensor_data, const float mean,
-                          const int month, const int year) const;
+  float StdDevTemperature(const Vector<float> &data, const float mean) const;
 
   /**
    * @brief Calculates the total solar radiation for a given month and year
-   * @param sensor_data Reference to the sensor log data
+   * @param data Reference to the data to be calculated
    * @param month The month to calculate for
    * @param year The year to calculate for
    * @return float The total solar radiation, returns 0 if insufficient data
    */
-  float TotalSolarRadiation(const SensorLog &sensor_data, const int month,
-                            const int year) const;
+  float TotalSolarRadiation(const Vector<float> &data) const;
 };
 #endif

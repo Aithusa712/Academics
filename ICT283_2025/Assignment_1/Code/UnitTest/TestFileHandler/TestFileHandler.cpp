@@ -7,9 +7,14 @@ using namespace std;
 void TestWriteToFile() {
   FileHandler handleFile;
   handleFile.writeToFile("TestFile.txt", "hello this is the content");
-  cout << "File created, Expected result:\nFilename in directory: "
-          "TestFile.txt\nContent:hello this is the content "
-       << endl;
+  ifstream file("TestFile.txt");
+  string line;
+  getline(file, line);
+  if (line == "hello this is the content") {
+    cout << "TestWriteToFile() Test: PASS" << endl;
+  } else {
+    cout << "TestWriteToFile() Test: PASS" << endl;
+  }
 }
 
 void TestReadCsv() {

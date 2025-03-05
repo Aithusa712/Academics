@@ -1,24 +1,28 @@
 <map id="Results::PrintAll" name="Results::PrintAll">
-<area shape="rect" id="Node000001" title="Writes wind speed, temperature and solar radiation data to WindTempSolar.csv." alt="" coords="5,183,122,209"/>
-<area shape="rect" id="Node000002" href="$classCalculator.html#a432b0a174d6036792fa598c01216dcae" title="Calculates the average speed for a given month and year." alt="" coords="187,5,360,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,181,105,118,133,80,168,49,190,36,193,40,171,53,137,84,109,120,73,183"/>
-<area shape="rect" id="Node000003" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="426,157,517,184"/>
-<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="72,180,109,134,137,110,169,92,226,73,273,67,321,74,379,92,420,115,451,144,448,148,417,120,377,97,320,79,273,73,227,78,171,97,140,115,113,138,76,184"/>
-<area shape="rect" id="Node000004" href="$classCalculator.html#a991f6cbf0f18c17f1abf8dfe5ae75d23" title="Calculates the average temperature for a given month and year." alt="" coords="170,107,378,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="89,180,169,143,192,135,194,140,171,148,91,185"/>
-<area shape="rect" id="Node000005" href="$Results_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month index into a readable month string." alt="" coords="226,157,322,184"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="122,186,210,176,211,181,122,192"/>
-<area shape="rect" id="Node000006" href="$classCalculator.html#aa4650f4b9536b08a5aa02661c7551d34" title="Calculates the standard deviation of speed for a given month and year." alt="" coords="189,208,358,235"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="122,200,174,207,173,212,122,206"/>
-<area shape="rect" id="Node000007" href="$classCalculator.html#a1d690cbec689cb1bfb1ea9b31c2685dd" title="Calculates the standard deviation of temperature for a given month and year." alt="" coords="172,259,376,285"/>
-<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="91,207,171,244,194,252,192,257,169,249,89,212"/>
-<area shape="rect" id="Node000008" href="$classCalculator.html#ad0516c4e99ee4b164221167c2a3ead84" title="Calculates the total solar radiation for a given month and year." alt="" coords="173,309,374,336"/>
-<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="77,208,115,251,142,275,171,295,183,301,181,306,168,300,138,279,112,255,73,212"/>
-<area shape="rect" id="Node000009" href="$classFileHandler.html#a89530c8ca2d597f40ead571fb7ce41f4" title="Writes content to a specified file." alt="" coords="195,360,353,387"/>
-<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="73,209,86,238,107,275,136,314,171,346,182,352,179,357,168,350,132,317,103,278,81,240,68,211"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="342,30,379,48,405,70,426,95,458,142,454,145,422,98,401,74,377,53,340,35"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="334,131,379,143,412,152,410,157,377,148,332,137"/>
-<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="332,205,377,193,410,185,412,190,379,199,334,210"/>
-<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="348,256,377,244,414,220,445,193,449,197,417,224,379,249,350,261"/>
-<area shape="poly" id="edge12_Node000008_Node000003" title=" " alt="" coords="354,306,377,295,402,274,424,248,455,197,460,200,428,251,406,277,379,300,357,311"/>
+<area shape="rect" id="Node000001" title="Writes wind speed, temperature and solar radiation data to WindTempSolar.csv." alt="" coords="5,233,122,260"/>
+<area shape="rect" id="Node000002" href="$classCalculator.html#a435b767e89db80654828503be749298d" title="Calculates the average speed." alt="" coords="187,5,360,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,232,77,196,97,146,127,94,146,70,168,49,187,37,189,41,171,53,150,73,132,97,102,149,82,197,71,234"/>
+<area shape="rect" id="Node000003" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="426,208,517,235"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="67,232,79,201,100,162,130,123,148,106,168,92,224,68,274,60,323,68,379,92,408,113,431,139,462,193,457,195,427,142,404,117,377,97,321,73,274,65,226,73,171,97,151,110,133,126,105,165,84,203,72,234"/>
+<area shape="rect" id="Node000004" href="$classCalculator.html#a263bef44a9496961f9452c79d0afc844" title="Calculates the average temperature." alt="" coords="170,107,378,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="73,231,112,187,138,163,168,143,181,137,183,142,171,148,142,168,115,191,77,235"/>
+<area shape="rect" id="Node000005" href="$classVector.html#a06640b5a57e692928364c727def3c5de" title="Removes all elements from the vector." alt="" coords="225,157,323,184"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="89,230,169,194,209,181,210,187,171,198,91,235"/>
+<area shape="rect" id="Node000006" href="$Results_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month index into a readable month string." alt="" coords="226,208,322,235"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="122,237,210,226,211,232,122,242"/>
+<area shape="rect" id="Node000007" href="$classVector.html#ac83df8927ebc368e68fe85958830eed7" title="Adds an element to the end of the vector." alt="" coords="226,259,322,285"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="122,251,211,262,210,267,122,256"/>
+<area shape="rect" id="Node000008" href="$classCalculator.html#ac50d1b12db66b60a5b6784f70a226610" title="Calculates the standard deviation of speed." alt="" coords="189,309,358,336"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="91,258,171,295,194,302,192,307,169,300,89,263"/>
+<area shape="rect" id="Node000009" href="$classCalculator.html#ae755edfd9f7ecc9d6215f583ca48403c" title="Calculates the standard deviation of temperature." alt="" coords="172,360,376,387"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="77,259,115,302,142,326,171,346,183,352,181,356,168,350,138,330,112,306,73,262"/>
+<area shape="rect" id="Node000010" href="$classCalculator.html#ac2194024094aebd3cc9b6687c0f37752" title="Calculates the total solar radiation." alt="" coords="173,411,374,437"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="73,259,86,289,107,326,136,364,171,397,179,401,176,406,168,401,132,368,103,329,81,291,68,262"/>
+<area shape="rect" id="Node000011" href="$classFileHandler.html#a89530c8ca2d597f40ead571fb7ce41f4" title="Writes content to a specified file." alt="" coords="195,461,353,488"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="70,260,81,298,100,349,130,402,149,426,171,447,182,454,179,459,168,451,145,430,126,405,95,351,76,299,65,261"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="347,30,380,49,411,82,435,121,453,159,465,192,460,194,448,161,431,123,407,85,376,53,344,35"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="350,131,379,143,417,168,449,195,445,199,414,172,377,148,348,136"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="348,306,377,295,414,271,445,243,449,247,417,275,379,300,350,311"/>
+<area shape="poly" id="edge12_Node000009_Node000003" title=" " alt="" coords="354,357,377,346,402,324,424,298,455,247,460,250,428,302,406,328,379,350,357,362"/>
+<area shape="poly" id="edge14_Node000010_Node000003" title=" " alt="" coords="358,408,376,397,408,363,432,323,450,283,461,249,466,251,455,285,437,326,412,366,380,401,360,412"/>
 </map>

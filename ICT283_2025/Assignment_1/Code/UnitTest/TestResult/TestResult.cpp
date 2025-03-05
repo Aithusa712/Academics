@@ -8,6 +8,7 @@ SensorLog TestData() {
   SensorLog data;
   for (int month_index = 1; month_index < 13; month_index++) {
     for (int i = 0; i < 3; i++) {
+
       Date date;
       date.SetMonth(month_index);
       date.SetYear(2007);
@@ -54,11 +55,22 @@ void TestDisplaySolarRadiation(SensorLog sensor_data) {
 void TestPrintAll(SensorLog sensor_data) {
   Results test;
   test.PrintAll(sensor_data, 2007);
-  cout << "WindTempSolar.csv created, Expected Result: \nAll Months have "
+  cout << "\nWindTempSolar.csv created, Expected Result: \nAll Months have "
           "data\nEach Row:6.5(2.1),25.1(4.4),0.2"
        << endl;
 }
+
+void TestValidateMonth(SensorLog sensor_data) {
+  Results test;
+
+  if (test.ValidateMonth(sensor_data, 3, 2007, "T")) {
+    cout << "ValidateMonth() Test: PASS" << endl;
+  } else {
+    cout << "ValidateMonth() Test: FAIL" << endl;
+  }
+}
 int main() {
+  TestValidateMonth(TestData());
   TestDisplaySpeed(TestData());
   TestDisplayTemperature(TestData());
   TestDisplaySolarRadiation(TestData());

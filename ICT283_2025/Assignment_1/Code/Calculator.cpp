@@ -12,8 +12,7 @@ float Calculator::AverageSpeed(const Vector<float> &data) const {
   float average = 0.0f;
   int data_count = 0;
 
-  // Loop through all the sensor data, and check if it matches the year and
-  // month parameter to get the sum of speed records
+  // Loop through all the sensor data and get the sum
 
   for (int index = 0; index < data.size(); index++) {
     sum += data[index];

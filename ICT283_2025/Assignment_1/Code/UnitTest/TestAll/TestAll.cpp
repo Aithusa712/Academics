@@ -1,7 +1,8 @@
+#include "Calculator.h"
 #include "FileHandler.h"
 #include "Results.h"
 #include "SensorRecType.h"
-#include <iostream>
+#include "Vector.h"
 
 using namespace std;
 
@@ -94,34 +95,21 @@ void TestSetGetHours() {
   }
 }
 
-SensorLog TestData() {
-  SensorLog data;
+void TestSpeed() {
+
+  Vector<float> data;
   for (int i = 0; i < 3; i++) {
-    Date date;
-    date.SetMonth(3);
-    date.SetYear(2007);
+    float speed = 4.4 + (i * 2.1); // 4.4, 6.5, 8.6
+    // float temperature = 20.7 + (i * 4.4);        // 20.7, 25.1, 29.5
+    // float solar_radiation = 415.25 + (i * 8.51); // 415.25, 423.76, 432.27
 
-    float speed = 4.4 + (i * 2.1);               // 4.4, 6.5, 8.6
-    float temperature = 20.7 + (i * 4.4);        // 20.7, 25.1, 29.5
-    float solar_radiation = 415.25 + (i * 8.51); // 415.25, 423.76, 432.27
-
-    SensorRecType temp;
-    temp.speed = speed;
-    temp.temperature = temperature;
-    temp.solar_radiation = solar_radiation;
-    temp.date = date;
-    data.push(temp);
+    data.push(speed);
   }
-
-  return data;
-}
-
-void TestSpeed(SensorLog sensor_data) {
   Calculator test;
   float mean = 0.0f;
   float standard_deviation = 0.0f;
-  mean = test.AverageSpeed(sensor_data, 3, 2007);
-  standard_deviation = test.StdDevSpeed(sensor_data, mean, 3, 2007);
+  mean = test.AverageSpeed(data);
+  standard_deviation = test.StdDevSpeed(data, mean);
   // 4.5 + 6.5 + 8.6 = 19.5
   // 19.5 / 3
   // mean = 6.5
@@ -137,12 +125,20 @@ void TestSpeed(SensorLog sensor_data) {
   }
 }
 
-void TestTemp(SensorLog sensor_data) {
+void TestTemp() {
   Calculator test;
+  Vector<float> data;
+  for (int i = 0; i < 3; i++) {
+    // float speed = 4.4 + (i * 2.1); // 4.4, 6.5, 8.6
+    float temperature = 20.7 + (i * 4.4); // 20.7, 25.1, 29.5
+    // float solar_radiation = 415.25 + (i * 8.51); // 415.25, 423.76, 432.27
+
+    data.push(temperature);
+  }
   float mean = 0.0f;
   float standard_deviation = 0.0f;
-  mean = test.AverageTemperature(sensor_data, 3, 2007);
-  standard_deviation = test.StdDevTemperature(sensor_data, mean, 3, 2007);
+  mean = test.AverageTemperature(data);
+  standard_deviation = test.StdDevTemperature(data, mean);
   // 20.7 + 25.1 + 29.5 = 75.3
   // 75.3 / 3
   // 25.1
@@ -158,10 +154,19 @@ void TestTemp(SensorLog sensor_data) {
   }
 }
 
-void TestSolarRadiation(SensorLog sensor_data) {
+void TestSolarRadiation() {
+
   Calculator test;
+  Vector<float> data;
+  for (int i = 0; i < 3; i++) {
+    // float speed = 4.4 + (i * 2.1); // 4.4, 6.5, 8.6
+    // float temperature = 20.7 + (i * 4.4);        // 20.7, 25.1, 29.5
+    float solar_radiation = 415.25 + (i * 8.51); // 415.25, 423.76, 432.27
+
+    data.push(solar_radiation);
+  }
   float total_solar_radiation = 0;
-  total_solar_radiation = test.TotalSolarRadiation(sensor_data, 3, 2007);
+  total_solar_radiation = test.TotalSolarRadiation(data);
   // 415.25 + 423.76 + 432.27
   // 1271.28 w/m^2 * (10 min / 60 min)
   // 211.88 / 10000 W/kW
@@ -171,6 +176,30 @@ void TestSolarRadiation(SensorLog sensor_data) {
   } else {
     cout << "TotalSolarRadiation() Test: FAIL" << endl;
   }
+}
+
+SensorLog TestData() {
+  SensorLog data;
+  for (int month_index = 1; month_index < 13; month_index++) {
+    for (int i = 0; i < 3; i++) {
+
+      Date date;
+      date.SetMonth(month_index);
+      date.SetYear(2007);
+
+      float speed = 4.4 + (i * 2.1);               // 4.4, 6.5, 8.6
+      float temperature = 20.7 + (i * 4.4);        // 20.7, 25.1, 29.5
+      float solar_radiation = 415.25 + (i * 8.51); // 415.25, 423.76, 432.27
+
+      SensorRecType temp;
+      temp.speed = speed;
+      temp.temperature = temperature;
+      temp.solar_radiation = solar_radiation;
+      temp.date = date;
+      data.push(temp);
+    }
+  }
+  return data;
 }
 
 void TestDisplaySpeed(SensorLog sensor_data) {
@@ -200,17 +229,31 @@ void TestDisplaySolarRadiation(SensorLog sensor_data) {
 void TestPrintAll(SensorLog sensor_data) {
   Results test;
   test.PrintAll(sensor_data, 2007);
-  cout << "WindTempSolar.csv created, Expected Result: \nAll Months have "
+  cout << "\nWindTempSolar.csv created, Expected Result: \nAll Months have "
           "data\nEach Row:6.5(2.1),25.1(4.4),0.2"
        << endl;
 }
 
+void TestValidateMonth(SensorLog sensor_data) {
+  Results test;
+
+  if (test.ValidateMonth(sensor_data, 3, 2007, "T")) {
+    cout << "ValidateMonth() Test: PASS" << endl;
+  } else {
+    cout << "ValidateMonth() Test: FAIL" << endl;
+  }
+}
 void TestWriteToFile() {
   FileHandler handleFile;
   handleFile.writeToFile("TestFile.txt", "hello this is the content");
-  cout << "File created, Expected result:\nFilename in directory: "
-          "TestFile.txt\nContent:hello this is the content "
-       << endl;
+  ifstream file("TestFile.txt");
+  string line;
+  getline(file, line);
+  if (line == "hello this is the content") {
+    cout << "TestWriteToFile() Test: PASS" << endl;
+  } else {
+    cout << "TestWriteToFile() Test: PASS" << endl;
+  }
 }
 
 void TestReadCsv() {
@@ -238,27 +281,36 @@ void TestReadSource() {
 }
 
 int main() {
-
-  // VECTOR
+  // Test Vector
   TestVectorInt();
   TestVectorSensor();
-  // DATE AND TIME
+
+  // Test Date and Time;
   TestSetGetDay();
   TestSetGetMonth();
   TestSetGetYear();
   TestSetGetMinutes();
   TestSetGetHours();
-  // CALCULATOR
-  TestSpeed(TestData());
-  TestTemp(TestData());
-  TestSolarRadiation(TestData());
-  // Result
+
+  // Test Calculator
+  TestSpeed();
+  TestTemp();
+  TestSolarRadiation();
+
+  // Results
+  TestValidateMonth(TestData());
+
+  // File Handler
+  TestWriteToFile();
+  TestReadCsv();
+  TestReadSource();
+
+  cout << "================================\n Manually check output here and "
+          "in .txt/.csv outputs in cwd of main program"
+       << endl;
+
   TestDisplaySpeed(TestData());
   TestDisplayTemperature(TestData());
   TestDisplaySolarRadiation(TestData());
   TestPrintAll(TestData());
-  // FileHandler
-  TestWriteToFile();
-  TestReadCsv();
-  TestReadSource();
 }

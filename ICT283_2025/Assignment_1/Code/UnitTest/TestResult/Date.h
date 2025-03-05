@@ -1,7 +1,6 @@
 #ifndef DATE_H
 #define DATE_H
 
-#include <iomanip>
 #include <iostream>
 using namespace std;
 

@@ -1,8 +1,6 @@
 #ifndef VECTOR_H
 #define VECTOR_H
 
-#include <cassert>
-
 /**
  * @class Vector
  * @brief A dynamic array implementation that grows automatically
@@ -158,13 +156,9 @@ template <typename T> void Vector<T>::Resize() {
   arr = temp;
 }
 
-template <typename T> T &Vector<T>::operator[](int index) {
-  assert(index < current_size && "Index is out of bounds");
-  return arr[index];
-}
+template <typename T> T &Vector<T>::operator[](int index) { return arr[index]; }
 
 template <typename T> const T &Vector<T>::operator[](int index) const {
-  assert(index < current_size && "Index is out of bounds");
   return arr[index];
 }
 

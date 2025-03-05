@@ -1,8 +1,8 @@
 var classCalculator =
 [
-    [ "AverageSpeed", "classCalculator.html#a432b0a174d6036792fa598c01216dcae", null ],
-    [ "AverageTemperature", "classCalculator.html#a991f6cbf0f18c17f1abf8dfe5ae75d23", null ],
-    [ "StdDevSpeed", "classCalculator.html#aa4650f4b9536b08a5aa02661c7551d34", null ],
-    [ "StdDevTemperature", "classCalculator.html#a1d690cbec689cb1bfb1ea9b31c2685dd", null ],
-    [ "TotalSolarRadiation", "classCalculator.html#ad0516c4e99ee4b164221167c2a3ead84", null ]
+    [ "AverageSpeed", "classCalculator.html#a435b767e89db80654828503be749298d", null ],
+    [ "AverageTemperature", "classCalculator.html#a263bef44a9496961f9452c79d0afc844", null ],
+    [ "StdDevSpeed", "classCalculator.html#ac50d1b12db66b60a5b6784f70a226610", null ],
+    [ "StdDevTemperature", "classCalculator.html#ae755edfd9f7ecc9d6215f583ca48403c", null ],
+    [ "TotalSolarRadiation", "classCalculator.html#ac2194024094aebd3cc9b6687c0f37752", null ]
 ];

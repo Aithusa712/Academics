@@ -14,6 +14,8 @@ void Results::DisplayAverageStdevSpeed(const SensorLog &sensor_data,
   // The "S" in the ValidateMonth parameter stands for Speed
   if (ValidateMonth(sensor_data, month, year, "S")) {
 
+    // Loop through all sensor_data elements and insert Speed data that matches
+    // the month and year parameter to float vector
     for (int index = 0; index < sensor_data.size(); index++) {
       if (sensor_data[index].date.GetMonth() == month &&
           sensor_data[index].date.GetYear() == year) {
@@ -26,7 +28,7 @@ void Results::DisplayAverageStdevSpeed(const SensorLog &sensor_data,
     standard_deviation = calculate.StdDevSpeed(data, average);
 
     // Print Results
-    cout << month << " " << year << ":" << endl
+    cout << int_to_month(month) << " " << year << ":" << endl
          << "Average Speed: " << average << "km/h" << endl
          << "Sample stdev: " << standard_deviation << endl;
   }
@@ -66,10 +68,14 @@ void Results::DisplayAverageStdevTemperature(const SensorLog &sensor_data,
 
     // Loop through all the months of a year
     for (int month_index = 1; month_index < MAX_MONTHS; month_index++) {
+      // Clear Data after each month
+      data.Clear();
 
       // month_index = the month to be validated
       month = month_index;
 
+      // Loop through all sensor_data elements and insert Temperature data that
+      // matches the month and year parameter to float vector
       for (int index = 0; index < sensor_data.size(); index++) {
         if (sensor_data[index].date.GetMonth() == month &&
             sensor_data[index].date.GetYear() == year) {
@@ -130,9 +136,15 @@ void Results::DisplayTotalSolarRadiation(const SensorLog &sensor_data,
     // Loop through all the months
     for (int month_index = 1; month_index < MAX_MONTHS; month_index++) {
 
+      // Clear data after each month
+      data.Clear();
+
       // month_index = the month to be validated
 
       month = month_index;
+
+      // Loop through all sensor_data elements and insert Solar Radiation data
+      // that matches the month and year parameter to float vector
 
       for (int index = 0; index < sensor_data.size(); index++) {
         if (sensor_data[index].date.GetMonth() == month &&
@@ -181,9 +193,8 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
   Vector<float> speed_data;
   Vector<float> temperature_data;
   Vector<float> solar_radiation_data;
-
-  // Loop through the sensor data vector struct to find if there is any data on
-  // the year the user entered
+  // Loop throughtemperature_datatemperature_data the sensor data vector struct
+  // to find if there is any data on the year the user entered
   for (int index = 0; index < sensor_data.size(); index++) {
     if (sensor_data[index].date.GetYear() == year) {
       month_exist = true;
@@ -194,23 +205,27 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
   // The "SR" inside the ValidateMonth parameter stands for Solar Radiation
 
   if (month_exist) {
-
     // Print year to output stream
-
     output << year << ": " << endl;
 
     // Loop through all the months
 
     for (int month_index = 1; month_index < MAX_MONTHS; month_index++) {
+      // Clear Vector data after each month
+      speed_data.Clear();
+      temperature_data.Clear();
+      solar_radiation_data.Clear();
 
       // month_index = the current month to calculate results for
-
       month = month_index;
 
       // empty data counter - if empty data = 0, that means there is no data for
       // the entire month
 
       int empty_data = 0;
+
+      // Loop through all sensor_data elements and insert all relevant data that
+      // matches the month and year parameter to float vector
 
       for (int index = 0; index < sensor_data.size(); index++) {
         if (sensor_data[index].date.GetMonth() == month &&

@@ -22,52 +22,40 @@ class Calculator {
 
 public:
   /**
-   * @brief Calculates the average speed for a given month and year
+   * @brief Calculates the average speed
    * @param data Reference to the data to be calculated
-   * @param month The month to calculate for
-   * @param year The year to calculate for
    * @return float The average speed, returns 0 if insufficient data
    */
   float AverageSpeed(const Vector<float> &data) const;
 
   /**
-   * @brief Calculates the average temperature for a given month and year
+   * @brief Calculates the average temperature
    * @param data Reference to the data to be calculated
-   * @param month The month to calculate for
-   * @param year The year to calculate for
    * @return float The average temperature, returns 0 if insufficient data
    */
   float AverageTemperature(const Vector<float> &data) const;
 
   /**
-   * @brief Calculates the standard deviation of speed for a given month and
-   * year
+   * @brief Calculates the standard deviation of speed
    * @param data Reference to the data to be calculated
    * @param mean The mean speed value
-   * @param month The month to calculate for
-   * @param year The year to calculate for
    * @return float The standard deviation of speed, returns 0 if insufficient
    * data
    */
   float StdDevSpeed(const Vector<float> &data, const float mean) const;
 
   /**
-   * @brief Calculates the standard deviation of temperature for a given month
-   * and year
+   * @brief Calculates the standard deviation of temperature
    * @param data Reference to the data to be calculated
    * @param mean The mean temperature value
-   * @param month The month to calculate for
-   * @param year The year to calculate for
    * @return float The standard deviation of temperature, returns 0 if
    * insufficient data
    */
   float StdDevTemperature(const Vector<float> &data, const float mean) const;
 
   /**
-   * @brief Calculates the total solar radiation for a given month and year
+   * @brief Calculates the total solar radiation
    * @param data Reference to the data to be calculated
-   * @param month The month to calculate for
-   * @param year The year to calculate for
    * @return float The total solar radiation, returns 0 if insufficient data
    */
   float TotalSolarRadiation(const Vector<float> &data) const;

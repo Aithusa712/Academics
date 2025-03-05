@@ -5,5 +5,5 @@ var searchData=
   ['time_2',['time',['../structSensorRecType.html#abf78dac926fec35766935a65722f1583',1,'SensorRecType']]],
   ['time_2ecpp_3',['Time.cpp',['../Time_8cpp.html',1,'']]],
   ['time_2eh_4',['Time.h',['../Time_8h.html',1,'']]],
-  ['totalsolarradiation_5',['TotalSolarRadiation',['../classCalculator.html#ad0516c4e99ee4b164221167c2a3ead84',1,'Calculator']]]
+  ['totalsolarradiation_5',['TotalSolarRadiation',['../classCalculator.html#ac2194024094aebd3cc9b6687c0f37752',1,'Calculator']]]
 ];

@@ -1,15 +1,18 @@
 <map id="Results::DisplayAverageStdevSpeed" name="Results::DisplayAverageStdevSpeed">
-<area shape="rect" id="Node000001" title="Calculates and displays average wind speed and standard deviation for specified month/year." alt="" coords="5,73,206,116"/>
-<area shape="rect" id="Node000002" href="$classCalculator.html#a432b0a174d6036792fa598c01216dcae" title="Calculates the average speed for a given month and year." alt="" coords="254,5,427,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,70,253,41,275,34,277,40,254,47,169,75"/>
-<area shape="rect" id="Node000004" href="$Results_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month index into a readable month string." alt="" coords="292,56,388,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,81,277,73,277,79,207,86"/>
-<area shape="rect" id="Node000005" href="$classCalculator.html#aa4650f4b9536b08a5aa02661c7551d34" title="Calculates the standard deviation of speed for a given month and year." alt="" coords="256,107,425,133"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="207,103,240,107,240,112,206,108"/>
-<area shape="rect" id="Node000006" href="$classResults.html#a935d60d849b540951e4be2eac4809c7f" title="Checks if data exists for specified month and year." alt="" coords="262,157,418,184"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="169,114,254,143,277,150,275,155,253,148,168,119"/>
-<area shape="rect" id="Node000003" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="475,107,566,133"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="401,30,428,42,466,67,497,94,494,98,463,71,426,46,399,35"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="425,117,459,117,459,123,425,123"/>
-<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="390,154,460,134,461,139,391,159"/>
+<area shape="rect" id="Node000001" title="Calculates and displays average wind speed and standard deviation for specified month/year." alt="" coords="5,124,206,167"/>
+<area shape="rect" id="Node000002" href="$classCalculator.html#a435b767e89db80654828503be749298d" title="Calculates the average speed." alt="" coords="254,5,427,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,121,189,85,252,48,281,35,284,40,255,53,191,90,138,126"/>
+<area shape="rect" id="Node000003" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="475,132,566,159"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="156,121,203,104,253,92,341,80,379,82,428,92,460,104,489,121,487,125,458,109,426,97,379,87,341,85,254,97,204,110,158,126"/>
+<area shape="rect" id="Node000004" href="$Results_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month index into a readable month string." alt="" coords="292,107,388,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,132,277,124,277,129,207,137"/>
+<area shape="rect" id="Node000005" href="$classVector.html#ac83df8927ebc368e68fe85958830eed7" title="Adds an element to the end of the vector." alt="" coords="293,157,388,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="207,154,277,161,277,167,206,159"/>
+<area shape="rect" id="Node000006" href="$classCalculator.html#ac50d1b12db66b60a5b6784f70a226610" title="Calculates the standard deviation of speed." alt="" coords="256,208,425,235"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="169,165,254,193,277,200,275,206,253,199,168,170"/>
+<area shape="rect" id="Node000007" href="$classResults.html#a935d60d849b540951e4be2eac4809c7f" title="Checks if data exists for specified month and year." alt="" coords="262,259,418,285"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="134,165,188,205,255,244,270,251,267,255,252,249,185,209,131,169"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="391,30,428,48,470,82,502,118,498,122,466,86,426,53,389,35"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="394,205,426,194,483,165,485,169,428,198,396,210"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="402,256,426,244,468,208,500,170,504,173,472,212,428,249,405,260"/>
 </map>

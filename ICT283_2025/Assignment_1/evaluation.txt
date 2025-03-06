@@ -7,6 +7,8 @@ I am unsure of the algorithm for converting Solar Radiation from w/m2 to kWH/m2 
 I made it easy for the Evaluator to check each class because in the UnitTest Folder I made 
 a folder for each class that I tested (excluding the Menu class).
 
+The Test Files have no codeblock project file and the evaluator.
+
 Output of Test Files (Taken from the output of TestAll.cpp in /UnitTest/TestAll folder):
 
 TestVectorInt() Test: PASS

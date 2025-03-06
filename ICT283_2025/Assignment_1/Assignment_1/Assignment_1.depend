@@ -1,0 +1,69 @@
+# depslib dependency file v1.0
+1741171950 source:/home/kim/Documents/ICT283_2025/Assignment_1/Assignment_1/Calculator.cpp
+	"Calculator.h"
+	"Vector.h"
+
+1741172190 /home/kim/Documents/ICT283_2025/Assignment_1/Assignment_1/Calculator.h
+	"Vector.h"
+	<cmath>
+	<iostream>
+
+1741172244 /home/kim/Documents/ICT283_2025/Assignment_1/Assignment_1/Vector.h
+
+1740808544 source:/home/kim/Documents/ICT283_2025/Assignment_1/Assignment_1/Date.cpp
+	"Date.h"
+
+1741172167 /home/kim/Documents/ICT283_2025/Assignment_1/Assignment_1/Date.h
+	<iostream>
+
+1740989200 source:/home/kim/Documents/ICT283_2025/Assignment_1/Assignment_1/FileHandler.cpp
+	"FileHandler.h"
+
+1740814104 /home/kim/Documents/ICT283_2025/Assignment_1/Assignment_1/FileHandler.h
+	"Date.h"
+	"SensorRecType.h"
+	"Time.h"
+	<fstream>
+	<iostream>
+	<sstream>
+	<string>
+
+1740995840 /home/kim/Documents/ICT283_2025/Assignment_1/Assignment_1/SensorRecType.h
+	"Date.h"
+	"Time.h"
+	"Vector.h"
+
+1741172139 /home/kim/Documents/ICT283_2025/Assignment_1/Assignment_1/Time.h
+	<iostream>
+
+1741174684 source:/home/kim/Documents/ICT283_2025/Assignment_1/Assignment_1/main.cpp
+	"Calculator.h"
+	"FileHandler.h"
+	"Menu.h"
+	"SensorRecType.h"
+	<iostream>
+	<ostream>
+
+1740888398 /home/kim/Documents/ICT283_2025/Assignment_1/Assignment_1/Menu.h
+	"Results.h"
+	"SensorRecType.h"
+	<iostream>
+
+1740888391 /home/kim/Documents/ICT283_2025/Assignment_1/Assignment_1/Results.h
+	"Calculator.h"
+	"FileHandler.h"
+	"SensorRecType.h"
+	<iostream>
+
+1740886981 source:/home/kim/Documents/ICT283_2025/Assignment_1/Assignment_1/Menu.cpp
+	"Menu.h"
+	"Results.h"
+	"SensorRecType.h"
+
+1741182130 source:/home/kim/Documents/ICT283_2025/Assignment_1/Assignment_1/Results.cpp
+	"Results.h"
+	"Vector.h"
+
+1740803731 source:/home/kim/Documents/ICT283_2025/Assignment_1/Assignment_1/Time.cpp
+	"Time.h"
+

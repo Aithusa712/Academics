@@ -1,0 +1,17 @@
+<map id="Results::DisplayTotalSolarRadiation" name="Results::DisplayTotalSolarRadiation">
+<area shape="rect" id="Node000001" title="Calculates and displays total solar radiation for each month of specified year." alt="" coords="5,124,182,167"/>
+<area shape="rect" id="Node000002" href="$classVector.html#a06640b5a57e692928364c727def3c5de" title="Removes all elements from the vector." alt="" coords="281,5,380,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,121,165,81,228,42,265,28,267,33,231,46,169,85,119,126"/>
+<area shape="rect" id="Node000003" href="$Results_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month index into a readable month string." alt="" coords="282,56,378,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,121,229,92,266,81,268,87,230,97,150,126"/>
+<area shape="rect" id="Node000004" href="$classVector.html#ac83df8927ebc368e68fe85958830eed7" title="Adds an element to the end of the vector." alt="" coords="283,107,378,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,133,267,124,268,129,182,139"/>
+<area shape="rect" id="Node000005" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="479,208,570,235"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="182,153,301,170,432,193,465,201,463,207,430,199,300,175,182,158"/>
+<area shape="rect" id="Node000006" href="$classCalculator.html#ac2194024094aebd3cc9b6687c0f37752" title="Calculates the total solar radiation." alt="" coords="230,208,431,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="163,165,230,187,272,200,270,205,229,192,161,170"/>
+<area shape="rect" id="Node000007" href="$classResults.html#a935d60d849b540951e4be2eac4809c7f" title="Checks if data exists for specified month and year." alt="" coords="252,259,408,285"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="119,165,169,206,231,244,246,251,244,256,228,249,165,210,116,169"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="431,219,464,219,464,224,431,224"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="386,256,430,244,463,235,465,240,432,249,388,261"/>
+</map>

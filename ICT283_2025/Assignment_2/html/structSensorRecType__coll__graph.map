@@ -1,0 +1,9 @@
+<map id="SensorRecType" name="SensorRecType">
+<area shape="rect" id="Node000001" title="Structure representing a sensor record with environmental measurements." alt="" coords="117,299,220,368"/>
+<area shape="rect" id="Node000002" href="$classDate.html" title="Contains date data in integer form." alt="" coords="5,5,94,203"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,201,128,273,135,283,130,286,124,276,87,204"/>
+<area shape="rect" id="Node000003" href="$classTime.html" title="Contains time data in integer form." alt="" coords="119,27,218,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,181,171,282,166,282,166,181"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="243,69,278,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="257,139,241,204,214,276,208,286,204,283,209,274,236,202,252,138"/>
+</map>

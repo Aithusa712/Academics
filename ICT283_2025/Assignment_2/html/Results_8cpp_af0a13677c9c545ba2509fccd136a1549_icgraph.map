@@ -1,0 +1,20 @@
+<map id="int_to_month" name="int_to_month">
+<area shape="rect" id="Node000001" title="Converts month index into a readable month string." alt="" coords="749,103,845,129"/>
+<area shape="rect" id="Node000002" href="$classResults.html#aab2d1793b03f766af73da66b272697cd" title="Calculates and displays average wind speed and standard deviation for specified month/year." alt="" coords="500,5,701,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="755,98,700,70,655,51,657,46,702,66,757,93"/>
+<area shape="rect" id="Node000006" href="$classResults.html#a4a4faf662090164cb2c873e49c4c54b4" title="Calculates and displays average temperature and standard deviation for each month of specified year." alt="" coords="252,61,452,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="733,114,452,93,453,87,733,109"/>
+<area shape="rect" id="Node000007" href="$classResults.html#ab02523d4983775f3c2255d44934c988e" title="Calculates and displays total solar radiation for each month of specified year." alt="" coords="264,128,440,171"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="733,123,441,145,440,140,733,118"/>
+<area shape="rect" id="Node000008" href="$classResults.html#aef3159df1c45e68eb77af91747358a89" title="Writes wind speed, temperature and solar radiation data to WindTempSolar.csv." alt="" coords="542,183,659,209"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="755,139,702,162,643,185,642,180,700,158,752,134"/>
+<area shape="rect" id="Node000003" href="$classMenu.html#a1692acad1cdf7ea5115467a4d0669efd" title="Gets and validate user input for specific month and year." alt="" coords="260,11,445,37"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="485,28,445,28,445,22,485,23"/>
+<area shape="rect" id="Node000004" href="$classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,103,204,129"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="270,45,253,52,208,77,173,104,170,100,206,73,251,47,268,40"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,103,55,129"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,119,55,119,55,113,87,113"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="237,105,205,110,204,105,236,99"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="248,135,204,127,205,122,249,129"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="527,207,467,211,397,210,323,202,251,185,226,174,203,160,167,132,171,128,206,156,229,170,253,180,324,197,397,205,467,205,527,202"/>
+</map>

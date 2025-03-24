@@ -1,0 +1,26 @@
+<map id="Menu::HandleAllData" name="Menu::HandleAllData">
+<area shape="rect" id="Node000001" title="Writes wind speed, temperature and solar radiation data to WindTempSolar.csv." alt="" coords="5,208,151,235"/>
+<area shape="rect" id="Node000002" href="$classCalculator.html#a432b0a174d6036792fa598c01216dcae" title="Calculates the average speed for a given month and year." alt="" coords="216,5,390,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,206,98,174,123,132,156,87,197,49,219,36,222,41,200,53,160,91,127,135,103,177,88,209"/>
+<area shape="rect" id="Node000003" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="455,183,546,209"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="85,206,101,180,127,148,159,116,197,92,255,71,303,64,351,71,408,92,433,107,454,127,486,167,482,171,450,130,430,111,406,97,350,76,303,70,256,77,200,97,162,120,131,151,106,183,89,209"/>
+<area shape="rect" id="Node000004" href="$classCalculator.html#a991f6cbf0f18c17f1abf8dfe5ae75d23" title="Calculates the average temperature for a given month and year." alt="" coords="199,107,407,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="95,205,140,174,198,143,217,136,219,141,200,148,143,179,98,210"/>
+<area shape="rect" id="Node000005" href="$classMenu.html#acdb35007ed6ed2b1cf476776edde519d" title="Gets and validates year input from user." alt="" coords="235,157,371,184"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="140,205,225,185,226,191,141,210"/>
+<area shape="rect" id="Node000006" href="$Menu_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month name to month number." alt="" coords="255,208,351,235"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="151,219,239,219,239,224,151,224"/>
+<area shape="rect" id="Node000007" href="$classCalculator.html#aa4650f4b9536b08a5aa02661c7551d34" title="Calculates the standard deviation of speed for a given month and year." alt="" coords="218,259,388,285"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="141,233,226,252,225,257,140,238"/>
+<area shape="rect" id="Node000008" href="$classCalculator.html#a1d690cbec689cb1bfb1ea9b31c2685dd" title="Calculates the standard deviation of temperature for a given month and year." alt="" coords="201,309,405,336"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="98,233,143,264,200,295,219,302,217,307,198,300,140,269,95,237"/>
+<area shape="rect" id="Node000009" href="$classCalculator.html#ad0516c4e99ee4b164221167c2a3ead84" title="Calculates the total solar radiation for a given month and year." alt="" coords="202,360,404,387"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="90,234,133,289,164,320,200,346,211,351,208,356,197,350,161,324,129,292,86,237"/>
+<area shape="rect" id="Node000010" href="$classFileHandler.html#a89530c8ca2d597f40ead571fb7ce41f4" title="Writes content to a specified file." alt="" coords="224,411,382,437"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="87,234,102,267,126,312,159,358,200,397,211,403,208,407,197,401,155,361,121,315,97,270,82,236"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="374,30,409,49,437,76,460,107,491,167,486,170,456,110,433,79,405,53,372,35"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="372,131,408,143,466,172,463,177,406,148,371,136"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="371,256,406,244,463,215,466,220,408,249,372,261"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="381,306,406,295,428,279,448,260,480,221,484,224,452,263,431,283,408,300,383,311"/>
+<area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="385,357,405,346,434,318,457,286,488,223,492,225,462,288,438,322,409,350,388,362"/>
+</map>

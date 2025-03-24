@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1429515527 source:c:\users\smr\desktop\new folder (4)\stack\stacktest.cpp
+	<iostream>
+	<string>
+	"Stack.h"
+
+1429515649 c:\users\smr\desktop\new folder (4)\stack\stack.h
+	<stack>
+	<iostream>
+
+1429515527 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\lectures\topic07\stack\stacktest.cpp
+	<iostream>
+	<string>
+	"Stack.h"
+
+1460963545 \\sphinx\s900391h\units\ict209\_7y9uq~q\.old15\lectures\topic07\stack\stack.h
+	<stack>
+	<iostream>
+
+1460963633 source:\\sphinx\s900391h\smr\smr\ict209-ict283\2017\tj - 6x4\placed in lms\session04\1-  pre-workshop\topic07\content\stack\stacktest.cpp
+	<iostream>
+	<string>
+	"Stack.h"
+
+1488371545 \\sphinx\s900391h\smr\smr\ict209-ict283\2017\tj - 6x4\placed in lms\session04\1-  pre-workshop\topic07\content\stack\stack.h
+	<stack>
+	<iostream>
+
+1488371617 source:\\sphinx\s900391h\units\ict209\_7y9uq~q\topics\topic07\content\stack\stacktest.cpp
+	<iostream>
+	<string>
+	"Stack.h"
+
+1488371545 \\sphinx\s900391h\units\ict209\_7y9uq~q\topics\topic07\content\stack\stack.h
+	<stack>
+	<iostream>
+
+1523859002 source:\\sphinx.murdoch.edu.au\s900391h\units\ict209\_7y9uq~q\topics\2018-19\topic07\content\stack\stacktest.cpp
+	<iostream>
+	<string>
+	"Stack.h"
+
+1555330107 \\sphinx.murdoch.edu.au\s900391h\units\ict209\_7y9uq~q\topics\2018-19\topic07\content\stack\stack.h
+	<stack>
+

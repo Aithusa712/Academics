@@ -1,0 +1,5 @@
+<map id="Calculator::StdDevTemperature" name="Calculator::StdDevTemperature">
+<area shape="rect" id="Node000001" title="Calculates the standard deviation of temperature for a given month and year." alt="" coords="5,5,210,32"/>
+<area shape="rect" id="Node000002" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="258,5,349,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,16,242,16,242,21,210,21"/>
+</map>

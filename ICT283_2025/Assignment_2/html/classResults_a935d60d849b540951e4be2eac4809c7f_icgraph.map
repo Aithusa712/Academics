@@ -1,0 +1,17 @@
+<map id="Results::ValidateMonth" name="Results::ValidateMonth">
+<area shape="rect" id="Node000001" title="Checks if data exists for specified month and year." alt="" coords="749,72,905,99"/>
+<area shape="rect" id="Node000002" href="$classResults.html#aab2d1793b03f766af73da66b272697cd" title="Calculates and displays average wind speed and standard deviation for specified month/year." alt="" coords="500,5,701,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="757,70,685,51,686,46,759,65"/>
+<area shape="rect" id="Node000006" href="$classResults.html#a4a4faf662090164cb2c873e49c4c54b4" title="Calculates and displays average temperature and standard deviation for each month of specified year." alt="" coords="252,64,452,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="733,88,453,88,453,83,733,83"/>
+<area shape="rect" id="Node000007" href="$classResults.html#ab02523d4983775f3c2255d44934c988e" title="Calculates and displays total solar radiation for each month of specified year." alt="" coords="512,123,689,165"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="759,106,686,125,685,119,757,100"/>
+<area shape="rect" id="Node000003" href="$classMenu.html#a1692acad1cdf7ea5115467a4d0669efd" title="Gets and validate user input for specific month and year." alt="" coords="260,13,445,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="485,29,445,29,445,24,485,24"/>
+<area shape="rect" id="Node000004" href="$classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,72,204,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="279,47,253,55,194,74,192,69,251,49,278,42"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,72,55,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,88,55,88,55,83,87,83"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="236,88,205,88,205,83,236,83"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="497,146,379,139,251,121,188,102,189,97,253,116,379,134,497,141"/>
+</map>

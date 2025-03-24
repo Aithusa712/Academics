@@ -1,0 +1,22 @@
+<map id="Menu::HandleMonthlySpeed" name="Menu::HandleMonthlySpeed">
+<area shape="rect" id="Node000001" title="Gets and validate user input for specific month and year." alt="" coords="5,161,191,188"/>
+<area shape="rect" id="Node000002" href="$classResults.html#aab2d1793b03f766af73da66b272697cd" title="Calculates and displays average wind speed and standard deviation for specified month/year." alt="" coords="239,124,439,167"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,161,223,157,223,162,191,166"/>
+<area shape="rect" id="Node000009" href="$classMenu.html#acdb35007ed6ed2b1cf476776edde519d" title="Gets and validates year input from user." alt="" coords="271,191,407,217"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="191,183,256,191,255,197,191,189"/>
+<area shape="rect" id="Node000003" href="$classCalculator.html#a435b767e89db80654828503be749298d" title="Calculates the average speed." alt="" coords="487,5,660,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="368,121,422,85,486,48,515,35,517,40,488,53,425,90,371,126"/>
+<area shape="rect" id="Node000004" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="708,132,800,159"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="389,121,436,104,487,92,574,80,613,82,661,92,694,104,723,121,720,125,692,109,660,97,612,87,574,85,487,97,437,110,391,126"/>
+<area shape="rect" id="Node000005" href="$Results_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month index into a readable month string." alt="" coords="526,107,622,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="439,132,510,124,511,129,440,137"/>
+<area shape="rect" id="Node000006" href="$classVector.html#ac83df8927ebc368e68fe85958830eed7" title="Adds an element to the end of the vector." alt="" coords="526,157,621,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="440,154,511,161,510,167,439,159"/>
+<area shape="rect" id="Node000007" href="$classCalculator.html#ac50d1b12db66b60a5b6784f70a226610" title="Calculates the standard deviation of speed." alt="" coords="489,208,658,235"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="406,165,440,176,488,193,510,200,508,206,486,199,438,181,405,170"/>
+<area shape="rect" id="Node000008" href="$classResults.html#a935d60d849b540951e4be2eac4809c7f" title="Checks if data exists for specified month and year." alt="" coords="496,259,652,285"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="421,165,441,177,457,194,465,212,473,229,489,245,496,249,493,254,485,249,469,232,460,214,453,197,437,181,419,170"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="624,30,662,48,703,82,735,118,731,122,699,86,659,53,622,35"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="628,205,659,194,716,165,719,169,661,198,629,210"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="636,256,659,244,701,208,733,170,737,173,705,212,662,249,638,260"/>
+</map>

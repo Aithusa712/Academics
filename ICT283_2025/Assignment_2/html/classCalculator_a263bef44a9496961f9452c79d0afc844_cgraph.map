@@ -1,0 +1,5 @@
+<map id="Calculator::AverageTemperature" name="Calculator::AverageTemperature">
+<area shape="rect" id="Node000001" title="Calculates the average temperature." alt="" coords="5,5,214,32"/>
+<area shape="rect" id="Node000002" href="$classVector.html#a196e9eedc9a88a48f64e69e39405fa72" title="Returns the current number of elements." alt="" coords="262,5,353,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,16,246,16,246,21,214,21"/>
+</map>

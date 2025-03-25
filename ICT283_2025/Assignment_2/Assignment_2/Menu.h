@@ -30,8 +30,9 @@ public:
    *
    * @param sensor_data Reference to sensor log containing all data
    */
+  //  NOTE:   fix doxygen comment
 
-  void HandleMonthlySpeed(const SensorLog &sensor_data) const;
+  int GetValidMonth() const;
 
   /**
    * @brief Gets and validates year input from user

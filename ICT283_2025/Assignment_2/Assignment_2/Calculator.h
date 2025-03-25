@@ -28,7 +28,6 @@ public:
    */
   float CalculateAverage(const Map<int, float> &data) const;
 
-
   /**
    * @brief Calculates the standard deviation of speed
    * @param data Reference to the data to be calculated
@@ -36,9 +35,8 @@ public:
    * @return float The standard deviation of speed, returns 0 if insufficient
    * data
    */
-  float CalculateStandardDeviation(const Map<int, float> &data, const float mean) const;
-
-
+  float CalculateStandardDeviation(const Map<int, float> &data,
+                                   const float mean) const;
 
   /**
    * @brief Calculates the total solar radiation
@@ -47,8 +45,9 @@ public:
    */
   float CalculateTotalSolarRadiation(const Map<int, float> &data) const;
 
+  float Calculate_sPCC(const Map<int, float> &sensor_data_1,
+                      const Map<int, float> &sensor_data_2);
 
-  float calculateSPCC(const Map<int, float>& sensor_data_1, const Map<int, float>& sensor_data_2);
-
+  float CalculateMAD(const Map<int, float> &data) const;
 };
 #endif

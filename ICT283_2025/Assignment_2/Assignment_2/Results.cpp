@@ -10,68 +10,71 @@ Map<int, float> Results::solarData;
 
 bool Results::dataFound = false;
 
-
 void Results::CollectSpeedData(SensorRecType &record) {
-    if (record.date.GetMonth() == targetMonth &&
-        record.date.GetYear() == targetYear) {
-      speedData.Insert(speedData.Size(), record.speed);
-    }
+  if (record.date.GetMonth() == targetMonth &&
+      record.date.GetYear() == targetYear) {
+    speedData.Insert(speedData.Size(), record.speed);
   }
+}
 void Results::CollectTempData(SensorRecType &record) {
-    if (record.date.GetMonth() == targetMonth &&
-        record.date.GetYear() == targetYear) {
-      tempData.Insert(tempData.Size(), record.temperature);
-    }
+  if (record.date.GetMonth() == targetMonth &&
+      record.date.GetYear() == targetYear) {
+    tempData.Insert(tempData.Size(), record.temperature);
   }
+}
 
-  void Results::CollectSolarData(SensorRecType &record) {
-    if (record.date.GetMonth() == targetMonth &&
-        record.date.GetYear() == targetYear) {
-      solarData.Insert(solarData.Size(), record.solar_radiation);
-    }
+void Results::CollectSolarData(SensorRecType &record) {
+  if (record.date.GetMonth() == targetMonth &&
+      record.date.GetYear() == targetYear) {
+    solarData.Insert(solarData.Size(), record.solar_radiation);
   }
+}
 
-  void Results::CollectAllData(SensorRecType &record) {
-    if (record.date.GetMonth() == targetMonth &&
-        record.date.GetYear() == targetYear) {
-      speedData.Insert(speedData.Size(),record.speed);
-      tempData.Insert(tempData.Size(),record.temperature);
-      solarData.Insert(solarData.Size(),record.solar_radiation);
-    }
+void Results::CollectAllData(SensorRecType &record) {
+  if (record.date.GetMonth() == targetMonth &&
+      record.date.GetYear() == targetYear) {
+    speedData.Insert(speedData.Size(), record.speed);
+    tempData.Insert(tempData.Size(), record.temperature);
+    solarData.Insert(solarData.Size(), record.solar_radiation);
   }
-  void Results::CheckSpeed(SensorRecType &record) {
-    if (record.date.GetMonth() == targetMonth &&
-        record.date.GetYear() == targetYear && record.speed != 0) {
-      dataFound = true;
-    }
+}
+void Results::CheckSpeed(SensorRecType &record) {
+  if (record.date.GetMonth() == targetMonth &&
+      record.date.GetYear() == targetYear && record.speed != 0) {
+    dataFound = true;
   }
+}
 
-  void Results::CheckTemp(SensorRecType &record) {
-    if (record.date.GetMonth() == targetMonth &&
-        record.date.GetYear() == targetYear && record.temperature != 0) {
-      dataFound = true;
-    }
+void Results::CheckTemp(SensorRecType &record) {
+  if (record.date.GetMonth() == targetMonth &&
+      record.date.GetYear() == targetYear && record.temperature != 0) {
+    dataFound = true;
   }
+}
 
-  void Results::CheckSolar(SensorRecType &record) {
-    if (record.date.GetMonth() == targetMonth &&
-        record.date.GetYear() == targetYear && record.solar_radiation != 0) {
-      dataFound = true;
-    }
+void Results::CheckSolar(SensorRecType &record) {
+  if (record.date.GetMonth() == targetMonth &&
+      record.date.GetYear() == targetYear && record.solar_radiation != 0) {
+    dataFound = true;
   }
+}
 
-  void Results::CheckAll(SensorRecType &record) {
-    if (record.date.GetYear() == targetYear &&
-        record.date.GetMonth() == targetMonth &&
-        (record.speed != 0 || record.temperature != 0 ||
-         record.solar_radiation != 0)) {
-      dataFound = true;
-    }
+void Results::CheckAll(SensorRecType &record) {
+  if (record.date.GetYear() == targetYear &&
+      record.date.GetMonth() == targetMonth &&
+      (record.speed != 0 || record.temperature != 0 ||
+       record.solar_radiation != 0)) {
+    dataFound = true;
   }
+}
 
-
-void GetMonthlyData(const SensorLog &sensor_data, const int month,
-                    const int day) {}
+void Results::collect_sPCC_data(SensorRecType &record) {
+  if (record.date.GetMonth() == targetMonth) {
+    speedData.Insert(speedData.Size(), record.speed);
+    tempData.Insert(tempData.Size(), record.temperature);
+    solarData.Insert(solarData.Size(), record.solar_radiation);
+  }
+}
 
 void Results::DisplayAverageStdevSpeed(const SensorLog &sensor_data,
                                        const int month, const int year) const {
@@ -93,7 +96,8 @@ void Results::DisplayAverageStdevSpeed(const SensorLog &sensor_data,
 
     // Calculate average and standard deviation
     average = calculate.CalculateAverage(speedData);
-    standard_deviation = calculate.CalculateStandardDeviation(speedData, average);
+    standard_deviation =
+        calculate.CalculateStandardDeviation(speedData, average);
 
     // Print Results
     cout << int_to_month(month) << " " << year << ":" << std::endl
@@ -153,7 +157,8 @@ void Results::DisplayAverageStdevTemperature(const SensorLog &sensor_data,
         sensor_data.printInOrder(CollectTempData);
         // Call functions from the Calculator class
         average = calculate.CalculateAverage(tempData);
-        standard_deviation = calculate.CalculateStandardDeviation(tempData, average);
+        standard_deviation =
+            calculate.CalculateStandardDeviation(tempData, average);
         // Print Results
         cout << int_to_month(month) << ":"
              << " average: " << average
@@ -223,7 +228,8 @@ void Results::DisplayTotalSolarRadiation(const SensorLog &sensor_data,
         sensor_data.printInOrder(CollectSolarData);
         // Call function from the Calculator Class
 
-        total_solar_radiation = calculate.CalculateTotalSolarRadiation(solarData);
+        total_solar_radiation =
+            calculate.CalculateTotalSolarRadiation(solarData);
 
         // Print Results
 
@@ -252,6 +258,8 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
   float average_temperature = 0.0f;
   float stdev_temperature = 0.0f;
   float total_solar_radiation = 0.0f;
+  float mad_speed = 0.0f;
+  float mad_temperature = 0.0f;
   int month = 0;
   bool month_exist = false;
   targetMonth = 0;
@@ -306,7 +314,8 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
       // Average Speed
       average_speed = calculate.CalculateAverage(speedData);
       // Sample Standard Deviation Speed
-      stdev_speed = calculate.CalculateStandardDeviation(speedData, average_speed);
+      stdev_speed =
+          calculate.CalculateStandardDeviation(speedData, average_speed);
       // Average Temperature
       average_temperature = calculate.CalculateAverage(tempData);
       // Sample Standard Deviation Temperature
@@ -314,6 +323,9 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
           calculate.CalculateStandardDeviation(tempData, average_temperature);
       // Total solar Radiation
       total_solar_radiation = calculate.CalculateTotalSolarRadiation(solarData);
+
+      mad_speed = calculate.CalculateMAD(speedData);
+      mad_temperature = calculate.CalculateMAD(tempData);
 
       // Print month name to output stream
 
@@ -329,7 +341,7 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
         empty_data++;
       }
       if (stdev_speed != 0) {
-        output << "(" << stdev_speed << ")";
+        output << "(" << stdev_speed << ", " << mad_speed << ")";
       } else {
         empty_data++;
       }
@@ -339,7 +351,7 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
         empty_data++;
       }
       if (stdev_temperature != 0) {
-        output << "(" << stdev_temperature << ")";
+        output << "(" << stdev_temperature << ", " << mad_temperature << ")";
       } else {
         empty_data++;
       }
@@ -360,6 +372,28 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
   // Call FileHandler class, send the filename to insert the output stream into
 
   handleFile.writeToFile("WindTempSolar.csv", output.str());
+}
+void Results::Display_sPCC(const SensorLog &sensor_data,
+                           const int month) const {
+
+  Calculator calculate;
+  speedData.Clear();
+  tempData.Clear();
+  solarData.Clear();
+  targetMonth = month;
+
+  // Condition to check if the month and year contain any data
+
+  // Perform in-order traversal using a custom function
+  sensor_data.printInOrder(collect_sPCC_data);
+
+  // Calculate average and standard deviation
+
+  // Print Results
+  cout << int_to_month(month) << endl
+       << "S_T: " << calculate.Calculate_sPCC(speedData, tempData) << endl
+       << "S_R: " << calculate.Calculate_sPCC(speedData, solarData) << endl
+       << "T_R: " << calculate.Calculate_sPCC(tempData, solarData) << endl;
 }
 
 string int_to_month(const int month) {

@@ -29,9 +29,8 @@ float Calculator::CalculateAverage(const Map<int, float> &data) const {
   }
 }
 
-
 float Calculator::CalculateStandardDeviation(const Map<int, float> &data,
-                              const float mean) const {
+                                             const float mean) const {
 
   //  Initialize local variables
 
@@ -60,7 +59,8 @@ float Calculator::CalculateStandardDeviation(const Map<int, float> &data,
   }
 }
 
-float Calculator::CalculateTotalSolarRadiation(const Map<int, float> &data) const {
+float Calculator::CalculateTotalSolarRadiation(
+    const Map<int, float> &data) const {
   float totalRadiation = 0.0f;
   int data_count = 0;
 
@@ -89,28 +89,43 @@ float Calculator::CalculateTotalSolarRadiation(const Map<int, float> &data) cons
   }
 }
 
-float Calculator::calculateSPCC(const Map<int, float> &data_1,
+float Calculator::Calculate_sPCC(const Map<int, float> &data_1,
                                 const Map<int, float> &data_2) {
   int data_size = 0;
+  float spcc = 0.0f;
   if (data_1.Size() != data_2.Size()) {
     return -1;
   } else {
     data_size = data_1.Size();
   }
-  float avg1 = CalculateAverage(data_1);
-  float avg2 = CalculateAverage(data_2);
+  float average_1 = CalculateAverage(data_1);
+  float average_2 = CalculateAverage(data_2);
   float numerator = 0.0f;
   float denominator1 = 0.0f;
   float denominator2 = 0.0f;
 
   for (int i = 0; i < data_1.Size(); ++i) {
-    float value1 = 0.0f;
-    float value2 = 0.0f;
+    float value_1 = 0.0f;
+    float value_2 = 0.0f;
+    value_1 = data_1[i];
+    value_2 = data_2[i];
 
-    numerator += (value1 - avg1) * (value2 - avg2);
-    denominator1 += pow(value1 - avg1, 2);
-    denominator2 += pow(value2 - avg2, 2);
+    numerator += (value_1 - average_1) * (value_2 - average_2);
+    denominator1 += pow(value_1 - average_1, 2);
+    denominator2 += pow(value_2 - average_2, 2);
   }
+  spcc = numerator / sqrt(denominator1 * denominator2);
+  return round(spcc * 100) / 100.0;
+}
 
-  return numerator / sqrt(denominator1 * denominator2);
+float Calculator::CalculateMAD(const Map<int, float> &data) const {
+  float mad = 0.0f;
+  float value = 0.0f;
+  float average = CalculateAverage(data);
+  for (int i = 0; i < data.Size(); ++i) {
+    value = data[i];
+    mad += fabs(value - average);
+  }
+  mad /= data.Size();
+  return round(mad * 10) / 10.0;
 }

@@ -70,6 +70,8 @@ public:
   bool ValidateMonth(const SensorLog &sensor_data, const int month,
                      const int year, const string sensor_type) const;
 
+  void Display_sPCC(const SensorLog &sensor_data, const int month) const;
+
 private:
   static int targetMonth;
   static int targetYear;
@@ -96,6 +98,8 @@ private:
   static void CheckSolar(SensorRecType &record);
 
   static void CheckAll(SensorRecType &record);
+
+  static void collect_sPCC_data(SensorRecType &record); 
 };
 
 /**

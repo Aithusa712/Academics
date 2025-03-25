@@ -11,6 +11,7 @@ void Menu::prompt(const SensorLog &sensor_data, bool &exit) const {
   bool valid_choice = false;
   Results result;
   int year = 0;
+  int month = 0;
   bool month_exist = false;
 
   // While loop to validate correct user input
@@ -18,25 +19,33 @@ void Menu::prompt(const SensorLog &sensor_data, bool &exit) const {
 
     // The prompt to be prompted
     cout << endl;
-    cout << "\n1. The average wind speed and sample standard deviation for "
-            "this\n"
-            "wind speed given a specified month and year. (print on screen "
-            "only)\n"
-         << endl
-         << "2. Average ambient air temperature and sample standard deviation\n"
-            "for each month of a specified year. (print on screen only)\n"
-         << endl
-         << "3.Total solar radiation in kWh/m^2 for each month of a specified\n"
-            "year. (print on screen only)\n"
-         << endl
-         << "4. Average wind speed(km/h), average ambient air temperature and\n"
-            "total solar radiation in kWh/m^2 for each month of a specified\n"
-            "year. The solar deviation is printed in () next to the average.\n"
-            "(print to a file called 'WindTempSolar.csv')\n"
-         << endl
-         << "5. Exit. \n"
-         << endl
-         << "Input:";
+    cout
+        << "\n1. The average wind speed and sample standard deviation for"
+           "\nthis wind speed given a specified month and year. (print on screen "
+           "\nonly)"
+        << endl
+        << "\n2. Average ambient air temperature and sample standard deviation"
+           "\nfor each month of a specified year. (print on screen only)"
+        << endl
+        << "\n3. sPCC calculation is carried out for a user specified month and "
+           "\ncombinations of two data fields."
+           "\n\n  The combinations are:"
+           "\n  a. Average Wind Speed (S) and Ambient Air Temperature (T)."
+           "\n     This is called S_T."
+           "\n  b. Average Wind Speed (S) and Solar Radiation (R). This is"
+           "\n     called S_R."
+           "\n  c. Ambient Air Temperature (T) and Solar Radiation (R). This "
+           "\n     is called T_R.\n"
+        << endl
+        << "4.Average wind speed (km/h), average ambient air temperature and \n"
+           "total solar radiation in kWh/m2 for each month of a specified \n"
+           "year. The standard deviation stdev, and Mean Absolute Deviation \n"
+           "mad is printed as (stdev, mad ) next to the average. (print to a \n"
+           "file called “WindTempSolar.csv”).\n"
+        << endl
+        << "5. Exit. \n"
+        << endl
+        << "Input:";
 
     cin >> choice_string;
 
@@ -77,7 +86,9 @@ void Menu::prompt(const SensorLog &sensor_data, bool &exit) const {
 
   switch (choice) {
   case 1:
-    HandleMonthlySpeed(sensor_data);
+    month = GetValidMonth();
+    year = GetValidYear();
+    result.DisplayAverageStdevSpeed(sensor_data, month, year);
     break;
   case 2:
     // Call GetValidYear routine to prompt a user for a Year and validate if its
@@ -90,8 +101,8 @@ void Menu::prompt(const SensorLog &sensor_data, bool &exit) const {
   case 3:
     // Call GetValidYear routine to prompt a user for a Year and validate if its
     // a numerical string or out of range
-    year = GetValidYear();
-    result.DisplayTotalSolarRadiation(sensor_data, year);
+    month = GetValidMonth();
+    result.Display_sPCC(sensor_data, month);
     break;
   case 4:
     // Call GetValidYear routine to prompt a user for a Year and validate if its
@@ -109,7 +120,7 @@ void Menu::prompt(const SensorLog &sensor_data, bool &exit) const {
 }
 
 // Handles the Monthly speed prompt
-void Menu::HandleMonthlySpeed(const SensorLog &sensor_data) const {
+int Menu::GetValidMonth() const {
 
   // Initialize local variables
 
@@ -153,9 +164,8 @@ void Menu::HandleMonthlySpeed(const SensorLog &sensor_data) const {
 
   // Call GetValidYear routine to prompt a user for a Year and validate if its a
   // numerical string or out of range
-  year = GetValidYear();
 
-  result.DisplayAverageStdevSpeed(sensor_data, month, year);
+  return month;
 }
 
 // Prompt User for an input with validation

@@ -1,5 +1,4 @@
 #include "Calculator.h"
-#include "Vector.h"
 using namespace std;
 
 /*  Calculate Average Speed   */

@@ -69,31 +69,13 @@ public:
    * @param root the root to process
    * @param processNode a function pointer to process each node
    */
-  void preOrder(Node<T> *root, PN processNode) const;
-  /**
-   * @brief  Travels the tree in an postOrder traversal and takes in a function
-   * pointer to call a function to process the node
-   * @param root the root to process
-   * @param processNode a function pointer to process each node
-   */
-  void postOrder(Node<T> *root, PN processNode) const;
-  /**
-   * @brief  Allows other classes to call inOrder function
-   * @param processNode a function pointer to process each node
-   */
+
   void printInOrder(PN processNode) const;
   /**
    * @brief  Allows other classes to call postOrder function
    * @param processNode a function pointer to process each node
    */
-  void printPostOrder(PN processNode);
-  /**
-   * @brief  Allows other classes to call preOrder function
-   */
-  void printPreOrder(PN processNode);
-  /**
-   * @brief  Allows other classes to call Delete function
-   */
+
   void DeleteTree();
   /**
    * @brief  Allows other classes to call Search function
@@ -374,25 +356,7 @@ void Bst<T>::inOrder(Node<T> *root, PN processNode) const {
   inOrder(root->right, processNode);
 }
 
-template <typename T>
-void Bst<T>::preOrder(Node<T> *root, PN processNode) const {
-  if (root == nullptr) {
-    return;
-  }
-  processNode(root->info);
-  preOrder(root->left, processNode);
-  preOrder(root->right, processNode);
-}
 
-template <typename T>
-void Bst<T>::postOrder(Node<T> *root, PN processNode) const {
-  if (root == nullptr) {
-    return;
-  }
-  postOrder(root->left, processNode);
-  postOrder(root->right, processNode);
-  processNode(root->info);
-}
 
 template <typename T> void Bst<T>::printInOrder(PN processNode) const {
   if (root == nullptr) {
@@ -402,21 +366,6 @@ template <typename T> void Bst<T>::printInOrder(PN processNode) const {
   }
 }
 
-template <typename T> void Bst<T>::printPostOrder(PN processNode) {
-  if (root == nullptr) {
-    std::cout << "Tree is empty";
-  } else {
-    postOrder(root, processNode);
-  }
-}
-
-template <typename T> void Bst<T>::printPreOrder(PN processNode) {
-  if (root == nullptr) {
-    std::cout << "Tree is empty";
-  } else {
-    preOrder(root, processNode);
-  }
-}
 
 template <typename T> void Bst<T>::DeleteTree() { Delete(root); }
 

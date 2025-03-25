@@ -3,7 +3,7 @@ using namespace std;
 
 /*  Calculate Average Speed   */
 
-float Calculator::AverageSpeed(const Map<int, float> &data) const {
+float Calculator::CalculateAverage(const Map<int, float> &data) const {
 
   // Initialize local variables
 
@@ -29,39 +29,8 @@ float Calculator::AverageSpeed(const Map<int, float> &data) const {
   }
 }
 
-/*  Calculate Average Temperature   */
 
-float Calculator::AverageTemperature(const Map<int, float> &data) const {
-
-  // Initialize local variables
-
-  float sum = 0.0f;
-  float average = 0.0f;
-  int data_count = 0;
-
-  // Loop through all the sensor data, and check if it matches the year and
-  // month parameter to get the sum of temperature records
-
-  for (int index = 0; index < data.Size(); index++) {
-
-    sum += data[index];
-    data_count++;
-  }
-
-  // Check if there are more than 1 data, return 0 if data is
-  // insufficient
-
-  if (data_count < 2) {
-    return 0;
-  } else {
-    average = sum / data_count;
-    return round(10 * average) / 10.0;
-  }
-}
-
-/*  Calculate Sample Standard Deviation of Speed   */
-
-float Calculator::StdDevSpeed(const Map<int, float> &data,
+float Calculator::CalculateStandardDeviation(const Map<int, float> &data,
                               const float mean) const {
 
   //  Initialize local variables
@@ -91,42 +60,7 @@ float Calculator::StdDevSpeed(const Map<int, float> &data,
   }
 }
 
-/*  Calculate Sample Standard Deviation of Temperature   */
-
-float Calculator::StdDevTemperature(const Map<int, float> &data,
-                                    const float mean) const {
-
-  // Initialize local variables
-
-  float sum_square_diff = 0.0f;
-  float standard_deviation = 0.0f;
-  int data_count = 0;
-
-  // Loop through all the sensor data, and check if it matches the year and
-  // month parameter to get the sum of squared difference of speed records.
-
-  for (int index = 0; index < data.Size(); index++) {
-
-    float diff = data[index] - mean;
-    sum_square_diff += diff * diff;
-    data_count++;
-  }
-
-  // Check if there are more than 1 data, return 0 if data is
-  // insufficient
-
-  if (data_count < 2) {
-    return 0;
-  } else {
-    standard_deviation = sqrt(sum_square_diff / (data_count - 1));
-
-    return round(10 * standard_deviation) / 10.0;
-  }
-}
-
-/*  Calculate Sample Standard Deviation of Speed   */
-
-float Calculator::TotalSolarRadiation(const Map<int, float> &data) const {
+float Calculator::CalculateTotalSolarRadiation(const Map<int, float> &data) const {
   float totalRadiation = 0.0f;
   int data_count = 0;
 
@@ -153,4 +87,30 @@ float Calculator::TotalSolarRadiation(const Map<int, float> &data) const {
   } else {
     return round(10 * totalRadiation) / 10.0;
   }
+}
+
+float Calculator::calculateSPCC(const Map<int, float> &data_1,
+                                const Map<int, float> &data_2) {
+  int data_size = 0;
+  if (data_1.Size() != data_2.Size()) {
+    return -1;
+  } else {
+    data_size = data_1.Size();
+  }
+  float avg1 = CalculateAverage(data_1);
+  float avg2 = CalculateAverage(data_2);
+  float numerator = 0.0f;
+  float denominator1 = 0.0f;
+  float denominator2 = 0.0f;
+
+  for (int i = 0; i < data_1.Size(); ++i) {
+    float value1 = 0.0f;
+    float value2 = 0.0f;
+
+    numerator += (value1 - avg1) * (value2 - avg2);
+    denominator1 += pow(value1 - avg1, 2);
+    denominator2 += pow(value2 - avg2, 2);
+  }
+
+  return numerator / sqrt(denominator1 * denominator2);
 }

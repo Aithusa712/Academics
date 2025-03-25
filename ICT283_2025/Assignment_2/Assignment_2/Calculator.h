@@ -26,14 +26,8 @@ public:
    * @param data Reference to the data to be calculated
    * @return float The average speed, returns 0 if insufficient data
    */
-  float AverageSpeed(const Map<int, float> &data) const;
+  float CalculateAverage(const Map<int, float> &data) const;
 
-  /**
-   * @brief Calculates the average temperature
-   * @param data Reference to the data to be calculated
-   * @return float The average temperature, returns 0 if insufficient data
-   */
-  float AverageTemperature(const Map<int, float> &data) const;
 
   /**
    * @brief Calculates the standard deviation of speed
@@ -42,22 +36,19 @@ public:
    * @return float The standard deviation of speed, returns 0 if insufficient
    * data
    */
-  float StdDevSpeed(const Map<int, float> &data, const float mean) const;
+  float CalculateStandardDeviation(const Map<int, float> &data, const float mean) const;
 
-  /**
-   * @brief Calculates the standard deviation of temperature
-   * @param data Reference to the data to be calculated
-   * @param mean The mean temperature value
-   * @return float The standard deviation of temperature, returns 0 if
-   * insufficient data
-   */
-  float StdDevTemperature(const Map<int, float> &data, const float mean) const;
+
 
   /**
    * @brief Calculates the total solar radiation
    * @param data Reference to the data to be calculated
    * @return float The total solar radiation, returns 0 if insufficient data
    */
-  float TotalSolarRadiation(const Map<int, float> &data) const;
+  float CalculateTotalSolarRadiation(const Map<int, float> &data) const;
+
+
+  float calculateSPCC(const Map<int, float>& sensor_data_1, const Map<int, float>& sensor_data_2);
+
 };
 #endif

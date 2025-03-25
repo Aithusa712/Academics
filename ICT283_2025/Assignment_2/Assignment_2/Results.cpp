@@ -92,8 +92,8 @@ void Results::DisplayAverageStdevSpeed(const SensorLog &sensor_data,
     sensor_data.printInOrder(CollectSpeedData);
 
     // Calculate average and standard deviation
-    average = calculate.AverageSpeed(speedData);
-    standard_deviation = calculate.StdDevSpeed(speedData, average);
+    average = calculate.CalculateAverage(speedData);
+    standard_deviation = calculate.CalculateStandardDeviation(speedData, average);
 
     // Print Results
     cout << int_to_month(month) << " " << year << ":" << std::endl
@@ -152,8 +152,8 @@ void Results::DisplayAverageStdevTemperature(const SensorLog &sensor_data,
       if (dataFound) {
         sensor_data.printInOrder(CollectTempData);
         // Call functions from the Calculator class
-        average = calculate.AverageTemperature(tempData);
-        standard_deviation = calculate.StdDevTemperature(tempData, average);
+        average = calculate.CalculateAverage(tempData);
+        standard_deviation = calculate.CalculateStandardDeviation(tempData, average);
         // Print Results
         cout << int_to_month(month) << ":"
              << " average: " << average
@@ -223,7 +223,7 @@ void Results::DisplayTotalSolarRadiation(const SensorLog &sensor_data,
         sensor_data.printInOrder(CollectSolarData);
         // Call function from the Calculator Class
 
-        total_solar_radiation = calculate.TotalSolarRadiation(solarData);
+        total_solar_radiation = calculate.CalculateTotalSolarRadiation(solarData);
 
         // Print Results
 
@@ -304,16 +304,16 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
       // Call functions from the calculate class
 
       // Average Speed
-      average_speed = calculate.AverageSpeed(speedData);
+      average_speed = calculate.CalculateAverage(speedData);
       // Sample Standard Deviation Speed
-      stdev_speed = calculate.StdDevSpeed(speedData, average_speed);
+      stdev_speed = calculate.CalculateStandardDeviation(speedData, average_speed);
       // Average Temperature
-      average_temperature = calculate.AverageTemperature(tempData);
+      average_temperature = calculate.CalculateAverage(tempData);
       // Sample Standard Deviation Temperature
       stdev_temperature =
-          calculate.StdDevTemperature(tempData, average_temperature);
+          calculate.CalculateStandardDeviation(tempData, average_temperature);
       // Total solar Radiation
-      total_solar_radiation = calculate.TotalSolarRadiation(solarData);
+      total_solar_radiation = calculate.CalculateTotalSolarRadiation(solarData);
 
       // Print month name to output stream
 

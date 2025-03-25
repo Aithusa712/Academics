@@ -53,7 +53,7 @@ void FileHandler::readCSV(const string &filename,
   int S_Index = -1;  // Initialize to -1 in case "S" is not found
   int T_Index = -1;  // Initialize to -1 in case "T" is not found
   int SR_Index = -1; // Initialize to -1 in case "SR" is not found
-  Map<int,string> mapHeader;
+  Map<int, string> mapHeader;
 
   // Open file
 
@@ -101,7 +101,7 @@ void FileHandler::readCSV(const string &filename,
 
     // initialize temporary variables
     istringstream ss(line);
-    if (line.empty() || line == "\r" || line == "\n") {
+    if (line.empty() || line == "\r" || line == "\n" || line.at(0) == ',') {
       continue;
     }
     string s_speed = "";
@@ -186,27 +186,31 @@ void FileHandler::readCSV(const string &filename,
 
     // convert string to float and check if empty
     // For speed
-    if (!s_speed.empty()) {
+    if (s_speed == "N/A") {
+      f_speed = 0.0f;
+    } else if (!s_speed.empty()) {
       f_speed = stof(s_speed);
     } else {
       f_speed = 0.0f;
     }
 
     // For temperature (use the same pattern)
-    if (!s_temperature.empty()) {
+    if (s_temperature == "N/A") {
+      f_temperature = 0.0f;
+    } else if (!s_temperature.empty()) {
       f_temperature = stof(s_temperature);
     } else {
       f_temperature = 0.0f;
     }
 
     // For solar radiation
-    if (!s_solar_radiation.empty()) {
+    if (s_solar_radiation == "N/A") {
+      f_solar_radiation = 0.0f;
+    } else if (!s_solar_radiation.empty()) {
       f_solar_radiation = stof(s_solar_radiation);
     } else {
       f_solar_radiation = 0.0f;
-    }
-
-    // Create temporary Date and Time objects
+    } // Create temporary Date and Time objects
 
     Date date;
     date.SetDay(day);
@@ -228,7 +232,10 @@ void FileHandler::readCSV(const string &filename,
     tempData.solar_radiation = f_solar_radiation; // solar radiation - float
 
     // Push temporary struct into Parameter SensorLog BST Struct
-    cout << "Pushing data dd/mm/yyyy speed temp solar: " << tempData.date.GetDay() << " " << tempData.date.GetMonth() << " " << tempData.date.GetYear() << " " << tempData.speed << " " << tempData.temperature << " " << tempData.solar_radiation << endl;
+    cout << "Pushing data dd/mm/yyyy speed temp solar: "
+         << tempData.date.GetDay() << " " << tempData.date.GetMonth() << " "
+         << tempData.date.GetYear() << " " << tempData.speed << " "
+         << tempData.temperature << " " << tempData.solar_radiation << endl;
     sensor_data.Insert(tempData);
   }
 

@@ -53,7 +53,7 @@ void FileHandler::readCSV(const string &filename,
   int S_Index = -1;  // Initialize to -1 in case "S" is not found
   int T_Index = -1;  // Initialize to -1 in case "T" is not found
   int SR_Index = -1; // Initialize to -1 in case "SR" is not found
-  Vector<string> vecHeader;
+  Map<int,string> mapHeader;
 
   // Open file
 
@@ -73,16 +73,16 @@ void FileHandler::readCSV(const string &filename,
   // Extract the header of the file and push it into a header vector
 
   while (getline(ss, token, ',')) {
-    vecHeader.push(token);
+    mapHeader.Insert(mapHeader.Size(), token);
   }
 
   ss.clear();
 
   // Loop through the header vector to find the index of a specific sensor
 
-  for (int i = 0; i < vecHeader.size(); i++) {
+  for (int i = 0; i < mapHeader.Size(); i++) {
 
-    string header = vecHeader[i];
+    string header = mapHeader[i];
     // S = Speed
     if (header == "S") {
       S_Index = i;
@@ -128,7 +128,7 @@ void FileHandler::readCSV(const string &filename,
     float f_solar_radiation = 0.0f;
 
     // Loop through all the columns
-    for (int i = 0; i < vecHeader.size(); ++i) {
+    for (int i = 0; i < mapHeader.Size(); ++i) {
 
       // Extract Date and time from wast column
 

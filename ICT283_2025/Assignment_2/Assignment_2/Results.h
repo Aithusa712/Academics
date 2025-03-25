@@ -5,7 +5,7 @@
 #include "Calculator.h"
 #include "FileHandler.h"
 #include "SensorRecType.h"
-#include "Vector.h"
+#include "Map.h"
 #include <iostream>
 using namespace std;
 
@@ -75,9 +75,9 @@ private:
   static int targetYear;
   static bool targetFound;
 
-  static Vector<float> speedData;
-  static Vector<float> tempData;
-  static Vector<float> solarData;
+  static Map<int, float> speedData;
+  static Map<int, float> tempData;
+  static Map<int, float> solarData;
 
   static bool dataFound;
 

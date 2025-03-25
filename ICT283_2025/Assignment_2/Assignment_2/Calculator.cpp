@@ -3,7 +3,7 @@ using namespace std;
 
 /*  Calculate Average Speed   */
 
-float Calculator::AverageSpeed(const Vector<float> &data) const {
+float Calculator::AverageSpeed(const Map<int, float> &data) const {
 
   // Initialize local variables
 
@@ -13,7 +13,7 @@ float Calculator::AverageSpeed(const Vector<float> &data) const {
 
   // Loop through all the sensor data and get the sum
 
-  for (int index = 0; index < data.size(); index++) {
+  for (int index = 0; index < data.Size(); index++) {
     sum += data[index];
     data_count++;
   }
@@ -31,7 +31,7 @@ float Calculator::AverageSpeed(const Vector<float> &data) const {
 
 /*  Calculate Average Temperature   */
 
-float Calculator::AverageTemperature(const Vector<float> &data) const {
+float Calculator::AverageTemperature(const Map<int, float> &data) const {
 
   // Initialize local variables
 
@@ -42,7 +42,7 @@ float Calculator::AverageTemperature(const Vector<float> &data) const {
   // Loop through all the sensor data, and check if it matches the year and
   // month parameter to get the sum of temperature records
 
-  for (int index = 0; index < data.size(); index++) {
+  for (int index = 0; index < data.Size(); index++) {
 
     sum += data[index];
     data_count++;
@@ -61,7 +61,7 @@ float Calculator::AverageTemperature(const Vector<float> &data) const {
 
 /*  Calculate Sample Standard Deviation of Speed   */
 
-float Calculator::StdDevSpeed(const Vector<float> &data,
+float Calculator::StdDevSpeed(const Map<int, float> &data,
                               const float mean) const {
 
   //  Initialize local variables
@@ -73,7 +73,7 @@ float Calculator::StdDevSpeed(const Vector<float> &data,
   // Loop through all the sensor data, and check if it matches the year and
   // month parameter to get the sum of squared difference of speed records.
 
-  for (int index = 0; index < data.size(); index++) {
+  for (int index = 0; index < data.Size(); index++) {
 
     float diff = data[index] - mean;
     sum_square_diff += diff * diff;
@@ -93,7 +93,7 @@ float Calculator::StdDevSpeed(const Vector<float> &data,
 
 /*  Calculate Sample Standard Deviation of Temperature   */
 
-float Calculator::StdDevTemperature(const Vector<float> &data,
+float Calculator::StdDevTemperature(const Map<int, float> &data,
                                     const float mean) const {
 
   // Initialize local variables
@@ -105,7 +105,7 @@ float Calculator::StdDevTemperature(const Vector<float> &data,
   // Loop through all the sensor data, and check if it matches the year and
   // month parameter to get the sum of squared difference of speed records.
 
-  for (int index = 0; index < data.size(); index++) {
+  for (int index = 0; index < data.Size(); index++) {
 
     float diff = data[index] - mean;
     sum_square_diff += diff * diff;
@@ -126,14 +126,14 @@ float Calculator::StdDevTemperature(const Vector<float> &data,
 
 /*  Calculate Sample Standard Deviation of Speed   */
 
-float Calculator::TotalSolarRadiation(const Vector<float> &data) const {
+float Calculator::TotalSolarRadiation(const Map<int, float> &data) const {
   float totalRadiation = 0.0f;
   int data_count = 0;
 
   // Loop through all the sensor data, and check if it matches the year and
   // month parameter to get the sum of solar radiation
 
-  for (int index = 0; index < data.size(); index++) {
+  for (int index = 0; index < data.Size(); index++) {
     if (data[index] >= 100) {
 
       // Convert W/m^2 to kWh/m^2:

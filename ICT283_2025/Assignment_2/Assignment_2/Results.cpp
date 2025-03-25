@@ -4,9 +4,9 @@ int Results::targetMonth = 0;
 int Results::targetYear = 0;
 bool Results::targetFound = false;
 
-Vector<float> Results::speedData;
-Vector<float> Results::tempData;
-Vector<float> Results::solarData;
+Map<int, float> Results::speedData;
+Map<int, float> Results::tempData;
+Map<int, float> Results::solarData;
 
 bool Results::dataFound = false;
 
@@ -14,29 +14,29 @@ bool Results::dataFound = false;
 void Results::CollectSpeedData(SensorRecType &record) {
     if (record.date.GetMonth() == targetMonth &&
         record.date.GetYear() == targetYear) {
-      speedData.push(record.speed);
+      speedData.Insert(speedData.Size(), record.speed);
     }
   }
 void Results::CollectTempData(SensorRecType &record) {
     if (record.date.GetMonth() == targetMonth &&
         record.date.GetYear() == targetYear) {
-      tempData.push(record.temperature);
+      tempData.Insert(tempData.Size(), record.temperature);
     }
   }
 
   void Results::CollectSolarData(SensorRecType &record) {
     if (record.date.GetMonth() == targetMonth &&
         record.date.GetYear() == targetYear) {
-      solarData.push(record.solar_radiation);
+      solarData.Insert(solarData.Size(), record.solar_radiation);
     }
   }
 
   void Results::CollectAllData(SensorRecType &record) {
     if (record.date.GetMonth() == targetMonth &&
         record.date.GetYear() == targetYear) {
-      speedData.push(record.speed);
-      tempData.push(record.temperature);
-      solarData.push(record.solar_radiation);
+      speedData.Insert(speedData.Size(),record.speed);
+      tempData.Insert(tempData.Size(),record.temperature);
+      solarData.Insert(solarData.Size(),record.solar_radiation);
     }
   }
   void Results::CheckSpeed(SensorRecType &record) {

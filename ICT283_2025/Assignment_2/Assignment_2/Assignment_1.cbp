@@ -31,12 +31,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Bst.h" />
 		<Unit filename="Calculator.cpp" />
 		<Unit filename="Calculator.h" />
 		<Unit filename="Date.cpp" />
 		<Unit filename="Date.h" />
 		<Unit filename="FileHandler.cpp" />
 		<Unit filename="FileHandler.h" />
+		<Unit filename="Map.h" />
 		<Unit filename="Menu.cpp" />
 		<Unit filename="Menu.h" />
 		<Unit filename="Results.cpp" />

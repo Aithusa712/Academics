@@ -232,10 +232,10 @@ void FileHandler::readCSV(const string &filename,
     tempData.solar_radiation = f_solar_radiation; // solar radiation - float
 
     // Push temporary struct into Parameter SensorLog BST Struct
-    cout << "Pushing data dd/mm/yyyy speed temp solar: "
-         << tempData.date.GetDay() << " " << tempData.date.GetMonth() << " "
-         << tempData.date.GetYear() << " " << tempData.speed << " "
-         << tempData.temperature << " " << tempData.solar_radiation << endl;
+    /*cout << "Pushing data dd/mm/yyyy speed temp solar: "*/
+    /*     << tempData.date.GetDay() << " " << tempData.date.GetMonth() << " "*/
+    /*     << tempData.date.GetYear() << " " << tempData.speed << " "*/
+    /*     << tempData.temperature << " " << tempData.solar_radiation << endl;*/
     sensor_data.Insert(tempData);
   }
 

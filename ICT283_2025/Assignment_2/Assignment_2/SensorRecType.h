@@ -3,7 +3,6 @@
 #include "Bst.h"
 #include "Date.h"
 #include "Time.h"
-#include <ctime>
 /**
  * @brief Structure representing a sensor record with environmental measurements
  */
@@ -13,53 +12,46 @@ struct SensorRecType {
   float speed;           /**< Speed measurement in m/s */
   float temperature;     /**< Temperature measurement in degrees Celsius */
   float solar_radiation; /**< Solar radiation measurement in W/m² */
+  
+  /**
+   * @brief Equality operator for SensorRecType.
+   * 
+   * This operator checks if the current SensorRecType instance is
+   * equal to another SensorRecType instance.
+   *
+   * @param other The SensorRecType instance to compare against.
+   * @return true if both SensorRecType instances are equal, false otherwise.
+   */ 
+  bool operator==(const SensorRecType &other) const;
 
-  bool operator==(const SensorRecType &other) const {
-    return date.GetYear() == other.date.GetYear() &&
-           date.GetMonth() == other.date.GetMonth() &&
-           date.GetDay() == other.date.GetDay() &&
-           time.GetHours() == other.time.GetHours() &&
-           time.GetMinutes() == other.time.GetMinutes();
-  }
+  /**
+   * @brief Less-than operator for SensorRecType.
+   * 
+   * This operator checks if the current SensorRecType instance is
+   * less than another SensorRecType instance.
+   *
+   * @param other The SensorRecType instance to compare against.
+   * @return true if the current instance is less than the other, false otherwise.
+   */ 
+  bool operator<(const SensorRecType &other) const;
 
-  bool operator<(const SensorRecType &other) const {
-    if (date.GetYear() < other.date.GetYear())
-      return true;
-    if (date.GetYear() > other.date.GetYear())
-      return false;
-
-    if (date.GetMonth() < other.date.GetMonth())
-      return true;
-    if (date.GetMonth() > other.date.GetMonth())
-      return false;
-
-    if (date.GetDay() < other.date.GetDay())
-      return true;
-    if (date.GetDay() > other.date.GetDay())
-      return false;
-
-    if (time.GetHours() < other.time.GetHours())
-      return true;
-    if (time.GetHours() > other.time.GetHours())
-      return false;
-
-    if (time.GetMinutes() < other.time.GetMinutes())
-      return true;
-    if (time.GetMinutes() > other.time.GetMinutes())
-      return false;
-
-    // If needed, extend comparison to other fields
-    return false;
-  }
-
-  bool operator>(const SensorRecType &other) const {
-    return other < *this; // Utilize < operator
-  }
+  /**
+   * @brief Greater-than operator for SensorRecType.
+   * 
+   * This operator checks if the current SensorRecType instance is
+   * greater than another SensorRecType instance.
+   *
+   * @param other The SensorRecType instance to compare against.
+   * @return true if the current instance is greater than the other, false otherwise.
+   */ 
+  bool operator>(const SensorRecType &other) const;
 };
+
+
 /**
- * @brief Vector container for storing sensor records
+ * @brief Binary Search Tree container for storing sensor records
  * @typedef SensorLog
  * @details Collection of sensor records stored chronologically
  */
 typedef Bst<SensorRecType> SensorLog;
-#endif
+#endif 

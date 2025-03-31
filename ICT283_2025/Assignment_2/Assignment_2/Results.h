@@ -2,6 +2,7 @@
 #define RESULTS_H
 
 #include "Bst.h"
+#include "Collection.h"
 #include "Calculator.h"
 #include "FileHandler.h"
 #include "SensorRecType.h"
@@ -25,81 +26,63 @@ const int MAX_MONTHS = 13;
  */
 class Results {
 
+/**
+ * @brief Displays the average speed and standard deviation.
+ *
+ * @param sensor_data The sensor log containing data.
+ * @param month The month for which to display the data.
+ * @param year The year for which to display the data.
+ */
 public:
-  /**
-   * @brief Calculates and displays average wind speed and standard deviation
-   * for specified month/year
-   * @param sensor_data Reference to sensor log containing all data
-   * @param month the specific month to calculate
-   * @param year the year to display
-   */
   void DisplayAverageStdevSpeed(const SensorLog &sensor_data, const int month,
                                 const int year) const;
-  /**
-   * @brief Calculates and displays average temperature and standard deviation
-   * for each month of specified year
-   * @param sensor_data Reference to sensor log containing all data
-   * @param year the year to display
-   */
+
+/**
+ * @brief Displays the average temperature and standard deviation.
+ *
+ * @param sensor_data The sensor log containing data.
+ * @param year The year for which to display the data.
+ */
   void DisplayAverageStdevTemperature(const SensorLog &sensor_data,
                                       const int year) const;
-  /**
-   * @brief Calculates and displays total solar radiation for each month of
-   * specified year
-   * @param sensor_data Reference to sensor log containing all data
-   * @param year the year to display
-   */
+
+/**
+ * @brief Displays the total solar radiation.
+ *
+ * @param sensor_data The sensor log containing data.
+ * @param year The year for which to display the data.
+ */
   void DisplayTotalSolarRadiation(const SensorLog &sensor_data,
                                   const int year) const;
-  /**
-   * @brief Writes wind speed, temperature and solar radiation data to
-   * WindTempSolar.csv
-   * @param sensor_data Reference to sensor log containing all data
-   * @param year the year to display
-   */
 
+/**
+ * @brief Prints all available data from the sensor log.
+ *
+ * @param sensor_data The sensor log containing data.
+ * @param year The year for which to print the data.
+ */
   void PrintAll(const SensorLog &sensor_data, const int year) const;
-  /**
-   * @brief Checks if data exists for specified month and year
-   * @param sensor_data Reference to sensor log containing all data
-   * @param month Month to validate
-   * @param year Year to validate
-   * @param sensor_type to validate
-   * @return true if data exists, false otherwise
-   */
+
+/**
+ * @brief Validates if the given month is correct for the specified sensor type.
+ *
+ * @param sensor_data The sensor log containing data.
+ * @param month The month to validate.
+ * @param year The year for which to validate the month.
+ * @param sensor_type The type of sensor being validated.
+ * @return true if the month is valid, false otherwise.
+ */
   bool ValidateMonth(const SensorLog &sensor_data, const int month,
                      const int year, const string sensor_type) const;
 
+/**
+ * @brief Displays the specific sPCC data for the month.
+ *
+ * @param sensor_data The sensor log containing data.
+ * @param month The month for which to display the PCC data.
+ */
   void Display_sPCC(const SensorLog &sensor_data, const int month) const;
 
-private:
-  static int targetMonth;
-  static int targetYear;
-  static bool targetFound;
-
-  static Map<int, float> speedData;
-  static Map<int, float> tempData;
-  static Map<int, float> solarData;
-
-  static bool dataFound;
-
-  static void CollectSpeedData(SensorRecType &record);
-
-  static void CollectTempData(SensorRecType &record);
-
-  static void CollectSolarData(SensorRecType &record);
-
-  static void CollectAllData(SensorRecType &record);
-
-  static void CheckSpeed(SensorRecType &record);
-
-  static void CheckTemp(SensorRecType &record);
-
-  static void CheckSolar(SensorRecType &record);
-
-  static void CheckAll(SensorRecType &record);
-
-  static void collect_sPCC_data(SensorRecType &record); 
 };
 
 /**

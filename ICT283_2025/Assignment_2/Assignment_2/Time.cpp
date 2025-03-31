@@ -11,4 +11,4 @@ int Time::GetMinutes() const { return m_minutes; }
 
 void Time::SetMinutes(int minutes) { m_minutes = minutes; }
 
-void Time::SetHours(int hours) { m_hours = hours; }
+void Time::SetHours(int hours) { m_hours = hours; }  

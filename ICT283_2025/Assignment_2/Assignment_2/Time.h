@@ -69,11 +69,4 @@ private:
   int m_hours; ///< contains the hours value
 };
 
-/// overloading the << operator
-ostream &operator<<(ostream &os, const Time &time);
-/// overloading the >> operator
-istream &operator>>(istream &input, Time &time);
-/// Helper Function to convert the time's integer form into readable string
-string ConvertTime(int minutes, int hours, int year);
-
 #endif

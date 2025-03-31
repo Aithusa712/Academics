@@ -21,7 +21,6 @@ using namespace std;
 class Calculator {
 
 public:
- 
   /**
    * @brief Calculates the average speed
    * @param data Reference to the data to be calculated
@@ -46,21 +45,9 @@ public:
    */
   float CalculateTotalSolarRadiation(const Map<int, float> &data) const;
 
-  /**
-   * @brief Calculates the sample Pearson Correlation Coefficient (sPCC)
-   * @param sensor_data_1 Reference to the first set of sensor data
-   * @param sensor_data_2 Reference to the second set of sensor data
-   * @return float The Pearson Correlation Coefficient, returns 0 if insufficient data
-   */
   float Calculate_sPCC(const Map<int, float> &sensor_data_1,
                       const Map<int, float> &sensor_data_2);
 
-  /**
-   * @brief Calculates the Mean Absolute Deviation (MAD)
-   * @param data Reference to the data to be calculated
-   * @return float The Mean Absolute Deviation, returns 0 if insufficient data
-   */
   float CalculateMAD(const Map<int, float> &data) const;
-
 };
 #endif

@@ -25,12 +25,9 @@ public:
 
   void prompt(const SensorLog &sensor_data, bool &exit) const;
   /**
-   * @brief Gets and validate user input for specific month and year
-   *
-   *
-   * @param sensor_data Reference to sensor log containing all data
+   * @brief Gets and validate Month Input of user
+   * @return Valid Month 
    */
-  //  NOTE:   fix doxygen comment
 
   int GetValidMonth() const;
 

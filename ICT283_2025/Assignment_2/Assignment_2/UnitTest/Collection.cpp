@@ -9,7 +9,7 @@ Map<int, float> Collection::tempData;
 Map<int, float> Collection::solarData;
 Map<int, float> Collection::sPCCData;
 
-static bool dataFound; ///< Flag indicating if any data was found.
+static bool dataFound = false; ///< Flag indicating if any data was found.
 Map<int, float> Collection::GetSpeedData(const SensorLog &data, const int year,
                                          const int month) {
   speedData.Clear();

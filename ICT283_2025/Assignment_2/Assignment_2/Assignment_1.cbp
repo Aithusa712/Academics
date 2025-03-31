@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="Assignment_1" />
+		<Option title="Assignment_2" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -34,6 +34,8 @@
 		<Unit filename="Bst.h" />
 		<Unit filename="Calculator.cpp" />
 		<Unit filename="Calculator.h" />
+		<Unit filename="Collection.cpp" />
+		<Unit filename="Collection.h" />
 		<Unit filename="Date.cpp" />
 		<Unit filename="Date.h" />
 		<Unit filename="FileHandler.cpp" />
@@ -43,10 +45,27 @@
 		<Unit filename="Menu.h" />
 		<Unit filename="Results.cpp" />
 		<Unit filename="Results.h" />
+		<Unit filename="SensorRecType.cpp" />
 		<Unit filename="SensorRecType.h" />
 		<Unit filename="Time.cpp" />
 		<Unit filename="Time.h" />
-		<Unit filename="Vector.h" />
+		<Unit filename="UnitTest/Bst.h" />
+		<Unit filename="UnitTest/Calculator.cpp" />
+		<Unit filename="UnitTest/Calculator.h" />
+		<Unit filename="UnitTest/Collection.cpp" />
+		<Unit filename="UnitTest/Collection.h" />
+		<Unit filename="UnitTest/Date.cpp" />
+		<Unit filename="UnitTest/Date.h" />
+		<Unit filename="UnitTest/FileHandler.cpp" />
+		<Unit filename="UnitTest/FileHandler.h" />
+		<Unit filename="UnitTest/Map.h" />
+		<Unit filename="UnitTest/Results.cpp" />
+		<Unit filename="UnitTest/Results.h" />
+		<Unit filename="UnitTest/SensorRecType.cpp" />
+		<Unit filename="UnitTest/SensorRecType.h" />
+		<Unit filename="UnitTest/TestAll.cpp" />
+		<Unit filename="UnitTest/Time.cpp" />
+		<Unit filename="UnitTest/Time.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

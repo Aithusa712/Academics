@@ -1,5 +1,5 @@
 #include "Calculator.h"
-using namespace std; 
+using namespace std;
 
 /*  Calculate Average Speed   */
 
@@ -104,7 +104,7 @@ float Calculator::Calculate_sPCC(const Map<int, float> &data_1,
   float denominator1 = 0.0f;
   float denominator2 = 0.0f;
 
-  for (int i = 0; i < data_1.Size(); ++i) {
+  for (int i = 0; i < data_size; ++i) {
     float value_1 = 0.0f;
     float value_2 = 0.0f;
     value_1 = data_1[i];

@@ -1,0 +1,6 @@
+<map id="Collection::CheckTemp" name="Collection::CheckTemp">
+<area shape="rect" id="Node000001" title="Check a sensor record for temperature data." alt="" coords="5,29,163,56"/>
+<area shape="rect" id="Node000002" href="$classBst.html#a0c85dfc8f9eae33384de1879e95a627a" title="Traverses the tree in order and applies a function to each node." alt="" coords="211,29,302,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,40,195,40,195,45,163,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="227,30,221,21,225,11,237,5,256,3,277,5,288,12,285,16,275,10,256,8,239,10,229,15,227,20,231,28"/>
+</map>

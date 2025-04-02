@@ -1,0 +1,23 @@
+<map id="Calculator::CalculateAverage" name="Calculator::CalculateAverage">
+<area shape="rect" id="Node000001" title="Calculates the average speed." alt="" coords="749,107,940,133"/>
+<area shape="rect" id="Node000002" href="$classCalculator.html#a3a3e1bc63004d4b645e164feba9ed73c" title="Calculates the sample Pearson Correlation Coefficient (sPCC)" alt="" coords="507,5,694,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="807,101,757,73,700,46,664,35,666,30,702,42,759,68,809,96"/>
+<area shape="rect" id="Node000006" href="$classCalculator.html#aa5cb508ff94a8084fec44cf84270f502" title="Calculates the Mean Absolute Deviation (MAD)" alt="" coords="514,56,687,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="761,106,668,86,669,81,762,100"/>
+<area shape="rect" id="Node000007" href="$classResults.html#aef3159df1c45e68eb77af91747358a89" title="Prints all available data from the sensor log." alt="" coords="294,99,410,125"/>
+<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="733,121,411,116,411,110,733,116"/>
+<area shape="rect" id="Node000008" href="$classResults.html#aab2d1793b03f766af73da66b272697cd" title="Displays the average speed and standard deviation." alt="" coords="252,149,452,192"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="734,134,453,163,453,158,733,129"/>
+<area shape="rect" id="Node000009" href="$classResults.html#a4a4faf662090164cb2c873e49c4c54b4" title="Displays the average temperature and standard deviation." alt="" coords="500,208,701,251"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="804,143,702,192,659,210,657,205,700,187,801,138"/>
+<area shape="rect" id="Node000003" href="$classResults.html#a35fbbd7efee024f4c532c9a8f3eb67be" title="Displays the specific sPCC data for the month." alt="" coords="272,27,433,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="492,31,434,36,433,30,492,25"/>
+<area shape="rect" id="Node000004" href="$classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,128,204,155"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="307,63,253,89,180,130,177,125,251,84,305,58"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,128,55,155"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,144,55,144,55,139,87,139"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="504,88,411,105,410,99,504,83"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="279,125,205,137,204,131,278,120"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="236,156,204,151,205,146,237,151"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="484,238,370,232,310,222,251,206,205,184,169,157,172,153,208,179,253,202,311,217,371,226,485,232"/>
+</map>

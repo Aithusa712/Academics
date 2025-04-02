@@ -1,0 +1,86 @@
+# depslib dependency file v1.0
+1743437760 source:/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/Calculator.cpp
+	"Calculator.h"
+
+1743409276 /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/Calculator.h
+	"Map.h"
+	<cmath>
+	<iostream>
+
+1743435290 /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/Map.h
+	<iostream>
+	<map>
+
+1743435845 source:/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/Collection.cpp
+	"Collection.h"
+
+1743435869 /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/Collection.h
+	"Map.h"
+	"SensorRecType.h"
+
+1743410241 /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/SensorRecType.h
+	"Bst.h"
+	"Date.h"
+	"Time.h"
+
+1743438272 /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/Bst.h
+	<iostream>
+
+1742462974 /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/Date.h
+	<iostream>
+
+1743410081 /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/Time.h
+	<iostream>
+
+1742462974 source:/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/Date.cpp
+	"Date.h"
+
+1743388871 source:/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/FileHandler.cpp
+	"FileHandler.h"
+
+1742898690 /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/FileHandler.h
+	"Date.h"
+	"SensorRecType.h"
+	"Time.h"
+	"Map.h"
+	<fstream>
+	<iostream>
+	<sstream>
+	<string>
+
+1742464245 source:/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/main.cpp
+	"Calculator.h"
+	"FileHandler.h"
+	"Menu.h"
+	"SensorRecType.h"
+
+1743409589 /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/Menu.h
+	"Results.h"
+	"SensorRecType.h"
+	<iostream>
+
+1743436348 /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/Results.h
+	"Bst.h"
+	"Collection.h"
+	"Calculator.h"
+	"FileHandler.h"
+	"SensorRecType.h"
+	"Map.h"
+	<iostream>
+
+1743436820 source:/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/Menu.cpp
+	"Menu.h"
+	"Results.h"
+	"SensorRecType.h"
+
+1743437973 source:/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/Results.cpp
+	"Results.h"
+	"Collection.h"
+	"SensorRecType.h"
+
+1743409814 source:/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/SensorRecType.cpp
+	"SensorRecType.h"
+
+1743410082 source:/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/Time.cpp
+	"Time.h"
+

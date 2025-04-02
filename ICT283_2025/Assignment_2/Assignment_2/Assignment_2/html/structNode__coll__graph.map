@@ -1,0 +1,12 @@
+<map id="Node&lt; T &gt;" name="Node&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Node structure for a binary tree." alt="" coords="57,288,130,357"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="38,5,56,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="40,59,27,87,15,125,8,166,14,207,30,242,52,274,48,277,25,245,9,209,3,166,9,123,22,85,35,57"/>
+<area shape="rect" id="Node000003" href="$structNode.html" title="Node structure for a binary tree." alt="" coords="57,139,130,208"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="59,66,78,122,73,124,54,68"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="96,208,96,271,91,271,91,208"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="131,158,149,161,157,173,149,184,145,181,152,173,146,166,130,163"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="179,5,203,75"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="203,74,213,138,211,174,201,209,176,250,145,284,141,280,172,247,196,207,206,173,207,138,198,75"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="181,59,130,127,126,124,176,56"/>
+</map>

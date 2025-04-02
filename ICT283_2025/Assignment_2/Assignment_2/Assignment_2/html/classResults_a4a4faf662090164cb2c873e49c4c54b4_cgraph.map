@@ -1,0 +1,22 @@
+<map id="Results::DisplayAverageStdevTemperature" name="Results::DisplayAverageStdevTemperature">
+<area shape="rect" id="Node000001" title="Displays the average temperature and standard deviation." alt="" coords="5,115,206,157"/>
+<area shape="rect" id="Node000002" href="$classCalculator.html#a3a67e4f9efeff3d9105babf64a6c3223" title="Calculates the average speed." alt="" coords="256,5,447,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,112,188,76,253,42,271,35,272,40,255,46,190,81,137,116"/>
+<area shape="rect" id="Node000004" href="$classCalculator.html#ac2df88bb90f09985f9f44dc20ce252da" title="Calculates the standard deviation of speed." alt="" coords="254,56,449,99"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="197,111,244,100,245,105,198,117"/>
+<area shape="rect" id="Node000005" href="$classCollection.html#ae64e9aa0bb973aab4d96219d693f5f2a" title="Check a sensor record for temperature data." alt="" coords="273,123,430,149"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="206,133,257,133,257,139,206,139"/>
+<area shape="rect" id="Node000007" href="$classCollection.html#ad6d940fd6b6a7a32dbfc2b003c4f0542" title="Retrieve temperature data for a specific year and month." alt="" coords="267,173,436,200"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="207,154,269,167,268,172,206,159"/>
+<area shape="rect" id="Node000009" href="$Results_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month index into a readable month string." alt="" coords="303,224,400,251"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="144,155,196,183,255,210,289,221,287,226,253,214,193,188,142,160"/>
+<area shape="rect" id="Node000003" href="$classMap.html#a6582085ec2326d087e3f93570da1100c" title="Gets the number of elements in the map." alt="" coords="502,27,583,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="448,27,487,31,487,37,447,32"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="449,56,486,48,488,53,450,61"/>
+<area shape="rect" id="Node000006" href="$classBst.html#a0c85dfc8f9eae33384de1879e95a627a" title="Traverses the tree in order and applies a function to each node." alt="" coords="497,123,588,149"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="430,133,482,133,482,139,430,139"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="510,124,504,114,508,104,521,98,543,96,566,99,578,105,575,110,564,104,543,101,523,103,512,108,510,113,515,121"/>
+<area shape="poly" id="edge10_Node000007_Node000006" title=" " alt="" coords="406,170,448,159,481,150,483,155,450,164,407,175"/>
+<area shape="rect" id="Node000008" href="$classMap.html#a690fcb6c1d9661b769d630a476be46c7" title="Clears all elements from the map." alt="" coords="500,173,585,200"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="436,184,485,184,485,189,436,189"/>
+</map>

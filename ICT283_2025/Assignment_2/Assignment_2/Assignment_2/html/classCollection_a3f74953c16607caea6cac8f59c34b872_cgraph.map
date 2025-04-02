@@ -1,0 +1,8 @@
+<map id="Collection::GetSolarData" name="Collection::GetSolarData">
+<area shape="rect" id="Node000001" title="Retrieve solar data for a specific year and month." alt="" coords="5,43,172,69"/>
+<area shape="rect" id="Node000002" href="$classMap.html#a690fcb6c1d9661b769d630a476be46c7" title="Clears all elements from the map." alt="" coords="223,5,308,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,39,207,28,208,33,155,45"/>
+<area shape="rect" id="Node000003" href="$classBst.html#a0c85dfc8f9eae33384de1879e95a627a" title="Traverses the tree in order and applies a function to each node." alt="" coords="220,80,311,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="155,67,205,78,204,83,154,73"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="235,81,230,71,233,62,246,55,265,53,287,56,298,62,295,67,285,61,265,59,247,61,237,65,235,71,240,78"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Date::GetYear" name="Date::GetYear">
+<area shape="rect" id="Node000001" title="Returns the m_year value." alt="" coords="239,56,343,83"/>
+<area shape="rect" id="Node000002" href="$structSensorRecType.html#a9153eb3c288122918db4b2065aa4c08e" title="Less&#45;than operator for SensorRecType." alt="" coords="9,5,187,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,54,151,35,152,30,224,49"/>
+<area shape="rect" id="Node000003" href="$Date_8cpp.html#ac0f695447b7c2af099d0744865300c03" title="overloading the &lt;&lt; operator" alt="" coords="56,56,140,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,72,141,72,141,67,223,67"/>
+<area shape="rect" id="Node000004" href="$structSensorRecType.html#a8da51a5f54a9b275bc25f716176ac573" title="Equality operator for SensorRecType." alt="" coords="5,107,191,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="224,90,152,109,151,104,223,84"/>
+</map>

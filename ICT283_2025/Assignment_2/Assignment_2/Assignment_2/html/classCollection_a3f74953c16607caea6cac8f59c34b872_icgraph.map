@@ -1,0 +1,11 @@
+<map id="Collection::GetSolarData" name="Collection::GetSolarData">
+<area shape="rect" id="Node000001" title="Retrieve solar data for a specific year and month." alt="" coords="476,43,643,69"/>
+<area shape="rect" id="Node000002" href="$classResults.html#ab02523d4983775f3c2255d44934c988e" title="Displays the total solar radiation." alt="" coords="252,5,428,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="461,46,429,41,429,36,462,40"/>
+<area shape="rect" id="Node000003" href="$classResults.html#aef3159df1c45e68eb77af91747358a89" title="Prints all available data from the sensor log." alt="" coords="282,72,398,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="462,72,399,80,398,75,461,66"/>
+<area shape="rect" id="Node000004" href="$classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,72,204,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="267,88,204,88,204,83,267,83"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,72,55,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,88,55,88,55,83,87,83"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Bst::balanceFromLeft" name="Bst::balanceFromLeft">
+<area shape="rect" id="Node000001" title="Balances the subtree from the left." alt="" coords="5,31,152,57"/>
+<area shape="rect" id="Node000002" href="$classBst.html#af6a1f9ad94aba3b8b4ff3efcf1bd1731" title="Rotates the subtree to the left." alt="" coords="204,5,322,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,31,188,26,189,31,152,37"/>
+<area shape="rect" id="Node000003" href="$classBst.html#af8539855d313f7b65ac3d4216298e43c" title="Rotates the subtree to the right." alt="" coords="200,56,327,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,51,185,56,184,61,151,57"/>
+</map>

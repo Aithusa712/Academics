@@ -1,0 +1,165 @@
+==16541== Memcheck, a memory error detector
+==16541== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==16541== Using Valgrind-3.24.0-fcdaa47426-20241101 and LibVEX; rerun with -h for copyright info
+==16541== Command: ./run
+==16541== Parent PID: 7954
+==16541== 
+--16541-- 
+--16541-- Valgrind options:
+--16541--    --leak-check=full
+--16541--    --show-leak-kinds=all
+--16541--    --track-origins=yes
+--16541--    --verbose
+--16541--    --log-file=valgrind-out.txt
+--16541-- Contents of /proc/version:
+--16541--   Linux version 6.13.8-arch1-1 (linux@archlinux) (gcc (GCC) 14.2.1 20250207, GNU ld (GNU Binutils) 2.44) #1 SMP PREEMPT_DYNAMIC Sun, 23 Mar 2025 17:17:30 +0000
+--16541-- 
+--16541-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-ssse3-avx-avx2-bmi-f16c-rdrand-rdseed-fma
+--16541-- Page sizes: currently 4096, max supported 4096
+--16541-- Valgrind library directory: /usr/lib/valgrind
+--16541-- Reading syms from /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/run
+--16541-- Reading syms from /usr/lib/ld-linux-x86-64.so.2
+==16541== Downloading debug info for /usr/lib/ld-linux-x86-64.so.2...
+--16541--   Considering /home/kim/.cache/debuginfod_client/5fced0dbad50aee336716c4a6de8bf24e7e1f5d9/debuginfo ..
+--16541--   .. CRC is valid
+==16541== Successfully downloaded debug file for /usr/lib/ld-linux-x86-64.so.2
+--16541-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--16541--    object doesn't have a dynamic symbol table
+--16541-- Scheduler: using generic scheduler lock implementation.
+--16541-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==16541== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-16541-by-kim-on-???
+==16541== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-16541-by-kim-on-???
+==16541== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-16541-by-kim-on-???
+==16541== 
+==16541== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==16541== don't want to do, unless you know exactly what you're doing,
+==16541== or are doing some strange experiment):
+==16541==   /usr/lib/valgrind/../../bin/vgdb --pid=16541 ...command...
+==16541== 
+==16541== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==16541==   /path/to/gdb ./run
+==16541== and then give GDB the following command
+==16541==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=16541
+==16541== --pid is optional if only one valgrind process is running
+==16541== 
+==16541== Downloading debug info for /usr/lib/valgrind/memcheck-amd64-linux...
+--16541--   Considering /home/kim/.cache/debuginfod_client/94b7675525ca0c5d83803686cc70a920784883ec/debuginfo ..
+--16541--   .. CRC is valid
+==16541== Successfully downloaded debug file for /usr/lib/valgrind/memcheck-amd64-linux
+--16541-- Warning: cross-CU LIMITATION: some inlined fn names
+--16541-- might be shown as UnknownInlinedFun
+--16541-- REDIR: 0x4027320 (ld-linux-x86-64.so.2:strlen) redirected to 0x5821f294 (vgPlain_amd64_linux_REDIR_FOR_strlen)
+--16541-- REDIR: 0x4025ce0 (ld-linux-x86-64.so.2:strcmp) redirected to 0x5821f2ae (vgPlain_amd64_linux_REDIR_FOR_strcmp)
+--16541-- REDIR: 0x4025ab0 (ld-linux-x86-64.so.2:index) redirected to 0x5821f2c9 (vgPlain_amd64_linux_REDIR_FOR_index)
+--16541-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--16541-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+==16541== WARNING: new redirection conflicts with existing -- ignoring it
+--16541--     old: 0x04025ce0 (strcmp              ) R-> (0000.0) 0x5821f2ae vgPlain_amd64_linux_REDIR_FOR_strcmp
+==16541== Downloading debug info for /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so...
+--16541--   Considering /home/kim/.cache/debuginfod_client/45117f4dbf5e6b56cef25bc73e96245139503c39/debuginfo ..
+--16541--   .. CRC is valid
+==16541== Successfully downloaded debug file for /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--16541--     new: 0x04025ce0 (strcmp              ) R-> (2016.0) 0x04850150 strcmp
+==16541== WARNING: new redirection conflicts with existing -- ignoring it
+--16541--     old: 0x04027320 (strlen              ) R-> (0000.0) 0x5821f294 vgPlain_amd64_linux_REDIR_FOR_strlen
+--16541--     new: 0x04027320 (strlen              ) R-> (2007.0) 0x0484edc0 strlen
+--16541-- REDIR: 0x4025110 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x48548a0 (mempcpy)
+--16541-- Reading syms from /usr/lib/libstdc++.so.6.0.33
+--16541-- Reading syms from /usr/lib/libm.so.6
+--16541-- Reading syms from /usr/lib/libgcc_s.so.1
+--16541-- Reading syms from /usr/lib/libc.so.6
+==16541== Downloading debug info for /usr/lib/libc.so.6...
+--16541--   Considering /home/kim/.cache/debuginfod_client/0b707b217b15b106c25fe51df3724b25848310c0/debuginfo ..
+--16541--   .. CRC is valid
+==16541== Successfully downloaded debug file for /usr/lib/libc.so.6
+--16541-- REDIR: 0x40274c0 (ld-linux-x86-64.so.2:strncmp) redirected to 0x484f8c0 (strncmp)
+==16541== Downloading debug info for /usr/lib/valgrind/vgpreload_core-amd64-linux.so...
+--16541--   Considering /home/kim/.cache/debuginfod_client/93060faeaf32d027082dabc8341faf32b7b32840/debuginfo ..
+--16541--   .. CRC is valid
+==16541== Successfully downloaded debug file for /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--16541-- REDIR: 0x4cdbd10 (libc.so.6:strncasecmp) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cd8e20 (libc.so.6:mempcpy) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cef610 (libc.so.6:wcpncpy) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cd91c0 (libc.so.6:stpcpy) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4d53ce0 (libc.so.6:__memmove_chk) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cfddc0 (libc.so.6:wmemcmp) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cd9e90 (libc.so.6:strcat) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cd8490 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cf14c0 (libc.so.6:wcsncpy) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4d53bc0 (libc.so.6:__memcpy_chk) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+==16541== WARNING: new redirection conflicts with existing -- ignoring it
+--16541--     old: 0x04d9a290 (__memcpy_chk_avx_una) R-> (2024.0) 0x048542b0 __memmove_chk
+--16541--     new: 0x04d9a290 (__memcpy_chk_avx_una) R-> (2030.0) 0x048549b0 __memcpy_chk
+--16541-- REDIR: 0x4cf0c10 (libc.so.6:wcslen) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cd8fd0 (libc.so.6:memset) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cf1520 (libc.so.6:wcsnlen) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cdc010 (libc.so.6:strnlen) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cdc0a0 (libc.so.6:strpbrk) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cda010 (libc.so.6:strcmp) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cd8f40 (libc.so.6:memrchr) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cefa00 (libc.so.6:wcschr) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cd9f00 (libc.so.6:index) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cdc0d0 (libc.so.6:rindex) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cefab0 (libc.so.6:wcscmp) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cd9230 (libc.so.6:stpncpy) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cfdd40 (libc.so.6:wmemchr) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cdbeb0 (libc.so.6:strncmp) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cd9290 (libc.so.6:strcasecmp) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cdb280 (libc.so.6:strcspn) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cf09e0 (libc.so.6:wcscpy) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cdbdb0 (libc.so.6:strncasecmp_l) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cd9f80 (libc.so.6:strchrnul) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cd83a0 (libc.so.6:bcmp) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cdb210 (libc.so.6:strcpy) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cd9330 (libc.so.6:strcasecmp_l) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cdbc80 (libc.so.6:strlen) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cdbf50 (libc.so.6:strncpy) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cd8d00 (libc.so.6:memmove) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+==16541== Preferring higher priority redirection:
+--16541--     old: 0x04d9a2c0 (__memcpy_avx_unalign) R-> (2018.0) 0x04851820 __memcpy_avx_unaligned_erms
+--16541--     new: 0x04d9a2c0 (__memcpy_avx_unalign) R-> (2018.1) 0x048535b0 memmove
+--16541-- REDIR: 0x4cd8320 (libc.so.6:memchr) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4cdc2d0 (libc.so.6:strspn) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+==16541== WARNING: new redirection conflicts with existing -- ignoring it
+--16541--     old: 0x04d9a290 (__memcpy_chk_avx_una) R-> (2024.0) 0x048542b0 __memmove_chk
+--16541--     new: 0x04d9a290 (__memcpy_chk_avx_una) R-> (2030.0) 0x048549b0 __memcpy_chk
+--16541-- REDIR: 0x4cdcbf0 (libc.so.6:strstr) redirected to 0x483a1a0 (_vgnU_ifunc_wrapper)
+--16541-- REDIR: 0x4d9eef0 (libc.so.6:__strrchr_avx2) redirected to 0x484e5a0 (rindex)
+--16541-- REDIR: 0x4d9d040 (libc.so.6:__strlen_avx2) redirected to 0x484eca0 (strlen)
+--16541-- REDIR: 0x4d99b60 (libc.so.6:__memcmp_avx2_movbe) redirected to 0x4852ba0 (bcmp)
+--16541-- REDIR: 0x4cd4190 (libc.so.6:malloc) redirected to 0x4845730 (malloc)
+--16541-- REDIR: 0x4930ba0 (libstdc++.so.6:operator new(unsigned long)) redirected to 0x4845f20 (operator new(unsigned long))
+==16541== Downloading debug info for /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/run...
+==16541== Server query failed: No such file or directory
+--16541-- REDIR: 0x4d9a2c0 (libc.so.6:__memcpy_avx_unaligned_erms) redirected to 0x48535b0 (memmove)
+--16541-- REDIR: 0x4d9c460 (libc.so.6:__strchr_avx2) redirected to 0x484e7e0 (index)
+--16541-- REDIR: 0x4930c10 (libstdc++.so.6:operator new[](unsigned long)) redirected to 0x48475a0 (operator new[](unsigned long))
+--16541-- REDIR: 0x4d998c0 (libc.so.6:__memchr_avx2) redirected to 0x4850210 (memchr)
+--16541-- REDIR: 0x492eb80 (libstdc++.so.6:operator delete(void*)) redirected to 0x4849340 (operator delete(void*))
+--16541-- REDIR: 0x4d9a290 (libc.so.6:__memcpy_chk_avx_unaligned_erms) redirected to 0x48542b0 (__memmove_chk)
+--16541-- REDIR: 0x492ebb0 (libstdc++.so.6:operator delete[](void*)) redirected to 0x484b180 (operator delete[](void*))
+--16541-- REDIR: 0x4cd48b0 (libc.so.6:free) redirected to 0x4848880 (free)
+--16541-- REDIR: 0x4d9a280 (libc.so.6:__mempcpy_avx_unaligned_erms) redirected to 0x4854460 (mempcpy)
+==16541== 
+==16541== HEAP SUMMARY:
+==16541==     in use at exit: 489,776 bytes in 8,746 blocks
+==16541==   total heap usage: 1,018,967 allocs, 1,010,221 frees, 76,140,081 bytes allocated
+==16541== 
+==16541== Searching for pointers to 8,746 not-freed blocks
+==16541== Checked 123,688 bytes
+==16541== 
+==16541== 489,776 bytes in 8,746 blocks are definitely lost in loss record 1 of 1
+==16541==    at 0x4845F93: operator new(unsigned long) (vg_replace_malloc.c:487)
+==16541==    by 0x110AC2: Bst<SensorRecType>::Insert(SensorRecType const&) (in /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/run)
+==16541==    by 0x110590: FileHandler::readCSV(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Bst<SensorRecType>&) const (in /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/run)
+==16541==    by 0x10F3CB: FileHandler::readSource(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Bst<SensorRecType>&) const (in /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/run)
+==16541==    by 0x1130BE: main (in /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/run)
+==16541== 
+==16541== LEAK SUMMARY:
+==16541==    definitely lost: 489,776 bytes in 8,746 blocks
+==16541==    indirectly lost: 0 bytes in 0 blocks
+==16541==      possibly lost: 0 bytes in 0 blocks
+==16541==    still reachable: 0 bytes in 0 blocks
+==16541==         suppressed: 0 bytes in 0 blocks
+==16541== 
+==16541== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

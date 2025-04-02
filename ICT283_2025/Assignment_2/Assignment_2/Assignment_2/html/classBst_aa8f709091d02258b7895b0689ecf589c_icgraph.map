@@ -1,0 +1,8 @@
+<map id="Bst::Delete" name="Bst::Delete">
+<area shape="rect" id="Node000001" title="Deletes a node from the Bst." alt="" coords="167,31,254,57"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="235,18,226,12,210,9,195,11,187,16,185,21,189,29,184,31,180,22,183,12,193,6,210,4,228,7,238,13"/>
+<area shape="rect" id="Node000002" href="$classBst.html#ae3ecac082cc1d95144638291e6926503" title="Deletes the entire tree and frees resources." alt="" coords="5,5,119,32"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="151,37,118,31,119,26,151,31"/>
+<area shape="rect" id="Node000003" href="$classBst.html#ac70fe9f8cfede8f34f74d3105544760e" title="Destroys the Bst object and frees resources." alt="" coords="23,56,101,83"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="151,57,101,65,101,60,151,51"/>
+</map>

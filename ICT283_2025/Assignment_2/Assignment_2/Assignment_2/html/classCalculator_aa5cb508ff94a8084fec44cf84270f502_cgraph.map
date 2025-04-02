@@ -1,0 +1,8 @@
+<map id="Calculator::CalculateMAD" name="Calculator::CalculateMAD">
+<area shape="rect" id="Node000001" title="Calculates the Mean Absolute Deviation (MAD)" alt="" coords="5,31,179,57"/>
+<area shape="rect" id="Node000002" href="$classCalculator.html#a3a67e4f9efeff3d9105babf64a6c3223" title="Calculates the average speed." alt="" coords="227,5,418,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,32,211,28,212,34,179,37"/>
+<area shape="rect" id="Node000003" href="$classMap.html#a6582085ec2326d087e3f93570da1100c" title="Gets the number of elements in the map." alt="" coords="466,31,546,57"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="179,41,451,41,451,47,179,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="419,29,451,34,450,39,418,35"/>
+</map>

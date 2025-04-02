@@ -1,0 +1,16 @@
+<map id="Bst::Insert" name="Bst::Insert">
+<area shape="rect" id="Node000001" title="Inserts new data into the Bst." alt="" coords="5,31,88,57"/>
+<area shape="rect" id="Node000002" href="$classBst.html#a78cf826523e6d7111d2d7c0ef659740a" title="Inserts a node into the Bst and checks for height changes." alt="" coords="136,31,259,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,41,120,41,120,47,88,47"/>
+<area shape="poly" id="edge8_Node000002_Node000002" title=" " alt="" coords="171,31,166,22,170,12,180,6,197,4,216,7,225,13,222,18,214,12,197,9,182,11,174,16,172,21,176,29"/>
+<area shape="rect" id="Node000003" href="$classBst.html#a4753549c76bdd9e67a8f20b940a2ffc5" title="Balances the subtree from the left." alt="" coords="312,5,458,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="259,33,296,28,296,33,260,38"/>
+<area shape="rect" id="Node000006" href="$classBst.html#a6658742e0f0b47ab2e305bb1aa7e5fbc" title="Balances the subtree from the right." alt="" coords="307,56,462,83"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="260,50,292,54,292,59,259,55"/>
+<area shape="rect" id="Node000004" href="$classBst.html#af6a1f9ad94aba3b8b4ff3efcf1bd1731" title="Rotates the subtree to the left." alt="" coords="515,5,633,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="458,16,500,16,500,21,458,21"/>
+<area shape="rect" id="Node000005" href="$classBst.html#af8539855d313f7b65ac3d4216298e43c" title="Rotates the subtree to the right." alt="" coords="510,56,638,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="438,30,507,49,506,54,437,35"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="437,53,506,34,507,39,438,58"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="462,67,494,67,494,72,462,72"/>
+</map>

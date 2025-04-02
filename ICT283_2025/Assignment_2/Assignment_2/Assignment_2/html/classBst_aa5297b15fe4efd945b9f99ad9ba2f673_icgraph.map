@@ -1,0 +1,6 @@
+<map id="Bst::Search" name="Bst::Search">
+<area shape="rect" id="Node000001" title="Searches for a target value in the Bst." alt="" coords="170,29,260,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="240,16,231,10,215,8,199,10,191,14,189,20,193,28,188,30,184,21,187,11,198,5,215,3,233,5,243,12"/>
+<area shape="rect" id="Node000002" href="$classBst.html#a4bbc4555a8ba931216a32f8f1d626613" title="Searches for a target value in the entire Bst." alt="" coords="5,29,122,56"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="154,45,122,45,122,40,154,40"/>
+</map>

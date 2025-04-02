@@ -63,7 +63,6 @@ public:
    */
   void SetHours(int hours);
 
-
 private:
   int m_minutes; ///< contains the minutes value
 

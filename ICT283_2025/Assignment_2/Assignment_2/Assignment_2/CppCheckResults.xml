@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<results version="2">
+    <cppcheck version="2.17.1" />
+    <errors>
+        <error id="syntaxError" severity="error" msg="Code &apos;template&lt;...&apos; is invalid C code." verbose="Code &apos;template&lt;...&apos; is invalid C code.: Use --std, -x or --language to enforce C++. Or --cpp-header-probe to identify C++ headers via the Emacs marker." file0="Collection.h">
+            <location file="Map.h" line="13" column="1" />
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Node &lt; SensorRecType &gt;&apos; has a constructor with 1 argument that is not explicit." verbose='Struct &apos;Node &lt; SensorRecType &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions.' cwe="398" file0="Menu.cpp">
+            <location file="Bst.h" line="38" column="3" />
+            <symbol>Node &lt; SensorRecType &gt;</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="Menu.cpp">
+            <location file="Menu.cpp" line="57" column="26" />
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="Menu.cpp">
+            <location file="Menu.cpp" line="186" column="26" />
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;tempData&apos; shadows outer variable" verbose="Local variable &apos;tempData&apos; shadows outer variable" cwe="398" file0="Results.cpp">
+            <location file="Results.cpp" line="61" column="25" info="Shadow variable" />
+            <location file="Results.cpp" line="38" column="19" info="Shadowed declaration" />
+            <symbol>tempData</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;solarData&apos; shadows outer variable" verbose="Local variable &apos;solarData&apos; shadows outer variable" cwe="398" file0="Results.cpp">
+            <location file="Results.cpp" line="118" column="25" info="Shadow variable" />
+            <location file="Results.cpp" line="89" column="19" info="Shadowed declaration" />
+            <symbol>solarData</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;using namespace std&apos; is invalid C code." verbose="Code &apos;using namespace std&apos; is invalid C code.: Use --std, -x or --language to enforce C++. Or --cpp-header-probe to identify C++ headers via the Emacs marker." file0="Date.h">
+            <location file="Date.h" line="5" column="1" />
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;CollectSpeedData&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;CollectSpeedData&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="Collection.cpp">
+            <location file="Collection.cpp" line="54" column="50" info="Parameter &apos;record&apos; can be declared as reference to const" />
+            <location file="Collection.cpp" line="18" column="16" info="You might need to cast the function pointer here" />
+            <symbol>record</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;CollectTempData&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;CollectTempData&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="Collection.cpp">
+            <location file="Collection.cpp" line="60" column="49" info="Parameter &apos;record&apos; can be declared as reference to const" />
+            <location file="Collection.cpp" line="27" column="16" info="You might need to cast the function pointer here" />
+            <symbol>record</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;CollectSolarData&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;CollectSolarData&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="Collection.cpp">
+            <location file="Collection.cpp" line="67" column="50" info="Parameter &apos;record&apos; can be declared as reference to const" />
+            <location file="Collection.cpp" line="36" column="16" info="You might need to cast the function pointer here" />
+            <symbol>record</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;collect_sPCC_data&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;collect_sPCC_data&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="Collection.cpp">
+            <location file="Collection.cpp" line="74" column="51" info="Parameter &apos;record&apos; can be declared as reference to const" />
+            <location file="Collection.cpp" line="48" column="16" info="You might need to cast the function pointer here" />
+            <symbol>record</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;CheckSpeedData&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;CheckSpeedData&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="Collection.cpp">
+            <location file="Collection.cpp" line="119" column="49" info="Parameter &apos;record&apos; can be declared as reference to const" />
+            <location file="Collection.cpp" line="87" column="16" info="You might need to cast the function pointer here" />
+            <symbol>record</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;CheckTempData&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;CheckTempData&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="Collection.cpp">
+            <location file="Collection.cpp" line="126" column="47" info="Parameter &apos;record&apos; can be declared as reference to const" />
+            <location file="Collection.cpp" line="97" column="16" info="You might need to cast the function pointer here" />
+            <symbol>record</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;CheckSolarData&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;CheckSolarData&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="Collection.cpp">
+            <location file="Collection.cpp" line="133" column="48" info="Parameter &apos;record&apos; can be declared as reference to const" />
+            <location file="Collection.cpp" line="106" column="16" info="You might need to cast the function pointer here" />
+            <symbol>record</symbol>
+        </error>
+        <error id="constParameterCallback" severity="style" msg="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;CheckAllData&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." verbose="Parameter &apos;record&apos; can be declared as reference to const. However it seems that &apos;CheckAllData&apos; is a callback function, if &apos;record&apos; is declared with const you might also need to cast function pointer(s)." cwe="398" file0="Collection.cpp">
+            <location file="Collection.cpp" line="140" column="46" info="Parameter &apos;record&apos; can be declared as reference to const" />
+            <location file="Collection.cpp" line="115" column="16" info="You might need to cast the function pointer here" />
+            <symbol>record</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;template&lt;...&apos; is invalid C code." verbose="Code &apos;template&lt;...&apos; is invalid C code.: Use --std, -x or --language to enforce C++. Or --cpp-header-probe to identify C++ headers via the Emacs marker." file0="Results.h">
+            <location file="Bst.h" line="23" column="1" />
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Node&apos; has a constructor with 1 argument that is not explicit." verbose='Struct &apos;Node&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions.' cwe="398" file0="SensorRecType.cpp">
+            <location file="Bst.h" line="38" column="3" />
+            <symbol>Node</symbol>
+        </error>
+        <error id="syntaxError" severity="error" msg="Code &apos;using namespace std&apos; is invalid C code." verbose="Code &apos;using namespace std&apos; is invalid C code.: Use --std, -x or --language to enforce C++. Or --cpp-header-probe to identify C++ headers via the Emacs marker." file0="Time.h">
+            <location file="Time.h" line="5" column="1" />
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;ss&apos; shadows outer variable" verbose="Local variable &apos;ss&apos; shadows outer variable" cwe="398" file0="FileHandler.cpp">
+            <location file="FileHandler.cpp" line="103" column="19" info="Shadow variable" />
+            <location file="FileHandler.cpp" line="72" column="17" info="Shadowed declaration" />
+            <symbol>ss</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;Get&apos; is never used." verbose="The function &apos;Get&apos; is never used." cwe="561">
+            <location file="Bst.h" line="398" column="0" />
+            <symbol>Get</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;DeleteTree&apos; is never used." verbose="The function &apos;DeleteTree&apos; is never used." cwe="561">
+            <location file="Bst.h" line="424" column="0" />
+            <symbol>DeleteTree</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;SearchTree&apos; is never used." verbose="The function &apos;SearchTree&apos; is never used." cwe="561">
+            <location file="Bst.h" line="426" column="0" />
+            <symbol>SearchTree</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;DisplayTotalSolarRadiation&apos; is never used." verbose="The function &apos;DisplayTotalSolarRadiation&apos; is never used." cwe="561">
+            <location file="Results.cpp" line="83" column="0" />
+            <symbol>DisplayTotalSolarRadiation</symbol>
+        </error>
+        <error id="checkersReport" severity="information" msg="Active checkers: There was critical errors (use --checkers-report=&lt;filename&gt; to see details)" verbose="Active checkers: There was critical errors (use --checkers-report=&lt;filename&gt; to see details)" />
+    </errors>
+</results>

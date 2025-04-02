@@ -78,8 +78,6 @@ public:
    */
   void SetYear(int year);
 
- 
-
 private:
   int m_day; ///< contains the day value
 

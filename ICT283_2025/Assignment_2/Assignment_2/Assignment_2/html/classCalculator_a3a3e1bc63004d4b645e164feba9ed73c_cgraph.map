@@ -1,0 +1,8 @@
+<map id="Calculator::Calculate_sPCC" name="Calculator::Calculate_sPCC">
+<area shape="rect" id="Node000001" title="Calculates the sample Pearson Correlation Coefficient (sPCC)" alt="" coords="5,31,192,57"/>
+<area shape="rect" id="Node000002" href="$classCalculator.html#a3a67e4f9efeff3d9105babf64a6c3223" title="Calculates the average speed." alt="" coords="240,5,431,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,31,224,28,224,33,192,37"/>
+<area shape="rect" id="Node000003" href="$classMap.html#a6582085ec2326d087e3f93570da1100c" title="Gets the number of elements in the map." alt="" coords="479,31,559,57"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="192,41,464,41,464,47,192,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="432,29,464,34,463,39,431,35"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Time::GetHours" name="Time::GetHours">
+<area shape="rect" id="Node000001" title="Returns the m_hours value." alt="" coords="239,31,353,57"/>
+<area shape="rect" id="Node000002" href="$structSensorRecType.html#a9153eb3c288122918db4b2065aa4c08e" title="Less&#45;than operator for SensorRecType." alt="" coords="9,5,187,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,37,187,33,188,27,223,32"/>
+<area shape="rect" id="Node000003" href="$structSensorRecType.html#a8da51a5f54a9b275bc25f716176ac573" title="Equality operator for SensorRecType." alt="" coords="5,56,191,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,56,192,60,191,55,223,51"/>
+</map>

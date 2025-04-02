@@ -1,0 +1,19 @@
+<map id="Results::DisplayTotalSolarRadiation" name="Results::DisplayTotalSolarRadiation">
+<area shape="rect" id="Node000001" title="Displays the total solar radiation." alt="" coords="5,97,182,140"/>
+<area shape="rect" id="Node000002" href="$classCalculator.html#aa70e3d02acd2ad3211484334a5ed9ae4" title="Calculates the total solar radiation." alt="" coords="230,5,401,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,94,247,52,249,57,148,99"/>
+<area shape="rect" id="Node000004" href="$classCollection.html#a135d38d3c4d2156aec0a406aa29f37d7" title="Check a sensor record for solar data." alt="" coords="238,80,393,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,106,222,101,223,107,182,111"/>
+<area shape="rect" id="Node000006" href="$classCollection.html#a3f74953c16607caea6cac8f59c34b872" title="Retrieve solar data for a specific year and month." alt="" coords="232,131,398,157"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="182,126,217,130,216,135,182,131"/>
+<area shape="rect" id="Node000008" href="$Results_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month index into a readable month string." alt="" coords="267,181,364,208"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="151,138,231,167,253,174,251,179,229,172,149,143"/>
+<area shape="rect" id="Node000003" href="$classMap.html#a6582085ec2326d087e3f93570da1100c" title="Gets the number of elements in the map." alt="" coords="454,9,535,36"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="401,22,439,21,439,27,401,27"/>
+<area shape="rect" id="Node000005" href="$classBst.html#a0c85dfc8f9eae33384de1879e95a627a" title="Traverses the tree in order and applies a function to each node." alt="" coords="449,84,540,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="394,92,434,93,433,99,394,98"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="464,85,458,75,462,66,475,59,495,57,516,60,528,66,525,71,515,65,495,63,476,65,466,69,464,75,468,82"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="369,128,433,110,434,116,370,133"/>
+<area shape="rect" id="Node000007" href="$classMap.html#a690fcb6c1d9661b769d630a476be46c7" title="Clears all elements from the map." alt="" coords="452,135,537,161"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="399,143,436,144,436,149,399,149"/>
+</map>

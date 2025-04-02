@@ -1,0 +1,277 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: /home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/bin/Debug/Assignment_1</line>
+</preamble>
+
+<pid>281536</pid>
+<ppid>281385</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind</exe>
+    <arg>--leak-check=full</arg>
+    <arg>--track-origins=yes</arg>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/ValgrindOut.xml</arg>
+  </vargv>
+  <argv>
+    <exe>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/bin/Debug/Assignment_1</exe>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.041 </time>
+</status>
+
+<fatal_signal>
+  <tid>1</tid>
+  <signo>6</signo>
+  <signame>SIGABRT</signame>
+  <sicode>-6</sicode>
+  <stack>
+    <frame>
+      <ip>0x4CC5624</ip>
+      <obj>/usr/lib/libc.so.6</obj>
+      <fn>__pthread_kill_implementation</fn>
+      <dir>/usr/src/debug/glibc/glibc/nptl</dir>
+      <file>pthread_kill.c</file>
+      <line>44</line>
+    </frame>
+    <frame>
+      <ip>0x4C6BB9F</ip>
+      <obj>/usr/lib/libc.so.6</obj>
+      <fn>raise</fn>
+      <dir>/usr/src/debug/glibc/glibc/signal/../sysdeps/posix</dir>
+      <file>raise.c</file>
+      <line>26</line>
+    </frame>
+    <frame>
+      <ip>0x4C53581</ip>
+      <obj>/usr/lib/libc.so.6</obj>
+      <fn>abort</fn>
+      <dir>/usr/src/debug/glibc/glibc/stdlib</dir>
+      <file>abort.c</file>
+      <line>73</line>
+    </frame>
+    <frame>
+      <ip>0x4919B2B</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.33</obj>
+      <fn>__gnu_cxx::__verbose_terminate_handler() [clone .cold]</fn>
+      <dir>/usr/src/debug/gcc/gcc/libstdc++-v3/libsupc++</dir>
+      <file>vterminate.cc</file>
+      <line>95</line>
+    </frame>
+    <frame>
+      <ip>0x49303B9</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.33</obj>
+      <fn>__cxxabiv1::__terminate(void (*)())</fn>
+      <dir>/usr/src/debug/gcc/gcc/libstdc++-v3/libsupc++</dir>
+      <file>eh_terminate.cc</file>
+      <line>48</line>
+    </frame>
+    <frame>
+      <ip>0x4919529</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.33</obj>
+      <fn>std::terminate()</fn>
+      <dir>/usr/src/debug/gcc/gcc/libstdc++-v3/libsupc++</dir>
+      <file>eh_terminate.cc</file>
+      <line>58</line>
+    </frame>
+    <frame>
+      <ip>0x4930675</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.33</obj>
+      <fn>__cxa_throw</fn>
+      <dir>/usr/src/debug/gcc/gcc/libstdc++-v3/libsupc++</dir>
+      <file>eh_throw.cc</file>
+      <line>98</line>
+    </frame>
+    <frame>
+      <ip>0x491D39E</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.33</obj>
+      <fn>std::__throw_invalid_argument(char const*)</fn>
+      <dir>/usr/src/debug/gcc/gcc/libstdc++-v3/src/c++11</dir>
+      <file>functexcept.cc</file>
+      <line>78</line>
+    </frame>
+    <frame>
+      <ip>0x1108F5</ip>
+      <obj>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/bin/Debug/Assignment_1</obj>
+      <fn>int __gnu_cxx::__stoa&lt;long, int, char, int&gt;(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)</fn>
+      <dir>/usr/include/c++/14.2.1/ext</dir>
+      <file>string_conversions.h</file>
+      <line>85</line>
+    </frame>
+    <frame>
+      <ip>0x11066D</ip>
+      <obj>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/bin/Debug/Assignment_1</obj>
+      <fn>std::__cxx11::stoi(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, unsigned long*, int)</fn>
+      <dir>/usr/include/c++/14.2.1/bits</dir>
+      <file>basic_string.h</file>
+      <line>4165</line>
+    </frame>
+    <frame>
+      <ip>0x1132D2</ip>
+      <obj>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/bin/Debug/Assignment_1</obj>
+      <fn>Menu::prompt(Bst&lt;SensorRecType&gt; const&amp;, bool&amp;) const</fn>
+      <dir>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2</dir>
+      <file>Menu.cpp</file>
+      <line>62</line>
+    </frame>
+    <frame>
+      <ip>0x112F23</ip>
+      <obj>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/bin/Debug/Assignment_1</obj>
+      <fn>main</fn>
+      <dir>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2</dir>
+      <file>main.cpp</file>
+      <line>21</line>
+    </frame>
+  </stack>
+</fatal_signal>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:03:17.372 </time>
+</status>
+
+<error>
+  <unique>0x1</unique>
+  <tid>1</tid>
+  <kind>Leak_PossiblyLost</kind>
+  <xwhat>
+    <text>144 bytes in 1 blocks are possibly lost in loss record 2 of 7</text>
+    <leakedbytes>144</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x48457A8</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>malloc</fn>
+      <dir>/usr/src/debug/valgrind/valgrind-3.24.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>446</line>
+    </frame>
+    <frame>
+      <ip>0x492F02C</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.33</obj>
+      <fn>__cxa_allocate_exception</fn>
+      <dir>/usr/src/debug/gcc/gcc/libstdc++-v3/libsupc++</dir>
+      <file>eh_alloc.cc</file>
+      <line>398</line>
+    </frame>
+    <frame>
+      <ip>0x491D36F</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.33</obj>
+      <fn>std::__throw_invalid_argument(char const*)</fn>
+      <dir>/usr/src/debug/gcc/gcc/libstdc++-v3/src/c++11</dir>
+      <file>functexcept.cc</file>
+      <line>78</line>
+    </frame>
+    <frame>
+      <ip>0x1108F5</ip>
+      <obj>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/bin/Debug/Assignment_1</obj>
+      <fn>int __gnu_cxx::__stoa&lt;long, int, char, int&gt;(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)</fn>
+      <dir>/usr/include/c++/14.2.1/ext</dir>
+      <file>string_conversions.h</file>
+      <line>85</line>
+    </frame>
+    <frame>
+      <ip>0x11066D</ip>
+      <obj>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/bin/Debug/Assignment_1</obj>
+      <fn>std::__cxx11::stoi(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, unsigned long*, int)</fn>
+      <dir>/usr/include/c++/14.2.1/bits</dir>
+      <file>basic_string.h</file>
+      <line>4165</line>
+    </frame>
+    <frame>
+      <ip>0x1132D2</ip>
+      <obj>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/bin/Debug/Assignment_1</obj>
+      <fn>Menu::prompt(Bst&lt;SensorRecType&gt; const&amp;, bool&amp;) const</fn>
+      <dir>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2</dir>
+      <file>Menu.cpp</file>
+      <line>62</line>
+    </frame>
+    <frame>
+      <ip>0x112F23</ip>
+      <obj>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/bin/Debug/Assignment_1</obj>
+      <fn>main</fn>
+      <dir>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2</dir>
+      <file>main.cpp</file>
+      <line>21</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x5</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>489,776 bytes in 8,746 blocks are definitely lost in loss record 6 of 7</text>
+    <leakedbytes>489776</leakedbytes>
+    <leakedblocks>8746</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4845F93</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+      <dir>/usr/src/debug/valgrind/valgrind-3.24.0/coregrind/m_replacemalloc</dir>
+      <file>vg_replace_malloc.c</file>
+      <line>487</line>
+    </frame>
+    <frame>
+      <ip>0x110EA9</ip>
+      <obj>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/bin/Debug/Assignment_1</obj>
+      <fn>Bst&lt;SensorRecType&gt;::Insert(SensorRecType const&amp;)</fn>
+      <dir>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2</dir>
+      <file>Bst.h</file>
+      <line>320</line>
+    </frame>
+    <frame>
+      <ip>0x11008F</ip>
+      <obj>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/bin/Debug/Assignment_1</obj>
+      <fn>FileHandler::readCSV(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, Bst&lt;SensorRecType&gt;&amp;) const</fn>
+      <dir>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2</dir>
+      <file>FileHandler.cpp</file>
+      <line>239</line>
+    </frame>
+    <frame>
+      <ip>0x10F34E</ip>
+      <obj>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/bin/Debug/Assignment_1</obj>
+      <fn>FileHandler::readSource(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, Bst&lt;SensorRecType&gt;&amp;) const</fn>
+      <dir>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2</dir>
+      <file>FileHandler.cpp</file>
+      <line>40</line>
+    </frame>
+    <frame>
+      <ip>0x112EF1</ip>
+      <obj>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2/bin/Debug/Assignment_1</obj>
+      <fn>main</fn>
+      <dir>/home/kim/Documents/ICT283_2025/Assignment_2/Assignment_2</dir>
+      <file>main.cpp</file>
+      <line>18</line>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

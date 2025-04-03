@@ -1,100 +1,35 @@
+~ entire submission was checked for malware at VirusTotal.com
+
+Evaluation:
+
+Test Plan - I did not use my main application to produce a test plan. I tested each module instead using small datasets
+that I hardcoded into my UnitTest folder. I did this so I can accurately check if the calculations in my program are 
+correct, I copy and paste the datasets I used into websites to check for correct calculations, I also did manaual 
+calculations of my own and compared it to the website calculations and the calculations in my program. I can assure
+that the modules used in the Unit Test is the exact same as the main application. My rationale for not testing the main
+application is that by hardcoding the data, I can be sure that the module works and if it is correct in smaller dataset
+I am sure that the calculations in much larger datasets are correct.
+
 What works:
-All my functions for each class behaves as expected.
+- My program functionally works.
+- Each module especially the calculation module works as expected.
+- Error Handling for user misinput works.
+- Bst and Map data structure are implemented in my program.
+- Wrapped the std map into my own Map class.
+- Filehandling works.
+- When reading each line in a file, program will not break if a line is blank or value contains the string "N/A", 
+or is blank.
+- Successfully can print contents into a WindTempSolar.csv file.
+- Doxygen comments are present in the .h file.
+- Doxygen output  is in the html folder.
+- executable is in the executable folder.
 
 What does not work:
-I am unsure of the algorithm for converting Solar Radiation from w/m2 to kWH/m2 is correct.
-
-I made it easy for the Evaluator to check each class because in the UnitTest Folder I made 
-a folder for each class that I tested (excluding the Menu class).
-
-The Test Files have no codeblock project file and the evaluator.
-
-Output of Test Files (Taken from the output of TestAll.cpp in /UnitTest/TestAll folder):
-
-TestVectorInt() Test: PASS
-TestVectorSensor() Test: PASS
-GetDay() SetDay() Test: PASS
-GetMonth() SetMonth() Test: PASS
-GetYear() SetYear() Test: PASS
-GetMinutes() SetMinutes() Test: PASS
-GetHours() SetHours() Test: PASS
-AverageSpeed() Test: PASS
-StdDevSpeed() Speed TEST: PASS
-AverageTemperature() Test: PASS
-StdDevTemperature() Test: PASS
-TotalSolarRadiation() Test: PASS
-ValidateMonth() Test: PASS
-TestWriteToFile() Test: PASS
-TestReadCsv() Test: PASS
-TestReadSource() Test: PASS
-================================
- Manually check output here and in .txt/.csv outputs in cwd of main program
-January 2007:
-Average Speed: 6.5km/h
-Sample stdev: 2.1
-
-Speed Displayed, Expected Result:
-Average: 6.5km/h
-Sample Standard Deviation: 2.1
-
-2007:
-January: average: 25.1 degrees C, Sample stdev: 4.4
-February: average: 25.1 degrees C, Sample stdev: 4.4
-March: average: 25.1 degrees C, Sample stdev: 4.4
-April: average: 25.1 degrees C, Sample stdev: 4.4
-May: average: 25.1 degrees C, Sample stdev: 4.4
-June: average: 25.1 degrees C, Sample stdev: 4.4
-July: average: 25.1 degrees C, Sample stdev: 4.4
-August: average: 25.1 degrees C, Sample stdev: 4.4
-September: average: 25.1 degrees C, Sample stdev: 4.4
-October: average: 25.1 degrees C, Sample stdev: 4.4
-November: average: 25.1 degrees C, Sample stdev: 4.4
-December: average: 25.1 degrees C, Sample stdev: 4.4
-
-Temperature Displayed, Expected Result:
-All Months have Data
-Average:25.1 degrees C
-Sample Standard Deviation: 4.4
-
-2007:
-January: 0.2 kWh/m^2
-February: 0.2 kWh/m^2
-March: 0.2 kWh/m^2
-April: 0.2 kWh/m^2
-May: 0.2 kWh/m^2
-June: 0.2 kWh/m^2
-July: 0.2 kWh/m^2
-August: 0.2 kWh/m^2
-September: 0.2 kWh/m^2
-October: 0.2 kWh/m^2
-November: 0.2 kWh/m^2
-December: 0.2 kWh/m^2
-
-Solar Radiation Displayed, Expected Result:
-All Months have Data
-Total Solar Radiation: 0.2f
-
-WindTempSolar.csv created, Expected Result:
-All Months have data
-Each Row:6.5(2.1),25.1(4.4),0.2
+- I cannot find a situation in my program that can use a Map data structure effectively. The map data structure can be
+replaced by so many other data structures because I do not actually use key value pairs, the Map in my data is always 
+Map<int, float> when inserting data into my map wrapper, I always use .Size() (which returns the size of the map in int
+value. My program from top to bottom does not require the use of a key value pair. Sensor records have an 
+overloaded <,>,== operator to allow my BST to sort each date and my Map is simply there to store data which does not need
+to be sorted data because it is already filtered during insertion via BST traversal.
 
 
-Output of .txt/csv files (inside of /UnitTest/TestAll folder):
-
-TestFile.txt:
-hello this is the content
-
-WindTempSolar.csv:
-2007: 
-January,6.5(2.1),25.1(4.4),0.2
-February,6.5(2.1),25.1(4.4),0.2
-March,6.5(2.1),25.1(4.4),0.2
-April,6.5(2.1),25.1(4.4),0.2
-May,6.5(2.1),25.1(4.4),0.2
-June,6.5(2.1),25.1(4.4),0.2
-July,6.5(2.1),25.1(4.4),0.2
-August,6.5(2.1),25.1(4.4),0.2
-September,6.5(2.1),25.1(4.4),0.2
-October,6.5(2.1),25.1(4.4),0.2
-November,6.5(2.1),25.1(4.4),0.2
-December,6.5(2.1),25.1(4.4),0.2

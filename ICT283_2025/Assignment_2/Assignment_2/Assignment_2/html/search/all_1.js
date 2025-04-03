@@ -8,12 +8,9 @@ var searchData=
   ['calculator_5',['Calculator',['../classCalculator.html',1,'']]],
   ['calculator_2ecpp_6',['Calculator.cpp',['../Calculator_8cpp.html',1,'']]],
   ['calculator_2eh_7',['Calculator.h',['../Calculator_8h.html',1,'']]],
-  ['checkall_8',['CheckAll',['../classCollection.html#abe9c7f5270d5a8bfc5d9d64872a04533',1,'Collection']]],
-  ['checksolar_9',['CheckSolar',['../classCollection.html#a135d38d3c4d2156aec0a406aa29f37d7',1,'Collection']]],
-  ['checkspeed_10',['CheckSpeed',['../classCollection.html#afc0544ec0714f99f4d1184f368a98df3',1,'Collection']]],
-  ['checktemp_11',['CheckTemp',['../classCollection.html#ae64e9aa0bb973aab4d96219d693f5f2a',1,'Collection']]],
-  ['clear_12',['Clear',['../classMap.html#a690fcb6c1d9661b769d630a476be46c7',1,'Map']]],
-  ['collection_13',['Collection',['../classCollection.html',1,'']]],
-  ['collection_2ecpp_14',['Collection.cpp',['../Collection_8cpp.html',1,'']]],
-  ['collection_2eh_15',['Collection.h',['../Collection_8h.html',1,'']]]
+  ['checkdate_8',['CheckDate',['../Results_8cpp.html#adb6ed92cd39c982ae131553dfe438360',1,'CheckDate(const SensorLog &amp;sensor_data, const int year, const int month):&#160;Results.cpp'],['../Results_8h.html#adb6ed92cd39c982ae131553dfe438360',1,'CheckDate(const SensorLog &amp;sensor_data, const int year, const int month):&#160;Results.cpp']]],
+  ['clear_9',['Clear',['../classMap.html#a690fcb6c1d9661b769d630a476be46c7',1,'Map']]],
+  ['collection_10',['Collection',['../classCollection.html',1,'']]],
+  ['collection_2ecpp_11',['Collection.cpp',['../Collection_8cpp.html',1,'']]],
+  ['collection_2eh_12',['Collection.h',['../Collection_8h.html',1,'']]]
 ];

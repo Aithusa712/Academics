@@ -1,0 +1,17 @@
+<map id="CheckDate" name="CheckDate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="500,113,588,140"/>
+<area shape="rect" id="Node000002" href="$classResults.html#aab2d1793b03f766af73da66b272697cd" title="Displays the average speed and standard deviation." alt="" coords="252,5,452,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="514,105,485,83,451,62,426,51,428,46,454,58,488,79,517,101"/>
+<area shape="rect" id="Node000005" href="$classResults.html#a4a4faf662090164cb2c873e49c4c54b4" title="Displays the average temperature and standard deviation." alt="" coords="252,72,452,115"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="484,119,453,113,453,108,485,114"/>
+<area shape="rect" id="Node000006" href="$classResults.html#ab02523d4983775f3c2255d44934c988e" title="Displays the total solar radiation." alt="" coords="264,139,440,181"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="485,140,441,147,440,142,484,134"/>
+<area shape="rect" id="Node000007" href="$classResults.html#aef3159df1c45e68eb77af91747358a89" title="Prints all available data from the sensor log." alt="" coords="294,205,410,232"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="518,152,488,175,453,196,412,210,410,205,451,191,485,171,515,148"/>
+<area shape="rect" id="Node000003" href="$classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,80,204,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="272,56,253,63,196,82,195,77,251,57,271,51"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,80,55,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,96,55,96,55,91,87,91"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="236,96,205,96,205,91,236,91"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="278,208,251,196,223,176,198,152,162,109,166,106,202,148,226,171,253,191,280,203"/>
+</map>

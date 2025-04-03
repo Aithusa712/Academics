@@ -1,19 +1,29 @@
 <map id="Results::DisplayTotalSolarRadiation" name="Results::DisplayTotalSolarRadiation">
-<area shape="rect" id="Node000001" title="Displays the total solar radiation." alt="" coords="5,97,182,140"/>
-<area shape="rect" id="Node000002" href="$classCalculator.html#aa70e3d02acd2ad3211484334a5ed9ae4" title="Calculates the total solar radiation." alt="" coords="230,5,401,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,94,247,52,249,57,148,99"/>
-<area shape="rect" id="Node000004" href="$classCollection.html#a135d38d3c4d2156aec0a406aa29f37d7" title="Check a sensor record for solar data." alt="" coords="238,80,393,107"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,106,222,101,223,107,182,111"/>
-<area shape="rect" id="Node000006" href="$classCollection.html#a3f74953c16607caea6cac8f59c34b872" title="Retrieve solar data for a specific year and month." alt="" coords="232,131,398,157"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="182,126,217,130,216,135,182,131"/>
-<area shape="rect" id="Node000008" href="$Results_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month index into a readable month string." alt="" coords="267,181,364,208"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="151,138,231,167,253,174,251,179,229,172,149,143"/>
-<area shape="rect" id="Node000003" href="$classMap.html#a6582085ec2326d087e3f93570da1100c" title="Gets the number of elements in the map." alt="" coords="454,9,535,36"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="401,22,439,21,439,27,401,27"/>
-<area shape="rect" id="Node000005" href="$classBst.html#a0c85dfc8f9eae33384de1879e95a627a" title="Traverses the tree in order and applies a function to each node." alt="" coords="449,84,540,111"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="394,92,434,93,433,99,394,98"/>
-<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="464,85,458,75,462,66,475,59,495,57,516,60,528,66,525,71,515,65,495,63,476,65,466,69,464,75,468,82"/>
-<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="369,128,433,110,434,116,370,133"/>
-<area shape="rect" id="Node000007" href="$classMap.html#a690fcb6c1d9661b769d630a476be46c7" title="Clears all elements from the map." alt="" coords="452,135,537,161"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="399,143,436,144,436,149,399,149"/>
+<area shape="rect" id="Node000001" title="Displays the total solar radiation." alt="" coords="5,200,182,243"/>
+<area shape="rect" id="Node000002" href="$classCalculator.html#aa70e3d02acd2ad3211484334a5ed9ae4" title="Calculates the total solar radiation." alt="" coords="230,44,401,87"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,197,270,93,273,98,127,202"/>
+<area shape="rect" id="Node000004" href="$Results_8cpp.html#adb6ed92cd39c982ae131553dfe438360" title=" " alt="" coords="272,157,359,184"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="181,199,257,181,258,186,183,204"/>
+<area shape="rect" id="Node000010" href="$classCollection.html#a3f74953c16607caea6cac8f59c34b872" title="Retrieve solar data for a specific year and month." alt="" coords="232,233,398,260"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="182,229,217,233,216,238,182,234"/>
+<area shape="rect" id="Node000013" href="$Results_8cpp.html#af0a13677c9c545ba2509fccd136a1549" title="Converts month index into a readable month string." alt="" coords="267,284,364,311"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="151,241,231,269,253,277,251,282,229,275,149,246"/>
+<area shape="rect" id="Node000003" href="$classMap.html#a6582085ec2326d087e3f93570da1100c" title="Gets the number of elements in the map." alt="" coords="467,5,547,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="401,42,452,29,453,34,402,47"/>
+<area shape="rect" id="Node000005" href="$classBst.html#a4bbc4555a8ba931216a32f8f1d626613" title="Searches for a target value in the entire Bst." alt="" coords="449,56,565,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="338,154,448,92,458,87,461,92,450,97,341,159"/>
+<area shape="rect" id="Node000007" href="$classDate.html#a7b6f3262997530ea44b84dc1ff818690" title="Set the m_day value stored in this class." alt="" coords="456,107,558,133"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="359,157,441,135,442,140,360,162"/>
+<area shape="rect" id="Node000008" href="$classDate.html#aa7814f6054a688039338ac1190d74a8d" title="Set the m_month value stored in this class." alt="" coords="450,157,564,184"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="360,168,435,168,435,173,360,173"/>
+<area shape="rect" id="Node000009" href="$classDate.html#a795790fc0cde4220ceaf13b5ce232e4a" title="Set the m_year value stored in this class." alt="" coords="456,208,559,235"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="360,180,441,201,440,206,359,185"/>
+<area shape="rect" id="Node000006" href="$classBst.html#aa5297b15fe4efd945b9f99ad9ba2f673" title="Searches for a target value in the Bst." alt="" coords="613,56,704,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="566,67,597,67,597,72,566,72"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="632,57,628,47,631,38,641,32,659,29,677,32,687,39,684,43,675,37,658,35,643,37,635,41,633,47,637,54"/>
+<area shape="rect" id="Node000011" href="$classMap.html#a690fcb6c1d9661b769d630a476be46c7" title="Clears all elements from the map." alt="" coords="464,259,550,285"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="399,255,449,262,449,267,399,260"/>
+<area shape="rect" id="Node000012" href="$classBst.html#a0c85dfc8f9eae33384de1879e95a627a" title="Traverses the tree in order and applies a function to each node." alt="" coords="462,333,553,360"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="374,258,402,270,444,295,480,321,477,325,441,299,400,274,372,263"/>
+<area shape="poly" id="edge13_Node000012_Node000012" title=" " alt="" coords="481,334,476,325,479,315,490,309,507,307,526,309,535,316,532,320,524,314,507,312,492,314,483,318,482,324,486,332"/>
 </map>

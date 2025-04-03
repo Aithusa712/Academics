@@ -6,7 +6,6 @@
 /*#include <ostream>*/
 using namespace std; // check textbook for details of the namespace concept
 
-void unitTesting(const SensorLog &sensor_data);
 
 int main() {
   SensorLog sensor_data; // NOTE: THIS IS A BST, NOT A VECTOR
@@ -16,6 +15,7 @@ int main() {
   bool exit = false;
 
   handleFile.readSource("data/data_source.txt", sensor_data);
+
 
   while (!exit) {
     menu.prompt(sensor_data, exit);

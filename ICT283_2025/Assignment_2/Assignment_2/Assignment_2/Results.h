@@ -80,4 +80,6 @@ public:
  */
 string int_to_month(const int month_index);
 
+bool CheckDate(const SensorLog &sensor_data, const int year, const int month);
+
 #endif

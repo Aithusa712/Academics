@@ -198,6 +198,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a18ca9db5e8ac02b17d799f267dc2f301" id="r_a18ca9db5e8ac02b17d799f267dc2f301"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18ca9db5e8ac02b17d799f267dc2f301">int_to_month</a> (const int month_index)</td></tr>
 <tr class="memdesc:a18ca9db5e8ac02b17d799f267dc2f301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts month index into a readable month string.  <br /></td></tr>
 <tr class="separator:a18ca9db5e8ac02b17d799f267dc2f301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb6ed92cd39c982ae131553dfe438360" id="r_adb6ed92cd39c982ae131553dfe438360"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb6ed92cd39c982ae131553dfe438360">CheckDate</a> (const <a class="el" href="SensorRecType_8h.html#a956d88c53b304980ea47d015240a0c5d">SensorLog</a> &amp;sensor_data, const int year, const int month)</td></tr>
+<tr class="separator:adb6ed92cd39c982ae131553dfe438360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -205,6 +207,75 @@ Variables</h2></td></tr>
 <tr class="separator:a06d088fba93ef9a7115566194c32c795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="adb6ed92cd39c982ae131553dfe438360" name="adb6ed92cd39c982ae131553dfe438360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb6ed92cd39c982ae131553dfe438360">&#9670;&#160;</a></span>CheckDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CheckDate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="SensorRecType_8h.html#a956d88c53b304980ea47d015240a0c5d">SensorLog</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sensor_data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>year</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>month</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Results_8cpp_source.html#l00005">5</a> of file <a class="el" href="Results_8cpp_source.html">Results.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="Results_8h_adb6ed92cd39c982ae131553dfe438360_cgraph.png" border="0" usemap="#aResults_8h_adb6ed92cd39c982ae131553dfe438360_cgraph" alt=""/></div>
+<map name="aResults_8h_adb6ed92cd39c982ae131553dfe438360_cgraph" id="aResults_8h_adb6ed92cd39c982ae131553dfe438360_cgraph">
+<area shape="rect" title=" " alt="" coords="5,105,93,132"/>
+<area shape="rect" href="classBst.html#a4bbc4555a8ba931216a32f8f1d626613" title="Searches for a target value in the entire Bst." alt="" coords="141,29,257,56"/>
+<area shape="poly" title=" " alt="" coords="73,102,139,66,150,61,152,65,142,70,75,107"/>
+<area shape="rect" href="classDate.html#a7b6f3262997530ea44b84dc1ff818690" title="Set the m_day value stored in this class." alt="" coords="148,80,250,107"/>
+<area shape="poly" title=" " alt="" coords="93,109,133,102,134,107,94,114"/>
+<area shape="rect" href="classDate.html#aa7814f6054a688039338ac1190d74a8d" title="Set the m_month value stored in this class." alt="" coords="142,131,256,157"/>
+<area shape="poly" title=" " alt="" coords="94,123,127,129,126,134,93,129"/>
+<area shape="rect" href="classDate.html#a795790fc0cde4220ceaf13b5ce232e4a" title="Set the m_year value stored in this class." alt="" coords="147,181,250,208"/>
+<area shape="poly" title=" " alt="" coords="75,130,142,167,152,172,150,177,139,172,73,135"/>
+<area shape="rect" href="classBst.html#aa5297b15fe4efd945b9f99ad9ba2f673" title="Searches for a target value in the Bst." alt="" coords="305,29,395,56"/>
+<area shape="poly" title=" " alt="" coords="258,40,289,40,289,45,258,45"/>
+<area shape="poly" title=" " alt="" coords="324,30,319,21,322,11,333,5,350,3,369,5,378,12,375,16,367,10,350,8,335,10,326,14,325,20,329,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="Results_8h_adb6ed92cd39c982ae131553dfe438360_icgraph.png" border="0" usemap="#aResults_8h_adb6ed92cd39c982ae131553dfe438360_icgraph" alt=""/></div>
+<map name="aResults_8h_adb6ed92cd39c982ae131553dfe438360_icgraph" id="aResults_8h_adb6ed92cd39c982ae131553dfe438360_icgraph">
+<area shape="rect" title=" " alt="" coords="500,113,588,140"/>
+<area shape="rect" href="classResults.html#aab2d1793b03f766af73da66b272697cd" title="Displays the average speed and standard deviation." alt="" coords="252,5,452,48"/>
+<area shape="poly" title=" " alt="" coords="514,105,485,83,451,62,426,51,428,46,454,58,488,79,517,101"/>
+<area shape="rect" href="classResults.html#a4a4faf662090164cb2c873e49c4c54b4" title="Displays the average temperature and standard deviation." alt="" coords="252,72,452,115"/>
+<area shape="poly" title=" " alt="" coords="484,119,453,113,453,108,485,114"/>
+<area shape="rect" href="classResults.html#ab02523d4983775f3c2255d44934c988e" title="Displays the total solar radiation." alt="" coords="264,139,440,181"/>
+<area shape="poly" title=" " alt="" coords="485,140,441,147,440,142,484,134"/>
+<area shape="rect" href="classResults.html#aef3159df1c45e68eb77af91747358a89" title="Prints all available data from the sensor log." alt="" coords="294,205,410,232"/>
+<area shape="poly" title=" " alt="" coords="518,152,488,175,453,196,412,210,410,205,451,191,485,171,515,148"/>
+<area shape="rect" href="classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="103,80,204,107"/>
+<area shape="poly" title=" " alt="" coords="272,56,253,63,196,82,195,77,251,57,271,51"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,80,55,107"/>
+<area shape="poly" title=" " alt="" coords="87,96,55,96,55,91,87,91"/>
+<area shape="poly" title=" " alt="" coords="236,96,205,96,205,91,236,91"/>
+<area shape="poly" title=" " alt="" coords="278,208,251,196,223,176,198,152,162,109,166,106,202,148,226,171,253,191,280,203"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a18ca9db5e8ac02b17d799f267dc2f301" name="a18ca9db5e8ac02b17d799f267dc2f301"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18ca9db5e8ac02b17d799f267dc2f301">&#9670;&#160;</a></span>int_to_month()</h2>
 
@@ -229,7 +300,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the string named value of the month </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Results_8cpp_source.html#l00273">273</a> of file <a class="el" href="Results_8cpp_source.html">Results.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Results_8cpp_source.html#l00293">293</a> of file <a class="el" href="Results_8cpp_source.html">Results.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

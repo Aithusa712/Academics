@@ -2,13 +2,28 @@
 #include "Collection.h"
 #include "SensorRecType.h"
 
+bool CheckDate(const SensorLog &sensor_data, const int year, const int month) {
+  SensorRecType targetDate;
+  bool DataFound = false;
+  targetDate.date.SetYear(year);
+  targetDate.date.SetMonth(month);
+  for (int day = 1; day < 32; day++) {
+    targetDate.date.SetDay(day);
+    if (sensor_data.SearchTree(targetDate)) {
+      DataFound = true;
+      break;
+    }
+  }
+  return DataFound;
+}
+
 void Results::DisplayAverageStdevSpeed(const SensorLog &sensor_data, int month,
                                        int year) const {
   Calculator calculate;
   Collection collect;
 
   // Condition to check if the month and year contain any data
-  if (collect.CheckSpeed(sensor_data, year, month)) {
+  if (CheckDate(sensor_data, year, month)) {
 
     // Perform in-order traversal using a custom function
     Map<int, float> speedData = collect.GetSpeedData(sensor_data, year, month);
@@ -43,7 +58,7 @@ void Results::DisplayAverageStdevTemperature(const SensorLog &sensor_data,
 
   for (int index = 1; index < MAX_MONTHS; index++) {
     int targetMonth = index;
-    dataFound = collect.CheckTemp(sensor_data, year, targetMonth);
+    dataFound = CheckDate(sensor_data, year, targetMonth);
     if (dataFound) {
       break;
     }
@@ -57,8 +72,9 @@ void Results::DisplayAverageStdevTemperature(const SensorLog &sensor_data,
     // Loop through all the months of a year
     for (int month_index = 1; month_index < MAX_MONTHS; month_index++) {
 
-      if (collect.CheckTemp(sensor_data, year, month_index)) {
-        Map<int, float> tempData = collect.GetTempData(sensor_data, year, month_index);
+      if (CheckDate(sensor_data, year, month_index)) {
+        Map<int, float> tempData =
+            collect.GetTempData(sensor_data, year, month_index);
         // Call functions from the Calculator class
         float average = calculate.CalculateAverage(tempData);
         float standard_deviation =
@@ -90,8 +106,8 @@ void Results::DisplayTotalSolarRadiation(const SensorLog &sensor_data,
   // Loop through the sensor data vector struct to find if there is any data on
   // the year the user entered
 
-  for (int index = 1; index < MAX_MONTHS; index++) {
-    dataFound = collect.CheckSolar(sensor_data, year, index);
+  for (int targetMonth = 1; targetMonth < MAX_MONTHS; targetMonth++) {
+    dataFound = CheckDate(sensor_data, year, targetMonth);
     if (dataFound) {
       break;
     }
@@ -113,9 +129,10 @@ void Results::DisplayTotalSolarRadiation(const SensorLog &sensor_data,
       // Check if there is data for the current month index
       // The "SR" inside the ValidateMonth parameter stands for Solar Radiation
 
-      if (collect.CheckSolar(sensor_data, year, month_index)) {
+      if (CheckDate(sensor_data, year, month_index)) {
 
-        Map<int, float> solarData = collect.GetSolarData(sensor_data, year, month_index);
+        Map<int, float> solarData =
+            collect.GetSolarData(sensor_data, year, month_index);
 
         // Call function from the Calculator Class
 
@@ -148,11 +165,10 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
 
   bool dataFound = false;
 
-
   // Loop throughtemperature_datatemperature_data the sensor data vector struct
   // to find if there is any data on the year the user entered
   for (int index = 1; index < MAX_MONTHS; index++) {
-    dataFound = collect.CheckAll(sensor_data, year, index);
+    dataFound = CheckDate(sensor_data, year, index);
 
     if (dataFound) {
       break;
@@ -179,9 +195,12 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
       // Loop through all sensor_data elements and insert all relevant data that
       // matches the month and year parameter to float vector
 
-      Map<int, float> speedData = collect.GetSpeedData(sensor_data, year, month_index);
-      Map<int, float> tempData = collect.GetTempData(sensor_data, year, month_index);
-      Map<int, float> solarData = collect.GetSolarData(sensor_data, year, month_index);
+      Map<int, float> speedData =
+          collect.GetSpeedData(sensor_data, year, month_index);
+      Map<int, float> tempData =
+          collect.GetTempData(sensor_data, year, month_index);
+      Map<int, float> solarData =
+          collect.GetSolarData(sensor_data, year, month_index);
 
       // Call functions from the calculate class
       //
@@ -196,9 +215,8 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
       float stdev_temperature =
           calculate.CalculateStandardDeviation(tempData, average_temperature);
       // Total solar Radiation
-      float total_solar_radiation = calculate.CalculateTotalSolarRadiation(solarData);
-
-
+      float total_solar_radiation =
+          calculate.CalculateTotalSolarRadiation(solarData);
 
       // Print month name to output stream
 
@@ -214,7 +232,8 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
         empty_data++;
       }
       if (stdev_speed != 0) {
-        output << "(" << stdev_speed << ", " << calculate.CalculateMAD(speedData) << ")";
+        output << "(" << stdev_speed << ", "
+               << calculate.CalculateMAD(speedData) << ")";
       } else {
         empty_data++;
       }
@@ -224,7 +243,8 @@ void Results::PrintAll(const SensorLog &sensor_data, const int year) const {
         empty_data++;
       }
       if (stdev_temperature != 0) {
-        output << "(" << stdev_temperature << ", " << calculate.CalculateMAD(tempData) << ")";
+        output << "(" << stdev_temperature << ", "
+               << calculate.CalculateMAD(tempData) << ")";
       } else {
         empty_data++;
       }

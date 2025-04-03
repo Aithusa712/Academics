@@ -59,29 +59,6 @@ public:
   void Get_sPCC_Data(const SensorLog &data, int month,
                      Map<int, float> &speedDataIn, Map<int, float> &tempDataIn,
                      Map<int, float> &solarDataIn);
-  /**
-   * @brief Check a sensor record for speed data.
-   * @param record The sensor record to check.
-   */
-  bool CheckSpeed(const SensorLog &data, const int year, const int month);
-
-  /**
-   * @brief Check a sensor record for temperature data.
-   * @param record The sensor record to check.
-   */
-  bool CheckTemp(const SensorLog &data, const int year, const int month);
-
-  /**
-   * @brief Check a sensor record for solar data.
-   * @param record The sensor record to check.
-   */
-  bool CheckSolar(const SensorLog &data, const int year, const int month);
-
-  /**
-   * @brief Check a sensor record for all data types.
-   * @param record The sensor record to check.
-   */
-  bool CheckAll(const SensorLog &data, const int year, const int month);
 
 private:
   static int targetMonth;  ///< The target month for data collection.
@@ -117,30 +94,6 @@ private:
    * @param record The sensor record to collect data from.
    */
   static void collect_sPCC_data(SensorRecType &record);
-
-  /**
-   * @brief Check a sensor record for speed data.
-   * @param record The sensor record to check.
-   */
-  static void CheckSpeedData(SensorRecType &record);
-
-  /**
-   * @brief Check a sensor record for temperature data.
-   * @param record The sensor record to check.
-   */
-  static void CheckTempData(SensorRecType &record);
-
-  /**
-   * @brief Check a sensor record for solar data.
-   * @param record The sensor record to check.
-   */
-  static void CheckSolarData(SensorRecType &record);
-
-  /**
-   * @brief Check a sensor record for all data types.
-   * @param record The sensor record to check.
-   */
-  static void CheckAllData(SensorRecType &record);
 };
 
 #endif

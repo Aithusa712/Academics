@@ -1,6 +1,0 @@
-<map id="Collection::CheckSolar" name="Collection::CheckSolar">
-<area shape="rect" id="Node000001" title="Check a sensor record for solar data." alt="" coords="5,29,161,56"/>
-<area shape="rect" id="Node000002" href="$classBst.html#a0c85dfc8f9eae33384de1879e95a627a" title="Traverses the tree in order and applies a function to each node." alt="" coords="209,29,300,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,40,193,40,193,45,161,45"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="225,30,220,21,223,11,235,5,254,3,275,5,286,12,283,16,273,10,254,8,237,10,227,15,225,20,229,28"/>
-</map>

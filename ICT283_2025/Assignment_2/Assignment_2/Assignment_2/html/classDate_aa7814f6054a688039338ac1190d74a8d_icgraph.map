@@ -1,11 +1,26 @@
 <map id="Date::SetMonth" name="Date::SetMonth">
-<area shape="rect" id="Node000001" title="Set the m_month value stored in this class." alt="" coords="508,31,622,57"/>
-<area shape="rect" id="Node000002" href="$Date_8cpp.html#a1066557b9356efa7794a19cea936e688" title="overloading the &gt;&gt; operator" alt="" coords="344,5,428,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="493,36,429,27,429,22,494,31"/>
-<area shape="rect" id="Node000003" href="$classFileHandler.html#ab915f132c8eac7e38ef32235be498903" title="Reads and parses a CSV file containing sensor measurements." alt="" coords="312,56,460,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="493,57,461,61,461,56,492,52"/>
-<area shape="rect" id="Node000004" href="$classFileHandler.html#a157090e8ab86e0064796eb6992041a38" title="reads a source file containing a list of csv filenames" alt="" coords="103,56,264,83"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="296,72,264,72,264,67,296,67"/>
-<area shape="rect" id="Node000005" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
+<area shape="rect" id="Node000001" title="Set the m_month value stored in this class." alt="" coords="757,199,870,225"/>
+<area shape="rect" id="Node000002" href="$Results_8cpp.html#adb6ed92cd39c982ae131553dfe438360" title=" " alt="" coords="591,147,678,173"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="749,196,678,175,679,170,751,191"/>
+<area shape="rect" id="Node000009" href="$Date_8cpp.html#a1066557b9356efa7794a19cea936e688" title="overloading the &gt;&gt; operator" alt="" coords="592,199,677,225"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="741,215,677,215,677,209,741,209"/>
+<area shape="rect" id="Node000010" href="$classFileHandler.html#ab915f132c8eac7e38ef32235be498903" title="Reads and parses a CSV file containing sensor measurements." alt="" coords="560,253,709,280"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="753,233,681,255,680,250,752,228"/>
+<area shape="rect" id="Node000003" href="$classResults.html#aab2d1793b03f766af73da66b272697cd" title="Displays the average speed and standard deviation." alt="" coords="312,5,512,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="607,138,564,99,511,62,487,51,489,46,514,58,568,95,611,134"/>
+<area shape="rect" id="Node000006" href="$classResults.html#a4a4faf662090164cb2c873e49c4c54b4" title="Displays the average temperature and standard deviation." alt="" coords="312,72,512,115"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="575,145,485,118,486,113,576,140"/>
+<area shape="rect" id="Node000007" href="$classResults.html#ab02523d4983775f3c2255d44934c988e" title="Displays the total solar radiation." alt="" coords="324,139,500,181"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="575,163,501,163,501,157,575,157"/>
+<area shape="rect" id="Node000008" href="$classResults.html#aef3159df1c45e68eb77af91747358a89" title="Prints all available data from the sensor log." alt="" coords="354,205,470,232"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="577,179,513,196,469,207,468,202,512,191,575,173"/>
+<area shape="rect" id="Node000004" href="$classMenu.html#a042879989da9d5ba48f2e5091ca7de61" title="Displays main menu and handles user input." alt="" coords="133,112,234,139"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="329,56,313,62,210,114,208,109,311,58,327,51"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,168,55,195"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="131,147,56,175,54,170,129,142"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="297,112,235,121,234,116,296,107"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="338,205,311,196,253,169,206,142,208,137,256,164,313,191,340,200"/>
+<area shape="rect" id="Node000011" href="$classFileHandler.html#a157090e8ab86e0064796eb6992041a38" title="reads a source file containing a list of csv filenames" alt="" coords="103,193,264,220"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="545,268,433,262,311,247,223,223,224,218,313,241,434,257,545,263"/>
+<area shape="poly" id="edge13_Node000011_Node000005" title=" " alt="" coords="87,193,55,188,56,183,88,188"/>
 </map>

@@ -1,0 +1,14 @@
+Rationale
+BST
+I used the BST as a container to store all of the sensor data for all the years. There is around 500,000 records. 
+By usinga Binary Search Tree I can use an inOrder traversal to effectively navigate and retrieve sensor data in a 
+sorted order. Also I can search for a certain date and return true it exists and it does this in O(log n) time, this savesa lot of time in processing and will help decide if my tree needs to traverse and process data.
+
+Map
+I use my BST traversal function to traverse through all the nodes and use a void function to insert a node that matches
+the correct date into my map data structure. Because the data inside my map is already filtered and is ready to be 
+proceseed into my calculation class, it does not need keys. I could use a vector or even an array to do this but, there 
+are no other way for me to use maps without refactoring a majority of my code. If I try to implement with my bst like a 
+BST<Map> data structure, it would slow down my program and use a lot of resources because of 500,000 maps being
+initialized and created. 
+
